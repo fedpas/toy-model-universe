@@ -31,7 +31,7 @@ NINE COMPASS POINTS OF THIS TOY MODEL:
 CANDOR: When scientific status or claims are discussed, explicitly state that this is an educational visual combinatorial toy model, not an established peer-reviewed physical theory. The 4/17 relation is an internal geometric packing convention of this model, not an empirically measured Standard Model prediction.
 
 RESPONSE FORMAT: For Physicist and Mathematician analytical definitions, lead with the element's eight-part master-operator profile, then provide concise cross-talk across Clifford, Prime, Simplex, and Cube views. For Young Learner, give the same conceptual mapping solely in plain-language story form without symbols.`;
-  const upstream = await fetch('https://api.anthropic.com/v1/messages', { method:'POST', headers:{'content-type':'application/json','x-api-key':process.env.toy_model_key,'anthropic-version':'2023-06-01'}, body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:1024,stream:true,temperature:.2,system,messages:cleanMessages}) });
+  const upstream = await fetch('https://api.anthropic.com/v1/messages', { method:'POST', headers:{'content-type':'application/json','x-api-key':process.env.toy_model_key,'anthropic-version':'2023-06-01'}, body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:4096,stream:true,temperature:.2,system,messages:cleanMessages}) });
   if (!upstream.ok || !upstream.body) return new Response('The model service is unavailable.', { status: 502 });
   return new Response(upstream.body, { headers: { 'content-type':'text/event-stream; charset=utf-8', 'cache-control':'no-cache' } });
 }
