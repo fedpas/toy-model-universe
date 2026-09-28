@@ -7,6 +7,8 @@ const sectorProfiles = {
   Sector_EM_Maxwell:{nodes:6,ring:2,accent:0x35d9ff,strain:false},
   Sector_Color_Strong:{nodes:8,ring:3,accent:0x34d399,strain:false},
   Sector_Gravity_Strain:{nodes:8,ring:6,accent:0xff4772,strain:true},
+  Sector_Baryon_Conservation:{nodes:3,ring:3,accent:0x4fd18b,strain:false},
+  Sector_GUT_Junction:{nodes:8,ring:8,accent:0xffffff,strain:false},
   Sector_Electroweak_Unified:{nodes:8,ring:4,accent:0xffcd68,strain:false},
   Sector_Vacuum_Mass_Generation:{nodes:2,ring:1,accent:0xe59aff,strain:false},
 };
@@ -19,7 +21,7 @@ export default function SimplexCanvas({step,activeView,sector}){
   const points=Array.from({length:8},(_,i)=>{const a=i*Math.PI/4;return new THREE.Vector3(Math.cos(a)*3*sx,Math.sin(a)*3*sy,0)});
   const nodeMat=new THREE.MeshBasicMaterial({color:profile.accent}),ghostMat=new THREE.MeshBasicMaterial({color:0x34425f});
   const line=(a,b,color=tint,opacity=.65)=>root.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([a,b]),new THREE.LineBasicMaterial({color,transparent:true,opacity})));
-  if(sector==='Sector_Color_Strong'&&activeView==='Simplex'){[0,2,5].forEach(i=>{const node=new THREE.Mesh(new THREE.SphereGeometry(.2,20,20),nodeMat);node.position.copy(points[i]);root.add(node)});line(points[0],points[2],profile.accent,1);line(points[2],points[5],profile.accent,1);line(points[5],points[0],profile.accent,1);
+  if((sector==='Sector_Color_Strong'||sector==='Sector_Baryon_Conservation')&&activeView==='Simplex'){[0,2,5].forEach(i=>{const node=new THREE.Mesh(new THREE.SphereGeometry(.2,20,20),nodeMat);node.position.copy(points[i]);root.add(node)});line(points[0],points[2],profile.accent,1);line(points[2],points[5],profile.accent,1);line(points[5],points[0],profile.accent,1);
   }else if(activeView==='Clifford'){const frame=new THREE.Group();[[-1,-1],[1,-1],[1,1],[-1,1]].forEach(([x,y],i)=>{const cube=new THREE.Mesh(new THREE.BoxGeometry(.36,.36,.36),i<profile.ring?nodeMat:ghostMat);cube.position.set(x*1.75*(profile.strain?.7:1),y*1.75,i%2?.7:-.7);frame.add(cube)});line(new THREE.Vector3(-2.2*(profile.strain?.6:1),0,0),new THREE.Vector3(2.2*(profile.strain?.6:1),0,0),profile.accent,1);line(new THREE.Vector3(0,-2.2,0),new THREE.Vector3(0,2.2,0),profile.accent,1);root.add(frame);
   }else if(activeView==='Prime'){[3,5,7,11,13,17,19,23].forEach((prime,i)=>{const a=i*Math.PI/4,r=(1.1+(prime%5)*.3)*(profile.strain?.8:1),sphere=new THREE.Mesh(new THREE.SphereGeometry(.1,18,18),i<profile.ring?nodeMat:ghostMat);sphere.position.set(Math.cos(a)*r*sx,Math.sin(a)*r*sy,0);root.add(sphere);if(i<profile.ring)line(new THREE.Vector3(),sphere.position,profile.accent,.9)});
   }else if(activeView==='Simplex'){points.forEach((p,i)=>{const node=new THREE.Mesh(new THREE.SphereGeometry(.14,18,18),i<profile.nodes?nodeMat:ghostMat);node.position.copy(p);root.add(node)});for(let i=0;i<profile.nodes;i++)for(let j=i+1;j<profile.nodes;j++)line(points[i],points[j],i<profile.ring&&j<profile.ring?profile.accent:tint,i<profile.ring&&j<profile.ring?1:.23);
