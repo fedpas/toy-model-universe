@@ -3,7 +3,7 @@ const profiles = new Set(['Young Learner', 'Physicist', 'Mathematician']);
 const languages = new Set(['en', 'it']);
 export default async function handler(request) {
   if (request.method !== 'POST') return new Response('Method not allowed', { status: 405 });
-  if (!process.env.OPENAI_API_KEY) return new Response('Chat is not configured.', { status: 503 });
+  if (!process.env.toy_model_key) return new Response('Chat is not configured.', { status: 503 });
   let body; try { body = await request.json(); } catch { return new Response('Invalid JSON.', { status: 400 }); }
   const { messages, spokenLang, userProfile } = body;
   if (!Array.isArray(messages) || !languages.has(spokenLang) || !profiles.has(userProfile)) return new Response('Invalid chat context.', { status: 400 });
@@ -31,7 +31,7 @@ NINE COMPASS POINTS OF THIS TOY MODEL:
 CANDOR: When scientific status or claims are discussed, explicitly state that this is an educational visual combinatorial toy model, not an established peer-reviewed physical theory. The 4/17 relation is an internal geometric packing convention of this model, not an empirically measured Standard Model prediction.
 
 RESPONSE FORMAT: For Physicist and Mathematician analytical definitions, lead with the element's eight-part master-operator profile, then provide concise cross-talk across Clifford, Prime, Simplex, and Cube views. For Young Learner, give the same conceptual mapping solely in plain-language story form without symbols.`;
-  const upstream = await fetch('https://api.openai.com/v1/chat/completions', { method:'POST', headers:{'content-type':'application/json',authorization:`Bearer ${process.env.OPENAI_API_KEY}`}, body:JSON.stringify({model:'gpt-4o-mini',stream:true,temperature:.2,messages:[{role:'system',content:system},...cleanMessages]}) });
+  const upstream = await fetch('https://api.anthropic.com/v1/messages', { method:'POST', headers:{'content-type':'application/json','x-api-key':process.env.toy_model_key,'anthropic-version':'2023-06-01'}, body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:1024,stream:true,temperature:.2,system,messages:cleanMessages}) });
   if (!upstream.ok || !upstream.body) return new Response('The model service is unavailable.', { status: 502 });
   return new Response(upstream.body, { headers: { 'content-type':'text/event-stream; charset=utf-8', 'cache-control':'no-cache' } });
 }
