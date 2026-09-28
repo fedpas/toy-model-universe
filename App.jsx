@@ -1,19 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BlockMath, InlineMath } from 'react-katex';
 import SimplexCanvas from './SimplexCanvas';
 import { KNOWLEDGE_BASE_DIRECTORY, MENU_SECTOR_LIST, TUTORIAL_SLIDER_CONFIG } from './matrixData';
+import { initCascadeScrollEngine } from './Scrollytelling';
 
 const PROFILES=['Young Learner','Physicist','Mathematician'];
 const VIEWS=['Clifford','Prime','Simplex','Cube'];
 const labels={en:{tour:'The shared four-step tour',results:'Three result branches',matrix:'Language · audience · representation',note:'Educational visual toy model — not an established peer-reviewed physical theory.',lede:'The same visual journey adapts its language and explanatory depth for every audience. Use the controls below; every tour card and each result branch updates together.',open:'Open branch',step:'Step'},it:{tour:'Il tour condiviso in quattro passi',results:'Tre rami di risultati',matrix:'Lingua · pubblico · rappresentazione',note:'Modello visivo educativo — non una teoria fisica consolidata e sottoposta a peer review.',lede:'Lo stesso viaggio visivo adatta lingua e profondità esplicativa per ogni pubblico. Usa i controlli: ogni scheda del tour e ciascun ramo di risultati si aggiorna insieme.',open:'Apri il ramo',step:'Passo'}};
 export default function App(){
  const [lang,setLang]=useState('en'),[profile,setProfile]=useState('Young Learner'),[view,setView]=useState('Clifford'),[step,setStep]=useState(0),[sector,setSector]=useState('Sector_EM_Maxwell');
+ const tourRef = useRef(null);
+ useEffect(() => initCascadeScrollEngine(setStep, tourRef.current), []);
  const t=labels[lang], record=KNOWLEDGE_BASE_DIRECTORY[`${sector}_${lang}_${profile}`], slides=TUTORIAL_SLIDER_CONFIG[lang][profile], selected=MENU_SECTOR_LIST.find(x=>x.id===sector);
  return <main>
   <header className="topbar"><a className="brand" href="#top"><span>01</span> EIGHT SWITCHES</a></header>
   <section className="hero" id="top"><p className="eyebrow">Interactive research atlas · 2 × 3 × 4 presentation matrix</p><h1>{t.tour}</h1><p className="lede">{t.lede}</p><p className="disclosure">{t.note}</p></section>
   <ControlBar lang={lang} setLang={setLang} profile={profile} setProfile={setProfile} view={view} setView={setView}/>
-  <section className="tour"><div className="tour-copy"><p className="eyebrow">{t.step.toUpperCase()} {step+1} / 4 · {profile.toUpperCase()}</p><h2>{slides[step].title}</h2><p>{slides[step].desc}</p><p className="cue">{view} lens: {telemetry(record,view)}</p><div className="steps">{slides.map((x,i)=><button onClick={()=>setStep(i)} className={i===step?'active':''} key={x.step}>{String(i+1).padStart(2,'0')}</button>)}</div></div><div className="diagram"><SimplexCanvas step={step} activeView={view} sector={sector}/><span>{t.matrix}: {lang.toUpperCase()} · {profile} · {view}</span></div></section>
+  <section className="tour" ref={tourRef}><div className="tour-copy"><p className="eyebrow">{t.step.toUpperCase()} {step+1} / 4 · {profile.toUpperCase()}</p><h2>{slides[step].title}</h2><p>{slides[step].desc}</p><p className="cue">{view} lens: {telemetry(record,view)}</p><div className="steps">{slides.map((x,i)=><button onClick={()=>setStep(i)} className={i===step?'active':''} key={x.step}>{String(i+1).padStart(2,'0')}</button>)}</div></div><div className="diagram"><SimplexCanvas step={step} activeView={view} sector={sector}/><span>{t.matrix}: {lang.toUpperCase()} · {profile} · {view}</span></div></section>
   <section className="branch-heading"><p className="eyebrow">{t.results.toUpperCase()}</p><h2>One directory, eighteen audience-language narratives, four representational lenses.</h2></section>
   <section className="branches">{MENU_SECTOR_LIST.map(item=>{const data=KNOWLEDGE_BASE_DIRECTORY[`${item.id}_${lang}_${profile}`];return <article className={`branch ${item.id===sector?'selected':''}`} key={item.id}><div><p className="eyebrow">{item.category}</p><h3>{data.title}</h3><p>{data.desc}</p></div><button onClick={()=>setSector(item.id)}>{item.id===sector?'Active branch':t.open}</button></article>})}</section>
   <section className="result"><article className="paper"><p className="eyebrow">{selected.category.toUpperCase()} · {view.toUpperCase()} VIEW</p><h2>{record.title}</h2><p>{record.desc}</p><ResultFormal sector={sector} profile={profile} lang={lang}/></article><aside className="proof-map"><p className="eyebrow">BRANCH VISUALIZATION</p><SimplexCanvas step={3} activeView={view} sector={sector}/><div className="view-pills">{VIEWS.map(v=><button onClick={()=>setView(v)} className={v===view?'active':''} key={v}>{v}: {telemetry(record,v)}</button>)}</div></aside></section>
