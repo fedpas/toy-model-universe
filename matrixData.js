@@ -193,6 +193,26 @@ export const KNOWLEDGE_BASE_DIRECTORY = {
     cube: "[+, 0, R, G₀] ⊗ [0, 0, 0, 0]",
     title: "Il Campo Scalare di Identità e le Inversioni NOT Booleane",
     desc: "Il numero 1 si mappa sull'identità moltiplicativa scalare di Grado 0. Il potenziale standard 'a cappello messicano' rappresenta il profilo geometrico letterale del triangolo dei fattori primi rispetto a questa radice scalare. Nei nostri 4 modi, Clifford gestisce le trasformazioni degli ideali chirali; la vista Primi risolve i pesi di scala; il Simplesso mappa le catene; e l'Ipercubo traccia l'antimateria come riflessione involutiva."
+  },
+
+  // --- SECTOR 4: STRONG COLOR CONFINEMENT ---
+  "Sector_Color_Strong_en_Young Learner": {
+    id: "Sector_Color_Strong", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: 42, simplex: "2-face (Flat Triangle Loop)", cube: "[±, 0/1, L/R, G₀/₁] ⊗ [0, 0, 1, ν]", title: "The Unbreakable Proton Triangle", desc: "Protons are perfectly stable because they are made of three different quarks locked into a solid, flat triangle face. Because the number 7 is an indivisible prime, the weak force and light forces are completely blind to it, meaning the triangle can never be broken or dissolved into lighter pieces under multiplication."
+  },
+  "Sector_Color_Strong_en_Physicist": {
+    id: "Sector_Color_Strong", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: 42, simplex: "2-face (Flat Triangle Loop)", cube: "[±, 0/1, L/R, G₀/₁] ⊗ [0, 0, 1, ν]", title: "Baryon Confinement via Prime Indivisibility", desc: "Baryon number conservation is a structural consequence of the prime factor 7 loop. The SU(3) color transformations preserve the volume elements of an embedded Fano plane, forming a permanent topological trap that is completely unalterable by weak or electromagnetic channels."
+  },
+  "Sector_Color_Strong_en_Mathematician": {
+    id: "Sector_Color_Strong", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: 42, simplex: "2-face (Flat Triangle Loop)", cube: "[±, 0/1, L/R, G₀/₁] ⊗ [0, 0, 1, ν]", title: "The Fano Plane Cyclic Invariant Index", desc: "Baryon number is formalized as the topological winding index of the prime factor 7 loop (ν₇ mod 3 / 3). Because 7 is an atomic prime element, it cannot be mapped to combinations of 3s and 5s, forcing the triangular face of the simplex to remain invariant under Clifford products."
+  },
+  "Sector_Color_Strong_it_Young Learner": {
+    id: "Sector_Color_Strong", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: 42, simplex: "2-face (Flat Triangle Loop)", cube: "[±, 0/1, L/R, G₀/₁] ⊗ [0, 0, 1, ν]", title: "L'Infrangibile Triangolo dei Protoni", desc: "I protoni sono perfettamente stabili perché sono fatti di tre quark diversi racchiusi in una faccia a triangolo solida e piatta. Poiché il numero 7 è un numero primo indivisibile, la forza debole e le forze di luce sono completamente cieche ad esso, impedendo al triangolo di rompersi o dissolversi."
+  },
+  "Sector_Color_Strong_it_Physicist": {
+    id: "Sector_Color_Strong", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: 42, simplex: "2-face (Flat Triangle Loop)", cube: "[±, 0/1, L/R, G₀/₁] ⊗ [0, 0, 1, ν]", title: "Confinamento Barionico tramite Indivisibilità Prima", desc: "La conservazione del numero barionico è una conseguenza strutturale del loop del fattore primo 7. Le trasformazioni di colore SU(3) preservano gli elementi di volume di un piano di Fano incorporato, formando una trappola topologica permanente inalterabile dai canali deboli o elettromagnetici."
+  },
+  "Sector_Color_Strong_it_Mathematician": {
+    id: "Sector_Color_Strong", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: 42, simplex: "2-face (Flat Triangle Loop)", cube: "[±, 0/1, L/R, G₀/₁] ⊗ [0, 0, 1, ν]", title: "L'Indice Invariante Ciclico del Piano di Fano", desc: "Il numero barionico è formalizzato come l'indice di avvolgimento topologico del loop del fattore primo 7 (ν₇ mod 3 / 3). Poiché 7 è un elemento primo atomico, non può essere mappato su combinazioni di 3 e 5, costringendo la faccia triangolare del simplesso a rimanere invariante."
   }
 };
 
@@ -202,6 +222,7 @@ export const KNOWLEDGE_BASE_DIRECTORY = {
 // ============================================================================
 export const MENU_SECTOR_LIST = [
   { id: "Sector_EM_Maxwell", category: "Foundational Symmetries" },
+  { id: "Sector_Color_Strong", category: "Foundational Symmetries" },
   { id: "Sector_Electroweak_Unified", category: "Structural Realignments" },
   { id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers" }
 ];
