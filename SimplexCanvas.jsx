@@ -1,96 +1,26 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-export default function SimplexCanvas({ activeView }) {
-  const containerRef = useRef(null);
-
+const cameraPoints = [[0, 0, 10], [5, 3, 8], [0, 6, 4], [2, 1, 5]];
+export default function SimplexCanvas({ step, onSelect }) {
+  const ref = useRef(null);
   useEffect(() => {
-    if (!containerRef.current) return;
-
-    const width = containerRef.current.clientWidth || 500;
-    const height = 350;
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color('#020617');
-
-    const camera = new THREE.PerspectiveCamera(45, width / height, 1, 100);
-    camera.position.z = 11;
-
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(width, height);
-    containerRef.current.appendChild(renderer.domElement);
-
-    const vertexCount = 8;
-    const radius = 3.3;
-    const vertices = [];
-
-    // Calculate regular Petrie coordinates on the boundary ring
-    for (let i = 0; i < vertexCount; i++) {
-      const angle = (i * 2 * Math.PI) / vertexCount;
-      vertices.push(new THREE.Vector3(Math.cos(angle) * radius, Math.sin(angle) * radius, 0));
-    }
-
-    const group = new THREE.Group();
-
-    // DYNAMIC FILTER ENGINE: Adjusts colors and line thickness based on active framework view
-    const getLayerColor = () => {
-      if (activeView === 'Prime') return '#34d399';     // Arithmetic Emerald
-      if (activeView === 'Simplex') return '#fbbf24';   // Polyhedral Amber
-      if (activeView === 'Cube') return '#f472b6';      // Lattice Pink
-      return '#818cf8';                                 // Clifford Indigo
-    };
-
-    // Draw the 28 structural cross-connecting edges
-    for (let i = 0; i < vertexCount; i++) {
-      for (let j = i + 1; j < vertexCount; j++) {
-        const geometry = new THREE.BufferGeometry().setFromPoints([vertices[i], vertices[j]]);
-        
-        // Electroweak channel edges (1-2 and 2-3 links) glow with intense opacity
-        const isElectroweakEdge = (i === 1 && j === 2) || (i === 2 && j === 3);
-        const edgeOpacity = isElectroweakEdge ? 0.90 : 0.20;
-        const edgeWidth = isElectroweakEdge ? 2.5 : 1.0;
-
-        const lineMaterial = new THREE.LineBasicMaterial({
-          color: getLayerColor(),
-          transparent: true,
-          opacity: edgeOpacity,
-          linewidth: edgeWidth // Note: linewidth > 1 depends on hardware drivers
-        });
-
-        const line = new THREE.Line(geometry, lineMaterial);
-        group.add(line);
-      }
-    }
-
-    // Draw the 8 base vertex coordinate landmarks
-    const sphereGeo = new THREE.SphereGeometry(0.12, 32, 32);
-    const sphereMat = new THREE.MeshBasicMaterial({ color: '#22d3ee' });
-    
-    vertices.forEach(pos => {
-      const sphere = new THREE.Mesh(sphereGeo, sphereMat);
-      sphere.position.copy(pos);
-      group.add(sphere);
-    });
-
-    scene.add(group);
-
-    // Continuous parallel transport animation loop
-    let animationFrameId;
-    const animate = () => {
-      animationFrameId = requestAnimationFrame(animate);
-      group.rotation.z += 0.002; // Steady, calculated rotation speed
-      renderer.render(scene, camera);
-    };
-    animate();
-
-    // Clean browser window contexts on hot-reload or unmount
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-      renderer.dispose();
-      if (containerRef.current) {
-        containerRef.current.innerHTML = '';
-      }
-    };
-  }, [activeView]);
-
-  return <div ref={containerRef} style={{ width: '100%', height: '350px', borderRadius: '12px', overflow: 'hidden' }} />;
+    const host = ref.current; if (!host) return undefined;
+    const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2(0x070916, 0.06);
+    const camera = new THREE.PerspectiveCamera(42, host.clientWidth / 480, 0.1, 100); camera.position.set(...cameraPoints[step]);
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); renderer.setSize(host.clientWidth, 480); renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); host.appendChild(renderer.domElement);
+    const root = new THREE.Group(); scene.add(root);
+    const stars = new THREE.Points(new THREE.BufferGeometry().setFromPoints(Array.from({ length: 120 }, () => new THREE.Vector3((Math.random()-.5)*18,(Math.random()-.5)*12,(Math.random()-.5)*6))), new THREE.PointsMaterial({color:0x925cff,size:.025})); scene.add(stars);
+    const points = Array.from({length:8}, (_, i) => { const a=i*Math.PI/4; return new THREE.Vector3(Math.cos(a)*3, Math.sin(a)*3, 0); });
+    const cyan = new THREE.MeshBasicMaterial({color:0x32d7ff}); const red = new THREE.MeshBasicMaterial({color:0xff4d73}); const gold = new THREE.LineBasicMaterial({color:0xffcc67, transparent:true, opacity:1});
+    points.forEach((p,i) => { const node = new THREE.Mesh(new THREE.SphereGeometry(.17,24,24), i < 4 && step > 0 ? cyan : step > 0 ? red : cyan); node.position.copy(p); if(step>0 && i>=4) node.position.z=-1.6; root.add(node); });
+    if(step>=1) { const grid = new THREE.GridHelper(8, 8, 0x298bd0, 0x18354e); grid.rotation.x=Math.PI/2; grid.position.z=-.4; root.add(grid); for(let i=4;i<8;i++){ const ring = new THREE.Mesh(new THREE.TorusGeometry(.42,.035,10,36),red); ring.position.copy(points[i]); ring.position.z=-1.5; root.add(ring); } }
+    if(step>=2) { const floor = new THREE.Mesh(new THREE.PlaneGeometry(7,7), new THREE.MeshBasicMaterial({color:0x47d9d2,transparent:true,opacity:.10,side:THREE.DoubleSide})); floor.rotation.x=-Math.PI/2; floor.position.z=-.45; root.add(floor); const wheel=new THREE.Mesh(new THREE.TorusGeometry(.85,.06,12,42),cyan); wheel.rotation.x=Math.PI/2; wheel.position.z=.4; root.add(wheel); }
+    if(step>=3) { let n=0; for(let i=0;i<8;i++) for(let j=i+1;j<8;j++){ const active=n++<4; root.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([points[i],points[j]]), active ? gold : new THREE.LineBasicMaterial({color:0x50719a,transparent:true,opacity:.32}))); } }
+    const target = new THREE.Vector3(0,0,0); let frame; const animate=()=>{ root.rotation.z += .002; camera.lookAt(target); renderer.render(scene,camera); frame=requestAnimationFrame(animate); }; animate();
+    const resize=()=>{camera.aspect=host.clientWidth/480;camera.updateProjectionMatrix();renderer.setSize(host.clientWidth,480)}; window.addEventListener('resize',resize);
+    renderer.domElement.onclick=()=>onSelect?.();
+    return()=>{cancelAnimationFrame(frame);window.removeEventListener('resize',resize);renderer.dispose();host.replaceChildren();};
+  },[step,onSelect]);
+  return <div className="canvas" ref={ref} aria-label="Interactive toy-model diagram" />;
 }
