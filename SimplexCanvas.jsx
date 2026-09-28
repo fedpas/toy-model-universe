@@ -8,6 +8,8 @@ const sectorProfiles = {
   Sector_Color_Strong:{nodes:8,ring:3,accent:0x34d399,strain:false},
   Sector_Gravity_Strain:{nodes:8,ring:6,accent:0xff4772,strain:true},
   Sector_Baryon_Conservation:{nodes:3,ring:3,accent:0x4fd18b,strain:false},
+  Sector_Chiral_Parity:{nodes:5,ring:1,accent:0xff7b9f,strain:false},
+  Sector_Cosmic_Horizon:{nodes:8,ring:8,accent:0x7ee9ff,strain:false},
   Sector_GUT_Junction:{nodes:8,ring:8,accent:0xffffff,strain:false},
   Sector_Electroweak_Unified:{nodes:8,ring:4,accent:0xffcd68,strain:false},
   Sector_Vacuum_Mass_Generation:{nodes:2,ring:1,accent:0xe59aff,strain:false},
