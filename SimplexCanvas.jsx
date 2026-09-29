@@ -4,6 +4,18 @@ import * as THREE from 'three';
 const cameras = [[0,0,10],[5,3,8],[0,6,4],[2,1,5]];
 const palette = { Clifford:0x817cf8, Prime:0x34d399, Simplex:0xfbbf24, Cube:0xf472b6 };
 const sectorProfiles = {
+  Sector_Trivector_Base:{nodes:5,ring:3,accent:0x5bbcff,strain:false},
+  Sector_Trivector_Quark:{nodes:5,ring:3,accent:0xff9c55,strain:false},
+  Sector_Trivector_Lepton:{nodes:5,ring:2,accent:0x78d8ff,strain:false},
+  Sector_STA_Euclidean_Base:{nodes:6,ring:4,accent:0xd8e2ff,strain:false},
+  Sector_STA_Minkowski:{nodes:6,ring:4,accent:0x72c6ff,strain:false},
+  Sector_STA_Symmetric_Core:{nodes:6,ring:4,accent:0xffcd68,strain:false},
+  Sector_STA_Fiber_Frame:{nodes:6,ring:3,accent:0xb58cff,strain:false},
+  Sector_Row5_Base:{nodes:7,ring:5,accent:0xff7b9f,strain:false},
+  Sector_Row6_Confinement:{nodes:6,ring:3,accent:0x4fd18b,strain:false},
+  Sector_Row7_Mirror:{nodes:7,ring:4,accent:0xe59aff,strain:false},
+  Sector_Open_Questions:{nodes:4,ring:1,accent:0xff8b8b,strain:false},
+  Sector_Furey_Ledger:{nodes:6,ring:4,accent:0xf1e46e,strain:false},
   Sector_Vacuum_Origin:{nodes:1,ring:1,accent:0xd6d6ff,strain:false},
   Sector_Inject_Base_Real:{nodes:2,ring:1,accent:0x58d2ff,strain:false},
   Sector_Inject_Fiber_Clock:{nodes:2,ring:2,accent:0xa382ff,strain:false},
