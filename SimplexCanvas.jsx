@@ -4,6 +4,11 @@ import * as THREE from 'three';
 const cameras = [[0,0,10],[5,3,8],[0,6,4],[2,1,5]];
 const palette = { Clifford:0x817cf8, Prime:0x34d399, Simplex:0xfbbf24, Cube:0xf472b6 };
 const sectorProfiles = {
+  Sector_Vacuum_Origin:{nodes:1,ring:1,accent:0xd6d6ff,strain:false},
+  Sector_Inject_Base_Real:{nodes:2,ring:1,accent:0x58d2ff,strain:false},
+  Sector_Inject_Fiber_Clock:{nodes:2,ring:2,accent:0xa382ff,strain:false},
+  Sector_Quaternionic_Base:{nodes:4,ring:2,accent:0x5be6c0,strain:false},
+  Sector_Quaternionic_Fiber:{nodes:4,ring:2,accent:0x8c8cff,strain:false},
   Sector_EM_Maxwell:{nodes:6,ring:2,accent:0x35d9ff,strain:false},
   Sector_Color_Strong:{nodes:8,ring:3,accent:0x34d399,strain:false},
   Sector_Gravity_Strain:{nodes:8,ring:6,accent:0xff4772,strain:true},
