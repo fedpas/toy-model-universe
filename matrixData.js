@@ -225,7 +225,7 @@ export function getDualMetricDisplayData(nodeKey,lang,profile,metricMode='Spatia
  const base=KNOWLEDGE_BASE_DIRECTORY[`${nodeKey}_${lang}_${profile}`];
  if(!base || metricMode==='Spatial') return {...base,metricMode:'Spatial'};
  const [genericTitle,genericDesc]=TEMPORAL_TEXT_PACK[lang][profile];
- const title=TEMPORAL_NODE_OVERRIDES[nodeKey]?.[lang] || genericTitle;
+ const title=base.title;
  return {...base,title,desc:`${genericDesc} ${base.desc}`,metricMode:'Temporal'};
 }
 
