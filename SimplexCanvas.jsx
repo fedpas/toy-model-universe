@@ -31,12 +31,12 @@ const sectorProfiles = {
   Sector_Electroweak_Unified:{nodes:8,ring:4,accent:0xffcd68,strain:false},
   Sector_Vacuum_Mass_Generation:{nodes:2,ring:1,accent:0xe59aff,strain:false},
 };
-export default function SimplexCanvas({step,activeView,sector}){
+export default function SimplexCanvas({step,activeView,sector,metricMode='Spatial'}){
  const ref=useRef(null); useEffect(()=>{const host=ref.current;if(!host)return undefined;
   const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(42,host.clientWidth/440,.1,100),renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
   camera.position.set(...cameras[step]);renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(host.clientWidth,440);host.appendChild(renderer.domElement);
   const root=new THREE.Group();scene.add(root);const profile=sectorProfiles[sector]||sectorProfiles.Sector_EM_Maxwell,tint=palette[activeView];
-  const sx=profile.strain?.65:1,sy=profile.strain?1.25:1;
+  const sx=metricMode==='Temporal' ? (profile.strain?.5:.78) : (profile.strain?.65:1),sy=metricMode==='Temporal' ? (profile.strain?1.4:1.14) : (profile.strain?1.25:1);
   const points=Array.from({length:8},(_,i)=>{const a=i*Math.PI/4;return new THREE.Vector3(Math.cos(a)*3*sx,Math.sin(a)*3*sy,0)});
   const nodeMat=new THREE.MeshBasicMaterial({color:profile.accent}),ghostMat=new THREE.MeshBasicMaterial({color:0x34425f});
   const line=(a,b,color=tint,opacity=.65)=>root.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([a,b]),new THREE.LineBasicMaterial({color,transparent:true,opacity})));
@@ -49,5 +49,5 @@ export default function SimplexCanvas({step,activeView,sector}){
   const target=new THREE.Vector3();
   const fitCamera=()=>{root.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(root);const sphere=bounds.getBoundingSphere(new THREE.Sphere());target.copy(sphere.center);const verticalHalf=THREE.MathUtils.degToRad(camera.fov/2);const horizontalHalf=Math.atan(Math.tan(verticalHalf)*camera.aspect);const distance=Math.max(sphere.radius/Math.sin(verticalHalf),sphere.radius/Math.sin(horizontalHalf))*1.22;camera.position.copy(new THREE.Vector3(...cameras[step]).normalize().multiplyScalar(distance).add(target));camera.lookAt(target);};
   fitCamera();let frame;const draw=()=>{root.rotation.z+=.002;camera.lookAt(target);renderer.render(scene,camera);frame=requestAnimationFrame(draw)};draw();const resize=()=>{camera.aspect=host.clientWidth/440;camera.updateProjectionMatrix();renderer.setSize(host.clientWidth,440);fitCamera()};addEventListener('resize',resize);return()=>{cancelAnimationFrame(frame);removeEventListener('resize',resize);renderer.dispose();host.replaceChildren()};
- },[step,activeView,sector]);return <div className="canvas" ref={ref} aria-label={`${activeView} visualization`}/>;
+ },[step,activeView,sector,metricMode]);return <div className="canvas" ref={ref} aria-label={`${activeView} visualization`}/>;
 }

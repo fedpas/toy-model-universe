@@ -154,3 +154,50 @@ const authoredTracks={
 for(const [profile,languages] of Object.entries(authoredTracks)) for(const [lang,entries] of Object.entries(languages)) for(const [id,[title,desc]] of Object.entries(entries)) {
  const key=`${id}_${lang}_${profile}`; KNOWLEDGE_BASE_DIRECTORY[key]={...KNOWLEDGE_BASE_DIRECTORY[`${id}_${lang}_Physicist`],title,desc};
 }
+
+// Dual-metric catalog: 12 core nodes + 13 extensions = 25 atlas nodes.
+const DUAL_METRIC_ADDITIONS = [
+ ['Sector_Chiral_Parity','Structural Realignments','Grade 1 Left Ideal','B+F=5, B-F=-1','Handed Polytope Facet','Cl(4,1) Chiral Parity Matrix','Chiral Parity Matrix','The One-Way Mirror','Left-ideal parity mapping for the portal’s weak interaction convention.','Time-positive one-way mirror for out-of-phase historical paths.'],
+];
+for (const [id,category,grade,coordinate,simplex,cube,spTitle,tmTitle,spDesc,tmDesc] of DUAL_METRIC_ADDITIONS) {
+ const base={id,category,grade,coordinate,simplex,cube};
+ for (const lang of ['en','it']) for (const profile of ['Young Learner','Physicist','Mathematician']) KNOWLEDGE_BASE_DIRECTORY[`${id}_${lang}_${profile}`]={...base,title:spTitle,desc:spDesc};
+}
+const originalMenu=MENU_SECTOR_LIST;
+const dualOrder=['Sector_Vacuum_Origin','Sector_Inject_Base_Real','Sector_Inject_Fiber_Clock','Sector_Quaternionic_Base','Sector_Quaternionic_Fiber','Sector_Trivector_Base','Sector_Trivector_Quark','Sector_Trivector_Lepton','Sector_STA_Euclidean_Base','Sector_STA_Minkowski','Sector_STA_Symmetric_Core','Sector_STA_Fiber_Frame','Sector_Row5_Base','Sector_Row6_Confinement','Sector_Row7_Mirror','Sector_Chiral_Parity','Sector_EM_Maxwell','Sector_Gravity_Strain','Sector_Baryon_Conservation','Sector_Electroweak_Unified','Sector_Vacuum_Mass_Generation','Sector_GUT_Junction','Sector_Cosmic_Horizon','Sector_Open_Questions','Sector_Furey_Ledger'];
+const categoryById={Sector_Vacuum_Origin:'Foundational Symmetries',Sector_Gravity_Strain:'Foundational Symmetries',Sector_Baryon_Conservation:'Structural Realignments',Sector_Chiral_Parity:'Structural Realignments'};
+const dualItems=[...originalMenu,...DUAL_METRIC_ADDITIONS.map(([id,category])=>({id,category}))];
+MENU_SECTOR_LIST=dualOrder.map(id=>dualItems.find(item=>item.id===id)||({id,category:categoryById[id]||'Speculative Frontiers'}));
+const TEMPORAL_OVERRIDES={
+ Sector_Vacuum_Origin:{en:['The Still Point of History','The absolute motionless moment from which the atlas chronicles its paths.'],it:['Il Punto Fermo della Storia','Il momento assolutamente immobile da cui l’atlante racconta i suoi percorsi.']},
+ Sector_Inject_Base_Real:{en:['Chronological Line Painter','Injects raw historical progression; spatial lines become the record of what has happened.'],it:['Il Pittore della Linea Cronologica','Inietta la progressione storica: le linee spaziali diventano il registro di ciò che è accaduto.']},
+ Sector_Inject_Fiber_Clock:{en:['The Spatial Constraint Seed','Space emerges as a localized frequency loop inside a time-positive account.'],it:['Il Seme del Vincolo Spaziale','Lo spazio emerge come un ciclo di frequenza localizzato in una descrizione a tempo positivo.']},
+ Sector_Quaternionic_Base:{en:['Temporal Matrix Canvas','A matrix canvas for temporal rotations and historical recurrence.'],it:['La Tela Matriciale Temporale','Una tela matriciale per rotazioni temporali e ricorrenze storiche.']},
+ Sector_Quaternionic_Fiber:{en:['Spatial Rotation Ring','A ring where spatial restrictions rotate around the underlying chronology.'],it:['L’Anello di Rotazione Spaziale','Un anello dove le restrizioni spaziali ruotano attorno alla cronologia sottostante.']},
+ Sector_EM_Maxwell:{en:['Temporal Shear Tensor','Light is treated as a ripple of time skewing across spatial restrictions.'],it:['Il Tensore di Taglio Temporale','La luce è trattata come un’increspatura del tempo attraverso vincoli spaziali.']},
+ Sector_Gravity_Strain:{en:['Lattice Chrono-Compression','Mass squeezes the duration of local seconds in the time-positive reading.'],it:['La Crono-Compressione del Reticolo','La massa comprime la durata dei secondi locali nella lettura a tempo positivo.']},
+ Sector_Electroweak_Unified:{en:['The Balanced Chrono-Intersect','Four timelines cross the portal’s neutral paths in a balanced temporal junction.'],it:['L’Intersezione Cronologica Bilanciata','Quattro linee temporali attraversano i percorsi neutri del portale in una giunzione bilanciata.']},
+ Sector_GUT_Junction:{en:['Saturation of the Flux','The primorial junction becomes a saturation point for historical flux.'],it:['La Saturazione del Flusso','La giunzione primoriale diventa un punto di saturazione del flusso storico.']},
+ Sector_Cosmic_Horizon:{en:['Pseudoscalar Time Boundary','The horizon is the temporal boundary where the portal resets its chronology.'],it:['Il Confine Temporale Pseudoscalare','L’orizzonte è il confine temporale dove il portale reimposta la propria cronologia.']},
+ Sector_Trivector_Base:{en:['Volumetric Time Block','A volumetric block that records temporal thickness rather than spatial extent.'],it:['Il Blocco Temporale Volumetrico','Un blocco volumetrico che registra lo spessore temporale anziché l’estensione spaziale.']},
+ Sector_Trivector_Quark:{en:['Asymmetric Time Seed','An asymmetric temporal seed for the portal’s mixed quark channel.'],it:['Il Seme Temporale Asimmetrico','Un seme temporale asimmetrico per il canale quark misto del portale.']},
+ Sector_Trivector_Lepton:{en:['Linear Chrono-Track','A linear historical track for the leptonic current frame.'],it:['Il Tracciato Cronologico Lineare','Un tracciato storico lineare per il frame della corrente leptonica.']},
+ Sector_STA_Euclidean_Base:{en:['4D Temporal Box','A four-dimensional box that frames temporal possibilities.'],it:['La Scatola Temporale 4D','Una scatola quadridimensionale che inquadra possibilità temporali.']},
+ Sector_STA_Minkowski:{en:['The Historical Projector','A projector that casts chronology through a Minkowski frame.'],it:['Il Proiettore Storico','Un proiettore che proietta la cronologia attraverso un frame di Minkowski.']},
+ Sector_STA_Symmetric_Core:{en:['Balanced Chrono-Junction','A balanced junction where temporal paths meet the fiber clock.'],it:['La Giunzione Cronologica Bilanciata','Una giunzione bilanciata dove i percorsi temporali incontrano l’orologio della fibra.']},
+ Sector_STA_Fiber_Frame:{en:['Spatial Lock-Box','A lock-box that constrains space around the temporal fiber.'],it:['La Scatola di Blocco Spaziale','Una scatola che vincola lo spazio attorno alla fibra temporale.']},
+ Sector_Row5_Base:{en:['Chiral Time Mirror','A time mirror that distinguishes the portal’s left and right histories.'],it:['Lo Specchio Temporale Chirale','Uno specchio temporale che distingue le storie sinistre e destre del portale.']},
+ Sector_Row6_Confinement:{en:['Absolute Time-Lock','A closed time-lock that preserves the portal’s confined color loop.'],it:['Il Blocco Temporale Assoluto','Un blocco temporale chiuso che conserva il loop di colore confinato del portale.']},
+ Sector_Row7_Mirror:{en:['Historical Phase Mirror','A mirror threshold for phase-opposed historical states.'],it:['Lo Specchio di Fase Storica','Una soglia a specchio per stati storici in opposizione di fase.']},
+ Sector_Chiral_Parity:{en:['The One-Way Mirror','A time-positive mirror where phase-matched paths pass and opposed paths reflect.'],it:['Lo Specchio Unidirezionale','Uno specchio a tempo positivo dove i percorsi in fase passano e quelli opposti si riflettono.']},
+ Sector_Baryon_Conservation:{en:['Topological Time-Lock','A cyclic time-lock preserving the portal’s baryon loop.'],it:['Il Blocco Temporale Topologico','Un blocco temporale ciclico che conserva il loop barionico del portale.']},
+ Sector_Vacuum_Mass_Generation:{en:['Identity Clock Inversion','A clock inversion around the scalar identity root.'],it:['L’Inversione dell’Orologio d’Identità','Un’inversione dell’orologio attorno alla radice scalare d’identità.']},
+ Sector_Open_Questions:{en:['Paradox of the Now','The open question of how discrete historical steps form a continuous present.'],it:['Il Paradosso dell’Adesso','La questione aperta di come passi storici discreti formino un presente continuo.']},
+ Sector_Furey_Ledger:{en:['The Chrono-Bimodule','A bimodule reading of left/right actions across a time-positive atlas.'],it:['Il Crono-Bimodulo','Una lettura bimodulare delle azioni sinistra/destra in un atlante a tempo positivo.']}
+};
+export function getDisplayData(nodeKey, lang, profile, metricMode='Spatial') {
+ const base=KNOWLEDGE_BASE_DIRECTORY[`${nodeKey}_${lang}_${profile}`];
+ if(!base || metricMode==='Spatial') return base;
+ const override=TEMPORAL_OVERRIDES[nodeKey]?.[lang];
+ return override ? {...base,title:override[0],desc:override[1],metricMode:'Temporal'} : {...base,metricMode:'Temporal'};
+}
