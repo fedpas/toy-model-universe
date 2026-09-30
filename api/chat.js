@@ -8,7 +8,7 @@ export default async function handler(request) {
   if (!process.env.toy_model_key) return new Response('Chat is not configured.', { status: 503 });
   let body;
   try { body = await request.json(); } catch { return new Response('Invalid JSON.', { status: 400 }); }
-  const { messages, spokenLang, userProfile, metricMode } = body;
+  const { messages, spokenLang, userProfile, metricMode, isMatchMode = false } = body;
   if (!Array.isArray(messages) || !languages.has(spokenLang) || !profiles.has(userProfile) || !metrics.has(metricMode)) {
     return new Response('Invalid chat context.', { status: 400 });
   }
@@ -31,7 +31,8 @@ LANGUAGE AND PROFILE: respond strictly in ${spokenLang === 'it' ? 'Italian' : 'E
 
 INTELLECTUAL CANDOR: when status or precision is discussed, say this is an educational toy model, not established peer-reviewed physics. The 4/17 relation is an internal geometric packing requirement, not a Standard Model measurement. State its limitations: no absolute Higgs-VEV derivation, no continuous RGE running, CKM precision drift, and no proven continuum limit.
 
-RESPONSE TEMPLATE: lead analytical answers with [Row B+F, Column B-F], then give concise Clifford (ideals), Prime (frequencies), Simplex (facets), and Cube (Boolean bit-string) cross-talk, adapted to metricMode. For Young Learner, express this mapping only in plain language.`;
+RESPONSE TEMPLATE: lead analytical answers with [Row B+F, Column B-F], then give concise Clifford (ideals), Prime (frequencies), Simplex (facets), and Cube (Boolean bit-string) cross-talk, adapted to metricMode. For Young Learner, express this mapping only in plain language.${isMatchMode ? `\n\nMATCH MODE PROTOCOL (THE FUREY SUPERALGEBRA CHALLENGE):
+When isMatchMode is active, the user is submitting an adversarial research problem based on N. Furey's arXiv:2505.07923 concerning Z₂⁵-graded superalgebra representations of light particles. Independently audit its Bits [0–4] subspace against this portal's Cl(4,4,0) 2D-grid axioms, Bits [0–7], and 256-dimensional real space. Analyze the proposed exclusion of the Top Quark, then reason from first principles whether extending to the 8-bit lattice addresses that exclusion. Derive the relevant [Row B+F, Column B-F] truncation and completion sectors using only the portal's geometric-algebraic conventions; do not invoke external empirical values. Preserve intellectual candor: this is a toy-model comparison, so do not claim the analysis proves a Standard Model particle identity or validates either framework as established physics.` : ''}`;
 
   try {
     const upstream = await fetch('https://api.anthropic.com/v1/messages', {
