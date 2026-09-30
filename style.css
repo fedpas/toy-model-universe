@@ -16,3 +16,8 @@
 .match-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .85rem; margin-top: 1rem; }
 .match-grid article { white-space: pre-wrap; border: 1px solid var(--line); border-radius: .8rem; padding: 1rem; color: var(--ink); line-height: 1.55; min-height: 8rem; }
 @media (max-width: 700px) { .match-grid { grid-template-columns: 1fr; } }
+.match-arena { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; background:#020617; padding:20px; margin-top:1rem; border:1px solid #1e293b; border-radius:12px; }
+.agent-column { white-space:pre-wrap; min-width:0; min-height:8rem; border:1px solid #1e293b; border-radius:8px; padding:15px; color:var(--ink); line-height:1.55; background:#0b1220; }
+.anthropic-border { border-top:4px solid #d97706; }
+.openai-border { border-top:4px solid #10b981; }
+@media (max-width:700px) { .match-arena { grid-template-columns:1fr; padding:12px; gap:12px; } }
