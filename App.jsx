@@ -1,285 +1,92 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import { BlockMath, InlineMath } from 'react-katex';
 import SimplexCanvas from './SimplexCanvas';
-import { KNOWLEDGE_BASE_DIRECTORY, MENU_SECTOR_LIST, HERO_BANNER_CONFIG, TUTORIAL_SLIDER_CONFIG } from './matrixData';
+import { KNOWLEDGE_BASE_DIRECTORY, MENU_SECTOR_LIST, TUTORIAL_SLIDER_CONFIG, getCompleteDualMetricDisplayData } from './matrixData';
 
-export default function ToyModelUniverse() {
-  // --- FLATTENED INTERFACE CONTROL STATES ---
-  const [spokenLang, setSpokenLang] = useState("en"); // en = English, it = Italiano
-  const [userProfile, setUserProfile] = useState("Physicist"); // Young Learner, Physicist, Mathematician
-  const [activeView, setActiveView] = useState("Clifford");     // Clifford, Prime, Simplex, Cube
-  const [selectedNode, setSelectedNode] = useState("Sector_EM_Maxwell");
-  const [activeSlide, setActiveSlide] = useState(0);
+const PROFILES=['Young Learner','Physicist','Mathematician'];
+const VIEWS=['Clifford','Prime','Simplex','Cube'];
+const LENSES={Clifford:['Minimal left ideals','Peirce projectors'],Prime:['Coprimality sieve','Arithmetic frequencies'],Simplex:['Combinatorial facets','Petrie graph edges'],Cube:['Boolean bit strings','Hamming distance vectors']};
+const LENS_COPY={en:{'Young Learner':{Clifford:['Magic folding boxes','Hidden shape rules'],Prime:['Number gears','Secret timing counts'],Simplex:['Puzzle faces','Connecting paths'],Cube:['Switch addresses','Flip-distance steps']},Physicist:LENSES,Mathematician:LENSES},it:{'Young Learner':{Clifford:['Scatole magiche','Regole delle forme'],Prime:['Ingranaggi numerici','Conteggi segreti'],Simplex:['Facce del puzzle','Percorsi connessi'],Cube:['Indirizzi degli interruttori','Passi di ribaltamento']},Physicist:{Clifford:['Ideali sinistri minimi','Proiettori di Peirce'],Prime:['Setaccio di coprimalità','Frequenze aritmetiche'],Simplex:['Facce combinatorie','Bordi del grafo Petrie'],Cube:['Stringhe di bit booleane','Vettori di distanza di Hamming']},Mathematician:{Clifford:['Ideali sinistri minimi','Proiettori di Peirce'],Prime:['Setaccio di coprimalità','Frequenze aritmetiche'],Simplex:['Facce combinatorie','Bordi del grafo Petrie'],Cube:['Stringhe di bit booleane','Vettori di distanza di Hamming']}}};
+const labels={en:{tour:'The shared four-step tour',results:'Three result branches',matrix:'Language · audience · representation',note:'Educational visual toy model — not an established peer-reviewed physical theory.',lede:'A structured visual translation atlas for tracing one combinatorial toy model across geometric algebra, arithmetic, simplex topology, and Boolean coordinates.',open:'Open branch',step:'Step',active:'Active sector',activeNote:'Choose any atlas node below. Its detailed explanation and visualization stay here, directly after the lattice.',now:'Now exploring',directory:'Sector directory',viewing:'Viewing',viewNode:'View',atlas:'Visual semantic translation atlas',hero:'Space as language, not a container.',base:'Base / Right action',baseDesc:'Macroscopic coordinates',fiber:'Fiber / Left action',fiberDesc:'Internal phase clocks',turntable:'The four-view translation turntable',turntableTitle:'One cell, four synchronized lenses.',lattice:'Immutable 2D lattice grid',latticeTitle:'Navigate by B+F / B−F coordinate.',research:'Research',activeVisual:'Active sector visualization',supporting:'Supporting learning module'},it:{tour:'Il tour condiviso in quattro passi',results:'Tre rami di risultati',matrix:'Lingua · pubblico · rappresentazione',note:'Modello visivo educativo — non una teoria fisica consolidata e sottoposta a peer review.',lede:'Un atlante visivo strutturato per tracciare un modello combinatorio attraverso algebra geometrica, aritmetica, topologia del simplesso e coordinate booleane.',open:'Apri il ramo',step:'Passo',active:'Settore attivo',activeNote:'Scegli un nodo dell’atlante qui sotto. La spiegazione dettagliata e la visualizzazione rimangono qui, subito dopo il reticolo.',now:'In esplorazione',directory:'Elenco dei settori',viewing:'In visione',viewNode:'Apri',atlas:'Atlante di traduzione semantica visiva',hero:'Lo spazio come linguaggio, non come contenitore.',base:'Base / Azione destra',baseDesc:'Coordinate macroscopiche',fiber:'Fibra / Azione sinistra',fiberDesc:'Orologi di fase interni',turntable:'Tavola rotante di traduzione a quattro viste',turntableTitle:'Una cella, quattro lenti sincronizzate.',lattice:'Reticolo 2D immutabile',latticeTitle:'Naviga tramite coordinate B+F / B−F.',research:'Ricerca',activeVisual:'Visualizzazione del settore attivo',supporting:'Modulo di apprendimento di supporto'}};
+const ATLAS_COPY={
+ en:{
+  'Young Learner':{atlas:'Magic switch atlas',hero:'A story where time and space take turns.',lede:'Explore eight magic switches, sandbox paths, secret clock gears, and mirror gates.',turntable:'Four magic views',turntableTitle:'One puzzle, four ways to see it.',lattice:'Switch map',latticeTitle:'Choose a place in the magic grid.',active:'Active magic place',activeNote:'Pick any atlas place. Its story and picture appear here.',supporting:'Story adventure'},
+  Physicist:{atlas:'Visual semantic translation atlas',hero:'Space as language, not a container.',lede:'A structured visual translation atlas for tracing a combinatorial toy model across gauge geometry, arithmetic, simplex topology, and Boolean coordinates.',turntable:'The four-view translation turntable',turntableTitle:'One cell, four synchronized lenses.',lattice:'Immutable 2D lattice grid',latticeTitle:'Navigate by B+F / B−F coordinate.',active:'Active sector',activeNote:'Choose any atlas node. Its detailed explanation and visualization stay here, directly after the lattice.',supporting:'Supporting learning module'},
+  Mathematician:{atlas:'Bigraded Clifford translation atlas',hero:'One algebra, multiple coordinate languages.',lede:'A cross-talk atlas of ideals, filtrations, combinatorial facets, and Boolean involutions over a two-dimensional lattice.',turntable:'Four-representation functorial turntable',turntableTitle:'One lattice cell, four compatible projections.',lattice:'Bigraded 2D lattice',latticeTitle:'Select a cell by B+F and B−F grading.',active:'Active algebraic cell',activeNote:'Choose a lattice cell. Its proposition and geometric projection appear here.',supporting:'Supporting construction sequence'}
+ },
+ it:{
+  'Young Learner':{atlas:'Atlante degli interruttori magici',hero:'Una storia dove tempo e spazio si alternano.',lede:'Esplora otto interruttori magici, percorsi nel recinto, ingranaggi-orologio segreti e cancelli a specchio.',turntable:'Quattro viste magiche',turntableTitle:'Un puzzle, quattro modi di guardarlo.',lattice:'Mappa degli interruttori',latticeTitle:'Scegli un posto nella griglia magica.',active:'Luogo magico attivo',activeNote:'Scegli un luogo dell’atlante. La sua storia e la sua immagine appaiono qui.',supporting:'Avventura narrativa'},
+  Physicist:{atlas:'Atlante di traduzione semantica visiva',hero:'Lo spazio come linguaggio, non come contenitore.',lede:'Un atlante visivo strutturato per tracciare un modello combinatorio attraverso geometria di gauge, aritmetica, topologia del simplesso e coordinate booleane.',turntable:'Tavola rotante di traduzione a quattro viste',turntableTitle:'Una cella, quattro lenti sincronizzate.',lattice:'Reticolo 2D immutabile',latticeTitle:'Naviga tramite coordinate B+F / B−F.',active:'Settore attivo',activeNote:'Scegli un nodo dell’atlante. La spiegazione dettagliata e la visualizzazione rimangono qui.',supporting:'Modulo di apprendimento di supporto'},
+  Mathematician:{atlas:'Atlante di traduzione Clifford bigradato',hero:'Una algebra, molte lingue di coordinate.',lede:'Un atlante di cross-talk tra ideali, filtrazioni, facce combinatorie e involuzioni booleane su un reticolo bidimensionale.',turntable:'Tavola funttoriale a quattro rappresentazioni',turntableTitle:'Una cella del reticolo, quattro proiezioni compatibili.',lattice:'Reticolo 2D bigradato',latticeTitle:'Seleziona una cella tramite la gradazione B+F e B−F.',active:'Cella algebrica attiva',activeNote:'Scegli una cella del reticolo. La sua proposizione e proiezione geometrica appaiono qui.',supporting:'Sequenza costruttiva di supporto'}
+ }
+};
+const HERO_BANNER_HOOKS={
+ Spatial:{
+  en:{'Young Learner':['The Great Sandbox Builder','Click switches and fold magic boxes to build a universe out of block sandboxes.'],Physicist:['Projective Manifold Atlas','A geometric gauge translation engine tracking bivector curvatures over flat space-positive backgrounds.'],Mathematician:['Cl(4,4,0) Invariant Directory','Systematic classification of principal left-ideals, minimal algebra representations, and Witt splits.']},
+  it:{'Young Learner':['Il Grande Costruttore del Recinto','Attiva gli interruttori e piega scatole magiche per costruire un universo di sabbia.'],Physicist:['Atlante della Varietà Proiettiva','Un motore di traduzione di gauge geometrico che traccia curvature bivettoriali su sfondi piatti a spazio positivo.'],Mathematician:['Elenco degli Invarianti di Cl(4,4,0)','Classificazione sistematica degli ideali sinistri principali, delle rappresentazioni algebriche minime e degli split di Witt.']}
+ },
+ Temporal:{
+  en:{'Young Learner':['The Infinite Movie Projector','Time as chronicle, space as constraint. Watch the rolling film reel unspool across internal gears.'],Physicist:['Chronological Displacement Field','A kinematic reading where space, mass, and charge are topological ripples of chronology foregrounded over a time-positive lattice.'],Mathematician:['Temporal Bimodule Operator Chain','Mapping regular hypercomplex transformations and regular representation actions over self-dual temporal modules.']},
+  it:{'Young Learner':['Il Proiettore del Film Infinito','Il tempo come cronaca, lo spazio come vincolo. Guarda la pellicola scorrere sugli ingranaggi interni.'],Physicist:['Campo di Spostamento Cronologico','Una lettura cinematica in cui spazio, massa e carica sono increspature topologiche di una cronologia posta in primo piano.'],Mathematician:['Catena dell’Operatore Bimodulo Temporale','Mappatura delle trasformazioni ipercomplesse regolari e delle azioni di rappresentazione su moduli temporali auto-duali.']}
+ }
+};
+function getAtlasCopy(lang,profile,metricMode){const base=ATLAS_COPY[lang][profile];const [hero,lede]=HERO_BANNER_HOOKS[metricMode][lang][profile];const temporal=metricMode==='Temporal';return {...base,hero,lede,metric:temporal?(lang==='it'?'Tempo-positivo':'Time-positive'):(lang==='it'?'Spazio-positivo':'Space-positive'),metricNote:temporal?(lang==='it'?'Cronologia temporale in primo piano':'Temporal chronology foregrounded'):(lang==='it'?'Geometria spaziale in primo piano':'Spatial geometry foregrounded')};}
 
-  // Direct, un-nested flat key lookup generation
-  const activeRecordKey = `${selectedNode}_${spokenLang}_${userProfile}`;
-  const activeNodeData = KNOWLEDGE_BASE_DIRECTORY[activeRecordKey];
-  const activeHeroData = HERO_BANNER_CONFIG[spokenLang][userProfile];
-  const activeSlideData = TUTORIAL_SLIDER_CONFIG[spokenLang][userProfile][activeSlide];
+export default function App(){
+ const [lang,setLang]=useState('en'),[profile,setProfile]=useState('Young Learner'),[metricMode,setMetricMode]=useState('Spatial'),[view,setView]=useState('Clifford'),[step,setStep]=useState(0),[sector,setSector]=useState('Sector_EM_Maxwell');
+ const resultRef = useRef(null);
+ const t=labels[lang], c=getAtlasCopy(lang,profile,metricMode), record=getCompleteDualMetricDisplayData(sector,lang,profile,metricMode), slides=TUTORIAL_SLIDER_CONFIG[lang][profile], selected=MENU_SECTOR_LIST.find(x=>x.id===sector);
+ return <main>
+  <header className="topbar"><a className="brand" href="#top"><span>01</span> CASCADE ATLAS</a></header>
+  <section className="atlas-hero" id="top"><p className="eyebrow">{c.atlas.toUpperCase()}</p><h1>{c.hero}</h1><p className="lede">{c.lede}</p><p className="metric-readout">{c.metric} · {c.metricNote}</p><div className="action-model"><span><b>{t.base}</b>{t.baseDesc}</span><i>⊗</i><span><b>{t.fiber}</b>{t.fiberDesc}</span></div><p className="disclosure">{t.note}</p></section>
+  <ControlBar lang={lang} setLang={setLang} profile={profile} setProfile={setProfile} metricMode={metricMode} setMetricMode={setMetricMode} view={view} setView={setView}/>
+  <Turntable c={c} lang={lang} profile={profile} view={view} setView={setView}/>
+  <LatticeMap c={c} sector={sector} setSector={setSector} lang={lang} profile={profile} metricMode={metricMode} resultRef={resultRef}/>
+  <section className="explorer-intro"><p className="eyebrow">{c.active.toUpperCase()}</p><h2>{c.active}</h2><p>{c.activeNote}</p></section>
+  <section className="result active-result" ref={resultRef} tabIndex="-1"><article className="paper"><p className="eyebrow">{t.now.toUpperCase()} · {selected.category.toUpperCase()} · {view.toUpperCase()} VIEW</p><h2>{record.title}</h2>{record.subtitle&&<p className="subtitle">{record.subtitle}</p>}<p>{record.desc}</p><ResultFormal sector={sector} profile={profile} lang={lang} record={record}/></article><aside className="proof-map"><p className="eyebrow">{t.activeVisual.toUpperCase()}</p><SimplexCanvas step={3} activeView={view} sector={sector} metricMode={metricMode}/><div className="view-pills">{VIEWS.map(v=><button onClick={()=>setView(v)} className={v===view?'active':''} key={v}>{v}: {telemetry(record,v)}</button>)}</div></aside></section>
+  <TourBlock t={t} c={c} step={step} setStep={setStep} profile={profile} view={view} record={record} slides={slides} sector={sector} metricMode={metricMode}/>
+  <SectorNavigator lang={lang} profile={profile} metricMode={metricMode} t={t} sector={sector} setSector={setSector} resultRef={resultRef}/>
+  <ChatPanel lang={lang} profile={profile}/><footer><span>Clifford · Prime · Simplex · Cube</span><span>{t.note}</span></footer>
+ </main>
+}
+function Turntable({c,lang,profile,view,setView}){const lensCopy=LENS_COPY[lang][profile];return <section className="turntable"><p className="eyebrow">{c.turntable.toUpperCase()}</p><h2>{c.turntableTitle}</h2><div className="lens-grid">{VIEWS.map(v=><button className={view===v?'active':''} onClick={()=>setView(v)} key={v}><b>{v} lens</b><span>{lensCopy[v][0]}</span><span>{lensCopy[v][1]}</span></button>)}</div></section>}
+function LatticeMap({c,sector,setSector,lang,profile,metricMode,resultRef}){const rows=MENU_SECTOR_LIST.reduce((all,item)=>{const record=getCompleteDualMetricDisplayData(item.id,lang,profile,metricMode);const row=(record.coordinate.match(/B\+F=(\d+)/)||[])[1]||'Research';(all[row]??=[]).push(item);return all;},{});return <section className="lattice-map"><p className="eyebrow">{c.lattice.toUpperCase()}</p><h2>{c.latticeTitle}</h2><div className="lattice-rows">{Object.entries(rows).sort(([a],[b])=>Number(a)-Number(b)).map(([row,items])=><div className="lattice-row" key={row}><small>{row==='Research'?'RESEARCH':`ROW ${row}`}</small><div>{items.map(item=>{const r=getCompleteDualMetricDisplayData(item.id,lang,profile,metricMode);const active=sector===item.id;return <button className={active?'active':''} onClick={()=>{setSector(item.id);requestAnimationFrame(()=>resultRef.current?.scrollIntoView({behavior:'smooth',block:'start'}));}} key={item.id}><span>{r.coordinate.split(',').at(-1).trim()}</span><b>{r.title}</b></button>})}</div></div>)}</div></section>}
+function TourBlock({t,c,step,setStep,profile,view,record,slides,sector,metricMode}){return <section className="tour-block"><p className="eyebrow">{c.supporting.toUpperCase()} · {t.tour.toUpperCase()}</p><div className="tour"><div className="tour-copy"><p className="eyebrow">{t.step.toUpperCase()} {step+1} / 4 · {profile.toUpperCase()}</p><h2>{slides[step].title}</h2><p>{slides[step].desc}</p><p className="cue">{view} lens: {telemetry(record,view)}</p><div className="steps">{slides.map((x,i)=><button onClick={()=>setStep(i)} className={i===step?'active':''} key={x.step}>{String(i+1).padStart(2,'0')}</button>)}</div></div><div className="diagram"><SimplexCanvas step={step} activeView={view} sector={sector} metricMode={metricMode}/></div></div></section>}
 
-  const getViewTelemetry = (nodeId) => {
-    // Queries the data using the baseline fallback key to update panel menus
-    const mockKey = `${nodeId}_en_Physicist`;
-    const record = KNOWLEDGE_BASE_DIRECTORY[mockKey];
-    if (!record) return "";
-    if (activeView === "Clifford") return "Signature: " + record.grade;
-    if (activeView === "Prime") return "Multiplicity: [" + record.coordinate + "]";
-    if (activeView === "Simplex") return "Simplex Element: " + record.simplex;
-    if (activeView === "Cube") return "8-Cube Address: " + record.cube;
-    return "";
-  };
-
-  const categories = [
-    { name: "Foundational Symmetries", color: "#38bdf8", bg: "#0c4a6e30" },
-    { name: "Structural Realignments", color: "#34d399", bg: "#064e3b30" },
-    { name: "Speculative Frontiers", color: "#f472b6", bg: "#50072530" }
-  ];
-
-  const renderSVGChart = () => {
-    return (
-      <svg viewBox="0 0 500 200" style={{ width: '100%', height: 'auto', display: 'block' }}>
-        <line x1="40" y1="20" x2="40" y2="170" stroke="#334155" strokeWidth="1" />
-        <line x1="40" y1="170" x2="480" y2="170" stroke="#334155" strokeWidth="1" />
-        {[50, 80, 110, 140].map((y, idx) => (
-          <line key={idx} x1="40" y1={y} x2="480" y2={y} stroke="#1e293b" strokeWidth="1" strokeDasharray="4 4" />
-        ))}
-        {Array.from({ length: 9 }).map((_, k) => {
-          const x = 40 + (k * 50);
-          return (
-            <g key={k}>
-              <line x1={x} y1="170" x2={x} y2="175" stroke="#334155" strokeWidth="1" />
-              <text x={x} y="188" fill="#475569" fontSize="9" fontFamily="monospace" textAnchor="middle">k={k}</text>
-            </g>
-          );
-        })}
-        <path d="M 40,165 Q 140,150 240,40 T 440,165" fill="none" stroke="#f472b6" strokeWidth="2.5" />
-        <path d="M 40,140 C 140,140 240,120 390,50 T 440,25" fill="none" stroke="#34d399" strokeWidth="2.5" strokeDasharray="2 2" />
-        <circle cx="240" cy="40" r="5" fill="#22d3ee" />
-        <text x="240" y="28" fill="#22d3ee" fontSize="8" fontFamily="monospace" textAnchor="middle" fontWeight="bold">210 GUT Peak</text>
-        <circle cx="390" cy="50" r="4" fill="#fbbf24" />
-        <text x="390" y="42" fill="#fbbf24" fontSize="8" fontFamily="monospace" textAnchor="middle">128/192 Boundary</text>
-      </svg>
-    );
-  };
-
-  return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#0f172a', color: '#f8fafc', fontFamily: 'system-ui, sans-serif', padding: '24px', display: 'flex', flexDirection: 'column', boxSizing: 'border-box' }}>
-      
-      {/* LANGUAGE SELECTOR HEADER */}
-      <header style={{ borderBottom: '1px solid #334155', paddingBottom: '16px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
-        <div>
-          <h1 style={{ margin: 0, fontSize: '24px', fontWeight: '800', color: '#22d3ee' }}>A Toy Model of the Universe</h1>
-        </div>
-        
-        <div style={{ display: 'flex', gap: '6px' }}>
-          <button onClick={() => setSpokenLang("en")} style={{ fontSize: '11px', padding: '4px 10px', borderRadius: '4px', cursor: 'pointer', fontWeight: '700', backgroundColor: spokenLang === "en" ? '#6366f1' : '#1e293b', color: '#fff', border: 'none' }}>English</button>
-          <button onClick={() => setSpokenLang("it")} style={{ fontSize: '11px', padding: '4px 10px', borderRadius: '4px', cursor: 'pointer', fontWeight: '700', backgroundColor: spokenLang === "it" ? '#6366f1' : '#1e293b', color: '#fff', border: 'none' }}>Italiano</button>
-        </div>
-      </header>
-
-      {/* HERO INTRO BLOCK */}
-      <section style={{ background: 'linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%)', border: '1px solid #312e81', borderRadius: '12px', padding: '20px', marginBottom: '24px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap', marginBottom: '12px' }}>
-          <span style={{ fontSize: '10px', fontWeight: '800', tracking: '0.1em', color: '#818cf8' }}>{activeHeroData?.hook}</span>
-          <div style={{ display: 'flex', gap: '4px' }}>
-            {["Young Learner", "Physicist", "Mathematician"].map(p => (
-              <button key={p} onClick={() => setUserProfile(p)} style={{ fontSize: '10px', padding: '4px 8px', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', backgroundColor: userProfile === p ? '#06b6d4' : '#1e293b', color: userProfile === p ? '#0f172a' : '#94a3b8', border: 'none' }}>{p}</button>
-            ))}
-          </div>
-        </div>
-        <h2 style={{ margin: '8px 0 0 0', fontSize: '20px', fontWeight: '800' }}>{activeHeroData?.title}</h2>
-        <p style={{ margin: '8px 0 0 0', fontSize: '13px', lineHeight: '1.5', color: '#cbd5e1' }}>{activeHeroData?.intro}</p>
-      </section>
-
-      {/* TUTORIAL ROADMAP SLIDER */}
-      <div style={{ backgroundColor: '#020617', border: '1px solid #1e293b', borderRadius: '12px', padding: '16px', marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontSize: '9px', fontWeight: '800', textTransform: 'uppercase', color: '#fbbf24', letterSpacing: '0.05em' }}>
-            {spokenLang === "en" ? `ONBOARDING USER GUIDE // ${userProfile.toUpperCase()} TRACK` : `GUIDA DI BENVENUTO UTENTE // PERCORSO ${userProfile.toUpperCase()}`}
-          </span>
-          <div style={{ display: 'flex', gap: '4px' }}>
-            {[0, 1, 2, 3].map((idx) => (
-              <button 
-                key={idx} 
-                onClick={() => setActiveSlide(idx)}
-                style={{ width: '24px', height: '6px', borderRadius: '3px', border: 'none', cursor: 'pointer', backgroundColor: activeSlide === idx ? '#fbbf24' : '#1e293b', transition: 'background-color 0.2s' }}
-              />
-            ))}
-          </div>
-        </div>
-        <h4 style={{ margin: '4px 0 0 0', fontSize: '14px', fontWeight: '800', color: '#ffffff' }}>
-          {activeSlideData?.title}
-        </h4>
-        <p style={{ margin: 0, fontSize: '12.5px', color: '#94a3b8', lineHeight: '1.4' }}>
-          {activeSlideData?.desc}
-        </p>
-      </div>
-
-      {/* VIEW LAYER FILTER FLAGS */}
-      <div style={{ display: 'flex', gap: '6px', marginBottom: '16px' }}>
-        {["Clifford", "Prime", "Simplex", "Cube"].map(v => (
-          <button key={v} onClick={() => setActiveView(v)} style={{ padding: '6px 12px', borderRadius: '4px', fontSize: '10px', fontWeight: '700', textTransform: 'uppercase', cursor: 'pointer', backgroundColor: activeView === v ? '#4f46e5' : '#1e293b', color: '#fff', border: 'none' }}>{v} View</button>
-        ))}
-      </div>
-
-      {/* TWO COLUMN MASTER INTEGRATION ARENA */}
-      <main style={{ display: 'flex', flex: 1, gap: '24px', flexWrap: 'wrap', alignItems: 'stretch' }}>
-        
-        {/* LEFT COLUMN: Categorized Submenu Lists */}
-        <section style={{ flex: '1 1 320px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          {categories.map((cat) => (
-            <div key={cat.name} style={{ backgroundColor: '#1e293b40', border: '1px solid #1e293b', borderRadius: '12px', padding: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <h2 style={{ margin: '0 0 4px 0', fontSize: '11px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.05em', color: cat.color, backgroundColor: cat.bg, padding: '4px 8px', borderRadius: '6px', width: 'fit-content' }}>
-                {cat.name}
-              </h2>
-              
-              {MENU_SECTOR_LIST
-                .filter(item => item.category === cat.name)
-                .map((item) => {
-                  const lookupKey = `${item.id}_${spokenLang}_${userProfile}`;
-                  const record = KNOWLEDGE_BASE_DIRECTORY[lookupKey];
-                  
-                  return (
-                    <div
-                      key={item.id}
-                      onClick={() => setSelectedNode(item.id)}
-                      style={{ padding: '10px', borderRadius: '8px', border: '1px solid', borderColor: selectedNode === item.id ? cat.color : '#1e293b', backgroundColor: selectedNode === item.id ? '#1e293b' : '#0f172a60', cursor: 'pointer', transition: 'all 0.15s' }}
-                    >
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span style={{ fontWeight: '700', fontSize: '13px', color: '#f1f5f9' }}>
-                          {record ? record.title : item.id}
-                        </span>
-                        <span style={{ fontSize: '9px', fontFamily: 'monospace', padding: '1px 5px', borderRadius: '4px', backgroundColor: '#0f172a', border: '1px solid #334155', color: '#64748b' }}>
-                          N_{record?.coordinate || "0"}
-                        </span>
-                      </div>
-                      <p style={{ margin: '4px 0 0 0', color: '#475569', fontSize: '10px', fontFamily: 'monospace', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                        {getViewTelemetry(item.id)}
-                      </p>
-                    </div>
-                  );
-                })}
-            </div>
-          ))}
-        </section>
-        {/* RIGHT COLUMN: The Interactive Content Display Theater */}
-        <section style={{ flex: '2 1 500px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          
-          {/* HARDWARE ACCELERATED CANVAS */}
-          <div style={{ backgroundColor: '#020617', border: '1px solid #1e293b', borderRadius: '12px', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}>
-            <SimplexCanvas activeView={activeView} />
-            <div style={{ position: 'absolute', bottom: '12px', left: '12px', fontSize: '10px', fontFamily: 'monospace', color: '#64748b', pointerEvents: 'none' }}>
-              Active Lattice Mode: <span style={{ color: '#fbbf24' }}>{activeView} Perspective</span>
-            </div>
-          </div>
-
-          {/* THE TRANSLATION COMPONENT SCREEN */}
-          <article style={{ backgroundColor: '#1e293b', border: '1px solid #334155', borderRadius: '12px', padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.3)' }}>
-            <div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.05em', backgroundColor: '#083344', color: '#22d3ee', padding: '4px 10px', borderRadius: '9999px', border: '1px solid #155e75', fontWeight: '800' }}>
-                  Linguistic Translation Track: {userProfile} ({spokenLang.toUpperCase()})
-                </span>
-                <span style={{ fontSize: '10px', fontFamily: 'monospace', color: '#475569' }}>Active Filter: {activeView}</span>
-              </div>
-              
-              <h3 style={{ margin: '16px 0 0 0', fontSize: '22px', fontWeight: '800', color: '#f8fafc', letterSpacing: '-0.02em' }}>
-                {activeNodeData ? activeNodeData.title : "Sector Selected"}
-              </h3>
-              <p style={{ margin: '16px 0 0 0', color: '#cbd5e1', fontSize: '14px', lineHeight: '1.6', fontWeight: '400' }}>
-                {activeNodeData ? activeNodeData.desc : "Select a sector option to view description details."}
-              </p>
-            </div>
-
-            {/* LIVE NOETHER METRIC COMPRESSION CHART INLINE */}
-            <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid #334155' }}>
-              <div style={{ fontSize: '10px', fontWeight: '800', textTransform: 'uppercase', color: '#64748b', marginBottom: '12px', letterSpacing: '0.05em' }}>
-                {spokenLang === "en" ? "Live Noether Lattice Strain Profile" : "Profilo di Sforzo del Reticolo di Noether in Tempo Reale"}
-              </div>
-              <div style={{ backgroundColor: '#020617', border: '1px solid #1e293b', borderRadius: '8px', padding: '16px' }}>
-                {renderSVGChart()}
-                <div style={{ display: 'flex', gap: '16px', marginTop: '8px', justifyContent: 'center', fontFamily: 'monospace', fontSize: '9px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <div style={{ width: '12px', height: '3px', backgroundColor: '#f472b6' }}></div>
-                    <span style={{ color: '#94a3b8' }}>{spokenLang === "en" ? "Spatial Compression" : "Compressione Spaziale"}</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <div style={{ width: '12px', height: '3px', borderTop: '3px dashed #34d399' }}></div>
-                    <span style={{ color: '#94a3b8' }}>{spokenLang === "en" ? "Temporal Dilation" : "Dilatazione Temporale"}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* CROSS-TALK SYNCHRONIZATION DATA MONITORS */}
-            <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid #334155', fontFamily: 'monospace', fontSize: '11px', color: '#94a3b8' }}>
-              <div style={{ fontSize: '9px', fontWeight: '800', textTransform: 'uppercase', color: '#475569', marginBottom: '6px', letterSpacing: '0.05em' }}>Cross-Talk Multi-View Synchronization Matrix:</div>
-              <div style={{ margin: '3px 0' }}>• View 1 (Clifford Grade) : <span style={{ color: '#818cf8' }}>{activeNodeData?.grade || "N/A"}</span></div>
-              <div style={{ margin: '3px 0' }}>• View 2 (Prime Directory): <span style={{ color: '#34d399' }}>Real Matrix Node Vector [{activeNodeData?.coordinate || "0"}]</span></div>
-              <div style={{ margin: '3px 0' }}>• View 3 (Simplex Facet)  : <span style={{ color: '#fbbf24' }}>{activeNodeData?.simplex || "N/A"}</span></div>
-              <div style={{ margin: '3px 0' }}>• View 4 (8-Cube Lattice) : <span style={{ color: '#f472b6' }}>{activeNodeData?.cube || "N/A"}</span></div>
-            </div>
-          </article>
-        </section>
-      </main>
-
-      {/* SYSTEM STATUS FOOTER */}
-      <footer style={{ marginTop: '24px', borderTop: '1px solid #1e293b', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', fontSize: '9px', fontFamily: 'monospace', color: '#475569' }}>
-        <div>Platform Repository State: <span style={{ color: '#10b981', fontWeight: 'bold' }}>● ALL PILLARS SYSTEMATICALLY LINKED & LOCK-VERIFIED</span></div>
-        <div>Modularity Rule Invariant: π ≡ π (mod 4) | Cl(4,4,0) Core Complete</div>
-      </footer>
-
-    </div>
-  );
+function SectorNavigator({lang,profile,metricMode,t,sector,setSector,resultRef}){const groups=MENU_SECTOR_LIST.reduce((all,item)=>{(all[item.category]??=[]).push(item);return all;},{});return <section className="sector-navigator"><p className="eyebrow">{t.directory.toUpperCase()} · {MENU_SECTOR_LIST.length} NODES</p><div className="sector-groups">{Object.entries(groups).map(([category,items])=><div className="sector-group" key={category}><h3>{category}</h3>{items.map(item=>{const data=getCompleteDualMetricDisplayData(item.id,lang,profile,metricMode);const active=item.id===sector;return <button className={active?'active':''} aria-pressed={active} onClick={()=>{setSector(item.id);requestAnimationFrame(()=>resultRef.current?.scrollIntoView({behavior:'smooth',block:'start'}));}} key={item.id}><span>{data.title}</span><small>{active?t.viewing:t.viewNode}</small></button>})}</div>)}</div></section>}
+function ControlBar({lang,setLang,profile,setProfile,metricMode,setMetricMode,view,setView}){return <section className="controls" aria-label="Presentation controls"><div className="control-title"><span>Presentation matrix</span><small>{lang.toUpperCase()} · {profile} · {view}</small></div><div className="control-group language-group"><p>LANGUAGE</p><button className={lang==='en'?'active':''} onClick={()=>setLang('en')}>EN</button><button className={lang==='it'?'active':''} onClick={()=>setLang('it')}>IT</button></div><div className="control-group audience-group"><p>AUDIENCE</p>{PROFILES.map(x=><button className={profile===x?'active':''} onClick={()=>setProfile(x)} key={x}>{x==='Young Learner'?'Learner':x==='Physicist'?'Physics':'Math'}</button>)}</div><div className="control-group metric-group"><p>METRIC</p><button className={metricMode==='Spatial'?'active':''} onClick={()=>setMetricMode('Spatial')}>Space +</button><button className={metricMode==='Temporal'?'active':''} onClick={()=>setMetricMode('Temporal')}>Time +</button></div><div className="control-group lens-group"><p>LENS</p>{VIEWS.map(x=><button className={view===x?'active':''} onClick={()=>setView(x)} key={x}>{x}</button>)}</div></section>}
+function telemetry(record,view){return view==='Clifford'?record.grade:view==='Prime'?`Multiplicity [${record.coordinate}]`:view==='Simplex'?record.simplex:record.cube}
+function ResultFormal({ sector, profile, lang, record }) {
+ if (profile === 'Young Learner') return null;
+ const it=lang==='it';
+ const proofs={
+  Sector_Vacuum_Origin:[it?"Teorema I: L'Origine Scalare del Vuoto":"Theorem I: The Trivial Scalar Vacuum Origin",it?"Il punto zero della griglia stabilisce l’elemento identità moltiplicativo scalare, da cui si diramano le sotto-algebre.":"The grid zero-point establishes the pure scalar multiplicative identity element, from which all sub-algebras branch.",String.raw`\text{Grid Level: }[B+F=0,\,B-F=0]\implies\text{Cl}(0,0)\cong\mathbb{R}`,it?'Isomorfismo del Sotto-Spazio Radicale:':'Radical Subspace Isomorphism:',String.raw`\mathbf1\in\text{Cl}(4,4,0)_0\quad\text{where}\quad\langle\mathbf1\cdot x\rangle_0=x_0`],
+  Sector_Inject_Base_Real:[it?"Teorema II: L'Iniettore Reale di Base":"Theorem II: The Base Real Vector Injector",it?'L’iniezione di un singolo bit spaziale positivo mappa un vettore reale sulla varietà macroscopica.':'The injection of a single positive spatial bit maps a real vector onto the macroscopic manifold.',String.raw`\text{Grid Level: }[B+F=1,\,B-F=+1]\implies\text{Cl}(1,0)\cong\mathbb{R}\oplus\mathbb{R}`,it?'Generatore di Spostamento della Griglia:':'Lattice Displacement Generator:',String.raw`\Pi_{BF}(e_1)=0\quad\land\quad\sigma_{\pm}(e_1)=+1\implies e_1^2=+1`],
+  Sector_Inject_Fiber_Clock:[it?"Teorema III: L'Iniettore della Fibra Complessa":"Theorem III: The Internal Complex Fiber Injector",it?'Un singolo bit temporale negativo nella fibra agisce come orologio di fase immaginario.':'A single negative time-like bit embedded in the fiber acts as an imaginary phase clock.',String.raw`\text{Grid Level: }[B+F=1,\,B-F=-1]\implies\text{Cl}(0,1)\cong\mathbb{C}`,it?'Generatore della Fase di Gauge:':'Internal Gauge Phase Rotor:',String.raw`\Pi_{BF}(f_1)=1\quad\land\quad\sigma_{\pm}(f_1)=-1\implies f_1^2=-1`],
+  Sector_EM_Maxwell:[it?'Teorema IV: Il Campo di Maxwell':'Theorem IV: The Maxwell Curvature Bivector',it?'Le quattro equazioni di campo si contraggono in un unico enunciato di derivata geometrica.':'The four classical field equations collapse into a single geometric derivative statement.',String.raw`\nabla F=J\quad\text{where}\quad F=\mathbf{E}+I\mathbf{B}\in\text{Cl}(6,2)`,it?"Invarianza dei Canali dell'Orologio Aritmetico:":'Arithmetic Phase Clock Invariance:',String.raw`\nabla F=(\partial_t+\nabla)\cdot(\mathbf{E}+I\mathbf{B})=J\implies\text{Channels }|n|=85`],
+  Sector_Gravity_Strain:[it?'Teorema V: Lo Sforzo di Gravità della Teoria di Gauge':'Theorem V: Gauge Theory Gravity & Lattice Strain',it?'La gravità è mappata come gradiente di traslazione che inclina gli assi spaziali della griglia.':'Gravity is mapped as a localized translation gradient that skews the spatial grid axes.',String.raw`\mathbf{S}_{AB}(x)=h_A^\mu(x)h_B^\nu(x)\eta_{\mu\nu}-\eta_{AB}`,it?'Contrazione dello Sforzo di Noether:':'Canonical Noether Strain Contraction:',String.raw`T^{\mu\nu}\implies\Delta V_{\text{cell}}\propto\text{Tr}(\mathbf{S}_{AB})`],
+  Sector_Quaternionic_Base:[it?'Teorema VI: Superficie di Spazio Matrice Reale':'Theorem VI: Real 2D Matrix Surface Mesh',it?"La coordinata di base mappa due assi di tipo spazio, generando l'algebra delle matrici reali 2x2 con divisori dello zero.":'The base coordinate maps two space-like axes, generating the algebra of real 2x2 matrices containing zero divisors.',String.raw`\text{Grid Level: }[B+F=2,\,B-F=+2]\implies\text{Cl}(2,0)\cong M_2(\mathbb{R})`,it?'Generazione della Struttura dello Spazio di Base:':'Base Surface Space Generation:',String.raw`e_1^2=+1,\quad e_2^2=+1\implies(e_1e_2)^2=-1`],
+  Sector_Quaternionic_Fiber:[it?'Teorema VII: Spazio di Fase Elettrodebole SU(2)':'Theorem VII: Weak Isospin SU(2) Compact Fiber Phase',it?'Le trasformazioni di gauge deboli non abeliane nascono dalla struttura quaternionica compatta della fibra senza divisori dello zero.':'Non-abelian weak gauge fields arise from the compact quaternionic fiber phase space without zero divisors.',String.raw`\text{Grid Level: }[B+F=2,\,B-F=-2]\implies\text{Cl}(0,2)\cong\mathbb{H}`,it?'Generazione dei Campi di Gauge Spinoriali:':'Spinor Gauge Field Generation:',String.raw`i^2=j^2=k^2=ijk=-1\implies\Psi\in\text{SU}(2)_L`],
+  Sector_Baryon_Conservation:[it?'Teorema VIII: Conservazione del Numero Barionico':'Theorem VIII: Topological Baryon Stability',it?'La stabilità del protone emerge come vincolo di avvolgimento topologico rigido sui cicli del piano di Fano.':'Proton stability is represented as a rigid topological winding restriction over an embedded Fano plane.',String.raw`\text{Grid Level: }[B+F=8,\,B-F=+2]\implies\text{Cl}(5,1)\cong M_4(\mathbb{H})`,it?'Indice Invariante del Ciclo del Piano di Fano:':'Fano Plane Cyclic Winding Invariant:',String.raw`\nu_B\equiv\frac{\nu_7\pmod3}{3}\implies[\mathcal{D}_\mu^{(3,5)},\mathcal{I}_7]\cap\mathcal{I}_0=\emptyset`],
+  Sector_Electroweak_Unified:[it?'Teorema IX: Il Settore di Gauge Elettrodebole':'Theorem IX: The Saturated Electroweak Sector',it?'La frazione di impacchettamento 4/17 è una convenzione interna del modello visivo.':'The 4/17 packing fraction is an internal convention of this visual toy model.',String.raw`\sin^2\theta_W\equiv\frac{|\mathcal{N}_L|}{|\mathcal{N}|}=\frac4{17}\approx0.23529`,it?'Incrocio dei Canali della Corrente Neutra:':'Neutral Current Channel Crossing Constraints:',String.raw`\mathcal{N}_L=\{e_{ij}\in\mathcal{N}\mid\Pi_{BF}(e_{ij})=0\land\chi_{LR}(e_{ij})=L\}\implies|\mathcal{N}_L|=4`],
+  Sector_Vacuum_Mass_Generation:[it?'Teorema X: Inversione Scalare del Vuoto':'Theorem X: Identity Scalar Vacuum Inversion',it?'Il neutrino sterile e il campo di Higgs sono configurazioni isomorfe dello stesso nucleo scalare.':'The Sterile Neutrino and the active Higgs-field operator are toy-model configurations of the same scalar identity.',String.raw`\mathcal{M}(\mathbf{\Phi}_H\cdot\mathbf1)\equiv\psi_\nu`,it?'Mappatura della Riflessione Iper-Superficiale:':'Hyper-surface Reflection Auto-mapping:',String.raw`x\mapsto\operatorname{NOT}(x)`],
+  Sector_GUT_Junction:[it?'Teorema XI: Il Checkpoint di Saturazione Primorale':'Theorem XI: The Primorial Saturation Junction',it?'Le simmetrie di gauge si fondono al prodotto primorale 210 nella convenzione del portale.':'Gauge tracks intersect at the primorial product 210 in the portal convention.',String.raw`\mathbf{\Omega}_{\text{GUT}}=e_1\wedge e_2\wedge f_1\wedge e_3\implies\mathbf{\Omega}_{\text{GUT}}^2=-1`,it?"Frazione Sotto-Blocco dell'Iper-Reticolo:":'Hyper-lattice Sub-block Packing Fraction:',String.raw`\text{Faces}_{\text{7-Simplex}}=70\longleftrightarrow\text{Tesseracts}_{\text{Octeract}}=1120`],
+  Sector_Cosmic_Horizon:[it?"Teorema XII: Confine dell'Orizzonte Pseudoscalare Massimo":'Theorem XII: The Maximal Pseudoscalar Horizon',it?"La saturazione dell'elemento pseudoscalare impone una chiusura geometrica del modello.":'Saturation of the maximal pseudoscalar element represents a portal boundary-reset convention.',String.raw`I_8=\gamma_1\gamma_2\gamma_3\gamma_4\gamma_5\gamma_6\gamma_7\gamma_8\implies I_8^2=-1`,it?"Limite Cosmico dell'Orizzonte di Hubble:":'Macroscopic Hubble Horizon Limit:',String.raw`\Lambda_{\text{Master}}=[1,1,1,1]\otimes[1,1,1,1]\implies D_H=8`],
+  Sector_Trivector_Base:[it?'Teorema XIII: Volume Spaziale Macroscopico':'Theorem XIII: Macroscopic Spatial Volume Pseudoscalar',it?"L'elemento orientatore tridimensionale è formalizzato dal prodotto esterno di tre vettori spaziali ortogonali.":'The three-dimensional orienting element is formalized through the exterior product of three mutually orthogonal spatial basis vectors.',String.raw`\text{Cl}(3,0)\implies I_{3D}=\gamma_1\wedge\gamma_2\wedge\gamma_3\quad\text{where}\quad I_{3D}^2=-1`,it?'Orientazione del volume:':'Volume orientation:',String.raw`\gamma_1\wedge\gamma_2\wedge\gamma_3`],
+  Sector_Trivector_Quark:[it?'Teorema XIV: Vertice Quark-Gluone Asimmetrico':'Theorem XIV: Asymmetric Quark Core Geometry',it?'La carica frazionaria è rappresentata dalla ripartizione asimmetrica dei gradi tra la varietà macroscopica e la fibra quantistica interna.':'Fractional states emerge from the asymmetric grading distribution between the macroscopic manifold and internal quantum fiber.',String.raw`B=2,\,F=1\implies\nu_c\propto2/3`,it?'Indice di Avvolgimento Asimmetrico:':'Asymmetric Winding Number:',String.raw`\gcd(3^\alpha\cdot5^\beta,7)=1`],
+  Sector_Trivector_Lepton:[it?'Teorema XV: Frame di Corrente Leptonica':'Theorem XV: Leptonic Current Coordinates',it?'Le traiettorie leptoniche usano un singolo asse reale proiettato su due piani complessi interni.':'Charged leptonic trajectories use a single real axis projected across two internal complex fiber phase planes.',String.raw`\text{Cl}(1,2)\cong M_2(\mathbb{C})\implies\text{Leptonic Current}`,it?'Accoppiamento della Corrente:':'Current Coupling Matrix:',String.raw`[B+F=3,\,B-F=-1]`],
+  Sector_STA_Euclidean_Base:[it?'Teorema XVI: Spazio Quadridimensionale Euclideo':'Theorem XVI: Pure Euclidean 4D Base Manifold',it?'La varietà quadridimensionale spaziale pura è generata dal prodotto esterno di quattro vettori reali ortogonali.':'The pure four-dimensional spatial manifold is generated via four orthogonal real basis vectors.',String.raw`\text{Cl}(4,0)\implies\mathbf{\Omega}_{4D}=\gamma_1\wedge\gamma_2\wedge\gamma_3\wedge\gamma_4`,it?'Contenitore Spaziale Piatto:':'Flat Spatial Container:',String.raw`[B+F=4,\,B-F=+4]`],
+  Sector_STA_Minkowski:[it?'Teorema XVII: Algebra dello Spazio-Tempo Relativistico':'Theorem XVII: Minkowski Spacetime Algebra',it?'La metrica di Minkowski sorge dalla segnatura di tre assi spaziali e un asse temporale interno.':'The Minkowski metric emerges from three spatial base axes and one time-like fiber parameter.',String.raw`\text{Cl}(3,1)\implies g_{\mu\nu}=\operatorname{diag}(1,1,1,-1)`,it?'Struttura del Cono di Luce:':'Light-Cone Vector Frame:',String.raw`(+,+,+,-)`],
+  Sector_STA_Symmetric_Core:[it?'Teorema XVIII: Reticolo di Accoppiamento Simmetrico':'Theorem XVIII: Symmetric Electroweak Cross-Talk Core',it?'La giunzione simmetrica bilancia due dimensioni macroscopiche e due dimensioni di fibra di gauge.':'The symmetric core balances exactly two macroscopic base dimensions and two internal gauge fiber coordinates.',String.raw`\text{Cl}(2,2)\cong M_4(\mathbb{R})\implies\text{Symmetric Junction}`,it?'Incrocio Spazio-Fibra:':'Base-Fiber Balance Node:',String.raw`[B+F=4,\,B-F=0]`],
+  Sector_STA_Fiber_Frame:[it?'Teorema XIX: Frame Invariante di Gauge Debole':'Theorem XIX: Weak Gauge Invariant Fiber Topology',it?'Il frame della fibra di gauge debole isola un singolo asse reale proiettato su tre assi temporali interni.':'The weak gauge fiber topology restricts one real base parameter across three internal time-like fiber metrics.',String.raw`\text{Cl}(1,3)\cong M_2(\mathbb{H})\implies\text{Weak Invariant}`,it?'Isolamento Chirale Sinistro:':'Left-Ideal Chiral Locking:',String.raw`\chi_{LR}=L\quad\text{at}\quad[B-F=-2]`],
+  Sector_Row5_Base:[it?'Teorema XX: Struttura Spinoriale Complessificata':'Theorem XX: Complexified Pentavector Spinor Space',it?"L'estensione pseudoscalare introduce una coordinata complessa immaginaria che segrega gli ideali sinistri dalle invarianze destre.":'The pseudoscalar extension introduces an imaginary complex coordinate that segregates left-handed interacting ideals from right-handed sterile invariants.',String.raw`\text{Cl}(4,1)\cong\text{Cl}(4,0)\otimes\mathbb{C}\implies I_{5D}=\gamma_1\gamma_2\gamma_3\gamma_4\gamma_5`,it?'Asse della Violazione di Parità:':'Parity Violation Axis:',String.raw`[B+F=5,\,B-F=+3]`],
+  Sector_Row6_Confinement:[it?'Teorema XXI: Connessione Esavettoriale del Colore':'Theorem XXI: Hexvector Holonomy & Confinement',it?"L'olonomia a 6 bit impone la chiusura topologica ciclica del flusso del colore sul volume del piano di Fano.":'The 6-bit holonomy enforces cyclic topological closure of color flux over Fano-plane volume elements.',String.raw`\text{Cl}(5,1)\cong M_4(\mathbb{H})\implies\oint_{\partial\mathcal{P}_3}\omega_c\equiv0\pmod7`,it?'Chiusura Ciclica del Colore:':'Cyclic Color Confinement:',String.raw`[B+F=6,\,B-F=+2]`],
+  Sector_Row7_Mirror:[it?'Teorema XXII: Confine del Semipool Involutivo':'Theorem XXII: The Chiral Half-Pool Threshold',it?'Il semipool a 128 elementi segna la frontiera di inversione iper-superficiale della coniugazione di carica.':'The 128-element semipool bounds the inversion frontier mapping matter coordinates to antimatter complements.',String.raw`\text{Cl}(4,3)\cong M_8(\mathbb{R})\oplus M_8(\mathbb{R})\implies\dim(\mathcal{L}_0)=128`,it?"Flessione Antipodale dell'Ipercubo:":'Hypercube Antipodal Mapping:',String.raw`x\mapsto\operatorname{NOT}(x)\equiv\Gamma_{192}`],
+  Sector_Open_Questions:[it?'Critica Formale: Limiti Strutturali del Modello':'Formal Critique: Structural Model Limitations',it?'Il modello rimane privo di un meccanismo continuo per calcolare la costante di accoppiamento dinamica e la rinormalizzazione.':'The model lacks a native differential mechanics engine to derive continuous coupling running or absolute mass scales.',String.raw`\lim_{\Delta h\to0}\mathbf{S}_{AB}(x)\neq\text{RGE Running Path}`,it?'Paradosso del Continuo della Griglia:':'Lattice Continuum Paradox:',String.raw`\text{Scaffold Incompleteness Invariant}`],
+  Sector_Furey_Ledger:[it?'Capitolo I: Soluzioni Algebriche Invarianti per la Dr.ssa Furey':'Chapter I: Invariant Algebraic Solutions for Dr. Furey',it?'Mappatura delle catene di moltiplicazione di Furey e dei proiettori idempotenti nelle coordinate della nostra matrice.':"Mapping Furey's complex octonionic multiplication chains and Peirce idempotents into our 2D grid matrix coordinates.",String.raw`\mathbb{R}\mathbb{O}\cong\text{Cl}(6,0)\xrightarrow{\otimes\text{Cl}(2,0)}\text{Cl}(4,4,0)`,it?'Decomposizione degli Idempotenti di Peirce:':'Peirce Idempotent Structural Decomposition:',String.raw`\Psi_{\text{Gen }g}=\frac12(1\pm\Lambda_G)I_8\cdot\text{Cl}(4,4,0)\cdot e_{\text{Peirce}}` ]
+ };
+ const item=proofs[sector]||proofs.Sector_Vacuum_Origin;
+ return <details className="formal-proof"><summary>{it?'Apri il teorema e la dimostrazione':'Open theorem and proof'}</summary><div className="theorem"><b>{item[0]}</b><p>{item[1]}</p><BlockMath math={item[2]}/><div className="lemma"><b>{item[3]}</b><BlockMath math={item[4]}/></div></div></details>;
 }
 
-// --- Insert this functional script inside your ToyModelUniverse component ---
-const [chatInput, setChatInput] = useState("");
-const [chatLog, setChatLog] = useState([]);
-const [agentIsThinking, setAgentIsThinking] = useState(false);
-
-const handleAgentQuerySubmit = async (e) => {
-  e.preventDefault();
-  if (!chatInput.trim()) return;
-
-  const userEvent = { role: 'user', content: chatInput };
-  const updatedLog = [...chatLog, userEvent];
-  
-  setChatLog(updatedLog);
-  setChatInput("");
-  setAgentIsThinking(true);
-
-  try {
-    // Fire the stream packet directly to our new Vercel Edge API route
-    const response = await fetch('/api/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        messages: updatedLog,
-        spokenLang: spokenLang, // Passes "en" or "it" dynamically
-        userProfile: userProfile // Passes "Young Learner", "Physicist", etc.
-      })
-    });
-
-    if (!response.ok) throw new Error("Network connection drop");
-
-    // Read the stream chunk-by-chunk and update the interface chat bubbles
-    const reader = response.body.getReader();
-    const decoder = new TextDecoder();
-    let agentResponseText = "";
-
-    setChatLog([...updatedLog, { role: 'assistant', content: "" }]);
-
-    while (true) {
-      const { value, done } = await reader.read();
-      if (done) break;
-      
-      agentResponseText += decoder.decode(value, { stream: true });
-      setChatLog([...updatedLog, { role: 'assistant', content: agentResponseText }]);
-    }
-  } catch (error) {
-    console.error("Agent matrix connection failure:", error);
-  } finally {
-    setAgentIsThinking(false);
-  }
-};
-
+function ChatPanel({lang,profile}){const [input,setInput]=useState('');const [answer,setAnswer]=useState('');const [loading,setLoading]=useState(false);async function ask(e){e.preventDefault();if(!input.trim()||loading)return;setLoading(true);setAnswer('');try{const r=await fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({spokenLang:lang,userProfile:profile,messages:[{role:'user',content:input}]})});if(!r.ok)throw new Error();const reader=r.body.getReader(),decoder=new TextDecoder();let text='',buffer='';while(true){const {value,done}=await reader.read();buffer+=decoder.decode(value||new Uint8Array(),{stream:!done});const lines=buffer.split('\n');buffer=done?'':lines.pop();for(const line of lines){if(!line.startsWith('data: ')||line.includes('[DONE]'))continue;try{const event=JSON.parse(line.slice(6));text+=event.type==='content_block_delta'?event.delta?.text||'':'';setAnswer(text)}catch{}}if(done)break}}catch{setAnswer(lang==='it'?'Il servizio chat non è disponibile.':'Chat is unavailable.')}finally{setLoading(false)}}return <section className="chat"><p className="eyebrow">CASCADE GUIDE · {profile.toUpperCase()}</p><h2>{lang==='it'?'Chiedi al modello':'Ask the model'}</h2><form onSubmit={ask}><input value={input} onChange={e=>setInput(e.target.value)} placeholder={lang==='it'?'Fai una domanda':'Ask a question'} maxLength="1000"/><button disabled={loading}>{loading?'…':lang==='it'?'Invia':'Ask'}</button></form>{answer&&<article className="answer">{answer}</article>}</section>}
