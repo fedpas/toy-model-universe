@@ -201,3 +201,30 @@ export function getDisplayData(nodeKey, lang, profile, metricMode='Spatial') {
  const override=TEMPORAL_OVERRIDES[nodeKey]?.[lang];
  return override ? {...base,title:override[0],desc:override[1],metricMode:'Temporal'} : {...base,metricMode:'Temporal'};
 }
+
+// Centralized dual-metric compiler layer. It augments authored node text instead of replacing it.
+export const FULL_25_NODES = MENU_SECTOR_LIST.map(({id,category}) => {
+ const record=KNOWLEDGE_BASE_DIRECTORY[`${id}_en_Physicist`];
+ return {id,cat:category,coord:record.coordinate,simplex:record.simplex,cube:record.cube};
+});
+const TEMPORAL_TEXT_PACK={
+ en:{'Young Learner':['The Running Cinematic Clock Reel','Time becomes the huge movie canvas while space is a pattern drawn by its moving tracks.'],Physicist:['The Chronological Displacement Field','The metric is re-read as a time-positive lattice, with space emerging as localized imaginary-frequency constraints.'],Mathematician:['The Hypercomplex Chrono-Manifold Core','Regular-representation actions are re-read over non-commutative temporal modules and metric involutions.']},
+ it:{'Young Learner':['La Pellicola Cinematografica del Tempo','Il tempo diventa la grande tela del film mentre lo spazio è un disegno dei suoi binari in movimento.'],Physicist:['Il Campo di Spostamento Cronologico','La metrica è riletta come reticolo a tempo positivo, con lo spazio che emerge come vincolo di frequenza immaginario.'],Mathematician:['Il Core del Crono-Manifold Ipercomplesso','Le azioni di rappresentazione regolare sono rilette su moduli temporali non commutativi e involuzioni metriche.']}
+};
+const TEMPORAL_NODE_OVERRIDES={
+ Sector_Inject_Base_Real:{en:'Chronological Line Painter',it:'Il Pittore della Linea Cronologica'},
+ Sector_Inject_Fiber_Clock:{en:'The Spatial Constraint Seed',it:'Il Seme del Vincolo Spaziale'},
+ Sector_EM_Maxwell:{en:'Temporal Shear Tensor',it:'Il Tensore di Taglio Temporale'},
+ Sector_Gravity_Strain:{en:'Lattice Chrono-Compression',it:'La Crono-Compressione del Reticolo'},
+ Sector_Electroweak_Unified:{en:'The Balanced Chrono-Intersect',it:'L’Intersezione Cronologica Bilanciata'},
+ Sector_Vacuum_Origin:{en:'The Still Point of History',it:'Il Punto Fermo della Storia'},
+ Sector_Cosmic_Horizon:{en:'Pseudoscalar Time Boundary',it:'Il Confine Temporale Pseudoscalare'},
+ Sector_Furey_Ledger:{en:'The Chrono-Bimodule',it:'Il Crono-Bimodulo'}
+};
+export function getDualMetricDisplayData(nodeKey,lang,profile,metricMode='Spatial') {
+ const base=KNOWLEDGE_BASE_DIRECTORY[`${nodeKey}_${lang}_${profile}`];
+ if(!base || metricMode==='Spatial') return {...base,metricMode:'Spatial'};
+ const [genericTitle,genericDesc]=TEMPORAL_TEXT_PACK[lang][profile];
+ const title=TEMPORAL_NODE_OVERRIDES[nodeKey]?.[lang] || `${base.title} // ${genericTitle}`;
+ return {...base,title,desc:`${genericDesc} ${base.desc}`,metricMode:'Temporal'};
+}
