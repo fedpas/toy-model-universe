@@ -12,3 +12,7 @@
 .metric-group button.active{background:#9c4d3a!important;border-color:#ff9478!important}@media(max-width:800px){.metric-group{order:3;flex-basis:100%}.lens-group{order:4}}
 .metric-readout{font:10px 'DM Mono';color:#f2a98f;letter-spacing:.08em;margin:18px 0 0}.metric-group{border-left:1px solid #3b4161;padding-left:10px}@media(max-width:800px){.metric-group{border-left:0;padding-left:0}}
 .active-result .subtitle { margin: -0.4rem 0 0.85rem; color: var(--muted); font-size: 0.94rem; line-height: 1.45; }
+.match-button { margin-top: .7rem; }
+.match-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .85rem; margin-top: 1rem; }
+.match-grid article { white-space: pre-wrap; border: 1px solid var(--line); border-radius: .8rem; padding: 1rem; color: var(--ink); line-height: 1.55; min-height: 8rem; }
+@media (max-width: 700px) { .match-grid { grid-template-columns: 1fr; } }
