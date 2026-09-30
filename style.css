@@ -21,3 +21,7 @@
 .anthropic-border { border-top:4px solid #d97706; }
 .openai-border { border-top:4px solid #10b981; }
 @media (max-width:700px) { .match-arena { grid-template-columns:1fr; padding:12px; gap:12px; } }
+.agent-selector { display:flex; gap:.55rem; margin:.8rem 0; }
+.agent-selector button { border:1px solid var(--line); background:#0b1220; color:var(--muted); }
+.agent-selector .anthropic-agent.active { border-color:#d97706; color:#fbbf24; }
+.agent-selector .openai-agent.active { border-color:#10b981; color:#6ee7b7; }
