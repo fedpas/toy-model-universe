@@ -38,7 +38,7 @@ When isMatchMode is active, the user is submitting an adversarial research probl
     const upstream = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-api-key': process.env.toy_model_key, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-sonnet-4-5', max_tokens: 4096, stream: true, temperature: 0.15, system, messages: cleanMessages }),
+      body: JSON.stringify({ model: 'claude-opus-4-6', max_tokens: 4096, stream: true, temperature: 0.15, system, messages: cleanMessages }),
     });
     if (!upstream.ok || !upstream.body) return new Response('The model service is unavailable.', { status: 502 });
     return new Response(upstream.body, { headers: { 'content-type': 'text/event-stream; charset=utf-8', 'cache-control': 'no-cache' } });
