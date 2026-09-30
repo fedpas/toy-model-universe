@@ -1,3 +1,4 @@
+import AUTHOR_TRANSLATIONS from './sector-translations.js';
 // Master 2D Clifford lattice matrix directory (B+F vs B-F).
 const nodes = [
  ['Sector_Vacuum_Origin','Foundational Symmetries','Grade 0 Pure Scalar','B+F=0, B-F=0','Empty Set Vertex Core (Ø)','[0, 0, 0, 0] ⊗ [0, 0, 0, 0]','The Cl(0,0) Trivial Vacuum Origin Root',"La Radice dell'Origine del Vuoto Banale Cl(0,0)",'Located at the absolute grid origin, this scalar multiplier root carries zero active base or fiber dimensions and acts as the baseline reference field.','Situata all’origine assoluta della griglia, questa radice scalare non ha dimensioni attive di base o fibra e agisce come campo di riferimento.'],
@@ -245,6 +246,8 @@ for(const [id,metrics] of Object.entries(FINAL_METRIC_COPY)) for(const [metric,l
 }
 const previousDualMetric=getDualMetricDisplayData;
 export function getCompleteDualMetricDisplayData(nodeKey,lang,profile,metricMode='Spatial') {
- const authored=KNOWLEDGE_BASE_DIRECTORY[`${nodeKey}_${lang}_${profile}_${metricMode}`];
- return authored || previousDualMetric(nodeKey,lang,profile,metricMode);
+ const base=KNOWLEDGE_BASE_DIRECTORY[`${nodeKey}_${lang}_${profile}`];
+ const authored=AUTHOR_TRANSLATIONS[nodeKey]?.[metricMode]?.[lang]?.[profile];
+ if (authored) return {...base,...authored,metricMode};
+ return previousDualMetric(nodeKey,lang,profile,metricMode);
 }
