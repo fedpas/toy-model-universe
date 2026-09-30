@@ -49,3 +49,108 @@ const extensionMenu=extensionNodes.map(([id,category])=>({id,category}));
 const menuOrder=['Sector_Inject_Base_Real','Sector_Inject_Fiber_Clock','Sector_Quaternionic_Base','Sector_Quaternionic_Fiber','Sector_Trivector_Base','Sector_Trivector_Quark','Sector_Trivector_Lepton','Sector_STA_Euclidean_Base','Sector_STA_Minkowski','Sector_STA_Symmetric_Core','Sector_STA_Fiber_Frame','Sector_Row5_Base','Sector_Row6_Confinement','Sector_Row7_Mirror','Sector_EM_Maxwell','Sector_Electroweak_Unified','Sector_Vacuum_Mass_Generation','Sector_GUT_Junction','Sector_Cosmic_Horizon','Sector_Open_Questions','Sector_Furey_Ledger'];
 const allMenu=[...MENU_SECTOR_LIST,...extensionMenu];
 MENU_SECTOR_LIST=menuOrder.map(id=>allMenu.find(item=>item.id===id));
+
+// Authored audience tracks: these override compatibility copies generated above.
+const authoredTracks={
+ 'Young Learner':{
+  en:{
+   Sector_Inject_Base_Real:['The Sandbox Line Painter','This magic switch paints the first straight line on the outer sandbox so objects have a place to sit and move.'],
+   Sector_Inject_Fiber_Clock:['The Invisible Timing Wheel','This hidden switch builds a secret spinning clock that keeps electrical flashes and light rays in time.'],
+   Sector_Quaternionic_Base:['The Spinning Top Sandbox Floor','Two space switches make a spinning-top floor tile that gives every toy a double-turn twist.'],
+   Sector_Quaternionic_Fiber:['The Locked Weak Force Switchboard','Two hidden timing wheels lock inside a compact control box that steers the weak-force channels.'],
+   Sector_Trivector_Base:['The Magic 3D Toy Box','Three flat line switches pop outward into a solid toy box with height, width, and depth.'],
+   Sector_Trivector_Quark:['The Fractional Quark Puzzle Piece','Two sandbox steps and one hidden gear make a lopsided piece that can lock into triangles.'],
+   Sector_Trivector_Lepton:["The Electron's Spinning Dance Floor",'One sandbox track and two hidden timing gears make the rolling dance floor used by light particles.'],
+   Sector_STA_Euclidean_Base:['The Four-Dimensional Solid Castle','Four space pieces make a giant frozen castle block before the moving movie of time begins.'],
+   Sector_STA_Minkowski:['The Cosmic Movie Projector','Three outer paths and one clock gear make the light-cone movie that keeps moving objects on time.'],
+   Sector_STA_Symmetric_Core:['The Crossroads Control Station','Two sandbox channels and two clock gears balance at the middle crossroads.'],
+   Sector_STA_Fiber_Frame:['The Left-Handed Magic Box','One outer track and three hidden gears make a box that catches left-handed weak-force paths.'],
+   Sector_Row5_Base:['The One-Way Mirror Duel','An extra tracking line turns the playground into a mirror maze where left and right paths behave differently.'],
+   Sector_Row6_Confinement:['The Closed Triangle Locking Trap','Six switches build a locking grid where three puzzle pieces must join into a stable triangle.'],
+   Sector_Row7_Mirror:['The Mirror World Gate','This 128-piece gate can flip an ordinary state into its opposite mirror twin.'],
+   Sector_EM_Maxwell:['The Flash of Light & Maxwell’s Clock','Light and electricity are ripples of one hidden switch tipping between sandbox space and a clock face.'],
+   Sector_Electroweak_Unified:['The Electro-Weak Gearbox','Light gears and time gears join at a switchboard with neutral and charged paths.'],
+   Sector_Vacuum_Mass_Generation:['The Invisible Origin Key','The number one can rest quietly like an invisible guest or become an active key that gives matter weight.'],
+   Sector_GUT_Junction:['The Ultimate Overlap Knot','At 210, space, light, weak force, and color all meet because the puzzle runs out of room.'],
+   Sector_Cosmic_Horizon:['The Big Cosmic Reset Wall','When all eight switches turn on, the toy universe reaches its outer mirror wall.'],
+   Sector_Open_Questions:['Cracks in the Toy Box Construction','This is where the toy box admits its leaks: it cannot yet measure exact weights or make instant switches flow smoothly.'],
+   Sector_Furey_Ledger:["Professor Cohl’s Secret Blueprint",'A special research letter connects magic algebra boxes, three generations, and gravity-squeezing lines.']
+  },
+  it:{
+   Sector_Inject_Base_Real:['Il Pittore di Linee del Recinto','Questo interruttore magico dipinge la prima linea sul recinto di sabbia affinché gli oggetti possano stare e muoversi.'],
+   Sector_Inject_Fiber_Clock:['La Ruota del Tempo Invisibile','Questo interruttore nascosto costruisce un orologio segreto che tiene in tempo luce e segnali elettrici.'],
+   Sector_Quaternionic_Base:['Il Pavimento a Trottola del Recinto','Due interruttori dello spazio creano una piastrella a trottola che fa girare i giocattoli due volte.'],
+   Sector_Quaternionic_Fiber:['Il Centralino Chiuso della Forza Debole','Due ruote nascoste si bloccano in una scatola compatta che guida i canali della forza debole.'],
+   Sector_Trivector_Base:['La Scatola Magica 3D dei Giocattoli','Tre interruttori piatti si espandono in una scatola solida con altezza, larghezza e profondità.'],
+   Sector_Trivector_Quark:['Il Pezzo di Puzzle Frazionario dei Quark','Due passi nel recinto e un ingranaggio segreto creano un pezzo sbilanciato che si incastra a triangolo.'],
+   Sector_Trivector_Lepton:["La Pista da Ballo dell'Elettrone",'Un binario del recinto e due ingranaggi nascosti creano la pista delle particelle leggere.'],
+   Sector_STA_Euclidean_Base:['Il Castello Solido a Quattro Dimensioni','Quattro pezzi spaziali costruiscono un grande castello fermo prima che inizi il film del tempo.'],
+   Sector_STA_Minkowski:['Il Proiettore Cinematografico Cosmico','Tre percorsi esterni e un ingranaggio interno creano il film dei coni di luce.'],
+   Sector_STA_Symmetric_Core:['La Stazione di Controllo del Bivio','Due canali esterni e due ingranaggi del tempo si bilanciano al bivio centrale.'],
+   Sector_STA_Fiber_Frame:['La Scatola Magica della Mano Sinistra','Un binario esterno e tre ingranaggi nascosti creano una scatola che cattura i percorsi mancini.'],
+   Sector_Row5_Base:['Lo Specchio Magico Unidirezionale','Una linea in più trasforma il parco giochi in un labirinto di specchi per percorsi sinistri e destri.'],
+   Sector_Row6_Confinement:['La Trappola a Triangolo Chiuso','Sei interruttori costruiscono una griglia che costringe tre pezzi a formare un triangolo stabile.'],
+   Sector_Row7_Mirror:['Il Cancello del Mondo Specchio','Questo cancello di 128 pezzi può capovolgere uno stato nel suo gemello speculare.'],
+   Sector_EM_Maxwell:['Il Lampo di Luce e l’Orologio di Maxwell','Luce ed elettricità sono onde di un interruttore nascosto tra spazio e orologio.'],
+   Sector_Electroweak_Unified:["L’Ingranaggio Elettrodebole",'Gli ingranaggi della luce e del tempo si uniscono in un centralino di percorsi neutri e carichi.'],
+   Sector_Vacuum_Mass_Generation:["La Chiave d’Origine Invisibile",'Il numero uno può riposare come ospite invisibile o diventare una chiave che dà peso alla materia.'],
+   Sector_GUT_Junction:['Il Nodo di Sovrapposizione Assoluto','A 210, spazio, luce, forza debole e colore si incontrano perché il puzzle esaurisce lo spazio.'],
+   Sector_Cosmic_Horizon:['Il Grande Muro del Reset Cosmico','Quando tutti gli otto interruttori sono accesi, l’universo giocattolo raggiunge il suo muro specchio.'],
+   Sector_Open_Questions:['Crepe nella Costruzione della Scatola','Qui la scatola ammette i suoi limiti: non misura ancora pesi esatti né rende fluidi gli interruttori.'],
+   Sector_Furey_Ledger:['Il Progetto Segreto della Professoressa Cohl','Una lettera di ricerca collega scatole algebriche, tre generazioni e linee di gravità.']
+  }
+ },
+ Mathematician:{
+  en:{
+   Sector_Vacuum_Origin:['The Multiplicative Identity Scalar Field','The Grade-0 scalar identity is the radical origin from which principal ideals and nested filtrations branch.'],
+   Sector_Inject_Base_Real:['The Cl(1,0) Real Division Line Algebra','A positive-squaring exterior generator defines a discrete grading filtration over the real division line.'],
+   Sector_Inject_Fiber_Clock:['The Cl(0,1) Complex Phase Ring Generator','A negative-squaring generator isolates a complex phase field within the principal fiber ideal.'],
+   Sector_Quaternionic_Base:['The Cl(2,0) Real Matrix Ring M₂(R)','Two positive generators compile into a real matrix algebra with non-trivial zero divisors.'],
+   Sector_Quaternionic_Fiber:['The Cl(0,2) Compact Quaternion Division Ring','Two negative fiber generators form the compact quaternion division algebra governing weak-isospin ideals.'],
+   Sector_Trivector_Base:['The Cl(3,0) Oriented Volume Pseudoscalar','The antisymmetric product of three base generators defines the oriented volume invariant.'],
+   Sector_Trivector_Quark:['The Cl(2,1) Non-Commutative Quotient Sub-Space','A mixed trivector quotient projects asymmetric base-fiber grading into Fano-plane loops.'],
+   Sector_Trivector_Lepton:['The Cl(1,2) Complex Linear Isomorphism M₂(C)','One base generator acting on a dual negative fiber ring coordinates leptonic spinors.'],
+   Sector_STA_Euclidean_Base:['The Cl(4,0) Exterior Quotient Algebra','Four real basis elements generate a closed exterior boundary filtration.'],
+   Sector_STA_Minkowski:['The Cl(3,1) Real Space-Time Algebra Ring','Three base coordinates and one fiber metric generate the 16-dimensional space-time algebra.'],
+   Sector_STA_Symmetric_Core:['The Cl(2,2) Split Hyperbolic Matrix Ring','A symmetric base-fiber division creates the central lane for ideal intersection mixing.'],
+   Sector_STA_Fiber_Frame:['The Cl(1,3) Biquaternionic Clifford Ring','One base generator and three fiber dimensions isolate chirality-locked minimal left ideals.'],
+   Sector_Row5_Base:['The Cl(4,1) Complexified Ideals Mapping','A fifth pseudoscalar axis breaks the symmetry of Clifford grading involutions.'],
+   Sector_Row6_Confinement:['The Cl(5,1) Hexvector Boundary Holonomy','A closed boundary holonomy restricts trivector ideals to a color-singlet subspace.'],
+   Sector_Row7_Mirror:['The Cl(4,3) Direct Sum Split Semipool','A 128-dimensional semisimple algebra tracks hyperplane coordinates for NOT involutions.'],
+   Sector_EM_Maxwell:['The Invariant De Rham Cohomology Flux','An exterior derivative maps vector currents into curvature bivectors within the principal ideals of the Maxwell cell.'],
+   Sector_Electroweak_Unified:['The Non-Commutative Ideals of Cl(4,4,0)','Principal sub-ideal intersections encode the toy model’s left-handed packing fraction.'],
+   Sector_Vacuum_Mass_Generation:['The Identity Scalar Multiplier Field','The scalar identity maps to passive column ideals and active symmetry-breaking operators.'],
+   Sector_GUT_Junction:['The Supersymmetric Quadrivector Domain','A Grade-4 blade links simplex faces to octeract sub-block partitions.'],
+   Sector_Cosmic_Horizon:['The Saturated Pseudoscalar Volume Reset','The maximal element saturates base and fiber products, forcing an involutionary boundary reset.'],
+   Sector_Open_Questions:['The Scaffold Incompleteness Invariant','No native mechanism derives continuous RGE curves or absolute mass metrics without imported scales.'],
+   Sector_Furey_Ledger:['The Regular Bimodule Representation','Octonionic left chains and Peirce idempotents map into the 8-bit lattice to extend minimal ideals across families.']
+  },
+  it:{
+   Sector_Vacuum_Origin:["Il Campo Scalare dell’Identità Moltiplicativa",'L’identità scalare di Grado 0 è l’origine radicale da cui si ramificano ideali principali e filtrazioni.'],
+   Sector_Inject_Base_Real:['L’Algebra della Linea di Divisione Reale Cl(1,0)','Un generatore a quadratura positiva definisce una filtrazione discreta della linea reale.'],
+   Sector_Inject_Fiber_Clock:['Il Generatore dell’Anello di Fase Complesso Cl(0,1)','Un generatore a quadratura negativa isola un campo di fase complesso nell’ideale della fibra.'],
+   Sector_Quaternionic_Base:['L’Anello Matriziale Reale M₂(R) Cl(2,0)','Due generatori positivi si compilano in un’algebra matriciale reale con divisori dello zero.'],
+   Sector_Quaternionic_Fiber:['L’Anello di Divisione dei Quaternioni Compatti Cl(0,2)','Due generatori negativi formano l’algebra di divisione quaternionica per gli ideali di isospin debole.'],
+   Sector_Trivector_Base:['Lo Pseudoscalare del Volume Orientato Cl(3,0)','Il prodotto antisimmetrico di tre generatori di base definisce l’invariante di volume.'],
+   Sector_Trivector_Quark:['Il Sottospazio Quoziente Non Commutativo Cl(2,1)','Un quoziente trirettoriale misto proietta la gradazione asimmetrica nei loop del piano di Fano.'],
+   Sector_Trivector_Lepton:['L’Isomorfismo Lineare Complesso M₂(C) Cl(1,2)','Un generatore di base su un doppio anello negativo coordina gli spinori leptonici.'],
+   Sector_STA_Euclidean_Base:['L’Algebra Quoziente Esterna Cl(4,0)','Quattro elementi reali generano una filtrazione esterna di confine chiusa.'],
+   Sector_STA_Minkowski:['L’Anello dell’Algebra Spazio-Temporale Reale Cl(3,1)','Tre coordinate di base e una metrica di fibra generano l’algebra spazio-temporale a 16 dimensioni.'],
+   Sector_STA_Symmetric_Core:['L’Anello Matriziale Iperbolico Split Cl(2,2)','La divisione simmetrica base-fibra crea la corsia centrale per l’intersezione degli ideali.'],
+   Sector_STA_Fiber_Frame:['L’Anello Biquaternionico di Clifford Cl(1,3)','Un generatore di base e tre dimensioni di fibra isolano ideali sinistri minimi chirali.'],
+   Sector_Row5_Base:['La Mappatura degli Ideali Complessificati Cl(4,1)','Un quinto asse pseudoscalare rompe la simmetria delle involuzioni di gradazione.'],
+   Sector_Row6_Confinement:['L’Olonomia del Confine Esavettoriale Cl(5,1)','Un’olonomia chiusa restringe gli ideali trirettoriali a un sottospazio singoletto di colore.'],
+   Sector_Row7_Mirror:['La Scissione in Somma Diretta del Semipool Cl(4,3)','Un’algebra semisemplice a 128 dimensioni traccia le coordinate per le involuzioni NOT.'],
+   Sector_EM_Maxwell:['Il Flusso Invariante della Cohomologia di De Rham','Una derivata esterna mappa correnti vettoriali in bivettori di curvatura negli ideali principali.'],
+   Sector_Electroweak_Unified:['Gli Ideali Non Commutativi di Cl(4,4,0)','Intersezioni di sotto-ideali codificano la frazione di impacchettamento mancina del modello.'],
+   Sector_Vacuum_Mass_Generation:['Il Campo del Moltiplicatore Scalare di Identità','L’identità scalare si mappa a ideali di colonna passivi e operatori attivi di rottura della simmetria.'],
+   Sector_GUT_Junction:['Il Dominio Quadrivettoriale Supersimmetrico','Una lama di Grado 4 collega facce di simplesso e partizioni dell’otteratto.'],
+   Sector_Cosmic_Horizon:['Il Reset Saturato del Volume Pseudoscalare','L’elemento massimo satura base e fibra, imponendo un reset involutivo del confine.'],
+   Sector_Open_Questions:['L’Invariante di Incompletezza dello Scaffold','Non esiste un meccanismo nativo per curve RGE continue o metriche di massa assolute.'],
+   Sector_Furey_Ledger:['La Rappresentazione Bimodulo Regolare','Catene octonioniche e idempotenti di Peirce si mappano nel reticolo a 8 bit per estendere le famiglie.']
+  }
+ }
+};
+for(const [profile,languages] of Object.entries(authoredTracks)) for(const [lang,entries] of Object.entries(languages)) for(const [id,[title,desc]] of Object.entries(entries)) {
+ const key=`${id}_${lang}_${profile}`; KNOWLEDGE_BASE_DIRECTORY[key]={...KNOWLEDGE_BASE_DIRECTORY[`${id}_${lang}_Physicist`],title,desc};
+}
