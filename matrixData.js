@@ -1,5 +1,6 @@
 import AUTHOR_TRANSLATIONS from './sector-translations.js';
 import NODE_METADATA from './node-metadata.js';
+import GENESIS_METADATA from './genesis-metadata.js';
 // Master 2D Clifford lattice matrix directory (B+F vs B-F).
 const nodes = [
  ['Sector_Vacuum_Origin','Foundational Symmetries','Grade 0 Pure Scalar','B+F=0, B-F=0','Empty Set Vertex Core (Ø)','[0, 0, 0, 0] ⊗ [0, 0, 0, 0]','The Cl(0,0) Trivial Vacuum Origin Root',"La Radice dell'Origine del Vuoto Banale Cl(0,0)",'Located at the absolute grid origin, this scalar multiplier root carries zero active base or fiber dimensions and acts as the baseline reference field.','Situata all’origine assoluta della griglia, questa radice scalare non ha dimensioni attive di base o fibra e agisce come campo di riferimento.'],
@@ -254,4 +255,10 @@ export function getCompleteDualMetricDisplayData(nodeKey,lang,profile,metricMode
  if (metadata) return {...base,...authored,...metadata,metricMode};
  if (authored) return {...base,...authored,metricMode};
  return previousDualMetric(nodeKey,lang,profile,metricMode);
+}
+
+export const GENESIS_STAGES = Array.from({ length: 9 }, (_, index) => `Sector_Genesis_Node_${index}`);
+export function getGenesisDisplayData(stage, lang, profile, metricMode='Spatial') {
+  const sourceProfile = lang === 'it' && profile === 'Physicist' ? 'Fisico' : lang === 'it' && profile === 'Mathematician' ? 'Matematico' : profile;
+  return GENESIS_METADATA[`Sector_Genesis_Node_${stage}_${lang}_${sourceProfile}_${metricMode}`];
 }
