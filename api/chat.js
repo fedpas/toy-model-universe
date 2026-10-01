@@ -57,7 +57,7 @@ Lead with [Row B+F, Column B-F]. Synchronize reasoning across Clifford (ideals),
     const upstream = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-api-key': process.env.toy_model_key, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-opus-4-6', max_tokens: 8192, stream: true, temperature: 0.15, system, messages: cleanMessages }),
+      body: JSON.stringify({ model: 'claude-opus-4-6', max_tokens: 16384, stream: true, temperature: 0.15, system, messages: cleanMessages }),
     });
     if (!upstream.ok || !upstream.body) return new Response('The model service is unavailable.', { status: 502 });
     return new Response(upstream.body, { headers: { 'content-type': 'text/event-stream; charset=utf-8', 'cache-control': 'no-cache' } });

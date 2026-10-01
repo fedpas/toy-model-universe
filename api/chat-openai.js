@@ -48,7 +48,7 @@ If active, you are in a formal peer-audit match. Do not repeat instructions. Ind
 RESPONSE TEMPLATE:
 Lead with [Row B+F, Column B-F]. Synchronize reasoning across Clifford (ideals), Prime (frequencies), Simplex (facets), and Cube (bit-strings).`
   try {
-    const upstream=await fetch('https://api.openai.com/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${process.env.ToyModelKeyOpenAi}`},body:JSON.stringify({model:'o3',stream:true,max_completion_tokens:8192,messages:[{role:'system',content:system},...cleanMessages]})});
+    const upstream=await fetch('https://api.openai.com/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${process.env.ToyModelKeyOpenAi}`},body:JSON.stringify({model:'o3',stream:true,max_completion_tokens:16384,messages:[{role:'system',content:system},...cleanMessages]})});
     if(!upstream.ok||!upstream.body) {
       const detail=(await upstream.text()).slice(0,500);
       console.error('OpenAI upstream error',upstream.status,detail);
