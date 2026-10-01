@@ -1485,35 +1485,35 @@ export default {
       "en": {
         "Young Learner": {
           "title": "Professor Cohl's Secret Blueprint",
-          "subtitle": "A research letter to extend division algebra boxes.",
-          "desc": "This is a special letter written directly to an amazing scientist named Professor Cohl Furey. It shows her how to make her magic boxes stack three generations tall."
+          "subtitle": "A research letter about linking algebra boxes across generations.",
+          "desc": "This research chapter explores how eight-switch lattice rules could organize algebraic boxes into three family-sized layers. It is an educational exploration, not a settled scientific result."
         },
         "Physicist": {
           "title": "Chapter I: The Furey Regular Representation Ledger",
-          "subtitle": "Connecting complex octonionic chains (RO) to lattice coordinates.",
-          "desc": "A dedicated research chapter addressing the three missing links in her framework, framing gauge dynamics as left actions and spacetime frames as right actions."
+          "subtitle": "A dual-core audit log for regular-representation mappings.",
+          "desc": "A research directory mapping complex octonionic chains onto lattice vertices. It records exploratory cross-model comparisons of structural claims; these comparisons are not independent proof of the portal's toy-model relations."
         },
         "Mathematician": {
           "title": "The Regular Bimodule Representation Ledger",
-          "subtitle": "Extending single-generation minimal left ideals into three families.",
-          "desc": "Maps Furey's complex octonionic multiplication chains (RO) and Peirce decomposition idempotents straight onto our 8-bit master operator lattice coordinates."
+          "subtitle": "Space-positive topology over regular left/right actions.",
+          "desc": "Maps division-algebra chains and Peirce idempotents onto the master lattice as a proposed extension of minimal left ideals. This is a formal toy-model construction rather than an established derivation of fermion families."
         }
       },
       "it": {
         "Young Learner": {
           "title": "Il Progetto Segreto della Professoressa Cohl",
-          "subtitle": "Una lettera di ricerca per estendere le scatole di algebra.",
-          "desc": "Questa è una lettera speciale scritta direttamente alla scienziata Cohl Furey. Le mostra come impilare le sue scatole magiche fino a tre generazioni."
+          "subtitle": "Una lettera di ricerca per collegare scatole algebriche tra generazioni.",
+          "desc": "Questo capitolo esplora come le regole del reticolo a otto interruttori potrebbero organizzare scatole algebriche in tre livelli. È un'esplorazione educativa, non un risultato scientifico stabilito."
         },
         "Physicist": {
           "title": "Capitolo I: Il Registro della Rappresentazione Regolare di Furey",
-          "subtitle": "Collegare catene octoniche complesse (RO) alle coordinate.",
-          "desc": "Un capitolo di ricerca dedicato che affronta i tre anelli mancanti nel suo framework, interpretando la dinamica come azioni a sinistra e lo spaziotempo come azioni a destra."
+          "subtitle": "Un log di audit a doppio core per mappature di rappresentazione regolare.",
+          "desc": "Una directory di ricerca che mappa catene ottonioniche complesse sui vertici del reticolo. Registra confronti esplorativi tra modelli; questi non costituiscono una prova indipendente delle relazioni del modello giocattolo."
         },
         "Mathematician": {
           "title": "Il Registro della Rappresentazione Bimodulo Regolare",
-          "subtitle": "Estendere gli ideali sinistri di singola generazione in tre famiglie.",
-          "desc": "Mappa le catene di moltiplicazione sinistra octononiche complesse di Furey (RO) e gli idempotenti di Peirce direttamente sulle coordinate del reticolo a 8 bit."
+          "subtitle": "Topologia spazio-positiva sulle azioni regolari sinistra/destra.",
+          "desc": "Mappa catene di algebre di divisione e idempotenti di Peirce sul reticolo master come estensione proposta degli ideali sinistri minimi. È una costruzione formale di modello giocattolo."
         }
       }
     },
@@ -1521,35 +1521,35 @@ export default {
       "en": {
         "Young Learner": {
           "title": "Professor Cohl's Clockwork Blueprint",
-          "subtitle": "Helping magic boxes mesh with chronological lines.",
-          "desc": "This letter helps answer big mysteries in her work, showing her how to align her structural division algebra boxes with our time-positive background framework."
+          "subtitle": "A time-positive research map for the magic algebra boxes.",
+          "desc": "This chapter explores how the clockwork view of the atlas could line up algebraic boxes with time-positive background rules. It is a learning map, not a verified physical discovery."
         },
         "Physicist": {
           "title": "The Chrono-Bimodule Research Ledger",
-          "subtitle": "Bimodule operator mappings over regular temporal representations.",
-          "desc": "Integrates her division algebra chain into the regular representations of a temporal vector space, solving multi-generational family extensions via horizon scale bits."
+          "subtitle": "A time-positive audit log for regular representation mappings.",
+          "desc": "Integrates division-algebra chains into a proposed temporal regular-representation framework. Cross-model outputs are exploratory prompts for review, not validation of physical predictions."
         },
         "Mathematician": {
           "title": "The Chrono-Bimodule Regular Representation Ledger",
-          "subtitle": "Mapping left-right operator crossings over 256 vertex addresses.",
-          "desc": "Formulates her RO multiplication chains and Peirce idempotents straight onto the temporal grid matrix, deriving tree-level packing fractions from left-right operator crossings."
+          "subtitle": "A time-positive proposal for left/right operator crossings.",
+          "desc": "Records a proposed temporal mapping of regular representation actions and Peirce idempotents onto the lattice. Candidate packing fractions remain internal toy-model quantities requiring independent mathematical verification."
         }
       },
       "it": {
         "Young Learner": {
           "title": "Il Progetto Meccanico della Professoressa Cohl",
-          "subtitle": "Aiutare le scatole magiche a ingranare con le linee cronologiche.",
-          "desc": "Questa lettera aiuta a risolvere grandi misteri, mostrandole come allineare le sue scatole strutturali di algebra di divisione con il nostro framework a tempo positivo."
+          "subtitle": "Una mappa di ricerca a tempo positivo per le scatole algebriche.",
+          "desc": "Questo capitolo esplora come la visione a orologeria dell'atlante potrebbe allineare le scatole algebriche alle regole di sfondo a tempo positivo. È una mappa educativa, non una scoperta fisica verificata."
         },
         "Physicist": {
           "title": "Il Registro di Ricerca del Crono-Bimodulo",
-          "subtitle": "Mappature dell'operatore bimodulo su rappresentazioni temporali.",
-          "desc": "Integra la sua catena di algebre di divisione nelle rappresentazioni regolari di uno spazio vettoriale temporale, risolvendo le estensioni delle famiglie via bit di scala dell'orizzonte."
+          "subtitle": "Un log di audit a tempo positivo per mappature di rappresentazione regolare.",
+          "desc": "Integra catene di algebre di divisione in un framework proposto di rappresentazione regolare temporale. I risultati dei confronti tra modelli sono esplorativi e non validano previsioni fisiche."
         },
         "Mathematician": {
           "title": "Il Registro della Rappresentazione Regolare del Crono-Bimodulo",
-          "subtitle": "Mappare incroci di operatori sinistra-destra su 256 indirizzi.",
-          "desc": "Formalizza le sue catene di moltiplicazione RO e gli idempotenti di Peirce sulla matrice della griglia temporale, derivando frazioni di impacchettamento dagli incroci di operatori."
+          "subtitle": "Una proposta a tempo positivo per incroci di operatori sinistra/destra.",
+          "desc": "Registra una mappatura temporale proposta delle azioni di rappresentazione regolare e degli idempotenti di Peirce sul reticolo. Le frazioni candidate restano quantità interne del modello giocattolo e richiedono verifica matematica indipendente."
         }
       }
     }
