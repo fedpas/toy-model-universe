@@ -53,13 +53,25 @@ If active, you are in a formal peer-audit match. Do not repeat instructions. Ind
 
 RESPONSE TEMPLATE:
 Lead with [Row B+F, Column B-F]. Synchronize reasoning across Clifford (ideals), Prime (frequencies), Simplex (facets), and Cube (bit-strings).`
-  try {
-    const upstream=await fetch('https://api.openai.com/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${process.env.ToyModelKeyOpenAi}`},body:JSON.stringify({model:'o3',stream:true,max_completion_tokens:32768,messages:[{role:'system',content:system},...cleanMessages]})});
-    if(!upstream.ok||!upstream.body) {
-      const detail=(await upstream.text()).slice(0,500);
-      console.error('OpenAI upstream error',upstream.status,detail);
-      return new Response('The model service is unavailable.',{status:502});
+  const encoder = new TextEncoder();
+  const stream = new ReadableStream({
+    async start(controller) {
+      controller.enqueue(encoder.encode('data: {"type":"status","message":"OpenAI o3 is reasoning…"}\n\n'));
+      try {
+        const upstream=await fetch('https://api.openai.com/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${process.env.ToyModelKeyOpenAi}`},body:JSON.stringify({model:'o3',stream:true,max_completion_tokens:32768,messages:[{role:'system',content:system},...cleanMessages]})});
+        if(!upstream.ok||!upstream.body) {
+          const detail=(await upstream.text()).slice(0,500);
+          console.error('OpenAI upstream error',upstream.status,detail);
+          controller.enqueue(encoder.encode('data: {"type":"error","message":"The OpenAI model service is unavailable."}\n\n'));
+          return;
+        }
+        const reader=upstream.body.getReader();
+        while(true) { const {value,done}=await reader.read(); if(done) break; controller.enqueue(value); }
+      } catch(error) {
+        console.error('OpenAI gateway failure:',error);
+        controller.enqueue(encoder.encode('data: {"type":"error","message":"The OpenAI model service is unavailable."}\n\n'));
+      } finally { controller.close(); }
     }
-    return new Response(upstream.body,{headers:{'content-type':'text/event-stream; charset=utf-8','cache-control':'no-cache'}});
-  } catch(error) { console.error('OpenAI gateway failure:',error); return new Response('The model service is unavailable.',{status:502}); }
+  });
+  return new Response(stream,{headers:{'content-type':'text/event-stream; charset=utf-8','cache-control':'no-cache, no-transform','connection':'keep-alive'}});
 }
