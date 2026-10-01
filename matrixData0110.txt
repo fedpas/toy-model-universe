@@ -1,0 +1,1700 @@
+// ============================================================================
+// NODE 1: SECTOR_VACUUM_ORIGIN (THE ABSOLUTE MULTIPLICATIVE IDENTITY GROUND STATE)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Vacuum_Origin_en_Physicist_Spatial": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, B-F=0", simplex: "Empty Set Core (Ø)", cube: "1 ⊗ 1",
+    title: "The Cl(0,0) Trivial Vacuum Origin Root",
+    desc: "Located at the absolute grid origin, this scalar multiplier root carries zero active base or fiber dimensions and acts as the baseline reference field for all sub-algebras."
+  },
+  "Sector_Vacuum_Origin_it_Physicist_Spatial": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalare", coordinate: "B+F=0, B-F=0", simplex: "Nucleo dell'Insieme Vuoto (Ø)", cube: "1 ⊗ 1",
+    title: "La Radice dell'Origine del Vuoto Banale Cl(0,0)",
+    desc: "Situata all'origine assoluta della griglia, questa radice scalare non ha dimensioni attive di base o fibra e agisce come campo di riferimento di base."
+  },
+  "Sector_Vacuum_Origin_en_Mathematician_Spatial": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, B-F=0", simplex: "Empty Set Core (Ø)", cube: "1 ⊗ 1",
+    title: "The Multiplicative Identity Scalar Field",
+    desc: "The absolute algebra origin mapping directly to the Grade 0 scalar multiplicative identity over the real field R. It anchors the unpolarized radical core."
+  },
+  "Sector_Vacuum_Origin_it_Mathematician_Spatial": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalare", coordinate: "B+F=0, B-F=0", simplex: "Nucleo dell'Insieme Vuoto (Ø)", cube: "1 ⊗ 1",
+    title: "Il Campo Scalare dell'Identità Moltiplicativa",
+    desc: "L'origine assoluta dell'algebra che si mappa direttamente sull'identità moltiplicativa scalare di Grado 0 sul campo R, ancorando il nucleo radicale iniziale."
+  },
+  "Sector_Vacuum_Origin_en_Young Learner_Spatial": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, B-F=0", simplex: "Empty Set Core (Ø)", cube: "1 ⊗ 1",
+    title: "The Quiet Frozen Moment",
+    desc: "The absolute first step of our sandbox floor where nothing has moved yet. It is like a movie projector paused on the very first frame before the wheels turn."
+  },
+  "Sector_Vacuum_Origin_it_Young Learner_Spatial": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalare", coordinate: "B+F=0, B-F=0", simplex: "Nucleo dell'Insieme Vuoto (Ø)", cube: "1 ⊗ 1",
+    title: "L'Istante Silenzioso Congelato",
+    desc: "Il primo passo assoluto del nostro recinto di sabbia in cui nulla si è ancora mosso. È come un proiettore cinematografico messo in pausa sul primo fotogramma."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Vacuum_Origin_en_Physicist_Temporal": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, B-F=0", simplex: "Empty Set Core (Ø)", cube: "1 ⊗ 1",
+    title: "The Motionless Chronological Ground State",
+    desc: "Establishes a stationary chronological reference vacuum carrying zero active spatial tracking or metric modifications on the background grid layout."
+  },
+  "Sector_Vacuum_Origin_it_Physicist_Temporal": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalare", coordinate: "B+F=0, B-F=0", simplex: "Nucleo dell'Insieme Vuoto (Ø)", cube: "1 ⊗ 1",
+    title: "Lo Stato Fondamentale Cronologico Immobile",
+    desc: "Stabilisce un vuoto di riferimento cronologico stazionario privo di modifiche metriche o tracciamenti spaziali attivi sulla disposizione della griglia di sfondo."
+  },
+  "Sector_Vacuum_Origin_en_Mathematician_Temporal": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, B-F=0", simplex: "Empty Set Core (Ø)", cube: "1 ⊗ 1",
+    title: "The Multiplicative Identity Chronological Base",
+    desc: "The Grade 0 scalar identity element over the real number line R, establishing the primary unpolarized timeline seed from which complexified temporal ideals branch."
+  },
+  "Sector_Vacuum_Origin_it_Mathematician_Temporal": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalare", coordinate: "B+F=0, B-F=0", simplex: "Nucleo dell'Insieme Vuoto (Ø)", cube: "1 ⊗ 1",
+    title: "La Base Cronologica dell'Identità Moltiplicativa",
+    desc: "L'elemento identità scalare di Grado 0 sulla linea dei numeri reali R, stabilendo il seme cronologico primario da cui si ramificano gli ideali complessi."
+  },
+  "Sector_Vacuum_Origin_en_Young Learner_Temporal": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, B-F=0", simplex: "Empty Set Core (Ø)", cube: "1 ⊗ 1",
+    title: "The Still Point of History",
+    desc: "The absolute chronological zero-point of our world. A pure historical moment where no length of time or spatial distance has expanded outward yet."
+  },
+  "Sector_Vacuum_Origin_it_Young Learner_Temporal": {
+    id: "Sector_Vacuum_Origin", category: "Foundational Symmetries", grade: "Grade 0 Pure Scalare", coordinate: "B+F=0, B-F=0", simplex: "Nucleo dell'Insieme Vuoto (Ø)", cube: "1 ⊗ 1",
+    title: "Il Punto Fermo della Storia",
+    desc: "Il punto zero cronologico assoluto del nostro mondo. Un momento storico puro in cui nessuna durata di tempo o distanza si è ancora espansa verso l'esterno."
+  }
+});
+// ============================================================================
+// NODE 2: SECTOR_INJECT_BASE_REAL (THE REAL MANIFOLD COORDINATE INJECTOR)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Inject_Base_Real_en_Physicist_Spatial": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vector", coordinate: "B+F=1, B-F=+1", simplex: "0-face Vertex", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "The Cl(1,0) Macroscopic Base Injector",
+    desc: "This primary cell injects a real space-like vector onto the base manifold, generating the background coordinates for physical spatial paths."
+  },
+  "Sector_Inject_Base_Real_it_Physicist_Spatial": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vettore", coordinate: "B+F=1, B-F=+1", simplex: "Vertice Faccia-0", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "Iniettore di Base Reale Cl(1,0)",
+    desc: "Questa cella primaria inietta un vettore reale di tipo spazio sulla varietà di base, generando le coordinate di sfondo per i percorsi fisici."
+  },
+  "Sector_Inject_Base_Real_en_Mathematician_Spatial": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vector", coordinate: "B+F=1, B-F=+1", simplex: "0-face Vertex", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "The Cl(1,0) Real Division Line Algebra",
+    desc: "An exterior algebraic generator producing a single positive-squaring basis vector axis. It defines a discrete grading filtration that spans R ⊕ R."
+  },
+  "Sector_Inject_Base_Real_it_Mathematician_Spatial": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vettore", coordinate: "B+F=1, B-F=+1", simplex: "Vertice Faccia-0", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "L'Algebra della Linea di Divisione Reale Cl(1,0)",
+    desc: "Un generatore algebrico esterno che produce un singolo asse vettoriale a quadratura positiva. Definisce una filtrazione discreta che estende R ⊕ R."
+  },
+  "Sector_Inject_Base_Real_en_Young Learner_Spatial": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vector", coordinate: "B+F=1, B-F=+1", simplex: "0-face Vertex", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "The Sandbox Line Painter",
+    desc: "This magic switch paints the very first straight line on our big outer sandbox floor so that physical objects have a real place to sit and move forward."
+  },
+  "Sector_Inject_Base_Real_it_Young Learner_Spatial": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vettore", coordinate: "B+F=1, B-F=+1", simplex: "Vertice Faccia-0", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "Il Pittore di Linee del Recinto",
+    desc: "Questo interruttore magico dipinge la primissima linea retta sul pavimento del nostro recinto. Ogni volta che lo premi, stende un filo per dare un posto ai giocattoli."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Inject_Base_Real_en_Physicist_Temporal": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vector", coordinate: "B+F=1, B-F=+1", simplex: "0-face Vertex", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "The Real Chronological Manifold Injector",
+    desc: "Injects a positive-squaring time vector onto the base manifold, generating linear, orthogonal chronological progression tracks as a dynamic background."
+  },
+  "Sector_Inject_Base_Real_it_Physicist_Temporal": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vettore", coordinate: "B+F=1, B-F=+1", simplex: "Vertice Faccia-0", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "L'Iniettore della Varietà Cronologica Reale",
+    desc: "Inietta un vettore temporale a quadratura positiva sulla varietà di base, generando percorsi di progressione cronologica lineari e ortogonali come sfondo dinamico."
+  },
+  "Sector_Inject_Base_Real_en_Mathematician_Temporal": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vector", coordinate: "B+F=1, B-F=+1", simplex: "0-face Vertex", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "The Cl(1,0) Real Temporal Grading Filtration",
+    desc: "An exterior algebraic operator structuring a real 1-grade chronological line (R ⊕ R). It acts as the primary filtration layer for localized translations."
+  },
+  "Sector_Inject_Base_Real_it_Mathematician_Temporal": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vettore", coordinate: "B+F=1, B-F=+1", simplex: "Vertice Faccia-0", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "La Filtrazione della Gradazione Temporale Reale Cl(1,0)",
+    desc: "Un operatore algebrico esterno che struttura una linea cronologica reale di grado 1 (R ⊕ R). Definisce il livello di filtrazione primario per le traslazioni locali."
+  },
+  "Sector_Inject_Base_Real_en_Young Learner_Temporal": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vector", coordinate: "B+F=1, B-F=+1", simplex: "0-face Vertex", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "The Time Track Painter",
+    desc: "This switch lays down a straight, real time track. Every click pushes the world one step forward along a ticking historical line so events can happen in order."
+  },
+  "Sector_Inject_Base_Real_it_Young Learner_Temporal": {
+    id: "Sector_Inject_Base_Real", category: "Foundational Symmetries", grade: "Grade 1 Vettore", coordinate: "B+F=1, B-F=+1", simplex: "Vertice Faccia-0", cube: "[+, 0, L, G₀] ⊗ 1",
+    title: "Il Pittore dei Binari del Tempo",
+    desc: "Questo interruttore stende un binario dritto per il tempo reale. Ogni scatto spinge il mondo un passo in avanti lungo una linea storica in modo che gli eventi accadano in ordine."
+  }
+});
+// ============================================================================
+// NODE 3: SECTOR_INJECT_FIBER_CLOCK (THE INTERNAL GAUGE FIBER COUPLING CORE)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Inject_Fiber_Clock_en_Physicist_Spatial": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vector", coordinate: "B+F=1, B-F=-1", simplex: "Internal Face Edge", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Cl(0,1) Internal Complex Fiber Injector",
+    desc: "This cell injects a complex phase coordinate inside the gauge fiber, functioning as the phase clock for the portal’s electromagnetic mapping."
+  },
+  "Sector_Inject_Fiber_Clock_it_Physicist_Spatial": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vettore", coordinate: "B+F=1, B-F=-1", simplex: "Bordo della Faccia Interna", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Iniettore della Fibra Complessa Cl(0,1)",
+    desc: "Questa cella inietta una coordinata di fase complessa nella fibra di gauge, fungendo da orologio di fase per la mappatura elettromagnetica del portale."
+  },
+  "Sector_Inject_Fiber_Clock_en_Mathematician_Spatial": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vector", coordinate: "B+F=1, B-F=-1", simplex: "Internal Face Edge", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Cl(0,1) Complex Phase Ring Generator",
+    desc: "An imaginary unit generator producing a single negative-squaring basis vector within the principal fiber ideal, isolating a complex phase field C."
+  },
+  "Sector_Inject_Fiber_Clock_it_Mathematician_Spatial": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vettore", coordinate: "B+F=1, B-F=-1", simplex: "Bordo della Faccia Interna", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Il Generatore dell'Anello di Fase Complesso Cl(0,1)",
+    desc: "Un generatore di unità immaginaria che produce un singolo vettore di base a quadratura negativa all'interno dell'ideale principale della fibra, isolando un campo C."
+  },
+  "Sector_Inject_Fiber_Clock_en_Young Learner_Spatial": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vector", coordinate: "B+F=1, B-F=-1", simplex: "Internal Face Edge", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Invisible Timing Wheel",
+    desc: "This switch hides beneath the floorboards and builds a secret, spinning clock face inside our world to track the timing cycles that let electrical waves flash around."
+  },
+  "Sector_Inject_Fiber_Clock_it_Young Learner_Spatial": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vettore", coordinate: "B+F=1, B-F=-1", simplex: "Bordo della Faccia Interna", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "La Ruota del Tempo Invisibile",
+    desc: "Questo interruttore si nasconde sotto le assi del pavimento e costruisce un orologio segreto che gira dentro il nostro mondo per calcolare i tempi dei flussi elettrici."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Inject_Fiber_Clock_en_Physicist_Temporal": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vector", coordinate: "B+F=1, B-F=-1", simplex: "Internal Face Edge", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Emergent Spatial Coordinate Seed",
+    desc: "Positions a negative-squaring spatial bit inside the internal fiber column. Space materializes as an imaginary phase coordinate, ringing like a localized frequency."
+  },
+  "Sector_Inject_Fiber_Clock_it_Physicist_Temporal": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vettore", coordinate: "B+F=1, B-F=-1", simplex: "Bordo della Faccia Interna", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Il Seme della Coordinata Spaziale Emergente",
+    desc: "Posiziona un bit spaziale a quadratura negativa nella colonna della fibra interna. Lo spazio si materializza come una coordinata di fase immaginaria o frequenza locale."
+  },
+  "Sector_Inject_Fiber_Clock_en_Mathematician_Temporal": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vector", coordinate: "B+F=1, B-F=-1", simplex: "Internal Face Edge", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Cl(0,1) Spatial Subspace Phase Core",
+    desc: "An imaginary ring generator isolating a complex spatial unit (C) within the principal fiber ideal, creating a hypercomplex boundary coordinate that anti-commutes with real time."
+  },
+  "Sector_Inject_Fiber_Clock_it_Mathematician_Temporal": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vettore", coordinate: "B+F=1, B-F=-1", simplex: "Bordo della Faccia Interna", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Il Core di Fase del Sottospazio Spaziale Cl(0,1)",
+    desc: "Un generatore di anello immaginario che isola un'unità spaziale complessa (C) nell'ideale della fibra, creando un confine che anticommuta con il tempo reale."
+  },
+  "Sector_Inject_Fiber_Clock_en_Young Learner_Temporal": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vector", coordinate: "B+F=1, B-F=-1", simplex: "Internal Face Edge", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Emergent Space Switch",
+    desc: "Space appears here as a tiny switch! It doesn't stretch out; instead, it rolls up into a small ticking frequency wheel inside the hidden fiber walls."
+  },
+  "Sector_Inject_Fiber_Clock_it_Young Learner_Temporal": {
+    id: "Sector_Inject_Fiber_Clock", category: "Foundational Symmetries", grade: "Grade 1 Pseudo-Vettore", coordinate: "B+F=1, B-F=-1", simplex: "Bordo della Faccia Interna", cube: "[0, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "L'Interruttore dello Spazio Emergente",
+    desc: "Lo spazio qui appare come una levetta! Non si estende all'infuori; si arrotola invece in una ruota delle frequenze dentro le pareti nascoste della fibra."
+  }
+});
+// ============================================================================
+// NODE 4: SECTOR_TRIVECTOR_BASE (THE TRIDIMENSIONAL INTEGRATION CONTAINER)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Trivector_Base_en_Physicist_Spatial": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: "B+F=3, B-F=+3", simplex: "3-face (Volumetric Tetrahedron)", cube: "Cl(3,0) Real Volume Mesh",
+    title: "The Cl(3,0) Macroscopic Spatial Volume Cell",
+    desc: "This cell maps three real space-like vectors onto the manifold, generating the 3D spatial volume element that anchors macroscopic distance parameters."
+  },
+  "Sector_Trivector_Base_it_Physicist_Spatial": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivettore", coordinate: "B+F=3, B-F=+3", simplex: "Faccia-3 (Tetraedro Volumetrico)", cube: "Cl(3,0) Spazio Volume",
+    title: "La Cella del Volume Spaziale Macroscopico Cl(3,0)",
+    desc: "Questa cella mappa tre vettori reali di tipo spazio sulla varietà, generando l'elemento di volume spaziale 3D che ancora i parametri di distanza macroscopici."
+  },
+  "Sector_Trivector_Base_en_Mathematician_Spatial": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: "B+F=3, B-F=+3", simplex: "3-face (Volumetric Tetrahedron)", cube: "Cl(3,0) Real Volume Mesh",
+    title: "The Cl(3,0) Oriented Volume Pseudoscalar",
+    desc: "The completely anti-symmetric tensor product of three real spatial generators, mapping as an imaginary scalar invariant that commutes across the base filtration grades."
+  },
+  "Sector_Trivector_Base_it_Mathematician_Spatial": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivettore", coordinate: "B+F=3, B-F=+3", simplex: "Faccia-3 (Tetraedro Volumetrico)", cube: "Cl(3,0) Spazio Volume",
+    title: "Lo Pseudoscalare del Volume Orientato Cl(3,0)",
+    desc: "Il prodotto tensoriale completamente antisimmetrico di tre generatori spaziali reali, mappandosi come un invariante scalare immaginario che commuta tra i gradi di filtrazione."
+  },
+  "Sector_Trivector_Base_en_Young Learner_Spatial": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: "B+F=3, B-F=+3", simplex: "3-face (Volumetric Tetrahedron)", cube: "Cl(3,0) Real Volume Mesh",
+    title: "The Magic 3D Toy Box",
+    desc: "By combining three flat line switches, the grid pops outward to create a real 3D room container. This volumetric box holds everything that has real height, width, and depth."
+  },
+  "Sector_Trivector_Base_it_Young Learner_Spatial": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivettore", coordinate: "B+F=3, B-F=+3", simplex: "Faccia-3 (Tetraedro Volumetrico)", cube: "Cl(3,0) Spazio Volume",
+    title: "La Scatola Magica 3D dei Giocattoli",
+    desc: "Unendo tre interruttori piatti, la griglia si espande all'infuori per creare una vera stanza in 3D. Questa scatola contiene tutto ciò che possiede altezza, larghezza e profondità."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Trivector_Base_en_Physicist_Temporal": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: "B+F=3, B-F=+3", simplex: "3-face (Volumetric Tetrahedron)", cube: "Cl(3,0) Real Volume Mesh",
+    title: "The Volumetric Temporal Container",
+    desc: "A completely anti-symmetric tensor product mapping three positive time generators. It compiles a 3D chronological block, defining an arena of concurrent timeline tracks."
+  },
+  "Sector_Trivector_Base_it_Physicist_Temporal": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivettore", coordinate: "B+F=3, B-F=+3", simplex: "Faccia-3 (Tetraedro Volumetrico)", cube: "Cl(3,0) Spazio Volume",
+    title: "Il Contenitore Temporale Volumetrico",
+    desc: "Un prodotto tensoriale completamente antisimmetrico di tre generatori temporali positivi. Compila un blocco cronologico 3D, definendo un'arena di percorsi storici paralleli."
+  },
+  "Sector_Trivector_Base_en_Mathematician_Temporal": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: "B+F=3, B-F=+3", simplex: "3-face (Volumetric Tetrahedron)", cube: "Cl(3,0) Real Volume Mesh",
+    title: "The Cl(3,0) Oriented Chronological Pseudoscalar",
+    desc: "The exterior product of three real temporal basis vectors. It functions as an imaginary scalar invariant tracking macro-chronological thickness across the network topology."
+  },
+  "Sector_Trivector_Base_it_Mathematician_Temporal": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivettore", coordinate: "B+F=3, B-F=+3", simplex: "Faccia-3 (Tetraedro Volumetrico)", cube: "Cl(3,0) Spazio Volume",
+    title: "Lo Pseudoscalare Cronologico Orientato Cl(3,0)",
+    desc: "Il prodotto esterno di tre vettori di base temporale reale. Funziona come un invariante scalare immaginario che traccia lo spessore macro-cronologico sul reticolo."
+  },
+  "Sector_Trivector_Base_en_Young Learner_Temporal": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivector", coordinate: "B+F=3, B-F=+3", simplex: "3-face (Volumetric Tetrahedron)", cube: "Cl(3,0) Real Volume Mesh",
+    title: "The 3D Clock Box",
+    desc: "By combining three time-line tracks, our playground pops outward into a real 3D clock box. This thick box holds three different time directions at once like a big cube!"
+  },
+  "Sector_Trivector_Base_it_Young Learner_Temporal": {
+    id: "Sector_Trivector_Base", category: "Foundational Symmetries", grade: "Grade 3 Trivettore", coordinate: "B+F=3, B-F=+3", simplex: "Faccia-3 (Tetraedro Volumetrico)", cube: "Cl(3,0) Spazio Volume",
+    title: "La Scatola del Tempo in 3D",
+    desc: "Unendo tre binari temporali, il nostro campo da gioco si espande in una scatola a tre dimensioni cronologiche. Questa grande scatola contiene tre direzioni del tempo insieme."
+  }
+});
+// ============================================================================
+// NODE 5: SECTOR_STA_EUCLIDEAN_BASE (THE 4D EXTERIOR FILTRATION CONTAINER)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Euclidean_Base_en_Physicist_Spatial": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivector", coordinate: "B+F=4, B-F=+4", simplex: "4-face (Hyper-volume Cell)", cube: "Cl(4,0) Euclidean Base",
+    title: "The Cl(4,0) Pure Euclidean Base Cell",
+    desc: "This cell maps four real space-like vectors onto a flat 4D spatial container, serving as the system's static background space topology."
+  },
+  "Sector_STA_Euclidean_Base_it_Physicist_Spatial": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivettore", coordinate: "B+F=4, B-F=+4", simplex: "Faccia-4 (Cella Iper-Volumetrica)", cube: "Cl(4,0) Euclidean Base",
+    title: "La Cella di Base Euclidea Pura Cl(4,0)",
+    desc: "Questa cella mappa quattro vettori reali di tipo spazio in un contenitore spaziale 4D piatto, fungendo da struttura di sfondo geometrico statica."
+  },
+  "Sector_STA_Euclidean_Base_en_Mathematician_Spatial": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivector", coordinate: "B+F=4, B-F=+4", simplex: "4-face (Hyper-volume Cell)", cube: "Cl(4,0) Euclidean Base",
+    title: "The Cl(4,0) Exterior Quotient Algebra",
+    desc: "The complete exterior product of four real spatial basis elements, generating a closed four-grade boundary filtration layer prior to hypercomplex non-commutative mixing operations."
+  },
+  "Sector_STA_Euclidean_Base_it_Mathematician_Spatial": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivettore", coordinate: "B+F=4, B-F=+4", simplex: "Faccia-4 (Cella Iper-Volumetrica)", cube: "Cl(4,0) Euclidean Base",
+    title: "L'Algebra Quoziente Esterna Cl(4,0)",
+    desc: "Il prodotto esterno completo di quattro elementi di base spaziale reale, che genera un livello di filtrazione di confine chiuso a quattro gradi prima del mescolamento ipercomplesso."
+  },
+  "Sector_STA_Euclidean_Base_en_Young Learner_Spatial": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivector", coordinate: "B+F=4, B-F=+4", simplex: "4-face (Hyper-volume Cell)", cube: "Cl(4,0) Euclidean Base",
+    title: "The Four-Dimensional Solid Castle",
+    desc: "Imagine clicking four spatial toy segments together to lock down a huge, four-sided block container. This cell acts as a giant frozen castle block that serves as our static background world."
+  },
+  "Sector_STA_Euclidean_Base_it_Young Learner_Spatial": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivettore", coordinate: "B+F=4, B-F=+4", simplex: "Faccia-4 (Cella Iper-Volumetrica)", cube: "Cl(4,0) Euclidean Base",
+    title: "Il Castello Solido a Quattro Dimensioni",
+    desc: "Immagina di unire quattro segmenti spaziali giocattolo per bloccare un enorme contenitore a quattro facce. Questa cella funge da gigantesco mattone immobile come sfondo statico."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Euclidean_Base_en_Physicist_Temporal": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivector", coordinate: "B+F=4, B-F=+4", simplex: "4-face (Hyper-volume Cell)", cube: "Cl(4,0) Euclidean Base",
+    title: "The Pure Euclidean 4D Chronological Base Manifold",
+    desc: "Maps four real time-like vectors straight onto the base manifold, generating a flat 4D temporal container to establish static background parameters for cumulative history."
+  },
+  "Sector_STA_Euclidean_Base_it_Physicist_Temporal": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivettore", coordinate: "B+F=4, B-F=+4", simplex: "Faccia-4 (Cella Iper-Volumetrica)", cube: "Cl(4,0) Euclidean Base",
+    title: "La Varietà di Base Cronologica Pura 4D Euclidea",
+    desc: "Mappa quattro vettori reali di tipo tempo sulla varietà di base, generando un contenitore temporale 4D piatto per fissare i parametri di sfondo della storia accumulata."
+  },
+  "Sector_STA_Euclidean_Base_en_Mathematician_Temporal": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivector", coordinate: "B+F=4, B-F=+4", simplex: "4-face (Hyper-volume Cell)", cube: "Cl(4,0) Euclidean Base",
+    title: "The Cl(4,0) Real Temporal Exterior Quotient Algebra",
+    desc: "The complete exterior product of four real chronological basis elements, generating the matrix ring M_4(R) as a closed filtration layer over the base manifold."
+  },
+  "Sector_STA_Euclidean_Base_it_Mathematician_Temporal": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivettore", coordinate: "B+F=4, B-F=+4", simplex: "Faccia-4 (Cella Iper-Volumetrica)", cube: "Cl(4,0) Euclidean Base",
+    title: "L'Algebra Quoziente Esterna Temporale Reale Cl(4,0)",
+    desc: "Il prodotto esterno completo di quattro elementi di base cronologica reale, che genera l'anello matriciale M_4(R) come livello di filtrazione chiuso sulla varietà di base."
+  },
+  "Sector_STA_Euclidean_Base_en_Young Learner_Temporal": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivector", coordinate: "B+F=4, B-F=+4", simplex: "4-face (Hyper-volume Cell)", cube: "Cl(4,0) Euclidean Base",
+    title: "The Four-Timeline Solid Tower",
+    desc: "Imagine locking four real timeline tracks together to build a massive, four-sided history tower. This cell acts as a frozen block that stays still until spatial keys trigger actions."
+  },
+  "Sector_STA_Euclidean_Base_it_Young Learner_Temporal": {
+    id: "Sector_STA_Euclidean_Base", category: "Foundational Symmetries", grade: "Grade 4 Quadrivettore", coordinate: "B+F=4, B-F=+4", simplex: "Faccia-4 (Cella Iper-Volumetrica)", cube: "Cl(4,0) Euclidean Base",
+    title: "La Torre Solida a Quattro Linee Temporali",
+    desc: "Immagina di bloccare quattro binari del tempo reale insieme per costruire una torre della storia a quattro facce. Questo blocco rimane immobile finché lo spazio non agisce."
+  }
+});
+// ============================================================================
+// NODE 6: SECTOR_STA_MINKOWSKI (THE MINKOWSKI LORENTZ VECTOR JUNCTION)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Minkowski_en_Physicist_Spatial": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Multivector Frame", coordinate: "B+F=4, B-F=+2", simplex: "Minkowski Spacetime Vector Intersect", cube: "Cl(3,1) Physical Vector Frame",
+    title: "The Cl(3,1) Minkowski Physical Vector Frame",
+    desc: "Three base spatial dimensions and one fiber time dimension generate the portal’s relativistic vector frame field, structuring coordinates over light-cones and keeping proper time intervals invariant."
+  },
+  "Sector_STA_Minkowski_it_Physicist_Spatial": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Cornice Multivettore", coordinate: "B+F=4, B-F=+2", simplex: "Intersezione Vettoriale Minkowski", cube: "Cl(3,1) Physical Vector Frame",
+    title: "Il Frame Vettoriale Fisico Minkowski Cl(3,1)",
+    desc: "Tre dimensioni spaziali di base e una dimensione temporale di fibra generano il campo del frame di relatività speciale del portale, strutturando le coordinate sui coni di luce."
+  },
+  "Sector_STA_Minkowski_en_Mathematician_Spatial": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Multivector Frame", coordinate: "B+F=4, B-F=+2", simplex: "Minkowski Spacetime Vector Intersect", cube: "Cl(3,1) Spacetime Algebra",
+    title: "The Cl(3,1) Real Space-Time Algebra Ring",
+    desc: "The definitive formulation of the 16-dimensional Space-Time Algebra (STA), framing the non-commutative Lorentz rotation group SO(3,1) via inner blade contractions over the distribution matrix."
+  },
+  "Sector_STA_Minkowski_it_Mathematician_Spatial": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Cornice Multivettore", coordinate: "B+F=4, B-F=+2", simplex: "Intersezione Vettoriale Minkowski", cube: "Cl(3,1) Spacetime Algebra",
+    title: "L'Anello dell'Algebra Spazio-Temporale Reale Cl(3,1)",
+    desc: "La formulazione definitiva dell'Algebra dello Spazio-Tempo (STA) a 16 dimensioni, che inquadra il gruppo non commutativo di Lorentz SO(3,1) tramite contrazioni interne delle lame."
+  },
+  "Sector_STA_Minkowski_en_Young Learner_Spatial": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Multivector Frame", coordinate: "B+F=4, B-F=+2", simplex: "Minkowski Spacetime Vector Intersect", cube: "Cl(3,1) Physical Vector Frame",
+    title: "The Cosmic Movie Projector",
+    desc: "By pairing three outer sandbox paths with one inner ticking clock gear, our world wakes up! This cell creates regular movie frame sequences, forcing moving objects to track their time properly as they zoom by."
+  },
+  "Sector_STA_Minkowski_it_Young Learner_Spatial": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Cornice Multivettore", coordinate: "B+F=4, B-F=+2", simplex: "Intersezione Vettoriale Minkowski", cube: "Cl(3,1) Physical Vector Frame",
+    title: "Il Proiettore Cinematografico Cosmico",
+    desc: "Accoppiando tre percorsi esterni del recinto con un ingranaggio dell'orologio interno, il nostro mondo si sveglia! Questa cella crea le sequenze del film, costringendo gli oggetti a calcolare il proprio tempo."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Minkowski_en_Physicist_Temporal": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Multivector Frame", coordinate: "B+F=4, B-F=+2", simplex: "Minkowski Spacetime Vector Intersect", cube: "Cl(3,1) Spacetime Algebra",
+    title: "The Minkowski Space-Time Algebra Vector Frame",
+    desc: "Divided as three real temporal axes and one imaginary spatial fiber dimension, generating the special-relativity vector field frame from a time-positive metric background."
+  },
+  "Sector_STA_Minkowski_it_Physicist_Temporal": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Cornice Multivettore", coordinate: "B+F=4, B-F=+2", simplex: "Intersezione Vettoriale Minkowski", cube: "Cl(3,1) Spacetime Algebra",
+    title: "Il Frame Vettoriale Minkowski dell'Algebra Spazio-Temporale",
+    desc: "Diviso in tre assi temporali reali e una dimensione di fibra spaziale immaginaria, generando i campi vettoriali di relatività speciale partendo da uno sfondo metrico a tempo positivo."
+  },
+  "Sector_STA_Minkowski_en_Mathematician_Temporal": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Multivector Frame", coordinate: "B+F=4, B-F=+2", simplex: "Minkowski Spacetime Vector Intersect", cube: "Cl(3,1) Spacetime Algebra",
+    title: "The Cl(3,1) Pseudo-Hyperbolic Space-Time Algebra Ring",
+    desc: "The hypercomplex algebraic formulation structuring the non-commutative Lorentz rotation group SO(3,1) via inner blade contractions over the temporal distribution network."
+  },
+  "Sector_STA_Minkowski_it_Mathematician_Temporal": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Cornice Multivettore", coordinate: "B+F=4, B-F=+2", simplex: "Intersezione Vettoriale Minkowski", cube: "Cl(3,1) Spacetime Algebra",
+    title: "L'Anello dell'Algebra Spazio-Temporale Pseudo-Iperbolica Cl(3,1)",
+    desc: "La formulazione algebrica ipercomplessa che struttura i gruppi di rotazione non commutativi di Lorentz SO(3,1) tramite contrazioni di lame sulle reti temporali."
+  },
+  "Sector_STA_Minkowski_en_Young Learner_Temporal": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Multivector Frame", coordinate: "B+F=4, B-F=+2", simplex: "Minkowski Spacetime Vector Intersect", cube: "Cl(3,1) Physical Vector Frame",
+    title: "The Historical Film Projector",
+    desc: "By pairing three real time tracks with one internal imaginary space wheel, our world uncoils like a movie reel! It forces our spatial vector strings to track their lifetimes as they pass through the background."
+  },
+  "Sector_STA_Minkowski_it_Young Learner_Temporal": {
+    id: "Sector_STA_Minkowski", category: "Foundational Symmetries", grade: "Grade 1-4 Cornice Multivettore", coordinate: "B+F=4, B-F=+2", simplex: "Intersezione Vettoriale Minkowski", cube: "Cl(3,1) Physical Vector Frame",
+    title: "Il Proiettore della Storia",
+    desc: "Accoppiando tre binari del tempo reale con una ruota dello spazio immaginario interno, il nostro mondo si srotola come una pellicola cinematografica, calcolando la durata di vita delle corde spaziali."
+  }
+});
+// ============================================================================
+// NODE 7: SECTOR_EM_MAXWELL (THE MAXWELL CURVATURE HOLONOMY FLUX)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_EM_Maxwell_en_Physicist_Spatial": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivector", coordinate: "B+F=8, B-F=+6", simplex: "1-face (Edge Segment)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Maxwell Field Tensor // ∇F = J",
+    desc: "Saturated at the top row (B+F=8, B-F=+6). Formed by the tensor product composition of our fundamental Cl(1,0) and Cl(0,1) building blocks, compiling the 85 electromagnetic channels into a coordinate-free Clifford statement."
+  },
+  "Sector_EM_Maxwell_it_Physicist_Spatial": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivettore", coordinate: "B+F=8, B-F=+6", simplex: "Faccia-1 (Segmento di Bordo)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Tensore del Campo di Maxwell // ∇F = J",
+    desc: "Saturato alla riga superiore (B+F=8, B-F=+6). Formulato dal prodotto tensoriale dei nostri blocchi costruttivi fondamentali Cl(1,0) e Cl(0,1), compilando gli 85 canali elettromagnetici in un unico enunciato Clifford."
+  },
+  "Sector_EM_Maxwell_en_Mathematician_Spatial": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivector", coordinate: "B+F=8, B-F=+6", simplex: "1-face (Edge Segment)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Invariant De Rham Cohomology Flux",
+    desc: "Formalized as an exterior derivative operator mapping Grade 1 vector currents into Grade 2 curvature bivectors within the principal ideals of Cl(6,2). Field continuity is represented as the steady-state flow of prime factor multiplicities."
+  },
+  "Sector_EM_Maxwell_it_Mathematician_Spatial": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivettore", coordinate: "B+F=8, B-F=+6", simplex: "Faccia-1 (Segmento di Bordo)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Il Flusso Invariante della Coomologia di De Rham",
+    desc: "Formalizzato come un operatore di derivata esterna che mappa correnti vettoriali di Grado 1 in bivettori di curvatura di Grado 2 negli ideali di Cl(6,2). Tratta la continuità come flusso di molteplicità prime."
+  },
+  "Sector_EM_Maxwell_en_Young Learner_Spatial": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivector", coordinate: "B+F=8, B-F=+6", simplex: "1-face (Edge Segment)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Flash of Light // Maxwell's Clock",
+    desc: "Electricity and magnetism are not separate things; they are ripples of a single hidden switch continuously tipping between physical space and an internal phase clock face. Light is the thread that weaves our big visible world and the tiny sub-atomic world together seamlessly."
+  },
+  "Sector_EM_Maxwell_it_Young Learner_Spatial": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivettore", coordinate: "B+F=8, B-F=+6", simplex: "Faccia-1 (Segmento di Bordo)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Il Lampo di Luce // L'Orologio di Maxwell",
+    desc: "L'elettricità e il magnetismo non sono cose separate; sono increspature di un singolo interruttore nascosto che si ribalta continuamente tra lo spazio fisico e la faccia di un orologio interno. La luce è il filo che unisce il mondo visibile e quello atomico."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_EM_Maxwell_en_Physicist_Temporal": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivector", coordinate: "B+F=8, B-F=+6", simplex: "1-face (Edge Segment)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The Invariant Temporal Shear Field Tensor",
+    desc: "Saturated at row B+F=8, column +6. Maxwell's electromagnetic equations collapse identically into a single coordinate-free Clifford statement, tracking localized phase shear deformations where the chronological manifold interacts with the spatial fiber."
+  },
+  "Sector_EM_Maxwell_it_Physicist_Temporal": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivettore", coordinate: "B+F=8, B-F=+6", simplex: "Faccia-1 (Segmento di Bordo)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Il Tensore di Campo del Taglio Temporale Invariante",
+    desc: "Saturato alla riga B+F=8, colonna +6. Le equazioni elettromagnetiche di Maxwell collassano in un unico enunciato Clifford privo di coordinate, tracciando le deformazioni di taglio in cui la linea cronologica incontra la fibra spaziale."
+  },
+  "Sector_EM_Maxwell_en_Mathematician_Temporal": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivector", coordinate: "B+F=8, B-F=+6", simplex: "1-face (Edge Segment)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "The De Rham Cohomology Chrono-Spatial Invariant",
+    desc: "Formalized as an exterior derivative operator mapping Grade 1 temporal currents into Grade 2 curvature bivectors within the principal ideals of Cl(6,2). Continuity is tracked as the invariant flow of prime factor multiplicities."
+  },
+  "Sector_EM_Maxwell_it_Mathematician_Temporal": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivettore", coordinate: "B+F=8, B-F=+6", simplex: "Faccia-1 (Segmento di Bordo)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "L'Invariante Crono-Spaziale della Coomologia di De Rham",
+    desc: "Formalizzato come operatore di derivata esterna che mappa correnti temporali di Grado 1 in bivettori di curvatura di Grado 2 negli ideali di Cl(6,2). La continuità è il flusso invariante di molteplicità prime."
+  },
+  "Sector_EM_Maxwell_en_Young Learner_Temporal": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivector", coordinate: "B+F=8, B-F=+6", simplex: "1-face (Edge Segment)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Le Linee Temporali Scorrevoli // L'Onda di Maxwell",
+    desc: "Light is not something flying through empty rooms; it is a ripple created when real chronological lines slide across the hidden space gears! This motion knits the big world of clocks and the tiny world of pieces together smoothly."
+  },
+  "Sector_EM_Maxwell_it_Young Learner_Temporal": {
+    id: "Sector_EM_Maxwell", category: "Foundational Symmetries", grade: "Grade 2 Bivettore", coordinate: "B+F=8, B-F=+6", simplex: "Faccia-1 (Segmento di Bordo)", cube: "[+, 1, L, G₀] ⊗ [1, 0, 0, ν₃]",
+    title: "Le Linee Temporali Scorrevoli // L'Onda di Maxwell",
+    desc: "La luce non è qualcosa che vola in stanze vuote; è un'increspatura creata quando i binari del tempo reale scorrono sugli ingranaggi nascosti dello spazio! Questo movimento unisce gli orologi grandi e i pezzi atomici."
+  }
+});
+// ============================================================================
+// NODE 8: SECTOR_GRAVITY_STRAIN (THE BIMODULE ELASTIC STRAIN MANIFOLD CONNECTION)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Gravity_Strain_en_Physicist_Spatial": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=8, B-F=+4", simplex: "5-face (Boundary Flank)", cube: "Lattice Strain Tensor S_AB",
+    title: "Gauge Theory Gravity & Elastic Strain Connection",
+    desc: "Gravity replaces Riemann metric curvature tensors with a localized translation gradient that skews the orthogonal axes of the 8-cube lattice under local mass-energy density, acting as a macroscopic elastic strain field."
+  },
+  "Sector_Gravity_Strain_it_Physicist_Spatial": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Esavettore", coordinate: "B+F=8, B-F=+4", simplex: "Faccia-5 (Flanco del Confine)", cube: "Tensore dello Sforzo S_AB",
+    title: "Gravità della Teoria di Gauge e Sforzo Elastico",
+    desc: "La gravità sostituisce i tensori metrici di Riemann con un gradiente di traslazione localizzato che inclina gli assi ortogonali del reticolo a 8 cubi sotto una densità di massa-energia locale, agendo come un campo di deformazione elastica."
+  },
+  "Sector_Gravity_Strain_en_Mathematician_Spatial": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=8, B-F=+4", simplex: "5-face (Boundary Flank)", cube: "Lattice Strain Tensor S_AB",
+    title: "The Localized Translation Manifold Gradient",
+    desc: "The baseline coordinate space is generated by unpolarized elements of Cl(0,0,8). Gravity scales metrics via position-dependent translation gradients skewing the orthogonal axes of the lattice to calculate strain over the 256 vertices."
+  },
+  "Sector_Gravity_Strain_it_Mathematician_Spatial": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Esavettore", coordinate: "B+F=8, B-F=+4", simplex: "Faccia-5 (Flanco del Confine)", cube: "Tensore dello Sforzo S_AB",
+    title: "Il Gradiente di Traslazione della Varietà Localizzata",
+    desc: "Lo spazio coordinato di base è generato da elementi non polarizzati di Cl(0,0,8). La gravità sostituisce i tensori metrici classici con un gradiente di traslazione localizzato che inclina gli assi per calcolare la deformazione elastica."
+  },
+  "Sector_Gravity_Strain_en_Young Learner_Spatial": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=8, B-F=+4", simplex: "5-face (Boundary Flank)", cube: "Lattice Strain Tensor S_AB",
+    title: "The Squeeze // The Big Squeeze",
+    desc: "Gravity is not empty curved space! It is the literal squeezing of our spatial number boxes near massive objects. When a heavy star or planet is nearby, it shortens the local paths, forcing moving toys to curve their trajectories to keep the cosmic math perfectly balanced."
+  },
+  "Sector_Gravity_Strain_it_Young Learner_Spatial": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Esavettore", coordinate: "B+F=8, B-F=+4", simplex: "Faccia-5 (Flanco del Confine)", cube: "Tensore dello Sforzo S_AB",
+    title: "Lo Strizzo // Il Grande Schiacciamento",
+    desc: "La gravità non è uno spazio vuoto e curvo! È lo schiacciamento geometrico delle nostre scatole numeriche vicino a oggetti enormi. Quando una stella pesante è vicina, accorcia i percorsi locali, costringendo i giocattoli a curvare."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Gravity_Strain_en_Physicist_Temporal": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=8, B-F=+4", simplex: "5-face (Boundary Flank)", cube: "Lattice Strain Tensor S_AB",
+    title: "The Coordinate Position-Dependent Dilation Field",
+    desc: "Mass-energy density introduces a localized elastic strain that compresses spatial base parameters while projectively dilating timelike fiber configurations, completely rewriting geodesic lines as pure chrono-displacement flows."
+  },
+  "Sector_Gravity_Strain_it_Physicist_Temporal": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Esavettore", coordinate: "B+F=8, B-F=+4", simplex: "Faccia-5 (Flanco del Confine)", cube: "Tensore dello Sforzo S_AB",
+    title: "Il Campo di Dilatazione Dipendente dalla Posizione Coordinata",
+    desc: "La densità di massa-energia introduce uno sforzo elastico localizzato che comprime i parametri spaziali di base mentre dilata le configurazioni della fibra temporale, riscrivendo le linee geodesiche come flussi cronologici."
+  },
+  "Sector_Gravity_Strain_en_Mathematician_Temporal": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=8, B-F=+4", simplex: "5-face (Boundary Flank)", cube: "Lattice Strain Tensor S_AB",
+    title: "The Non-Commutative Bimodule Metric Displacement",
+    desc: "Gravity operates as an asymmetric bimodule deformation deforming the translation coordinates of the Chronos-Manifold, forcing the localized parallel transport equations to rotate natively under pure non-commutative matrix actions."
+  },
+  "Sector_Gravity_Strain_it_Mathematician_Temporal": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Esavettore", coordinate: "B+F=8, B-F=+4", simplex: "Faccia-5 (Flanco del Confine)", cube: "Tensore dello Sforzo S_AB",
+    title: "Lo Spostamento Metrico Bimodulo Non Commutativo",
+    desc: "La gravità opera come una deformazione asimmetrica di bimodulo che altera le coordinate di traslazione del Crono-Manifold, costringendo le equazioni di trasporto parallelo a ruotare sotto azioni matriciali pure."
+  },
+  "Sector_Gravity_Strain_en_Young Learner_Temporal": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=8, B-F=+4", simplex: "5-face (Boundary Flank)", cube: "Lattice Strain Tensor S_AB",
+    title: "Lattice Chrono-Compression",
+    desc: "When a heavy master state sits on the grid, it physically squeezes the ticking clock gears underneath. Because the duration of local seconds is compressed and shortened, spatial vector strings navigating the time box are forced to skew their histories."
+  },
+  "Sector_Gravity_Strain_it_Young Learner_Temporal": {
+    id: "Sector_Gravity_Strain", category: "Foundational Symmetries", grade: "Grade 6 Esavettore", coordinate: "B+F=8, B-F=+4", simplex: "Faccia-5 (Flanco del Confine)", cube: "Tensore dello Sforzo S_AB",
+    title: "Crono-Compressione del Reticolo",
+    desc: "Quando uno stato pesante si trova sulla griglia, schiaccia fisicamente gli ingranaggi dell'orologio sottostante. Poiché la durata dei secondi locali viene compressa, le corde spaziali sono costrette a deviare le loro storie."
+  }
+});
+// ============================================================================
+// NODE 9: SECTOR_QUATERNIONIC_BASE (THE MULTI-AXIAL MATRIX SURFACE CANVAS)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Quaternionic_Base_en_Physicist_Spatial": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Bivector Operator", coordinate: "B+F=2, B-F=+2", simplex: "2-face (Triangle Surface Canvas)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "The Cl(2,0) Macroscopic Real Matrix Surface",
+    desc: "Maps two space-like vector choices onto the manifold, generating real geometric rotations and coordinate bivector reflections to anchor background coordinates."
+  },
+  "Sector_Quaternionic_Base_it_Physicist_Spatial": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Operatore Bivettore", coordinate: "B+F=2, B-F=+2", simplex: "Faccia-2 (Tela della Superficie Triangolare)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "La Cella di Base Quaternionica Cl(2,0)",
+    desc: "Mappa due scelte vettoriali di tipo spazio sulla varietà, rigenerando rotazioni geometriche e riflessioni coordinate reali per ancorare le coordinate di sfondo."
+  },
+  "Sector_Quaternionic_Base_en_Mathematician_Spatial": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Bivector Operator", coordinate: "B+F=2, B-F=+2", simplex: "2-face (Triangle Surface Canvas)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "The Cl(2,0) Real Matrix Ring M_2(R)",
+    desc: "The geometric composition of two positive-squaring generators compiling into the algebra of real 2x2 matrices M_2(R). It introduces non-trivial zero divisors into the base manifold."
+  },
+  "Sector_Quaternionic_Base_it_Mathematician_Spatial": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Operatore Bivettore", coordinate: "B+F=2, B-F=+2", simplex: "Faccia-2 (Tela della Superficie Triangolare)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "L'Anello Matriziale Reale M_2(R) Cl(2,0)",
+    desc: "La composizione geometrica di due generatori a quadratura positiva che si compila nell'algebra delle matrici reali 2x2 M_2(R). Introduce divisori dello zero non banali nella varietà di base."
+  },
+  "Sector_Quaternionic_Base_en_Young Learner_Spatial": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Bivector Operator", coordinate: "B+F=2, B-F=+2", simplex: "2-face (Triangle Surface Canvas)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "The Spinning Top Sandbox Floor",
+    desc: "When two spatial switches mesh together, they create a rotating surface tile that behaves exactly like a spinning top. This forces every block or toy sitting on it to tumble through a full double-turn twist."
+  },
+  "Sector_Quaternionic_Base_it_Young Learner_Spatial": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Operatore Bivettore", coordinate: "B+F=2, B-F=+2", simplex: "Faccia-2 (Tela della Superficie Triangolare)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "Il Pavimento a Trottola del Recinto",
+    desc: "Quando due interruttori dello spazio si uniscono, creano una piastrella rotante che si comporta come una trottola. Costringe ogni giocattolo a compiere un intero doppio giro completo per tornare alla sua forma originale."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Quaternionic_Base_en_Physicist_Temporal": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Bivector Operator", coordinate: "B+F=2, B-F=+2", simplex: "2-face (Triangle Surface Canvas)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "The Multi-Dimensional Chronological Canvas",
+    desc: "Formulates row B+F=2, column +2 as a multi-axial temporal canvas, compiling independent real historical dimensions into a single symmetric real-matrix grid."
+  },
+  "Sector_Quaternionic_Base_it_Physicist_Temporal": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Operatore Bivettore", coordinate: "B+F=2, B-F=+2", simplex: "Faccia-2 (Tela della Superficie Triangolare)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "La Tela Cronologica Multi-Dimensionale",
+    desc: "Formula la riga B+F=2, colonna +2 come una tela temporale multi-assiale, unendo dimensioni storiche reali indipendenti in una singola griglia di rotazione reale simmetrica."
+  },
+  "Sector_Quaternionic_Base_en_Mathematician_Temporal": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Bivector Operator", coordinate: "B+F=2, B-F=+2", simplex: "2-face (Triangle Surface Canvas)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "The Cl(2,0) Real Historical Operator Ring M_2(R)",
+    desc: "Compiles two real temporal generators into the matrix algebra M_2(R), mapping non-trivial zero divisors directly into the operational tracking path of history."
+  },
+  "Sector_Quaternionic_Base_it_Mathematician_Temporal": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Operatore Bivettore", coordinate: "B+F=2, B-F=+2", simplex: "Faccia-2 (Tela della Superficie Triangolare)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "L'Anello dell'Operatore Storico Reale M_2(R) Cl(2,0)",
+    desc: "Compila due generatori temporali nell'algebra matriciale M_2(R), mappando divisori dello zero non banali direttamente nel cammino di tracciamento storico operativo."
+  },
+  "Sector_Quaternionic_Base_en_Young Learner_Temporal": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Bivector Operator", coordinate: "B+F=2, B-F=+2", simplex: "2-face (Triangle Surface Canvas)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "The Magic Multi-Time Playground",
+    desc: "When two real time switches click together, they build a multi-axial playground. Time gains a thickness, allowing paths to branch into side-by-side historical channels."
+  },
+  "Sector_Quaternionic_Base_it_Young Learner_Temporal": {
+    id: "Sector_Quaternionic_Base", category: "Structural Realignments", grade: "Grade 2 Operatore Bivettore", coordinate: "B+F=2, B-F=+2", simplex: "Faccia-2 (Tela della Superficie Triangolare)", cube: "[+, 1, L, G₀] ⊗ 1",
+    title: "Il Parco Giochi del Tempo Multiplo",
+    desc: "Quando due interruttori del tempo reale scattano insieme, creano un parco giochi multi-assiale. Il tempo acquista uno spessore, permettendo ai percorsi di diramarsi in canali storici affiancati."
+  }
+});
+// ============================================================================
+// NODE 10: SECTOR_QUATERNIONIC_FIBER (THE COMPACT INTERNAL ROTOR PHASE RING)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Quaternionic_Fiber_en_Physicist_Spatial": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Fiber Rotor", coordinate: "B+F=2, B-F=-2", simplex: "2-face (Hidden Gauge Cluster)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "The Cl(0,2) Electroweak Gauge Fiber Ring",
+    desc: "This cell locks two negative-squaring vectors inside the quantum fiber, creating the portal’s compact quaternionic phase space for internal SU(2) weak isospin mappings."
+  },
+  "Sector_Quaternionic_Fiber_it_Physicist_Spatial": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Rotore di Fibra", coordinate: "B+F=2, B-F=-2", simplex: "Faccia-2 (Cluster di Gauge Nascosto)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "L'Anello della Fibra di Gauge Elettrodebole Cl(0,2)",
+    desc: "Questa cella blocca due vettori a quadratura negativa nella fibra quantistica, creando lo spazio di fase quaternionico compatto per le mappature di isospin debole SU(2)."
+  },
+  "Sector_Quaternionic_Fiber_en_Mathematician_Spatial": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Fiber Rotor", coordinate: "B+F=2, B-F=-2", simplex: "2-face (Hidden Gauge Cluster)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "The Cl(0,2) Compact Quaternion Division Ring",
+    desc: "The tensor formulation of two negative-squaring generators inside the quantum fiber, forming the division algebra of compact quaternions H. Lacking zero divisors, it structures non-abelian minimal left ideals."
+  },
+  "Sector_Quaternionic_Fiber_it_Mathematician_Spatial": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Rotore di Fibra", coordinate: "B+F=2, B-F=-2", simplex: "Faccia-2 (Cluster di Gauge Nascosto)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "L'Anello di Divisione dei Quaternioni Compatti Cl(0,2)",
+    desc: "La formulazione tensoriale di due generatori a quadratura negativa nella fibra quantistica, che forma l'algebra di divisione dei quaternioni compatti H. Privo di divisori dello zero, struttura gli ideali sinistri minimi."
+  },
+  "Sector_Quaternionic_Fiber_en_Young Learner_Spatial": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Fiber Rotor", coordinate: "B+F=2, B-F=-2", simplex: "2-face (Hidden Gauge Cluster)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "The Locked Weak Force Switchboard",
+    desc: "This setup locks two spinning wheels tightly inside the hidden fiber walls. It creates a closed, compact control box that has no escape hatches, functioning as the heavy master switchboard that steers the weak atomic force channels."
+  },
+  "Sector_Quaternionic_Fiber_it_Young Learner_Spatial": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Rotore di Fibra", coordinate: "B+F=2, B-F=-2", simplex: "Faccia-2 (Cluster di Gauge Nascosto)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "Il Centralino Chiuso della Forza Debole",
+    desc: "Questa configurazione blocca due ruote che girano dentro le pareti nascoste della fibra. Crea una scatola di controllo super compatta senza fessure, funzionando come il grande pannello che comanda i canali della forza debole."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Quaternionic_Fiber_en_Physicist_Temporal": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Fiber Rotor", coordinate: "B+F=2, B-F=-2", simplex: "2-face (Hidden Gauge Cluster)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "The Compact Spatial Phase Ring",
+    desc: "Locks two negative-squaring spatial coordinates inside the gauge fiber column. Space materializes as an internal localized imaginary phase ring driving spin rotations."
+  },
+  "Sector_Quaternionic_Fiber_it_Physicist_Temporal": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Rotore di Fibra", coordinate: "B+F=2, B-F=-2", simplex: "Faccia-2 (Cluster di Gauge Nascosto)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "L'Anello di Fase Spaziale Compatto",
+    desc: "Blocca due coordinate spaziali a quadratura negativa nella colonna della fibra di gauge. Lo spazio si materializza come un anello di fase immaginario localizzato interno che guida le rotazioni di spin."
+  },
+  "Sector_Quaternionic_Fiber_en_Mathematician_Temporal": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Fiber Rotor", coordinate: "B+F=2, B-F=-2", simplex: "2-face (Hidden Gauge Cluster)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "The Cl(0,2) Compact Spatial Multi-Complex Ring",
+    desc: "Compiles two imaginary spatial coordinates into a non-commutative division algebra acting as a rigid non-abelian phase closure matrix over H."
+  },
+  "Sector_Quaternionic_Fiber_it_Mathematician_Temporal": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Rotore di Fibra", coordinate: "B+F=2, B-F=-2", simplex: "Faccia-2 (Cluster di Gauge Nascosto)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "L'Anello Multi-Complesso Spaziale Compatto Cl(0,2)",
+    desc: "Compila due coordinate spaziali immaginarie in un'algebra di divisione non commutativa che agisce come matrice di chiusura di fase non abeliana rigida su H."
+  },
+  "Sector_Quaternionic_Fiber_en_Young Learner_Temporal": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Fiber Rotor", coordinate: "B+F=2, B-F=-2", simplex: "2-face (Hidden Gauge Cluster)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "The Spinning Spatial Ferris Wheel",
+    desc: "Two imaginary spatial switches loop inside the fiber walls to create a spinning wheel. It locks spatial movements into smooth, circular cycles with no zero-leak slots."
+  },
+  "Sector_Quaternionic_Fiber_it_Young Learner_Temporal": {
+    id: "Sector_Quaternionic_Fiber", category: "Structural Realignments", grade: "Grade 2 Rotore di Fibra", coordinate: "B+F=2, B-F=-2", simplex: "Faccia-2 (Cluster di Gauge Nascosto)", cube: "[0, 1, L, G₀] ⊗ [0, 1, 0, ν₃]",
+    title: "La Ruota Panoramica Spaziale",
+    desc: "Due interruttori dello spazio immaginario si uniscono dentro la fibra per creare una ruota che gira. Blocca i movimenti spaziali in cicli circolari regolari senza fessure di perdita."
+  }
+});
+// ============================================================================
+// NODE 11: SECTOR_TRIVECTOR_QUARK (THE ASYMMETRIC MIXED QUARK INTERACTION CORE)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Trivector_Quark_en_Physicist_Spatial": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Mixed Trivector", coordinate: "B+F=3, B-F=+1", simplex: "Asymmetric Edge-Face Intersection", cube: "Cl(2,1) Mixed Quark Core",
+    title: "The Mixed Quark Core Interaction Channel",
+    desc: "An asymmetric two-base, one-fiber configuration that serves as the fractional geometric foundation for quark-gluon couplings and factor-7 topological color loops."
+  },
+  "Sector_Trivector_Quark_it_Physicist_Spatial": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Trivettore Misto", coordinate: "B+F=3, B-F=+1", simplex: "Intersezione Bordo-Faccia Asimmetrica", cube: "Cl(2,1) Core Quark Misto",
+    title: "Il Canale di Interazione del Core Quark Misto",
+    desc: "Una configurazione asimmetrica di due basi e una fibra, che funge da fondamento geometrico frazionario per gli accoppiamenti quark-gluone e i loop di colore del fattore 7."
+  },
+  "Sector_Trivector_Quark_en_Mathematician_Spatial": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Mixed Trivector", coordinate: "B+F=3, B-F=+1", simplex: "Asymmetric Edge-Face Intersection", cube: "Cl(2,1) Mixed Quark Core",
+    title: "The Cl(2,1) Non-Commutative Quotient Sub-Space",
+    desc: "A non-homogeneous trivector grading configuration spanning two base and one fiber generators, creating an asymmetric projection quotient that maps to the color cycles."
+  },
+  "Sector_Trivector_Quark_it_Mathematician_Spatial": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Trivettore Misto", coordinate: "B+F=3, B-F=+1", simplex: "Intersezione Bordo-Faccia Asimmetrica", cube: "Cl(2,1) Core Quark Misto",
+    title: "Il Sottospazio Quoziente Non Commutativo Cl(2,1)",
+    desc: "Una configurazione trirettoriale non omogenea che comprende due generatori di base e uno di fibra, generando un quoziente di proiezione asimmetrico mappato sui cicli del colore."
+  },
+  "Sector_Trivector_Quark_en_Young Learner_Spatial": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Mixed Trivector", coordinate: "B+F=3, B-F=+1", simplex: "Asymmetric Edge-Face Intersection", cube: "Cl(2,1) Mixed Quark Core",
+    title: "The Fractional Quark Puzzle Piece",
+    desc: "This switch creates a lopsided, broken puzzle piece by landing two steps inside the outer sandbox and one step inside the secret spinning gears, letting quarks lock into stable triangles."
+  },
+  "Sector_Trivector_Quark_it_Young Learner_Spatial": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Trivettore Misto", coordinate: "B+F=3, B-F=+1", simplex: "Intersezione Bordo-Faccia Asimmetrica", cube: "Cl(2,1) Core Quark Misto",
+    title: "Il Pezzo di Puzzle Frazionario dei Quark",
+    desc: "Questo interruttore crea una tessera sbilanciata, facendo due passi nel recinto di sabbia esterno e un passo negli ingranaggi rotanti segreti. Questa asimmetria permette ai quark di incastrarsi a triangolo."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Trivector_Quark_en_Physicist_Temporal": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Mixed Trivector", coordinate: "B+F=3, B-F=+1", simplex: "Asymmetric Edge-Face Intersection", cube: "Cl(2,1) Mixed Quark Core",
+    title: "The Asymmetric Temporal Phase Channel",
+    desc: "An asymmetric three-bit slice spanning two temporal base metrics and one spatial fiber bit, establishing a fractional phase winding alignment that seeds color vector systems."
+  },
+  "Sector_Trivector_Quark_it_Physicist_Temporal": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Trivettore Misto", coordinate: "B+F=3, B-F=+1", simplex: "Intersezione Bordo-Faccia Asimmetrica", cube: "Cl(2,1) Core Quark Misto",
+    title: "Il Canale di Fase Temporale Asimmetrico",
+    desc: "Una fetta asimmetrica a tre bit che comprende due metriche temporali di base e un bit spaziale di fibra, stabilendo un avvolgimento di fase frazionario che genera i vettori colore."
+  },
+  "Sector_Trivector_Quark_en_Mathematician_Temporal": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Mixed Trivector", coordinate: "B+F=3, B-F=+1", simplex: "Asymmetric Edge-Face Intersection", cube: "Cl(2,1) Mixed Quark Core",
+    title: "The Cl(2,1) Mixed Chrono-Spatial Quotient",
+    desc: "Establishes non-homogeneous grading parameters on the lattice grid matrix, linking discrete temporal coordinate offsets directly to the non-associative operator loops of the color core."
+  },
+  "Sector_Trivector_Quark_it_Mathematician_Temporal": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Trivettore Misto", coordinate: "B+F=3, B-F=+1", simplex: "Intersezione Bordo-Faccia Asimmetrica", cube: "Cl(2,1) Core Quark Misto",
+    title: "Il Quoziente Crono-Spaziale Misto Cl(2,1)",
+    desc: "Stabilisce parametri di gradazione non omogenei sulla griglia del reticolo, collegando gli sfasamenti delle coordinate temporali ai cicli degli operatori nel nucleo del colore."
+  },
+  "Sector_Trivector_Quark_en_Young Learner_Temporal": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Mixed Trivector", coordinate: "B+F=3, B-F=+1", simplex: "Asymmetric Edge-Face Intersection", cube: "Cl(2,1) Mixed Quark Core",
+    title: "The Broken Clock Gear",
+    desc: "Landing two steps inside the time tracks and one step inside the space wheels creates a crooked, lopsided gear. This unique shape serves as the absolute trap that locks color lines inside."
+  },
+  "Sector_Trivector_Quark_it_Young Learner_Temporal": {
+    id: "Sector_Trivector_Quark", category: "Structural Realignments", grade: "Grade 3 Trivettore Misto", coordinate: "B+F=3, B-F=+1", simplex: "Intersezione Bordo-Faccia Asimmetrica", cube: "Cl(2,1) Core Quark Misto",
+    title: "L'Ingranaggio dell'Orologio Rotto",
+    desc: "Mettere due passi nei binari del tempo e un passo nelle ruote dello spazio crea una ruota storta e sbilanciata. Questa forma è la trappola che blocca i flussi di colore all'interno."
+  }
+});
+// ============================================================================
+// NODE 12: SECTOR_TRIVECTOR_LEPTON (THE LEPTONIC FRAME & ISOMORPHISM CORE)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Trivector_Lepton_en_Physicist_Spatial": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Mixed Rotor", coordinate: "B+F=3, B-F=-1", simplex: "Unified Leptonic Edge Cross", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "The Cl(1,2) Leptonic Current Frame",
+    desc: "One spatial coordinate on the base combines with two time-like parameters in the fiber, structuring the background current tracks and spinor fields for charged leptons."
+  },
+  "Sector_Trivector_Lepton_it_Physicist_Spatial": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Rotore Misto", coordinate: "B+F=3, B-F=-1", simplex: "Incrocio del Bordo Leptonico Unificato", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "Il Frame della Corrente Leptonica Cl(1,2)",
+    desc: "Una coordinata spaziale sulla base si unisce a due parametri di tipo tempo nella fibra, strutturando le tracce di corrente e i campi spinoriali per i leptoni carichi."
+  },
+  "Sector_Trivector_Lepton_en_Mathematician_Spatial": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Mixed Rotor", coordinate: "B+F=3, B-F=-1", simplex: "Unified Leptonic Edge Cross", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "The Cl(1,2) Complex Linear Isomorphism M_2(C)",
+    desc: "Formed via one base generator acting on a dual negative fiber ring, constructing an algebraic ring isomorphism to complex 2x2 matrices M_2(C) for spinor transformations."
+  },
+  "Sector_Trivector_Lepton_it_Mathematician_Spatial": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Rotore Misto", coordinate: "B+F=3, B-F=-1", simplex: "Incrocio del Bordo Leptonico Unificato", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "L'Isomorfismo Lineare Complesso M_2(C) Cl(1,2)",
+    desc: "Formato da un generatore di base agente su un doppio anello negativo di fibra, creando un isomorfismo di anello con le matrici complesse 2x2 M_2(C) per le trasformazioni degli spinori."
+  },
+  "Sector_Trivector_Lepton_en_Young Learner_Spatial": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Mixed Rotor", coordinate: "B+F=3, B-F=-1", simplex: "Unified Leptonic Edge Cross", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "The Electron's Sliding Dance Floor",
+    desc: "One single tracking line stays outside on our sandbox floor while two timing gears spin inside the hidden walls. This asymmetric split creates a slippery track for electrons to dance on."
+  },
+  "Sector_Trivector_Lepton_it_Young Learner_Spatial": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Rotore Misto", coordinate: "B+F=3, B-F=-1", simplex: "Incrocio del Bordo Leptonico Unificato", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "La Pista da Ballo Scorrevole dell'Elettrone",
+    desc: "Una linea di tracciamento rimane sul pavimento di sabbia mentre due ingranaggi del tempo girano nelle pareti nascoste. Questa divisione crea una pista scorrevole su cui gli elettroni viaggiano."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Trivector_Lepton_en_Physicist_Temporal": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Mixed Rotor", coordinate: "B+F=3, B-F=-1", simplex: "Unified Leptonic Edge Cross", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "The Linear Chrono-Leptonic Current",
+    desc: "Maps one real chronological axis across two internal complex spatial phase planes, structuring the background current vectors required to track leptonic trajectories."
+  },
+  "Sector_Trivector_Lepton_it_Physicist_Temporal": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Rotore Misto", coordinate: "B+F=3, B-F=-1", simplex: "Incrocio del Bordo Leptonico Unificato", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "La Corrente Crono-Leptonica Lineare",
+    desc: "Mappa un asse cronologico reale su due piani di fase spaziali complessi interni, strutturando i vettori di corrente di sfondo necessari per tracciare le traiettorie leptoniche."
+  },
+  "Sector_Trivector_Lepton_en_Mathematician_Temporal": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Mixed Rotor", coordinate: "B+F=3, B-F=-1", simplex: "Unified Leptonic Edge Cross", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "The Cl(1,2) Complex Linear Ring Isomorphism M_2(C)",
+    desc: "Coordinates a single temporal basis element across two internal spatial metrics, forming an algebraic matrix ideal component to process leptonic field currents."
+  },
+  "Sector_Trivector_Lepton_it_Mathematician_Temporal": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Rotore Misto", coordinate: "B+F=3, B-F=-1", simplex: "Incrocio del Bordo Leptonico Unificato", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "L'Isomorfismo dell'Anello Lineare Complesso M_2(C) Cl(1,2)",
+    desc: "Coordina un singolo elemento di base temporale su due metriche spaziali interne, formando un modulo ideale di matrice algebrica per elaborare le correnti dei campi leptonici."
+  },
+  "Sector_Trivector_Lepton_en_Young Learner_Temporal": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Mixed Rotor", coordinate: "B+F=3, B-F=-1", simplex: "Unified Leptonic Edge Cross", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "The Straight String Rolling Track",
+    desc: "One single real time line stays outside while two imaginary space wheels loop inside the hidden walls. This builds a smooth rolling track for lightweight particles to cruise around."
+  },
+  "Sector_Trivector_Lepton_it_Young Learner_Temporal": {
+    id: "Sector_Trivector_Lepton", category: "Structural Realignments", grade: "Grade 3 Rotore Misto", coordinate: "B+F=3, B-F=-1", simplex: "Incrocio del Bordo Leptonico Unificato", cube: "Cl(1,2) ≅ M₂(ℂ) Lepton Frame",
+    title: "Il Binario di Scorrimento della Corda",
+    desc: "Una singola linea di tempo reale rimane fuori mentre due ruote dello spazio immaginario girano nelle pareti nascoste. Costruisce un binario liscio per lo scorrimento delle particelle leggere."
+  }
+});
+// ============================================================================
+// NODE 13: SECTOR_STA_SYMMETRIC_CORE (THE HYPERBOLIC SPLIT MATRIX CROSSROADS)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Symmetric_Core_en_Physicist_Spatial": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Balanced Mesh", coordinate: "B+F=4, B-F=0", simplex: "Symmetric 4-Bit Cross-Talk Node", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "The Cl(2,2) Balanced Electroweak Core Cell",
+    desc: "A perfectly symmetric division of two base vectors and two fiber dimensions, setting the non-commutative coordinate lane for electroweak gauge interactions over the lattice."
+  },
+  "Sector_STA_Symmetric_Core_it_Physicist_Spatial": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Mesh Bilanciata", coordinate: "B+F=4, B-F=0", simplex: "Nodo di Cross-Talk Simmetrico a 4-Bit", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "La Cella del Core Elettrodebole Bilanciato Cl(2,2)",
+    desc: "Una scissione coordinata perfettamente simmetrica di due vettori di base e due dimensioni di fibra, creando il canale per i campi di gauge elettrodeboli sul reticolo."
+  },
+  "Sector_STA_Symmetric_Core_en_Mathematician_Spatial": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Balanced Mesh", coordinate: "B+F=4, B-F=0", simplex: "Symmetric 4-Bit Cross-Talk Node", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "The Cl(2,2) Split Hyperbolic Matrix Ring M_4(R)",
+    desc: "The symmetric bivector breakdown of two base and two fiber metrics, generating the hyperbolic matrix algebra M_4(R) to serve as a non-commutative ideal intersection lane."
+  },
+  "Sector_STA_Symmetric_Core_it_Mathematician_Spatial": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Mesh Bilanciata", coordinate: "B+F=4, B-F=0", simplex: "Nodo di Cross-Talk Simmetrico a 4-Bit", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "L'Anello Matriziale Iperbolico Split M_4(R) Cl(2,2)",
+    desc: "La scomposizione bivettoriale simmetrica di due metriche base e due di fibra, che genera l'algebra matriciale split M_4(R) come corsia centrale per l'intersezione degli ideali."
+  },
+  "Sector_STA_Symmetric_Core_en_Young Learner_Spatial": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Balanced Mesh", coordinate: "B+F=4, B-F=0", simplex: "Symmetric 4-Bit Cross-Talk Node", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "The Crossroads Control Station",
+    desc: "This switchboard sits exactly at the middle crossroads, balancing two outer sandbox channels and two inner ticking clock gears to form a level playing field where paths mix evenly."
+  },
+  "Sector_STA_Symmetric_Core_it_Young Learner_Spatial": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Mesh Bilanciata", coordinate: "B+F=4, B-F=0", simplex: "Nodo di Cross-Talk Simmetrico a 4-Bit", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "La Stazione di Controllo del Bivio",
+    desc: "Questo centralino si trova esattamente all'incrocio centrale, bilanciando due canali di sabbia esterni e due ingranaggi interni per creare un'area in cui i percorsi si fondono equamente."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Symmetric_Core_en_Physicist_Temporal": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Balanced Mesh", coordinate: "B+F=4, B-F=0", simplex: "Symmetric 4-Bit Cross-Talk Node", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "The Balanced Chrono-Spatial Intersection Core",
+    desc: "Located at row B+F=4, column 0. A symmetric grid partition balancing two real chronological coordinates and two imaginary spatial fibers to anchor non-abelian mixing operations."
+  },
+  "Sector_STA_Symmetric_Core_it_Physicist_Temporal": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Mesh Bilanciata", coordinate: "B+F=4, B-F=0", simplex: "Nodo di Cross-Talk Simmetrico a 4-Bit", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "Il Core di Intersezione Crono-Spaziale Bilanciato",
+    desc: "Situato alla riga B+F=4, colonna 0. Una partizione di griglia simmetrica che bilancia due coordinate cronologiche reali e due fibre spaziali immaginarie per ancorare i campi di mixaggio."
+  },
+  "Sector_STA_Symmetric_Core_en_Mathematician_Temporal": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Balanced Mesh", coordinate: "B+F=4, B-F=0", simplex: "Symmetric 4-Bit Cross-Talk Node", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "The Cl(2,2) Split Hyperbolic Matrix Algebra M_4(R)",
+    desc: "The symmetric division of two temporal base vectors and two spatial fiber elements generating the matrix ring M_4(R) as a closed algebraic lane for ideal intersections."
+  },
+  "Sector_STA_Symmetric_Core_it_Mathematician_Temporal": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Mesh Bilanciata", coordinate: "B+F=4, B-F=0", simplex: "Nodo di Cross-Talk Simmetrico a 4-Bit", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "L'Algebra Matriziale Iperbolica Split M_4(R) Cl(2,2)",
+    desc: "La divisione simmetrica di due vettori base temporali e due elementi di fibra spaziale, che genera l'anello matriciale M_4(R) come modulo chiuso per l'incrocio degli ideali."
+  },
+  "Sector_STA_Symmetric_Core_en_Young Learner_Temporal": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Balanced Mesh", coordinate: "B+F=4, B-F=0", simplex: "Symmetric 4-Bit Cross-Talk Node", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "The Equal Cross-Time Station",
+    desc: "This switchboard sits exactly at the center crossroads, balancing two outer time channels and two inner space wheels to set up an even field where durations and distances overlap."
+  },
+  "Sector_STA_Symmetric_Core_it_Young Learner_Temporal": {
+    id: "Sector_STA_Symmetric_Core", category: "Structural Realignments", grade: "Grade 2 Mesh Bilanciata", coordinate: "B+F=4, B-F=0", simplex: "Nodo di Cross-Talk Simmetrico a 4-Bit", cube: "Cl(2,2) Split Core Mixing Lane",
+    title: "La Stazione del Tempo Equilibrato",
+    desc: "Questo centralino si trova al bivio centrale, bilanciando due canali temporali esterni e due ruote spaziali interne per spianare il campo in cui durate e distanze si sovrappongono."
+  }
+});
+// ============================================================================
+// NODE 14: SECTOR_STA_FIBER_FRAME (THE BIQUATERNIONIC CHIRAL LOCK-BOX)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Fiber_Frame_en_Physicist_Spatial": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Fiber Operator", coordinate: "B+F=4, B-F=-2", simplex: "Chirality-Locked Fiber Cluster", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "The Cl(1,3) Weak Gauge Fiber Frame Cell",
+    desc: "One space-like vector parameter remains on the base manifold, while three time-like axes enter the fiber, generating weak gauge invariant couplings for left-handed states."
+  },
+  "Sector_STA_Fiber_Frame_it_Physicist_Spatial": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Operatore di Fibra", coordinate: "B+F=4, B-F=-2", simplex: "Cluster di Fibra Blocca-Chiralità", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "La Cella del Frame della Fibra di Gauge Debole Cl(1,3)",
+    desc: "Un parametro vettoriale di tipo spazio rimane sulla varietà di base, mentre tre assi di tipo tempo entrano nella fibra, generando accoppiamenti invarianti per stati mancini."
+  },
+  "Sector_STA_Fiber_Frame_en_Mathematician_Spatial": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Fiber Operator", coordinate: "B+F=4, B-F=-2", simplex: "Chirality-Locked Fiber Cluster", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "The Cl(1,3) Biquaternionic Clifford Ring",
+    desc: "Formed via one spatial base generator acting on three internal fiber dimensions, isomorphic to the biquaternions M_2(H) to isolate chirality-locked minimal left ideals under gauge mappings."
+  },
+  "Sector_STA_Fiber_Frame_it_Mathematician_Spatial": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Operatore di Fibra", coordinate: "B+F=4, B-F=-2", simplex: "Cluster di Fibra Blocca-Chiralità", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "L'Anello Biquaternionico di Clifford Cl(1,3)",
+    desc: "Formato da un generatore spaziale di base che agisce su tre dimensioni interne della fibra, isomorfo ai biquaternioni M_2(H) per isolare gli ideali sinistri minimi legati alla chiralità."
+  },
+  "Sector_STA_Fiber_Frame_en_Young Learner_Spatial": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Fiber Operator", coordinate: "B+F=4, B-F=-2", simplex: "Chirality-Locked Fiber Cluster", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "The Left-Handed Magic Box",
+    desc: "One single tracking bit stays outside on our sandbox floor while three massive clock gears lock inside the hidden fiber walls. This sets up an asymmetric lock box that filters out right-handed paths."
+  },
+  "Sector_STA_Fiber_Frame_it_Young Learner_Spatial": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Operatore di Fibra", coordinate: "B+F=4, B-F=-2", simplex: "Cluster di Fibra Blocca-Chiralità", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "La Scatola Magica della Mano Sinistra",
+    desc: "Un solo bit rimane sul pavimento del recinto mentre tre massicci ingranaggi si bloccano dentro le pareti nascoste. Questo crea una scatola asimmetrica cieca alle forme destre, catturando le forze mancine."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_STA_Fiber_Frame_en_Physicist_Temporal": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Fiber Operator", coordinate: "B+F=4, B-F=-2", simplex: "Chirality-Locked Fiber Cluster", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "The Weak Gauge Invariant Spatial Fiber Frame",
+    desc: "Isolates a single real chronological parameter across three internal imaginary spatial metrics, generating the metrics needed to guide chirality-locked weak interaction currents."
+  },
+  "Sector_STA_Fiber_Frame_it_Physicist_Temporal": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Operatore di Fibra", coordinate: "B+F=4, B-F=-2", simplex: "Cluster di Fibra Blocca-Chiralità", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "Il Frame della Fibra Spaziale Invariante di Gauge Debole",
+    desc: "Isola un singolo parametro cronologico reale su tre metriche spaziali immaginarie interne, creando la struttura necessaria per guidare le correnti delle interazioni deboli mancine."
+  },
+  "Sector_STA_Fiber_Frame_en_Mathematician_Temporal": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Fiber Operator", coordinate: "B+F=4, B-F=-2", simplex: "Chirality-Locked Fiber Cluster", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "The Cl(1,3) Biquaternionic Chiral Ideal Ring M_2(H)",
+    desc: "The hypercomplex structural tensor formulation isomorphic to the matrix algebra M_2(H), separating left-ideal spatial spinor components from right-handed sterile pathways."
+  },
+  "Sector_STA_Fiber_Frame_it_Mathematician_Temporal": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Operatore di Fibra", coordinate: "B+F=4, B-F=-2", simplex: "Cluster di Fibra Blocca-Chiralità", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "L'Anello dell'Ideale Chirale Biquaternionico M_2(H) Cl(1,3)",
+    desc: "La formulazione tensoriale ipercomplessa strutturale isorfa all'algebra delle matrici M_2(H), separando le componenti degli spinori dell'ideale sinistro dai percorsi destri sterili."
+  },
+  "Sector_STA_Fiber_Frame_en_Young Learner_Temporal": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Fiber Operator", coordinate: "B+F=4, B-F=-2", simplex: "Chirality-Locked Fiber Cluster", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "The Squeezed Space Safe",
+    desc: "One single timeline bit stays outside while three imaginary space wheels loop inside the hidden walls. This constructs an asymmetric lock box that targets left-handed weak force channels."
+  },
+  "Sector_STA_Fiber_Frame_it_Young Learner_Temporal": {
+    id: "Sector_STA_Fiber_Frame", category: "Structural Realignments", grade: "Grade 3/4 Operatore di Fibra", coordinate: "B+F=4, B-F=-2", simplex: "Cluster di Fibra Blocca-Chiralità", cube: "Cl(1,3) ≅ M₂(ℍ) Weak Gauge Frame",
+    title: "La Cassaforte dello Spazio Schiacciato",
+    desc: "Un solo bit della linea temporale rimane fuori mentre tre ruote spaziali immaginarie girano nelle pareti nascoste, formando una cassaforte asimmetrica per bloccare le forze mancine."
+  }
+});
+// ============================================================================
+// NODE 15: SECTOR_ROW5_BASE (THE PENTAVECTOR CHIRAL SPINOR THRESHOLD)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Row5_Base_en_Physicist_Spatial": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavector", coordinate: "B+F=5, B-F=+3", simplex: "4-face Spacetime Edge Flank", cube: "Cl(4,1) Complexified Base",
+    title: "The Cl(4,1) Complexified Spacetime Spinor Cell",
+    desc: "Extends standard space-time matrices by introducing a fifth pseudo-scalar axis, structuring the underlying geometric spatial frame driving maximal parity violation."
+  },
+  "Sector_Row5_Base_it_Physicist_Spatial": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavettore", coordinate: "B+F=5, B-F=+3", simplex: "Fianco del Confine dello Spazio-Tempo", cube: "Cl(4,1) Base Complessificata",
+    title: "La Cella Spinoriale Spazio-Temporale Complessificata Cl(4,1)",
+    desc: "Estende le matrici spazio-temporali classiche introducendo un quinto asse pseudoscalare, strutturando il frame spaziale sottostante che guida la violazione massima della parità."
+  },
+  "Sector_Row5_Base_en_Mathematician_Spatial": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavector", coordinate: "B+F=5, B-F=+3", simplex: "4-face Spacetime Edge Flank", cube: "Cl(4,1) Complexified Base",
+    title: "The Cl(4,1) Complexified Ideals Mapping",
+    desc: "The algebraic formulation of a fifth pseudo-scalar axis element, factoring Cl(4,1) into a complexified spatial field to break the structural symmetry of Clifford grading involutions."
+  },
+  "Sector_Row5_Base_it_Mathematician_Spatial": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavettore", coordinate: "B+F=5, B-F=+3", simplex: "Fianco del Confine dello Spazio-Tempo", cube: "Cl(4,1) Base Complessificata",
+    title: "La Mappatura degli Ideali Complessificati Cl(4,1)",
+    desc: "La formulazione algebrica di un elemento dell'asse pseudoscalare, che scompone Cl(4,1) in un campo complesso spaziale per rompere la simmetria strutturale delle involuzioni di gradazione."
+  },
+  "Sector_Row5_Base_en_Young Learner_Spatial": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavector", coordinate: "B+F=5, B-F=+3", simplex: "4-face Spacetime Edge Flank", cube: "Cl(4,1) Complexified Base",
+    title: "The One-Way Mirror Maze",
+    desc: "This setup inserts an extra tracking line that splits the layout into a trick mirror maze, causing left-handed playground blocks to jump into action while right-handed blocks pass like quiet ghosts."
+  },
+  "Sector_Row5_Base_it_Young Learner_Spatial": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavettore", coordinate: "B+F=5, B-F=+3", simplex: "Fianco del Confine dello Spazio-Tempo", cube: "Cl(4,1) Base Complessificata",
+    title: "Il Labirinto degli Specchi Magici",
+    desc: "Questa configurazione inserisce una linea in più che divide il campo in un labirinto di specchi, facendo scattare le tessere mancine all'istante mentre le tessere destre scivolano via come spettri."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Row5_Base_en_Physicist_Temporal": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavector", coordinate: "B+F=5, B-F=+3", simplex: "4-face Spacetime Edge Flank", cube: "Cl(4,1) Complexified Base",
+    title: "The Complexified Chronological Pentavector Spinor Space",
+    desc: "Extends our multi-axial chronological grid matrix with a fifth pseudo-scalar coordinate axis, setting up the exact topological layout necessary for directional parity violation transformations."
+  },
+  "Sector_Row5_Base_it_Physicist_Temporal": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavettore", coordinate: "B+F=5, B-F=+3", simplex: "Fianco del Confine dello Spazio-Tempo", cube: "Cl(4,1) Base Complessificata",
+    title: "Lo Spazio Spinoriale Cronologico Complessificato Cl(4,1)",
+    desc: "Estende la nostra griglia cronologica multi-assiale con un quinto asse pseudoscalare di coordinate, impostando la disposizione topologica per le trasformazioni di violazione della parità."
+  },
+  "Sector_Row5_Base_en_Mathematician_Temporal": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavector", coordinate: "B+F=5, B-F=+3", simplex: "4-face Spacetime Edge Flank", cube: "Cl(4,1) Complexified Base",
+    title: "The Cl(4,1) Complexified Temporal Ideal Extension",
+    desc: "The algebraic extraction of an odd pseudo-scalar axis element, converting Cl(4,1) into a complexified exterior chronological field to segregate chiral temporal base ideals."
+  },
+  "Sector_Row5_Base_it_Mathematician_Temporal": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavettore", coordinate: "B+F=5, B-F=+3", simplex: "Fianco del Confine dello Spazio-Tempo", cube: "Cl(4,1) Base Complessificata",
+    title: "L'Estensione dell'Ideale Temporale Complessificato Cl(4,1)",
+    desc: "L'estrazione algebrica di un elemento dell'asse pseudoscalare, convertendo Cl(4,1) in un campo esterno cronologico complessificato per segregare gli ideali base temporali chirali."
+  },
+  "Sector_Row5_Base_en_Young Learner_Temporal": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavector", coordinate: "B+F=5, B-F=+3", simplex: "4-face Spacetime Edge Flank", cube: "Cl(4,1) Complexified Base",
+    title: "The Trick Mirror History Maze",
+    desc: "This high-tier tier inserts an extra clock line that splits the historical tracks into a trick maze, forcing left-handed timeline blocks directly into action while others stay hidden."
+  },
+  "Sector_Row5_Base_it_Young Learner_Temporal": {
+    id: "Sector_Row5_Base", category: "Structural Realignments", grade: "Grade 5 Pentavettore", coordinate: "B+F=5, B-F=+3", simplex: "Fianco del Confine dello Spazio-Tempo", cube: "Cl(4,1) Base Complessificata",
+    title: "Il Labirinto Cronologico degli Specchi",
+    desc: "Questo livello superiore inserisce una linea dell'orologio in più che divide le tracce storiche in un labirinto, costringendo i blocchi temporali mancini all'azione diretta."
+  }
+});
+// ============================================================================
+// NODE 16: SECTOR_ROW6_CONFINEMENT (THE HEXVECTOR BOUNDARY STRONG COLOR MESH)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Row6_Confinement_en_Physicist_Spatial": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=6, B-F=+2", simplex: "5-face Polytope Flank", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "The Cl(5,1) Color Confinement Mesh Cell",
+    desc: "A 6-bit grid boundary constraint mapping the cycles of an embedded Fano plane, locking strong color transformations and fluxes inside localized spatial boundary meshes."
+  },
+  "Sector_Row6_Confinement_it_Physicist_Spatial": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Esavettore", coordinate: "B+F=6, B-F=+2", simplex: "Politopo di Confine a 5 Facce", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "La Cella Mesh di Confinamento del Colore Cl(5,1)",
+    desc: "Un vincolo di confine a 6 bit della griglia che mappa i cicli di un piano di Fano, bloccando le trasformazioni e i flussi di colore forti entro superfici limite locali."
+  },
+  "Sector_Row6_Confinement_en_Mathematician_Spatial": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=6, B-F=+2", simplex: "5-face Polytope Flank", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "The Cl(5,1) Hexvector Boundary Holonomy",
+    desc: "Isomorphic to the matrix ring M_4(H), this tier structures a closed boundary holonomy over the hyper-lattice, forcing trivector fields to restrict their cyclic metrics onto a flat color-singlet subspace."
+  },
+  "Sector_Row6_Confinement_it_Mathematician_Spatial": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Esavettore", coordinate: "B+F=6, B-F=+2", simplex: "Politopo di Confine a 5 Facce", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "L'Olonomia del Confine Esavettoriale Cl(5,1)",
+    desc: "Isomorfo all'anello matriciale M_4(H), questo livello stabilisce un'olonomia di confine chiusa sull'iper-reticolo, costringendo i campi trivettoriali a limitare le loro metriche in un sottospazio."
+  },
+  "Sector_Row6_Confinement_en_Young Learner_Spatial": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=6, B-F=+2", simplex: "5-face Polytope Flank", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "The Closed Triangle Locking Trap",
+    desc: "This row sets an absolute 6-switch locking grid where three lopsided quark puzzle pieces must hook their paths together to build an unbreakable, stable triangle."
+  },
+  "Sector_Row6_Confinement_it_Young Learner_Spatial": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Esavettore", coordinate: "B+F=6, B-F=+2", simplex: "Politopo di Confine a 5 Facce", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "La Trappola a Triangolo Chiuso",
+    desc: "Questa riga imposta una griglia di blocco assoluta a 6 interruttori in cui tre pezzi di quark sbilanciati devono unire i loro percorsi per creare un triangolo stabile."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Row6_Confinement_en_Physicist_Temporal": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=6, B-F=+2", simplex: "5-face Polytope Flank", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "The Hexvector Chronological Holonomy Mesh",
+    desc: "Maps embedded Fano plane loop paths onto the 6-bit chronological grid, tracking how strong color matrix fields lock into stable configurations under continuous time evolution."
+  },
+  "Sector_Row6_Confinement_it_Physicist_Temporal": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Esavettore", coordinate: "B+F=6, B-F=+2", simplex: "Politopo di Confine a 5 Facce", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "La Mesh dell'Olonomia Cronologica Esavettoriale",
+    desc: "Mappa i percorsi dei cicli del piano di Fano sulla griglia cronologica a 6 bit, tracciando come i campi di colore forti si blocchino in configurazioni stabili sotto l'evoluzione temporale."
+  },
+  "Sector_Row6_Confinement_en_Mathematician_Temporal": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=6, B-F=+2", simplex: "5-face Polytope Flank", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "The Cl(5,1) Hexvector Boundary Algebra M_4(H)",
+    desc: "Isomorphic to the matrix ring M_4(H), this tier sets up an absolute operational boundary holonomy that locks multi-vector fields into a flat time-singlet subspace via prime factor 7 coordinates."
+  },
+  "Sector_Row6_Confinement_it_Mathematician_Temporal": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Esavettore", coordinate: "B+F=6, B-F=+2", simplex: "Politopo di Confine a 5 Facce", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "L'Algebra del Confine Esavettoriale M_4(H) Cl(5,1)",
+    desc: "Isomorfa all'anello matriciale M_4(H), questa riga imposta un'olonomia di confine operativa assoluta che blocca i campi multivettoriali in un sottospazio temporale singolo tramite le coordinate del fattore primo 7."
+  },
+  "Sector_Row6_Confinement_en_Young Learner_Temporal": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Hexvector Connection", coordinate: "B+F=6, B-F=+2", simplex: "5-face Polytope Flank", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "The Eternal Chronological Cage",
+    desc: "This row sets an absolute 6-switch locking grid that constructs an unbreakable timeline trap, trapping changing color loops inside an endless spinning cycle."
+  },
+  "Sector_Row6_Confinement_it_Young Learner_Temporal": {
+    id: "Sector_Row6_Confinement", category: "Structural Realignments", grade: "Grade 6 Esavettore", coordinate: "B+F=6, B-F=+2", simplex: "Politopo di Confine a 5 Facce", cube: "Cl(5,1) ≅ M₄(ℍ) Confinement Mesh",
+    title: "La Gabbia Cronologica Eterna",
+    desc: "Questa riga imposta una griglia di blocco assoluta a 6 interruttori che costruisce una trappola temporale, bloccando i flussi di colore in un ciclo infinito."
+  }
+});
+// ============================================================================
+// NODE 17: SECTOR_CHIRAL_PARITY (THE CHIRAL WEAK IDEAL SEPARATION MATRIX)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Chiral_Parity_en_Physicist_Spatial": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Asymmetric Spinor Branch", coordinate: "B+F=5, B-F=0", simplex: "Left-Ideal Asymmetric Branch", cube: "Minimal Left Ideal Binary Tree",
+    title: "The Chiral Parity Matrix",
+    desc: "Formulates maximal parity violation mechanisms where the weak interaction parameters are algebraically blind to right-handed spatial vectors, structuring asymmetric tracking fields."
+  },
+  "Sector_Chiral_Parity_it_Physicist_Spatial": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Ramo Spinoriale Asimmetrico", coordinate: "B+F=5, B-F=0", simplex: "Ramo Asimmetrico dell'Ideale Sinistro", cube: "Albero Binario dell'Ideale Sinistro Minimo",
+    title: "La Matrice di Parità Chirale",
+    desc: "Formula meccanismi di violazione massima della parità in cui i parametri dell'interazione debole sono algebricamente ciechi ai vettori spaziali destri, strutturando campi di tracciamento asimmetrici."
+  },
+  "Sector_Chiral_Parity_en_Mathematician_Spatial": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Asymmetric Spinor Branch", coordinate: "B+F=5, B-F=0", simplex: "Left-Ideal Asymmetric Branch", cube: "Minimal Left Ideal Binary Tree",
+    title: "The Asymmetric Left-Ideal Selection Matrix",
+    desc: "Derives asymmetric spinor field separations from non-overlapping binary path addresses that are orthogonal to even-grade Clifford elements, creating a nested minimal filtration tree."
+  },
+  "Sector_Chiral_Parity_it_Mathematician_Spatial": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Ramo Spinoriale Asimmetrico", coordinate: "B+F=5, B-F=0", simplex: "Ramo Asimmetrico dell'Ideale Sinistro", cube: "Albero Binario dell'Ideale Sinistro Minimo",
+    title: "La Matrice di Selezione dell'Ideale Sinistro Asimmetrico",
+    desc: "Deriva separazioni asimmetriche dei campi spinoriali da indirizzi di percorsi binari non sovrapposti che sono ortogonali agli elementi Clifford di grado pari, creando un albero di filtrazione minimo."
+  },
+  "Sector_Chiral_Parity_en_Young Learner_Spatial": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Asymmetric Spinor Branch", coordinate: "B+F=5, B-F=0", simplex: "Left-Ideal Asymmetric Branch", cube: "Minimal Left Ideal Binary Tree",
+    title: "The One-Way Path Switch",
+    desc: "This switch dictates a strict one-way path through our playground. The timing wheels inside our walls only mesh with shapes that choose a left-handed lane, leaving right-handed routes completely quiet."
+  },
+  "Sector_Chiral_Parity_it_Young Learner_Spatial": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Ramo Spinoriale Asimmetrico", coordinate: "B+F=5, B-F=0", simplex: "Ramo Asimmetrico dell'Ideale Sinistro", cube: "Albero Binario dell'Ideale Sinistro Minimo",
+    title: "L'Interruttore del Sentiero a Senso Unico",
+    desc: "Questo interruttore impone un percorso a senso unico nel parco giochi. Le ruote del tempo ingranano solo con forme che scelgono la corsia sinistra, lasciando le rotte destre ferme."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Chiral_Parity_en_Physicist_Temporal": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Asymmetric Spinor Branch", coordinate: "B+F=5, B-F=0", simplex: "Left-Ideal Asymmetric Branch", cube: "Minimal Left Ideal Binary Tree",
+    title: "The One-Way History Gate",
+    desc: "Reinterprets parity from a chronological background canvas, tracking how left-action weak gauge operators explicitly break symmetry under active clock rotation loops."
+  },
+  "Sector_Chiral_Parity_it_Physicist_Temporal": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Ramo Spinoriale Asimmetrico", coordinate: "B+F=5, B-F=0", simplex: "Ramo Asimmetrico dell'Ideale Sinistro", cube: "Albero Binario dell'Ideale Sinistro Minimo",
+    title: "Il Cancello della Storia a Senso Unico",
+    desc: "Reinterpreta la parità partendo da una tela di sfondo cronologica, tracciando come gli operatori di gauge deboli ad azione sinistra rompono la simmetria nei cicli di rotazione dell'orologio."
+  },
+  "Sector_Chiral_Parity_en_Mathematician_Temporal": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Asymmetric Spinor Branch", coordinate: "B+F=5, B-F=0", simplex: "Left-Ideal Asymmetric Branch", cube: "Minimal Left Ideal Binary Tree",
+    title: "The Non-Overlapping Binary Chiral Tree",
+    desc: "Formalizes parity selection as a topological packing restriction across the time lattice where the weak sector matrix operators remain orthogonal to even chronological filtration levels."
+  },
+  "Sector_Chiral_Parity_it_Mathematician_Temporal": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Ramo Spinoriale Asimmetrico", coordinate: "B+F=5, B-F=0", simplex: "Ramo Asimmetrico dell'Ideale Sinistro", cube: "Albero Binario dell'Ideale Sinistro Minimo",
+    title: "L'Albero Chirale Binario Non Sovrapposto",
+    desc: "Formalizza la selezione della parità come una restrizione topologica sulla griglia temporale, in cui gli operatori della matrice del settore debole rimangono ortogonali ai livelli di filtrazione cronologica pari."
+  },
+  "Sector_Chiral_Parity_en_Young Learner_Temporal": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Asymmetric Spinor Branch", coordinate: "B+F=5, B-F=0", simplex: "Left-Ideal Asymmetric Branch", cube: "Minimal Left Ideal Binary Tree",
+    title: "The One-Way History Gate",
+    desc: "This switch builds a one-way gate in our history timeline, allowing left-handed timeline blocks to step forward while freezing right-handed paths in place."
+  },
+  "Sector_Chiral_Parity_it_Young Learner_Temporal": {
+    id: "Sector_Chiral_Parity", category: "Structural Realignments", grade: "Ramo Spinoriale Asimmetrico", coordinate: "B+F=5, B-F=0", simplex: "Ramo Asimmetrico dell'Ideale Sinistro", cube: "Albero Binario dell'Ideale Sinistro Minimo",
+    title: "Il Cancello della Storia a Senso Unico",
+    desc: "Questo interruttore costruisce un cancello a senso unico nella nostra linea storica, permettendo ai blocchi temporali mancini di avanzare mentre congela i percorsi destri."
+  }
+});
+// ============================================================================
+// NODE 18: SECTOR_BARYON_CONSERVATION (THE FANO PLANE CYCLIC CLOSURE INVARIANT)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Baryon_Conservation_en_Physicist_Spatial": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Grade 3 Triangular Loop", coordinate: "B+F=8, B-F=+2", simplex: "2-face Triangular Boundary", cube: "[±, 0, L, G₀] ⊗ ν₇ Fano Loop",
+    title: "Topological Baryon Stability",
+    desc: "Baryon number conservation is structured as a rigid topological winding number mapping across the discrete internal cyclic loops of an embedded Fano plane."
+  },
+  "Sector_Baryon_Conservation_it_Physicist_Spatial": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Anello Triangolare di Grado 3", coordinate: "B+F=8, B-F=+2", simplex: "Confine Triangolare Faccia-2", cube: "[±, 0, L, G₀] ⊗ Anello Fano ν₇",
+    title: "Stabilità Barionica Topologica",
+    desc: "La conservazione del numero barionico è strutturata come un numero di avvolgimento topologico rigido mappato sui cicli ciclici interni discreti di un piano di Fano incorporato."
+  },
+  "Sector_Baryon_Conservation_en_Mathematician_Spatial": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Grade 3 Triangular Loop", coordinate: "B+F=8, B-F=+2", simplex: "2-face Triangular Boundary", cube: "[±, 0, L, G₀] ⊗ ν₇ Fano Loop",
+    title: "The Fano Plane Cyclic Winding Invariant",
+    desc: "Formalizes baryon stabilization as an index invariant (ν₇ mod 3) over a 2-face boundary hyperplane, rendering it fully stable against lower-order electroweak bivector actions."
+  },
+  "Sector_Baryon_Conservation_it_Mathematician_Spatial": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Anello Triangolare di Grado 3", coordinate: "B+F=8, B-F=+2", simplex: "Confine Triangolare Faccia-2", cube: "[±, 0, L, G₀] ⊗ Anello Fano ν₇",
+    title: "L'Indice Invariante di Avvolgimento Ciclico del Piano di Fano",
+    desc: "Formalizza la stabilizzazione barionica come un indice invariante (ν₇ mod 3) su un iperpiano di confine a faccia-2, rendendolo stabile contro azioni bivettoriali elettrodeboli."
+  },
+  "Sector_Baryon_Conservation_en_Young Learner_Spatial": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Grade 3 Triangular Loop", coordinate: "B+F=8, B-F=+2", simplex: "2-face Triangular Boundary", cube: "[±, 0, L, G₀] ⊗ ν₇ Fano Loop",
+    title: "The Locked Flavor Vault",
+    desc: "Nature locks quarks inside stable matter because three different color directions must weave a closed, unbreakable triangle loop to re-enter our sandbox playground safely."
+  },
+  "Sector_Baryon_Conservation_it_Young Learner_Spatial": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Anello Triangolare di Grado 3", coordinate: "B+F=8, B-F=+2", simplex: "Confine Triangolare Faccia-2", cube: "[±, 0, L, G₀] ⊗ Anello Fano ν₇",
+    title: "La Cassaforte Serrata dei Sapori",
+    desc: "La natura blocca i quark dentro la materia stabile perché tre direzioni di colore differenti devono tessere un ciclo triangolare chiuso e infrangibile per rimanere nel recinto."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Baryon_Conservation_en_Physicist_Temporal": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Grade 3 Triangular Loop", coordinate: "B+F=8, B-F=+2", simplex: "2-face Triangular Boundary", cube: "[±, 0, L, G₀] ⊗ ν₇ Fano Loop",
+    title: "The Topological History Loop",
+    desc: "Redefines baryon number tracking as a rigid winding limit over chronological paths, completely isolating heavy baryonic matrix states from weak leptonic decay channels."
+  },
+  "Sector_Baryon_Conservation_it_Physicist_Temporal": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Anello Triangolare di Grado 3", coordinate: "B+F=8, B-F=+2", simplex: "Confine Triangolare Faccia-2", cube: "[±, 0, L, G₀] ⊗ Anello Fano ν₇",
+    title: "Il Ciclo della Storia Topologica",
+    desc: "Ridefinisce il tracciamento del numero barionico come un limite rigido di avvolgimento sui cammini cronologici, isolando gli stati della matrice dai canali leptonici deboli."
+  },
+  "Sector_Baryon_Conservation_en_Mathematician_Temporal": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Grade 3 Triangular Loop", coordinate: "B+F=8, B-F=+2", simplex: "2-face Triangular Boundary", cube: "[±, 0, L, G₀] ⊗ ν₇ Fano Loop",
+    title: "Operational Boundary Closure via 7-Prime Controls",
+    desc: "Structures baryon permanence as a cyclic remainder over a 2-face temporal boundary orbit under 7-prime matrix actions, remaining an irreducible invariant under Clifford products."
+  },
+  "Sector_Baryon_Conservation_it_Mathematician_Temporal": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Anello Triangolare di Grado 3", coordinate: "B+F=8, B-F=+2", simplex: "Confine Triangolare Faccia-2", cube: "[±, 0, L, G₀] ⊗ Anello Fano ν₇",
+    title: "Chiusura del Confine Operativo tramite Controllo a 7 Primi",
+    desc: "Struttura la permanenza barionica come un resto ciclico su un'orbita di confine temporale a faccia-2 sotto azioni matriciali a 7 primi, rimanendo un invariante irriducibile."
+  },
+  "Sector_Baryon_Conservation_en_Young Learner_Temporal": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Grade 3 Triangular Loop", coordinate: "B+F=8, B-F=+2", simplex: "2-face Triangular Boundary", cube: "[±, 0, L, G₀] ⊗ ν₇ Fano Loop",
+    title: "The Topological History Loop",
+    desc: "The heavy proton triangle creates an unbreakable chronological knot, preventing our matter timelines from dissolving or tearing apart under everyday decay gears."
+  },
+  "Sector_Baryon_Conservation_it_Young Learner_Temporal": {
+    id: "Sector_Baryon_Conservation", category: "Structural Realignments", grade: "Anello Triangolare di Grado 3", coordinate: "B+F=8, B-F=+2", simplex: "Confine Triangolare Faccia-2", cube: "[±, 0, L, G₀] ⊗ Anello Fano ν₇",
+    title: "Il Ciclo di Storia Topologica",
+    desc: "Il pesante triangolo dei protoni crea un nodo cronologico infrangibile, impedendo alle linee temporali della materia di dissolversi o strapparsi sotto gli ingranaggi del decadimento."
+  }
+});
+// ============================================================================
+// NODE 19: SECTOR_ELECTROWEAK_UNIFIED (THE COMPACT CORE SATURATION MIXING LANE)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Electroweak_Unified_en_Physicist_Spatial": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Grade 2/4 Ideal Intersection", coordinate: "B+F=8, B-F=0", simplex: "Unified Edge Connectivity Graph K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "The Saturated Electroweak Gauge Sector",
+    desc: "The centered 4-base, 4-fiber matrix contains exactly 17 neutral current paths; its 4/17 fraction is an un-renormalized tree-level geometric packing invariant across the shared channel mappings."
+  },
+  "Sector_Electroweak_Unified_it_Physicist_Spatial": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Intersezione Ideale di Grado 2/4", coordinate: "B+F=8, B-F=0", simplex: "Grafo di Connettività dei Bordi Unificato K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "Il Settore di Gauge Elettrodebole Saturato",
+    desc: "La rete centrata di 4 basi e 4 fibre contiene esattamente 17 percorsi neutri; la sua frazione 4/17 è un invariante geometrico di impacchettamento a livello d'albero non rinormalizzato."
+  },
+  "Sector_Electroweak_Unified_en_Mathematician_Spatial": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Grade 2/4 Ideal Intersection", coordinate: "B+F=8, B-F=0", simplex: "Unified Edge Connectivity Graph K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "The Non-Commutative Ideals of Cl(4,4,0)",
+    desc: "The complete intersection and complement of the principal sub-ideals generated by Cl(0,1,0) and Cl(0,2,0), structuring the Weinberg Angle packing fractions via left-handed orthogonal paths."
+  },
+  "Sector_Electroweak_Unified_it_Mathematician_Spatial": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Intersezione Ideale di Grado 2/4", coordinate: "B+F=8, B-F=0", simplex: "Grafo di Connettività dei Bordi Unificato K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "Gli Ideali Non Commutativi di Cl(4,4,0)",
+    desc: "L'intersezione completa e il complemento dei sotto-ideali principali generati da Cl(0,1,0) e Cl(0,2,0), che struttura le frazioni di impacchettamento dell'Angolo di Weinberg tramite cammini ortogonali."
+  },
+  "Sector_Electroweak_Unified_en_Young Learner_Spatial": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Grade 2/4 Ideal Intersection", coordinate: "B+F=8, B-F=0", simplex: "Unified Edge Connectivity Graph K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "The Electro-Weak Ingranage (W± & Z⁰ Channels)",
+    desc: "When our internal Light gears (3) and Time gears (5) mesh at the core, they create exactly 17 Neutral Current channels like the Z⁰ boson, and 34 Charged Current paths like the heavy W+ and W- switches."
+  },
+  "Sector_Electroweak_Unified_it_Young Learner_Spatial": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Intersezione Ideale di Grado 2/4", coordinate: "B+F=8, B-F=0", simplex: "Grafo di Connettività dei Bordi Unificato K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "L'Ingranaggio Elettrodebole (Canali W± e Z⁰)",
+    desc: "Quando i nostri ingranaggi interni della Luce (3) e del Tempo (5) si incastrano al centro, creano esattamente 17 canali di Corrente Neutra come il bosone Z⁰, e 34 percorsi di Corrente Carica come gli interruttori W+ e W-."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Electroweak_Unified_en_Physicist_Temporal": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Grade 2/4 Ideal Intersection", coordinate: "B+F=8, B-F=0", simplex: "Unified Edge Connectivity Graph K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "The Saturated Chrono-Spatial Electroweak Intersect",
+    desc: "The absolute matrix core checkpoint [B+F=8, B-F=0]. A balanced 4-base, 4-fiber mesh where the 17 neutral current paths intersect, deriving the weak mixing angle as a strict topological packing fraction."
+  },
+  "Sector_Electroweak_Unified_it_Physicist_Temporal": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Intersezione Ideale di Grado 2/4", coordinate: "B+F=8, B-F=0", simplex: "Grafo di Connettività dei Bordi Unificato K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "Il Core di Intersezione Elettrodebole Crono-Spaziale",
+    desc: "Il checkpoint assoluto del nucleo della matrice [B+F=8, B-F=0]. Una rete bilanciata di 4 basi e 4 fibre in cui si intersecano i 17 cammini neutri, derivando l'angolo come frazione di impacchettamento topologico."
+  },
+  "Sector_Electroweak_Unified_en_Mathematician_Temporal": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Grade 2/4 Ideal Intersection", coordinate: "B+F=8, B-F=0", simplex: "Unified Edge Connectivity Graph K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "The Complete Ideal Intersections over Cl(4,4,0)",
+    desc: "Structures the tree-level mixing ratio as the orthogonal packing fraction of the left-handed Pin(4,4) paths relative to the 17 neutral edges of the temporal core mapping."
+  },
+  "Sector_Electroweak_Unified_it_Mathematician_Temporal": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Intersezione Ideale di Grado 2/4", coordinate: "B+F=8, B-F=0", simplex: "Grafo di Connettività dei Bordi Unificato K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "L'Intersezione Completa degli Ideali su Cl(4,4,0)",
+    desc: "Struttura il rapporto di miscelazione a livello d'albero come frazione di impacchettamento ortogonale dei cammini Pin(4,4) rispetto ai 17 bordi neutri del nucleo temporale."
+  },
+  "Sector_Electroweak_Unified_en_Young Learner_Temporal": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Grade 2/4 Ideal Intersection", coordinate: "B+F=8, B-F=0", simplex: "Unified Edge Connectivity Graph K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "The 17-Bridge Balanced Timing Gear",
+    desc: "When our real timeline tracks and imaginary space wheels mesh at the very center, they construct exactly 17 neutral current bridges and 34 charged current paths. The hypercube tracks them as perfect balance flips."
+  },
+  "Sector_Electroweak_Unified_it_Young Learner_Temporal": {
+    id: "Sector_Electroweak_Unified", category: "Structural Realignments", grade: "Intersezione Ideale di Grado 2/4", coordinate: "B+F=8, B-F=0", simplex: "Grafo di Connettività dei Bordi Unificato K₈", cube: "[-, 1, L, G₀↔G₁] ⊗ [1, 1, 0, ν]",
+    title: "L'Ingranaggio Temporale Bilanciato a 17 Ponti",
+    desc: "Quando i nostri binari temporali reali e le ruote spaziali immaginarie si incastrano al centro esatto, costruiscono esattamente 17 ponti di corrente neutra e 34 percorsi carichi. L'ipercubo li traccia come scatti bilanciati."
+  }
+});
+// ============================================================================
+// NODE 20: SECTOR_VACUUM_MASS_GENERATION (THE IDENTITY SCALAR BIMODULE FIELDS)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Vacuum_Mass_Generation_en_Physicist_Spatial": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identity / Grade 7 Inversion", coordinate: "B+F=0, B-F=0", simplex: "The Empty Face (Ø) Envelope", cube: "[+, 0, R, G₀] Identity Root",
+    title: "The Higgs VEV & Sterile Neutrino Isomorphism",
+    desc: "Identifies the active Higgs mechanism operator and the passive uncharged Sterile Neutrino state as isomorphic manifestations of the same multiplicative identity element across the flat 8-cube lattice."
+  },
+  "Sector_Vacuum_Mass_Generation_it_Physicist_Spatial": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identità / Inversione Faccia-7", coordinate: "B+F=0, B-F=0", simplex: "Involucro della Faccia Vuota (Ø)", cube: "[+, 0, R, G₀] Radice Identità",
+    title: "L'Isomorfismo tra VEV di Higgs e Neutrino Sterile",
+    desc: "Identifica l'operatore del meccanismo di Higgs attivo e lo stato passivo del Neutrino Sterile non carico come manifestazioni isomorfe dello stesso elemento di identità moltiplicativa sul reticolo dell'ipercubo."
+  },
+  "Sector_Vacuum_Mass_Generation_en_Mathematician_Spatial": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identity / Grade 7 Inversion", coordinate: "B+F=0, B-F=0", simplex: "The Empty Face (Ø) Envelope", cube: "[+, 0, R, G₀] Identity Root",
+    title: "The Identity Scalar Multiplier Field",
+    desc: "Maps straight to the Grade 0 scalar multiplicative identity. When operating as a passive background condition, it functions as a non-interacting column ideal; when active, it left-multiplies to induce symmetry-breaking profiles."
+  },
+  "Sector_Vacuum_Mass_Generation_it_Mathematician_Spatial": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identità / Inversione Faccia-7", coordinate: "B+F=0, B-F=0", simplex: "Involucro della Faccia Vuota (Ø)", cube: "[+, 0, R, G₀] Radice Identità",
+    title: "Il Campo del Moltiplicatore Scalare di Identità",
+    desc: "Si mappa direttamente sull'identità moltiplicativa scalare di Grado 0. Se opera come condizione passiva, funge da ideale di colonna non interagente; se attivo, moltiplica a sinistra lo spazio per indurre profili di rottura della simmetria."
+  },
+  "Sector_Vacuum_Mass_Generation_en_Young Learner_Spatial": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identity / Grade 7 Inversion", coordinate: "B+F=0, B-F=0", simplex: "The Empty Face (Ø) Envelope", cube: "[+, 0, R, G₀] Identity Root",
+    title: "The Invisible Origin Key & Mirror Duels",
+    desc: "The number 1 is the ultimate origin key of our world. When it acts as a passive background state, it is an invisible, uncharged ghost particle called a Sterile Neutrino. But when it acts as an active operator, it becomes the Higgs field that gives matter its weight."
+  },
+  "Sector_Vacuum_Mass_Generation_it_Young Learner_Spatial": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identità / Inversione Faccia-7", coordinate: "B+F=0, B-F=0", simplex: "Involucro della Faccia Vuota (Ø)", cube: "[+, 0, R, G₀] Radice Identità",
+    title: "La Chiave d'Origine Invisibile e i Duelli Speculari",
+    desc: "Il numero 1 è la chiave d'origine assoluta del nostro mondo. Quando agisce come sfondo passivo, è una particella fantasma invisibile chiamata Neutrino Sterile. Ma quando agisce come operatore attivo, diventa il campo di Higgs che dà peso alla materia."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Vacuum_Mass_Generation_en_Physicist_Temporal": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identity / Grade 7 Inversion", coordinate: "B+F=0, B-F=0", simplex: "The Empty Face (Ø) Envelope", cube: "[+, 0, R, G₀] Identity Root",
+    title: "The Identity Scalar Chrono-Friction Inversion",
+    desc: "Generates particle rest mass by interpreting the 0-prime scalar identity element as an active tensor operator deforming the time grid coordinates, inducing non-commutative structural friction."
+  },
+  "Sector_Vacuum_Mass_Generation_it_Physicist_Temporal": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identità / Inversione Faccia-7", coordinate: "B+F=0, B-F=0", simplex: "Involucro della Faccia Vuota (Ø)", cube: "[+, 0, R, G₀] Radice Identità",
+    title: "L'Inversione dell'Attrito Cronologico Scalare di Identità",
+    desc: "Genera la massa a riposo delle particelle interpretando l'elemento identità scalare a 0-primi come un operatore tensoriale attivo che deforma la griglia temporale, inducendo un attrito strutturale non commutativo."
+  },
+  "Sector_Vacuum_Mass_Generation_en_Mathematician_Temporal": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identity / Grade 7 Inversion", coordinate: "B+F=0, B-F=0", simplex: "The Empty Face (Ø) Envelope", cube: "[+, 0, R, G₀] Identity Root",
+    title: "The Grade 0 Operator Identity Inversion Mapping",
+    desc: "Left-multiplies the temporal state space module to induce a localized metric deformation, structuring the invariant profiles of mass scaling vectors across the network layers."
+  },
+  "Sector_Vacuum_Mass_Generation_it_Mathematician_Temporal": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identità / Inversione Faccia-7", coordinate: "B+F=0, B-F=0", simplex: "Involucro della Faccia Vuota (Ø)", cube: "[+, 0, R, G₀] Radice Identità",
+    title: "La Mappatura dell'Inversione dell'Identità dell'Operatore di Grado 0",
+    desc: "Moltiplica a sinistra il modulo dello spazio degli stati temporali per indurre una deformazione metrica localizzata, strutturando i profili invarianti dei vettori di scala della massa."
+  },
+  "Sector_Vacuum_Mass_Generation_en_Young Learner_Temporal": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identity / Grade 7 Inversion", coordinate: "B+F=0, B-F=0", simplex: "The Empty Face (Ø) Envelope", cube: "[+, 0, R, G₀] Identity Root",
+    title: "The Silent Anchor & The Weight Engine",
+    desc: "The number 1 is the clock zero-point. When it sits quietly, it acts as a ghost track called a Sterile Neutrino. But when our matrix actions flip it into an active operator, it acts as the weight engine that gives matter its heaviness."
+  },
+  "Sector_Vacuum_Mass_Generation_it_Young Learner_Temporal": {
+    id: "Sector_Vacuum_Mass_Generation", category: "Speculative Frontiers", grade: "Grade 0 Identità / Inversione Faccia-7", coordinate: "B+F=0, B-F=0", simplex: "Involucro della Faccia Vuota (Ø)", cube: "[+, 0, R, G₀] Radice Identità",
+    title: "L'Ancora Silenziosa e il Motore del Peso",
+    desc: "Il numero 1 è il punto zero dell'orologio. Quando riposa in silenzio, funge da traccia fantasma chiamata Neutrino Sterile. Ma quando le nostre azioni lo trasformano in operatore attivo, diventa il motore che dà peso alla materia."
+  }
+});
+// ============================================================================
+// NODE 21: SECTOR_GUT_JUNCTION (THE PRIMORIAL CHECKPOINT SATURATION CROSSING)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_GUT_Junction_en_Physicist_Spatial": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivector", coordinate: "B+F=8, B-F=-4", simplex: "3-face Internal Cell Cluster", cube: "[-, 1, R, G₁] ⊗ 210 Checkpoint",
+    title: "The Primorial Saturation Checkpoint",
+    desc: "Grand Unification is represented as an arithmetic saturation checkpoint at the primorial product number 210 (2 * 3 * 5 * 7), where all gauge track coordinates overlap into a dense non-commutative matrix block blade."
+  },
+  "Sector_GUT_Junction_it_Physicist_Spatial": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivettore", coordinate: "B+F=8, B-F=-4", simplex: "Cluster di Celle Interno Faccia-3", cube: "[-, 1, R, G₁] ⊗ Checkpoint 210",
+    title: "Il Checkpoint di Saturation Primorale",
+    desc: "La Grande Unificazione è rappresentata come un checkpoint di saturazione aritmetica al prodotto primorale 210 (2 * 3 * 5 * 7), dove tutte le coordinate dei canali di gauge si sovrappongono in un blocco di matrice."
+  },
+  "Sector_GUT_Junction_en_Mathematician_Spatial": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivector", coordinate: "B+F=8, B-F=-4", simplex: "3-face Internal Cell Cluster", cube: "[-, 1, R, G₁] ⊗ 210 Checkpoint",
+    title: "The Supersymmetric Quadrivector Domain",
+    desc: "A unique Grade-4 quadrivector blade squaring to -1 over the simplex. It maps directly onto the 70 independent 3-faces of the 7-simplex and the 1120 internal tesseract sub-blocks of the octeract, serving as a saturation bridge."
+  },
+  "Sector_GUT_Junction_it_Mathematician_Spatial": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivettore", coordinate: "B+F=8, B-F=-4", simplex: "Cluster di Celle Interno Faccia-3", cube: "[-, 1, R, G₁] ⊗ Checkpoint 210",
+    title: "Il Dominio Quadrivettoriale Supersimmetrico",
+    desc: "Una lama quadrivettoriale di Grado 4 che quadra a -1 sul simplesso. Si mappa sulle 70 facce-3 indipendenti del 7-simplesso e sui 1120 sotto-blocchi tesserattici interni dell'otteratto, fungendo da ponte."
+  },
+  "Sector_GUT_Junction_en_Young Learner_Spatial": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivector", coordinate: "B+F=8, B-F=-4", simplex: "3-face Internal Cell Cluster", cube: "[-, 1, R, G₁] ⊗ 210 Checkpoint",
+    title: "The Ultimate Overlap Knot",
+    desc: "The number 210 is the ultimate grand unification junction. It brings Space, Light, the Weak force, and Strong color into a single point, showing that forces melt together because they run out of arithmetic space on our grid."
+  },
+  "Sector_GUT_Junction_it_Young Learner_Spatial": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivettore", coordinate: "B+F=8, B-F=-4", simplex: "Cluster di Celle Interno Faccia-3", cube: "[-, 1, R, G₁] ⊗ Checkpoint 210",
+    title: "Il Nodo di Sovrapposizione Assoluto",
+    desc: "Il numero 210 è la giunzione definitiva della grande unificazione. Riunisce Spazio, Luce, la forza Debole e il colore Forte in un unico punto, mostrando che le forze si fondono perché esauriscono lo spazio aritmetico."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_GUT_Junction_en_Physicist_Temporal": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivector", coordinate: "B+F=8, B-F=-4", simplex: "3-face Internal Cell Cluster", cube: "[-, 1, R, G₁] ⊗ 210 Checkpoint",
+    title: "The Primorial Chronological Saturation Junction",
+    desc: "Symmetries merge because separate gauge tracks are forced to overlap into a single, dense non-commutative matrix block blade when the arithmetic product hits the packing limit of 210."
+  },
+  "Sector_GUT_Junction_it_Physicist_Temporal": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivettore", coordinate: "B+F=8, B-F=-4", simplex: "Cluster di Celle Interno Faccia-3", cube: "[-, 1, R, G₁] ⊗ Checkpoint 210",
+    title: "Il Checkpoint di Saturazione Cronologica Primorale",
+    desc: "Le simmetrie si fondono perché i canali di gauge indipendenti sono costretti a sovrapporsi in una singola lama di blocco di matrice quando il prodotto aritmetico raggiunge il limite di impacchettamento di 210."
+  },
+  "Sector_GUT_Junction_en_Mathematician_Temporal": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivector", coordinate: "B+F=8, B-F=-4", simplex: "3-face Internal Cell Cluster", cube: "[-, 1, R, G₁] ⊗ 210 Checkpoint",
+    title: "The Supersymmetric Quadrivector Chrono-Domain",
+    desc: "A unique Grade-4 quadrivector blade squaring to -1 over the hyper-lattice [B-F=-4]. It serves as an absolute primorial product saturation bridge, locking down multi-dimensional chronological coordinates."
+  },
+  "Sector_GUT_Junction_it_Mathematician_Temporal": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivettore", coordinate: "B+F=8, B-F=-4", simplex: "Cluster di Celle Interno Faccia-3", cube: "[-, 1, R, G₁] ⊗ Checkpoint 210",
+    title: "Il Dominio Quadrivettoriale Cronologico Supersimmetrico",
+    desc: "Una lama quadrivettoriale di Grado 4 che quadra a -1 sull'iper-reticolo [B-F=-4]. Funge da ponte assoluto di saturazione del prodotto primorale, bloccando le coordinate cronologiche multi-dimensionali."
+  },
+  "Sector_GUT_Junction_en_Young Learner_Temporal": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivector", coordinate: "B+F=8, B-F=-4", simplex: "3-face Internal Cell Cluster", cube: "[-, 1, R, G₁] ⊗ 210 Checkpoint",
+    title: "Saturation of the Flux",
+    desc: "The number 210 is the ultimate timeline knot. It brings timelines, light, and all clock wheels into a single point, showing that forces melt together because they run out of arithmetic space on our grid map."
+  },
+  "Sector_GUT_Junction_it_Young Learner_Temporal": {
+    id: "Sector_GUT_Junction", category: "Speculative Frontiers", grade: "Grade 4 Quadrivettore", coordinate: "B+F=8, B-F=-4", simplex: "Cluster di Celle Interno Faccia-3", cube: "[-, 1, R, G₁] ⊗ Checkpoint 210",
+    title: "La Saturazione del Flusso",
+    desc: "Il numero 210 è il nodo delle linee temporali definitivo. Riunisce linee temporali, luce e tutte le ruote degli orologi in un unico punto, mostrando che le forze si fondono perché esauriscono le coordinate sulla griglia."
+  }
+});
+// ============================================================================
+// NODE 22: SECTOR_COSMIC_HORIZON (THE MAXIMUM SATURATED PSEUDOSCALAR BOUNDARY)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Cosmic_Horizon_en_Physicist_Spatial": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Pseudoscalar Volume", coordinate: "B+F=8, B-F=-8", simplex: "1 Whole 7-face Simplex", cube: " ⊗ Saturated Node",
+    title: "The Maximal Pseudoscalar Horizon Boundary",
+    desc: "The maximal 256-multiplicity element representing the global pseudoscalar volume of Cl(4,4,0), marking the absolute anti-podal vertex node (11111111) on the octeract lattice."
+  },
+  "Sector_Cosmic_Horizon_it_Physicist_Spatial": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Volume Pseudoscalare", coordinate: "B+F=8, B-F=-8", simplex: "1 Intero Simplesso Faccia-7", cube: " ⊗ Nodo Saturato",
+    title: "L'Orizzonte Pseudoscalare Massimo di Confine",
+    desc: "L'elemento a massima molteplicità 256 rappresenta il volume pseudoscalare globale di Cl(4,4,0), segnando il nodo del vertice antipodale assoluto (11111111) sul reticolo dell'otteratto."
+  },
+  "Sector_Cosmic_Horizon_en_Mathematician_Spatial": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Pseudoscalar Volume", coordinate: "B+F=8, B-F=-8", simplex: "1 Whole 7-face Simplex", cube: " ⊗ Saturated Node",
+    title: "The Saturated Pseudoscalar Volume Reset",
+    desc: "The highest-multiplicity 8-prime element, 256 (2^8), mapping to the global volume reset boundary in Clifford Bott Periodicity. It completely saturates the associative tensor product space, forcing an automatic involutionary reset."
+  },
+  "Sector_Cosmic_Horizon_it_Mathematician_Spatial": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Volume Pseudoscalare", coordinate: "B+F=8, B-F=-8", simplex: "1 Intero Simplesso Faccia-7", cube: " ⊗ Nodo Saturato",
+    title: "Il Reset Saturato del Volume Pseudoscalare",
+    desc: "L'elemento a 8 primi con massima molteplicità 256 (2^8), che si mappa sul reset del confine globale nella periodicità di Bott di Clifford, saturando completamente i prodotti tensoriali dello spazio-tempo."
+  },
+  "Sector_Cosmic_Horizon_en_Young Learner_Spatial": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Pseudoscalar Volume", coordinate: "B+F=8, B-F=-8", simplex: "1 Whole 7-face Simplex", cube: " ⊗ Saturated Node",
+    title: "The Big Cosmic Reset Wall",
+    desc: "When we flip all 8 switches to their active state, the system hits the number 256. This is the absolute outer edge of our toy universe—the cosmic sky wall. It acts as a global mirror boundary that reflects escaping paths back inside."
+  },
+  "Sector_Cosmic_Horizon_it_Young Learner_Spatial": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Volume Pseudoscalare", coordinate: "B+F=8, B-F=-8", simplex: "1 Intero Simplesso Faccia-7", cube: " ⊗ Nodo Saturato",
+    title: "Il Grande Muro del Reset Cosmico",
+    desc: "Quando attiviamo tutti gli 8 interruttori insieme, il sistema raggiunge la saturazione al numero 256. Questo è il confine esterno assoluto del nostro universo giocattolo: la parete del cielo cosmico, che funge da specchio resettando i cammini di fuga."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Cosmic_Horizon_en_Physicist_Temporal": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Pseudoscalar Volume", coordinate: "B+F=8, B-F=-8", simplex: "1 Whole 7-face Simplex", cube: " ⊗ Saturated Node",
+    title: "The End of Time Boundary",
+    desc: "The maximal 256-multiplicity element functions as the macroscopic horizon that enforces geometric closures on a chronological background, establishing Hubble boundary constraints on time grids."
+  },
+  "Sector_Cosmic_Horizon_it_Physicist_Temporal": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Volume Pseudoscalare", coordinate: "B+F=8, B-F=-8", simplex: "1 Intero Simplesso Faccia-7", cube: " ⊗ Nodo Saturato",
+    title: "Il Confine della Fine del Tempo",
+    desc: "L'elemento a massima molteplicità 256 funge da orizzonte macroscopico che impone la chiusura geometrica sullo sfondo cronologico, stabilendo i vincoli di confine di Hubble sulle griglie temporali."
+  },
+  "Sector_Cosmic_Horizon_en_Mathematician_Temporal": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Pseudoscalar Volume", coordinate: "B+F=8, B-F=-8", simplex: "1 Whole 7-face Simplex", cube: " ⊗ Saturated Node",
+    title: "The Saturated Pseudoscalar Temporal Volume Reset",
+    desc: "Saturates the associative chronological base and fiber fields completely, forcing an automatic involutionary boundary reset over the mapping via Clifford Bott Periodicity."
+  },
+  "Sector_Cosmic_Horizon_it_Mathematician_Temporal": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Volume Pseudoscalare", coordinate: "B+F=8, B-F=-8", simplex: "1 Intero Simplesso Faccia-7", cube: " ⊗ Nodo Saturato",
+    title: "Il Reset del Volume Temporale Pseudoscalare",
+    desc: "Satura completamente i campi tensoriali cronologici della base e della fibra, forzando un reset del confine involutivo automatico sulla mappatura tramite la periodicità di Bott di Clifford."
+  },
+  "Sector_Cosmic_Horizon_en_Young Learner_Temporal": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Pseudoscalar Volume", coordinate: "B+F=8, B-F=-8", simplex: "1 Whole 7-face Simplex", cube: " ⊗ Saturated Node",
+    title: "The Pseudoscalar Time Boundary",
+    desc: "Flipping all 8 switches hits the maximum number 256—the edge of time where Bott Periodicity completely resets history, reflecting escaping paths back into the active loops."
+  },
+  "Sector_Cosmic_Horizon_it_Young Learner_Temporal": {
+    id: "Sector_Cosmic_Horizon", category: "Speculative Frontiers", grade: "Grade 8 Volume Pseudoscalare", coordinate: "B+F=8, B-F=-8", simplex: "1 Intero Simplesso Faccia-7", cube: " ⊗ Nodo Saturato",
+    title: "Il Confine Temporale Pseudoscalare",
+    desc: "Attivando tutti gli 8 interruttori si raggiunge la saturazione al numero 256: il confine estremo del tempo in cui la periodicità di Bott resetta completamente la storia, riflettendo i cammini di fuga all'interno."
+  }
+});
+// ============================================================================
+// NODE 23: SECTOR_ROW7_MIRROR (THE CHIRAL HALF-POOL DIRECT SUM THRESHOLD)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Row7_Mirror_en_Physicist_Spatial": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, B-F=+1", simplex: "6-face Hyper-surface Envelope", cube: "Cl(4,3) Chiral Half-Pool Threshold",
+    title: "The Cl(4,3) Chiral Half-Pool Threshold",
+    desc: "A 128-dimensional semi-simple linear algebra tracking the boundary hyper-surface envelope of a single polarized sector, governing the precise hyperplane reflection mappings required to execute charge conjugation invariants."
+  },
+  "Sector_Row7_Mirror_it_Physicist_Spatial": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grado 7 Orizzonte d'Inversione", coordinate: "B+F=7, B-F=+1", simplex: "Involucro Iper-Superficiale Faccia-6", cube: "Soglia del Semipool Chirale Cl(4,3)",
+    title: "Il Semipool Chirale di Confine Cl(4,3)",
+    desc: "Un'algebra lineare semisemplice a 128 dimensioni che traccia l'involucro iper-superficiale di confine di un singolo settore polarizzato, governando le riflessioni di iperpiano richieste per calcolare la coniugazione di carica."
+  },
+  "Sector_Row7_Mirror_en_Mathematician_Spatial": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, B-F=+1", simplex: "6-face Hyper-surface Envelope", cube: "Cl(4,3) Chiral Half-Pool Threshold",
+    title: "The Cl(4,3) Direct Sum Split Semipool M_8(R) ⊕ M_8(R)",
+    desc: "The final 128-element direct sum threshold before global saturation, generating the specific invariant hyperplane tracking parameters required to compute discrete automorphic Clifford grading inversions and bijective NOT involutions."
+  },
+  "Sector_Row7_Mirror_it_Mathematician_Spatial": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grado 7 Orizzonte d'Inversione", coordinate: "B+F=7, B-F=+1", simplex: "Involucro Iper-Superficiale Faccia-6", cube: "Soglia del Semipool Chirale Cl(4,3)",
+    title: "La Scissione in Somma Diretta M_8(R) ⊕ M_8(R) Cl(4,3)",
+    desc: "La soglia finale in somma diretta a 128 elementi prima della saturazione globale, che genera i parametri di tracciamento d'iperpiano invarianti necessari per calcolare le inversioni discrete di gradazione Clifford e le involuzioni NOT biunivoche."
+  },
+  "Sector_Row7_Mirror_en_Young Learner_Spatial": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, B-F=+1", simplex: "6-face Hyper-surface Envelope", cube: "Cl(4,3) Chiral Half-Pool Threshold",
+    title: "The Mirror Gate / The Mirror World Gate",
+    desc: "This threshold represents the absolute outer edge of a single family group of matter, consisting of exactly 128 blocks. It acts as a global mirror gate that houses the blueprints to flip any ordinary state into its opposite antimatter twin."
+  },
+  "Sector_Row7_Mirror_it_Young Learner_Spatial": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grado 7 Orizzonte d'Inversione", coordinate: "B+F=7, B-F=+1", simplex: "Involucro Iper-Superficiale Faccia-6", cube: "Soglia del Semipool Chirale Cl(4,3)",
+    title: "Il Cancello Specchio / Il Cancello del Mondo Specchio",
+    desc: "Questa soglia rappresenta il confine esterno assoluto di un singolo gruppo familiare di materia composto da esattamente 128 blocchi. Funziona come un cancello a specchio globale che contiene i progetti per capovolgere qualsiasi stato ordinario nel suo gemello opposto di antimateria."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Row7_Mirror_en_Physicist_Temporal": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, B-F=+1", simplex: "6-face Hyper-surface Envelope", cube: "Cl(4,3) Chiral Half-Pool Threshold",
+    title: "The Direct Sum Chrono-Inversion Frontier",
+    desc: "The 128-element Direct Sum envelope limits the hyper-surface inversion frontier under a time-positive background metric, establishing the precise coordinate alignments to map clock configurations into time-reversed complements."
+  },
+  "Sector_Row7_Mirror_it_Physicist_Temporal": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grado 7 Orizzonte d'Inversione", coordinate: "B+F=7, B-F=+1", simplex: "Involucro Iper-Superficiale Faccia-6", cube: "Soglia del Semipool Chirale Cl(4,3)",
+    title: "La Frontiera di Crono-Inversione in Somma Diretta",
+    desc: "L'involucro a 128 elementi limita la frontiera di inversione iper-superficiale sotto una metrica di sfondo a tempo positivo, stabilendo gli allineamenti precisi per mappare le configurazioni degli orologi nei loro complementi invertiti nel tempo."
+  },
+  "Sector_Row7_Mirror_en_Mathematician_Temporal": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, B-F=+1", simplex: "6-face Hyper-surface Envelope", cube: "Cl(4,3) Chiral Half-Pool Threshold",
+    title: "The direct sum M_8(R) ⊕ M_8(R) Temporal Involution Limit",
+    desc: "Bounds a direct sum tracking module of exactly 128 independent components, enforcing discrete automorphic closures that project the localized timeline vectors onto their anti-podal time-inversion ideals."
+  },
+  "Sector_Row7_Mirror_it_Mathematician_Temporal": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grado 7 Orizzonte d'Inversione", coordinate: "B+F=7, B-F=+1", simplex: "Involucro Iper-Superficiale Faccia-6", cube: "Soglia del Semipool Chirale Cl(4,3)",
+    title: "Il Limite di Involuzione Temporale della Somma Diretta M_8(R) ⊕ M_8(R)",
+    desc: "Delimita un modulo di tracciamento in somma diretta di esattamente 128 componenti indipendenti, imponendo chiusure automorfe discrete che proiettano i vettori delle linee temporali localizzate sui loro ideali antipodali di inversione temporale."
+  },
+  "Sector_Row7_Mirror_en_Young Learner_Temporal": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, B-F=+1", simplex: "6-face Hyper-surface Envelope", cube: "Cl(4,3) Chiral Half-Pool Threshold",
+    title: "Specchio di Fase Storica",
+    desc: "This boundary tracks exactly 128 hidden clock positions. It acts as an absolute historical flipping line that tells the master engine how to take a running timeline and play its ticking switches completely backwards."
+  },
+  "Sector_Row7_Mirror_it_Young Learner_Temporal": {
+    id: "Sector_Row7_Mirror", category: "Speculative Frontiers", grade: "Grado 7 Orizzonte d'Inversione", coordinate: "B+F=7, B-F=+1", simplex: "Involucro Iper-Superficiale Faccia-6", cube: "Soglia del Semipool Chirale Cl(4,3)",
+    title: "Specchio di Fase Storica",
+    desc: "Questo confine traccia esattamente 128 posizioni di orologi nascosti. Agisce come una linea di inversione storica assoluta che mostra al motore master come prendere una linea temporale attiva e far scattare i suoi interruttori completamente al contrario."
+  }
+});
+// ============================================================================
+// NODE 24: SECTOR_OPEN_QUESTIONS (THE CRITIQUES AND SYSTEM INCOMPLETENESS INVARIANTS)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Open_Questions_en_Physicist_Spatial": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Multi-vector Component", coordinate: "L_a R_b Limits", simplex: "Unclosed Scaffold Network", cube: "Model Incompleteness Invariants",
+    title: "Open Structural Anomalies & The Furey Lens",
+    desc: "A formal acknowledgment of model constraints. Vulnerabilities include: the Mass Scaling Defect (absolute scale calculation failure), the absence of a native mechanism for continuous Renormalization Group (RGE) coupling running, and the CKM Suppression Matrix Precision Drift."
+  },
+  "Sector_Open_Questions_it_Physicist_Spatial": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Componente Multivettore", coordinate: "Limiti L_a R_b", simplex: "Rete dello Scaffold Non Chiusa", cube: "Invarianti di Incompletezza del Modello",
+    title: "Anomalie Strutturali Aperte e la Lente di Furey",
+    desc: "Un riconoscimento formale dei vincoli del modello. Le vulnerabilità includono: il Difetto di Scala della Massa (impossibilità di calcolo della scala assoluta), l'assenza di un meccanismo nativo per la corsa delle costanti (RGE) e lo Scostamento di Precisione della Matrice di Soppressione CKM."
+  },
+  "Sector_Open_Questions_en_Mathematician_Spatial": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Multi-vector Component", coordinate: "L_a R_b Limits", simplex: "Unclosed Scaffold Network", cube: "Model Incompleteness Invariants",
+    title: "The Scaffold Incompleteness Invariant",
+    desc: "Acknowledges fundamental mathematical limitations over the non-commutative network: the current system fails to dynamically derive continuous running curves or project smooth continuous manifolds from discrete binary vertex jumps."
+  },
+  "Sector_Open_Questions_it_Mathematician_Spatial": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Componente Multivettore", coordinate: "Limiti L_a R_b", simplex: "Rete dello Scaffold Non Chiusa", cube: "Invarianti di Incompletezza del Modello",
+    title: "L'Invariante di Incompletezza dello Scaffold",
+    desc: "Riconoscimento formale dei vincoli matematici sulla rete non commutativa: il sistema attuale non riesce a derivare dinamicamente le curve di scorrimento continuo o a proiettare varietà lisce e continue partendo da salti discreti dei vertici binari."
+  },
+  "Sector_Open_Questions_en_Young Learner_Spatial": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Multi-vector Component", coordinate: "L_a R_b Limits", simplex: "Unclosed Scaffold Network", cube: "Model Incompleteness Invariants",
+    title: "Cracks in the Toy Box Construction",
+    desc: "Even the most beautiful toy boxes have cracks where things don't fit perfectly. This section shows our honest leaks: our rules can explain why things get heavy, but they cannot calculate their weights from scratch without cheating."
+  },
+  "Sector_Open_Questions_it_Young Learner_Spatial": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Componente Multivettore", coordinate: "Limiti L_a R_b", simplex: "Rete dello Scaffold Non Chiusa", cube: "Invarianti di Incompletezza del Modello",
+    title: "Crepe nella Costruzione della Scatola",
+    desc: "Anche le scatole di giocattoli più belle hanno fessure in cui le cose non si incastrano alla perfezione. Questa sezione mostra i nostri limiti onesti: le nostre regole spiegano perché gli oggetti pesano, ma non sanno calcolarne il peso da sole."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Open_Questions_en_Physicist_Temporal": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Multi-vector Component", coordinate: "L_a R_b Limits", simplex: "Unclosed Scaffold Network", cube: "Model Incompleteness Invariants",
+    title: "The Incomplete Chrono-Manifold Scaffold Critique",
+    desc: "Exposes core constraints under the time-positive lens: the grid matrix tracks discrete chronological scaling fractions but fails to dynamically generate continuous RGE running dilation paths without continuous parameters."
+  },
+  "Sector_Open_Questions_it_Physicist_Temporal": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Componente Multivettore", coordinate: "Limiti L_a R_b", simplex: "Rete dello Scaffold Non Chiusa", cube: "Invarianti di Incompletezza del Modello",
+    title: "La Critica dello Scaffold del Crono-Manifold Incompleto",
+    desc: "Espone i vincoli strutturali sotto la lente del tempo positivo: la matrice della griglia traccia frazioni di scala cronologiche discrete, ma non riesce a generare dinamicamente i percorsi di dilatazione continua RGE senza parametri continui."
+  },
+  "Sector_Open_Questions_en_Mathematician_Temporal": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Multi-vector Component", coordinate: "L_a R_b Limits", simplex: "Unclosed Scaffold Network", cube: "Model Incompleteness Invariants",
+    title: "The Lattice Continuum Omission Paradox",
+    desc: "The systematic limitation of the discrete model. Transitioning from discrete, binary 8-bit vertex jumps to smooth, differentiable macroscopic time tracks remains an unproven loop without metric field deformations."
+  },
+  "Sector_Open_Questions_it_Mathematician_Temporal": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Componente Multivettore", coordinate: "Limiti L_a R_b", simplex: "Rete dello Scaffold Non Chiusa", cube: "Invarianti di Incompletezza del Modello",
+    title: "Il Paradosso dell'Orizzonte di Omissione del Continuo",
+    desc: "La limitazione sistematica del modello discreto. Il passaggio da salti binari discreti a 8 bit a tracce temporali macroscopiche differenziabili rimane un ciclo di meccanica statistica non dimostrato senza deformazioni del campo metrico."
+  },
+  "Sector_Open_Questions_en_Young Learner_Temporal": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Multi-vector Component", coordinate: "L_a R_b Limits", simplex: "Unclosed Scaffold Network", cube: "Model Incompleteness Invariants",
+    title: "Cracks in the Moving Film Reel",
+    desc: "Our framework has leaks: its rules explain how things get heavy but can't measure weights perfectly, and our switches switch instantly instead of sliding smoothly like real moving time does."
+  },
+  "Sector_Open_Questions_it_Young Learner_Temporal": {
+    id: "Sector_Open_Questions", category: "Speculative Frontiers", grade: "Componente Multivettore", coordinate: "Limiti L_a R_b", simplex: "Rete dello Scaffold Non Chiusa", cube: "Invarianti di Incompletezza del Modello",
+    title: "Fessure nella Pellicola del Tempo",
+    desc: "Il nostro modello ha dei punti deboli: spiega perché gli oggetti pesano ma non misura la massa al grammo, e i nostri interruttori scattano di colpo all'istante invece di scorrere fluidi come il tempo reale."
+  }
+});
+// ============================================================================
+// NODE 25: SECTOR_FUREY_LEDGER (THE CROWN REGULAR BIMODULE AUDIT SUITE)
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // --- SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Furey_Ledger_en_Physicist_Spatial": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Regular Bimodule", coordinate: "B+F=6, B-F=+2", simplex: "Peirce Idempotent Vertex Projector", cube: "Cl(6,0) ⊗ Cl(2,0) Regular Bimodule",
+    title: "Chapter I: The Furey Regular Representation Ledger // The Dual-Core Audit Log",
+    desc: "A dedicated research directory mapping complex octonionic chains (R⊗O) onto lattice vertices. Blind multi-agent testing demonstrates that when the answer text is completely withheld, different frontier intelligence models independently prove that structural parameters (like the 4/17 packing fraction) are static geometric invariants of the lattice algebra acting on itself."
+  },
+  "Sector_Furey_Ledger_it_Physicist_Spatial": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Bimodulo Regolare", coordinate: "B+F=6, B-F=+2", simplex: "Proiettore del Vertice Idempotente di Peirce", cube: "Bimodulo Regolare Cl(6,0) ⊗ Cl(2,0)",
+    title: "Capitolo I: Il Registro della Rappresentazione Regolare di Furey // Log del Doppio Core",
+    desc: "Un registro di ricerca dedicato che mappa le catene ottonioniche complesse (R⊗O) sui vertici del reticolo. I test alla cieca dimostrano che, omettendo il testo della soluzione, diversi modelli AI derivano indipendentemente che i parametri strutturali (come la frazione 4/17) sono invarianti geometrici statici dell'algebra."
+  },
+  "Sector_Furey_Ledger_en_Mathematician_Spatial": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Regular Bimodule", coordinate: "B+F=6, B-F=+2", simplex: "Peirce Idempotent Vertex Projector", cube: "Cl(6,0) ⊗ Cl(2,0) Regular Bimodule",
+    title: "The Regular Bimodule Representation Ledger // Space-Positive Topology",
+    desc: "Maps Furey's division algebra chains and Peirce decomposition idempotents straight onto our master coordinate lattice, extending single-generation minimal left ideals into three full fermion families via global Clifford algebra Witt splits."
+  },
+  "Sector_Furey_Ledger_it_Mathematician_Spatial": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Bimodulo Regolare", coordinate: "B+F=6, B-F=+2", simplex: "Proiettore del Vertice Idempotente di Peirce", cube: "Bimodulo Regolare Cl(6,0) ⊗ Cl(2,0)",
+    title: "Il Registro della Rappresentazione Bimodulo Regolare // Topologia Spazio-Positiva",
+    desc: "Mappa le catene di algebra di divisione e gli idempotenti di Peirce direttamente sulle coordinate master, estendendo gli ideali sinistri minimi di singola generazione in tre famiglie fermioniche complete tramite gli split di Witt."
+  },
+  "Sector_Furey_Ledger_en_Young Learner_Spatial": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Regular Bimodule", coordinate: "B+F=6, B-F=+2", simplex: "Peirce Idempotent Vertex Projector", cube: "Cl(6,0) ⊗ Cl(2,0) Regular Bimodule",
+    title: "Professor Cohl's Secret Blueprint",
+    desc: "This is a special research letter written directly to an amazing scientist named Professor Cohl Furey. It uses our 8-button matrix layout rules to show her how to make her single magic block boxes stack three generations tall."
+  },
+  "Sector_Furey_Ledger_it_Young Learner_Spatial": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Bimodulo Regolare", coordinate: "B+F=6, B-F=+2", simplex: "Proiettore del Vertice Idempotente di Peirce", cube: "Bimodulo Regolare Cl(6,0) ⊗ Cl(2,0)",
+    title: "Il Progetto Segreto della Professoressa Cohl",
+    desc: "Questa è una lettera di ricerca speciale scritta direttamente a una scienziata straordinaria di nome Cohl Furey. Usa le nostre regole a 8 pulsanti per mostrarle come impilare le sue scatole magiche fino a tre generazioni."
+  },
+
+  // --- TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND) ---
+  "Sector_Furey_Ledger_en_Physicist_Temporal": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Regular Bimodule", coordinate: "B+F=8, B-F=0", simplex: "Peirce Idempotent Vertex Projector", cube: "Cl(4,4,0) Dual-Ontology Validation Node",
+    title: "The Chrono-Bimodule Research Ledger",
+    desc: "Integrates division algebra chains into the regular representations of a temporal vector space, providing a complete structural audit log of multi-generational family extensions via unguided intelligence match outputs."
+  },
+  "Sector_Furey_Ledger_it_Physicist_Temporal": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Bimodulo Regolare", coordinate: "B+F=8, B-F=0", simplex: "Proiettore del Vertice Idempotente di Peirce", cube: "Nodo di Validazione Doppia Ontologia Cl(4,4,0)",
+    title: "Il Registro di Ricerca del Crono-Bimodulo",
+    desc: "Integra le catene di algebre di divisione nelle rappresentazioni regolari di uno spazio vettoriale temporale, fornendo un log completo delle estensioni multi-generazionali tramite i risultati dei test alla cieca dei modelli."
+  },
+  "Sector_Furey_Ledger_en_Mathematician_Temporal": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Regular Bimodule", coordinate: "B+F=8, B-F=0", simplex: "Peirce Idempotent Vertex Projector", cube: "Cl(4,4,0) Dual-Ontology Validation Node",
+    title: "The Chrono-Bimodule Regular Representation Ledger",
+    desc: "UN-GUIDED AUDIT CONVERGENCE: Establishes that under an active t² = +1 metric with no solution prompts provided, the electroweak core resolves into two distinct, valid mathematical views. The Orbit-Sector path yields an irreducible 8/19 chronological capacity fraction (~0.421), while the Multi-Vector Blade path yields an 83/219 space-density fraction (~0.379)."
+  },
+  "Sector_Furey_Ledger_it_Mathematician_Temporal": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Bimodulo Regolare", coordinate: "B+F=8, B-F=0", simplex: "Proiettore del Vertice Idempotente di Peirce", cube: "Nodo di Validazione Doppia Ontologia Cl(4,4,0)",
+    title: "Il Registro della Rappresentazione Regolare del Crono-Bimodulo",
+    desc: "CONVERGENZA DELL'AUDIT ALLA CIECA: Dimostra che sotto metrica t² = +1 senza suggerimenti, il nucleo elettrodebole rivela due visioni distinte. Il cammino delle Orbite produce una capacità cronologica di 8/19 (~0.421), mentre il cammino delle Lame produce una densità dello spazio di 83/219 (~0.379)."
+  },
+  "Sector_Furey_Ledger_en_Young Learner_Temporal": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Regular Bimodule", coordinate: "B+F=8, B-F=0", simplex: "Peirce Idempotent Vertex Projector", cube: "Cl(4,4,0) Dual-Ontology Validation Node",
+    title: "Professor Cohl's Clockwork Blueprint",
+    desc: "This text helps answer deep mysteries in her research, showing her how to take her magic, heavy blocks of matter and align them beautifully with our time-positive background clocks."
+  },
+  "Sector_Furey_Ledger_it_Young Learner_Temporal": {
+    id: "Sector_Furey_Ledger", category: "Speculative Frontiers", grade: "Bimodulo Regolare", coordinate: "B+F=8, B-F=0", simplex: "Proiettore del Vertice Idempotente di Peirce", cube: "Nodo di Validazione Doppia Ontologia Cl(4,4,0)",
+    title: "Il Progetto Meccanico della Professoressa Cohl",
+    desc: "Questo testo aiuta a risolvere profondi misteri della sua ricerca, mostrandole come prendere le sue scatole pesanti di materia e allinearle perfettamente con i nostri orologi di sfondo a tempo positivo."
+  }
+});
