@@ -28,3 +28,44 @@
 .markdown-response :is(h1,h2,h3,h4){color:#f8fafc;line-height:1.2;margin:1rem 0 .5rem}.markdown-response h1{font-size:1.3rem}.markdown-response h2{font-size:1.15rem}.markdown-response h3{font-size:1.03rem}.markdown-response p{margin:.6rem 0}.markdown-response ul,.markdown-response ol{padding-left:1.35rem;margin:.65rem 0}.markdown-response li{margin:.3rem 0}.markdown-response code{background:#172033;border:1px solid #30405d;border-radius:4px;padding:.1rem .3rem;color:#b7f3f8}.markdown-response pre{overflow:auto;background:#070b14;border:1px solid #27324d;padding:.8rem;border-radius:7px}.markdown-response pre code{border:0;background:none;padding:0}.markdown-response .katex-display{overflow-x:auto;padding:.65rem 0;color:#f8fafc}.markdown-response blockquote{border-left:3px solid #4ddbea;margin:.8rem 0;padding:.15rem .85rem;color:#b9c3db}.agent-column .katex{color:#f8fafc}
 /* Chat composer and full-width audit arena */
 .chat{max-width:860px}.chat.chat-has-match{max-width:none}.chat-composer{display:flex;align-items:stretch;gap:12px;margin-top:20px}.chat-composer textarea{flex:1;min-width:0;min-height:76px;max-height:280px;resize:vertical;overflow-y:auto;background:#101323;border:1px solid #e7e9f5;border-radius:12px;color:#fff;padding:15px 18px;font:16px/1.5 'Space Grotesk';outline:none}.chat-composer textarea:focus{border-color:#61ddea;box-shadow:0 0 0 3px rgba(97,221,234,.12)}.chat-actions{display:flex;gap:8px;align-items:stretch}.chat .ask-button,.chat .match-button{margin:0;min-height:100%;padding:0 19px;white-space:nowrap}.chat .ask-button{background:#61ddea;color:#071017}.chat .match-button{background:#6d49a8;color:#fbf7ff;border:1px solid #a78bfa}.chat .match-button:disabled,.chat .ask-button:disabled{opacity:.55;cursor:not-allowed}.match-arena{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:24px}.agent-column{min-height:300px;padding:20px;font-size:15px}.agent-column .streamdown{max-width:none}.agent-column .katex-display{max-width:100%}@media(max-width:800px){.chat{max-width:none}.chat-composer{flex-direction:column}.chat-composer textarea{min-height:110px;font-size:16px}.chat-actions{display:grid;grid-template-columns:1fr 1fr}.chat .ask-button,.chat .match-button{min-height:46px;padding:0 10px;font-size:13px}.match-arena{grid-template-columns:1fr;padding:14px;gap:14px;margin-left:0;margin-right:0}.agent-column{min-height:180px;padding:16px;font-size:14px}.agent-column .katex-display{font-size:.9em}}
+
+
+/* Layout consolidation: shared section rhythm, legible canvas captions, and narrow-screen flow. */
+:root{--surface:#101323;--surface-raised:#151a30;--line:#303752;--muted:#b7bdd4;--section-space:clamp(2.5rem,6vw,5rem)}
+main{width:min(100%,1440px);padding-inline:clamp(1rem,4vw,2.625rem)}
+.turntable,.lattice-map,.tour-block,.explorer-intro,.sector-navigator,.findings,.dict,.chat{border-top:1px solid var(--line);padding-block:var(--section-space);margin:0}
+.turntable h2,.lattice-map h2,.explorer-intro h2,.findings h2,.dict h2,.chat h2{font-size:clamp(1.7rem,3vw,2.25rem);line-height:1.08;letter-spacing:-.045em}
+.diagram{display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.diagram>span{display:none}
+.canvas{min-height:clamp(23rem,42vw,30rem)}
+.genesis-canvas .canvas-legend{left:14px!important;right:14px!important;bottom:14px!important;max-width:calc(100% - 28px);padding:10px 12px;background:linear-gradient(90deg,rgba(7,9,22,.94),rgba(7,9,22,.7));border:1px solid rgba(106,120,157,.36);border-radius:8px;font-size:11px!important;line-height:1.35!important}
+.genesis-canvas .canvas-legend>div:not(:first-child){display:none}
+.genesis-canvas .canvas-legend span{height:5px!important;max-width:16px;flex:1}
+.result,.tour{gap:clamp(1.25rem,3vw,2.5rem)}
+.paper,.proof-map,.sector-group,.findings .f-card,.dict .d-card{border-color:var(--line);background:var(--surface)}
+.findings{max-width:none;padding-inline:0!important}
+.findings .lede,.dict .lede{max-width:760px;margin:0 0 1.75rem}
+.findings .f-card{padding:clamp(1rem,2.5vw,1.5rem);margin:1rem 0}
+.findings .f-body{gap:clamp(1rem,3vw,2rem)}
+.findings figure{min-width:0}
+.findings .f-cap{display:block;line-height:1.45;margin-top:.65rem;color:var(--muted)}
+.dict{max-width:none!important;padding-inline:0!important}
+.dict .d-card{border-color:var(--line)}
+.chat{max-width:none}
+@media(max-width:800px){
+  main{padding-inline:1rem}
+  .turntable,.lattice-map,.tour-block,.explorer-intro,.sector-navigator,.findings,.dict,.chat{padding-block:2.25rem}
+  .tour,.result{grid-template-columns:minmax(0,1fr)}
+  .tour-copy{padding:0}
+  .tour h2{font-size:clamp(1.8rem,8vw,2.4rem)}
+  .diagram{border-radius:14px}
+  .canvas{min-height:22rem}
+  .genesis-canvas .canvas-legend{font-size:10px!important;left:10px!important;right:10px!important;bottom:10px!important;max-width:calc(100% - 20px);padding:8px 10px}
+  .proof-map{padding:14px}
+  .findings .f-body{grid-template-columns:minmax(0,1fr)}
+  .findings svg{max-height:none}
+  .sector-groups{grid-template-columns:minmax(0,1fr)}
+  .action-model{flex-wrap:wrap}
+  .action-model i{display:none}
+  .action-model span{flex:1 1 12rem}
+}
