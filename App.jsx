@@ -4,6 +4,7 @@ import { createMathPlugin } from '@streamdown/math';
 import { BlockMath, InlineMath } from 'react-katex';
 import SimplexCanvas from './SimplexCanvas';
 import GenesisCanvas from './GenesisCanvas';
+import FureyFindings from './FureyFindings';
 import { PROOFS, STATUS_LABEL, PROOF_UI } from './proofs';
 import { KNOWLEDGE_BASE_DIRECTORY, MENU_SECTOR_LIST, GENESIS_STAGES, getCompleteDualMetricDisplayData, getGenesisDisplayData } from './matrixData';
 
@@ -52,6 +53,7 @@ export default function App(){
   <section className="explorer-intro"><p className="eyebrow">{c.active.toUpperCase()}</p><h2>{c.active}</h2><p>{c.activeNote}</p></section>
   <section className="result active-result" ref={resultRef} tabIndex="-1"><article className="paper"><p className="eyebrow">{t.now.toUpperCase()} · {selected.category.toUpperCase()} · {view.toUpperCase()} VIEW</p><h2>{record.title}</h2>{record.subtitle&&<p className="subtitle">{record.subtitle}</p>}<p>{record.desc}</p><ResultFormal sector={sector} profile={profile} lang={lang} record={record}/></article><aside className="proof-map"><p className="eyebrow">{t.activeVisual.toUpperCase()}</p><SimplexCanvas step={3} activeView={view} sector={sector} metricMode={metricMode} lang={lang}/><div className="view-pills">{VIEWS.map(v=><button onClick={()=>setView(v)} className={v===view?'active':''} key={v}>{v}: {telemetry(record,v)}</button>)}</div></aside></section>
   <SectorNavigator lang={lang} profile={profile} metricMode={metricMode} t={t} sector={sector} setSector={setSector} resultRef={resultRef}/>
+  <FureyFindings lang={lang} profile={profile}/>
   <ChatPanel lang={lang} profile={profile} metricMode={metricMode}/><footer><span>Clifford · Prime · Simplex · Cube</span><span>{t.note}</span></footer>
  </main>
 }
