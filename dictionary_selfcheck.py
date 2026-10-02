@@ -229,6 +229,30 @@ def build():
                  diag_item('T3','weak T₃ = ½(P_H2 − P_H1)',(PH2-PH1)/2,'su(2) Cartan'),
                  diag_item('l3','colour λ₃ = P_O1 − P_O2',PO(0)-PO(1),'su(3) Cartan'),
                  diag_item('l8','colour λ₈ ∝ P_O1 + P_O2 − 2 P_O3',PO(0)+PO(1)-2*PO(2),'su(3) Cartan')]
+    # --- Cartan ledger: audited face counts, grade splits, sign patterns, shared faces
+    mask=D['omega']['N']; lin=lambda n: bin(n&mask).count('1')%2==0
+    led={}; allc=set(); allp=set()
+    for c in D['cartan']:
+        cn={f['N'] for f in c['faces']}; pn={f['N'] for f in c['phase_faces']}
+        assert 0 not in cn and 0 not in pn                                  # empty face absent: traceless
+        assert {n^mask for n in cn}==pn                                     # phase faces = omega-translate (XOR 123)
+        assert all(lin(n) for n in cn|pn)                                   # all C-linear
+        cf=[Fraction(f['coef']) for f in c['faces']]; pf=[Fraction(f['coef']) for f in c['phase_faces']]
+        gr=lambda fs:{g:sum(1 for f in fs if f['grade']==g) for g in sorted({f['grade'] for f in fs})}
+        led[c['id']]={'code_faces':len(cn),'phase_faces':len(pn),'code_grades':gr(c['faces']),'phase_grades':gr(c['phase_faces']),
+                      'code_sum':str(sum(cf)),'phase_sum':str(sum(pf)),'code_pos':sum(1 for x in cf if x>0),'phase_pos':sum(1 for x in pf if x>0),
+                      'code_abs':sorted({str(abs(x)) for x in cf}),'phase_abs':sorted({str(abs(x)) for x in pf})}
+        allc|=cn; allp|=pn
+    assert len(allc)==7 and len(allp)==7 and [c['id'] for c in D['cartan'] if 51 in {f['N'] for f in c['faces']}]==['Y0','Q0','T3','l3','l8']
+    assert {n for n in allc}<= {sum(1<<a for a in S) for S in code}        # only code faces
+    assert (led['Y0']['code_faces'],led['Q0']['code_faces'],led['T3']['code_faces'],led['l3']['code_faces'],led['l8']['code_faces'])==(7,7,4,4,6)
+    assert led['Y0']['phase_grades']=={2:4,6:3}==led['Q0']['phase_grades'] and led['T3']['phase_grades']=={2:2,6:2}==led['l3']['phase_grades'] and led['l8']['phase_grades']=={2:3,6:3}
+    assert led['T3']['code_sum']=='0' and led['T3']['phase_pos']==0 and led['l3']['code_sum']=='0' and led['l3']['phase_sum']=='0'
+    assert led['l8']['code_pos']==6 and led['l8']['phase_pos']==3 and led['l8']['phase_sum']=='0'
+    Y0f={f['N']:f for f in D['cartan'][0]['faces']}
+    assert sorted(n for n,f in Y0f.items() if f['grade']==4 and 7 in f['S'])==[135,180,204] and sorted(n for n,f in Y0f.items() if f['grade']==4 and 7 not in f['S'])==[51,75,120]
+    D['cartan_ledger']={'per_operator':led,'distinct_code_faces':sorted(allc),'distinct_phase_faces':sorted(allp),'omega_mask':mask,'omega_bits':format(mask,'08b'),
+                        'trace':{'Y0':'Y - 3/8','Q0':'Q - 3/8'}}
     # --- channels / Fano plane
     chans=sorted({s['channel'] for s in states}); assert chans==[1,2,3,8,9,10,11]
     edges28=[]

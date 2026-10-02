@@ -839,6 +839,155 @@
    ]
   }
  ],
+ "cartan_ledger": {
+  "distinct_code_faces": [
+   51,
+   75,
+   120,
+   135,
+   180,
+   204,
+   255
+  ],
+  "distinct_phase_faces": [
+   3,
+   48,
+   72,
+   132,
+   183,
+   207,
+   252
+  ],
+  "omega_bits": "01111011",
+  "omega_mask": 123,
+  "per_operator": {
+   "Q0": {
+    "code_abs": [
+     "1/24",
+     "1/8",
+     "5/24",
+     "7/24"
+    ],
+    "code_faces": 7,
+    "code_grades": {
+     "4": 6,
+     "8": 1
+    },
+    "code_pos": 3,
+    "code_sum": "-5/24",
+    "phase_abs": [
+     "1/24",
+     "1/8",
+     "5/24",
+     "7/24"
+    ],
+    "phase_faces": 7,
+    "phase_grades": {
+     "2": 4,
+     "6": 3
+    },
+    "phase_pos": 3,
+    "phase_sum": "-3/8"
+   },
+   "T3": {
+    "code_abs": [
+     "1/8"
+    ],
+    "code_faces": 4,
+    "code_grades": {
+     "4": 4
+    },
+    "code_pos": 2,
+    "code_sum": "0",
+    "phase_abs": [
+     "1/8"
+    ],
+    "phase_faces": 4,
+    "phase_grades": {
+     "2": 2,
+     "6": 2
+    },
+    "phase_pos": 0,
+    "phase_sum": "-1/2"
+   },
+   "Y0": {
+    "code_abs": [
+     "1/12",
+     "1/24",
+     "1/6",
+     "1/8"
+    ],
+    "code_faces": 7,
+    "code_grades": {
+     "4": 6,
+     "8": 1
+    },
+    "code_pos": 2,
+    "code_sum": "-5/24",
+    "phase_abs": [
+     "1/12",
+     "1/24",
+     "1/6",
+     "1/8"
+    ],
+    "phase_faces": 7,
+    "phase_grades": {
+     "2": 4,
+     "6": 3
+    },
+    "phase_pos": 4,
+    "phase_sum": "1/8"
+   },
+   "l3": {
+    "code_abs": [
+     "1/4"
+    ],
+    "code_faces": 4,
+    "code_grades": {
+     "4": 4
+    },
+    "code_pos": 2,
+    "code_sum": "0",
+    "phase_abs": [
+     "1/4"
+    ],
+    "phase_faces": 4,
+    "phase_grades": {
+     "2": 2,
+     "6": 2
+    },
+    "phase_pos": 2,
+    "phase_sum": "0"
+   },
+   "l8": {
+    "code_abs": [
+     "1/2",
+     "1/4"
+    ],
+    "code_faces": 6,
+    "code_grades": {
+     "4": 6
+    },
+    "code_pos": 6,
+    "code_sum": "2",
+    "phase_abs": [
+     "1/2",
+     "1/4"
+    ],
+    "phase_faces": 6,
+    "phase_grades": {
+     "2": 3,
+     "6": 3
+    },
+    "phase_pos": 3,
+    "phase_sum": "0"
+   }
+  },
+  "trace": {
+   "Q0": "Q - 3/8",
+   "Y0": "Y - 3/8"
+  }
+ },
  "channels": {
   "blade_simplex_footprint": {
    "0": {

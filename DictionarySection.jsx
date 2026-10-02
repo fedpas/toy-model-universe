@@ -25,7 +25,7 @@ const UI = {
     dictH: 'The dictionary', pick: 'Pick a particle or gauge generator',
     groups: { matter: 'Quarks and leptons (one generation)', gauge: 'Gauge bosons', cartan: 'Diagonal generators', replica: 'Replica edges (open)' },
     cols: { furey: 'Furey (audited)', sim: 'Simplex', cli: 'Clifford', cub: 'Cube', pri: 'Prime', crs: 'Cross-view' },
-    fanoH: 'The seven channels are a Fano plane', dlH: 'Check it yourself',
+    fanoH: 'The seven channels are a Fano plane', cartH: 'The diagonal generators on the faces', dlH: 'Check it yourself',
     dlText: 'The script rebuilds the 16-dimensional model from octonions, recomputes every row of this dictionary and the ladder, and asserts them. Run it with python3 and numpy.',
     dlPy: 'Download self-check (Python)', dlJson: 'Download dictionary data (JSON)', dlCmd: 'python3 dictionary_selfcheck.py --compare dictionary.json',
     antiNote: 'Antiparticles are the reversed edges. They touch the same faces, so the face map alone cannot tell a particle from its antiparticle.',
@@ -40,7 +40,7 @@ const UI = {
     dictH: 'Il dizionario', pick: 'Scegli una particella o un generatore di gauge',
     groups: { matter: 'Quark e leptoni (una generazione)', gauge: 'Bosoni di gauge', cartan: 'Generatori diagonali', replica: 'Lati di replica (aperto)' },
     cols: { furey: 'Furey (verificato)', sim: 'Simplesso', cli: 'Clifford', cub: 'Cubo', pri: 'Primi', crs: 'Vista incrociata' },
-    fanoH: 'I sette canali sono un piano di Fano', dlH: 'Verificalo tu',
+    fanoH: 'I sette canali sono un piano di Fano', cartH: 'I generatori diagonali sulle facce', dlH: 'Verificalo tu',
     dlText: 'Lo script ricostruisce il modello a 16 dimensioni dagli ottonioni, ricalcola ogni riga di questo dizionario e la scala, e le verifica. Si esegue con python3 e numpy.',
     dlPy: 'Scarica l’auto-verifica (Python)', dlJson: 'Scarica i dati del dizionario (JSON)', dlCmd: 'python3 dictionary_selfcheck.py --compare dictionary.json',
     antiNote: 'Le antiparticelle sono i lati invertiti. Toccano le stesse facce, quindi la sola mappa sulle facce non distingue una particella dalla sua antiparticella.',
@@ -281,6 +281,21 @@ function Detail({ e, lang, profile }) {
   </div>;
 }
 
+function CartanLedger({ lang }) {
+  const L = DICT.cartan_ledger, en = lang === 'en', ids = ['Y0', 'Q0', 'T3', 'l3', 'l8'];
+  const nm = { Y0: 'Y₀ = Y − 3/8', Q0: 'Q₀ = Q − 3/8', T3: 'T₃', l3: 'λ₃', l8: 'λ₈' };
+  const gr = g => Object.entries(g).map(([k, v]) => v + '×' + (k === '2' ? (en ? 'bivector' : 'bivettore') : k === '6' ? (en ? 'hexavector' : 'esavettore') : 'g' + k)).join(' + ');
+  const sg = (pos, n) => pos === 0 ? (en ? 'all −' : 'tutti −') : pos === n ? (en ? 'all +' : 'tutti +') : pos + '+ / ' + (n - pos) + '−';
+  return <div className="d-card">
+    <p>{en ? <>The five diagonal generators are signed combinations of only <b>{L.distinct_code_faces.length}</b> code faces and their <b>{L.distinct_phase_faces.length}</b> ω-translates (XOR with ω = N {L.omega_mask} = <span className="d-mono">{L.omega_bits}</span>, a single grade-6 face). All 14 are ℂ-linear. The empty face is absent for every operator: all five are traceless. Y₀ and Q₀ are the traceless parts of hypercharge and charge (Tr_ℂ Y = 3 over dimension 8).</> : <>I cinque generatori diagonali sono combinazioni con segno di sole <b>{L.distinct_code_faces.length}</b> facce del codice e delle loro <b>{L.distinct_phase_faces.length}</b> traslate per ω (XOR con ω = N {L.omega_mask} = <span className="d-mono">{L.omega_bits}</span>, una sola faccia di grado 6). Tutte e 14 sono ℂ-lineari. La faccia vuota è assente in ogni operatore: tutti e cinque sono a traccia nulla. Y₀ e Q₀ sono le parti a traccia nulla di ipercarica e carica (Tr_ℂ Y = 3 su dimensione 8).</>}</p>
+    <div style={{ overflowX: 'auto' }}><table className="d-mono" style={{ borderCollapse: 'collapse', fontSize: '.8rem', width: '100%' }}>
+      <thead><tr>{[en ? 'operator' : 'operatore', en ? 'code faces' : 'facce codice', en ? 'phase faces (grades)' : 'facce di fase (gradi)', en ? 'signs code' : 'segni codice', en ? 'signs phase' : 'segni fase', en ? '|coef| code' : '|coef| codice'].map(h => <th key={h} style={{ textAlign: 'left', padding: '2px 8px', borderBottom: '1px solid currentColor' }}>{h}</th>)}</tr></thead>
+      <tbody>{ids.map(i => { const r = L.per_operator[i]; return <tr key={i}><td style={{ padding: '2px 8px' }}>{nm[i]}</td><td style={{ padding: '2px 8px' }}>{r.code_faces}</td><td style={{ padding: '2px 8px' }}>{r.phase_faces} = {gr(r.phase_grades)}</td><td style={{ padding: '2px 8px' }}>{sg(r.code_pos, r.code_faces)}</td><td style={{ padding: '2px 8px' }}>{sg(r.phase_pos, r.phase_faces)}</td><td style={{ padding: '2px 8px' }}>{r.code_abs.join(', ')}</td></tr>; })}</tbody></table></div>
+    <p>{en ? 'Y₀ and Q₀ share one code set: 3 Fano-line tetrahedra {0,1,2,7}, {2,4,5,7}, {2,3,6,7}, their 3 complements {3,4,5,6}, {0,1,3,6}, {0,1,4,5}, and the top face (all 8 vertices). The operators overlap heavily (face {0,1,4,5} is used by all five), so the counts are per operator and do not partition anything; 9 of the 16 code faces are unused.' : 'Y₀ e Q₀ condividono lo stesso insieme di facce: 3 tetraedri di retta di Fano {0,1,2,7}, {2,4,5,7}, {2,3,6,7}, i 3 complementari {3,4,5,6}, {0,1,3,6}, {0,1,4,5} e la faccia superiore (tutti e 8 i vertici). Gli operatori si sovrappongono molto (la faccia {0,1,4,5} è usata da tutti e cinque), quindi i conteggi sono per operatore e non partizionano nulla; 9 delle 16 facce del codice restano inutilizzate.'}</p>
+    <p className="d-cap">{en ? 'Coefficient sums depend on the normalisation and are not structure; counts, grades and the XOR rule are. Face integers and their prime factors change with vertex order.' : 'Le somme dei coefficienti dipendono dalla normalizzazione e non sono struttura; lo sono i conteggi, i gradi e la regola XOR. Gli interi delle facce e i loro fattori primi cambiano con l’ordine dei vertici.'}</p>
+  </div>;
+}
+
 export default function DictionarySection({ lang = 'en', profile = 'Young Learner' }) {
   const t = UI[lang] || UI.en, learner = profile === 'Young Learner';
   const [sel, setSel] = useState('uL1');
@@ -294,6 +309,7 @@ export default function DictionarySection({ lang = 'en', profile = 'Young Learne
     {groups.map(g => <div key={g} style={{ margin: '.5rem 0' }}><div className="d-cap" style={{ marginBottom: '.2rem' }}>{t.groups[g]}</div><div className="d-chips">{ENTRIES.filter(x => x.group === g).map(x => <button key={x.id} className={'d-chip' + (x.id === sel ? ' on' : '')} onClick={() => setSel(x.id)} aria-pressed={x.id === sel}>{lbl(x, lang)}</button>)}</div></div>)}
     <Detail e={e} lang={lang} profile={profile} />
     <p className="d-cap" style={{ fontSize: '.82rem' }}>{t.antiNote} {t.open}</p>
+    <h3>{t.cartH}</h3><CartanLedger lang={lang} />
     <h3>{t.fanoH}</h3>
     <div className="d-row2"><div className="d-card"><Fano pick={e.channel} setPick={c => { const x = ENTRIES.find(z => z.channel === c && z.kind === 'matter') || ENTRIES.find(z => z.channel === c); if (x) setSel(x.id); }} entry={e} /></div>
       <div className="d-card" style={{ gridColumn: 'span 2' }}><p>{lang === 'en' ? 'The 28 edges of the Peirce simplex fall into 7 parallel classes (channels); any two channels lie on exactly one of 7 lines of three: a Fano plane.' : 'I 28 lati del simplesso di Peirce cadono in 7 classi parallele (canali); due canali qualsiasi stanno su una sola delle 7 rette da tre: un piano di Fano.'}</p>

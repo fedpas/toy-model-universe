@@ -46,6 +46,15 @@ for(const s of DICT.states){const e=ch[s.channel].edges.find(e=>(e.edge[0]===s.f
 console.log('states with every vertex in exactly half of the 8 real faces:',balanced,'of',DICT.states.length);
 // prime scan claim: face-integer sums
 ok(Object.values(DICT.prime_scan.by_channel).every(v=>v.sum===1020),'channel integer sums');
+// Cartan ledger (audited text)
+{const L=DICT.cartan_ledger,P=L.per_operator,m=DICT.omega.N;
+ok(m===123&&L.omega_bits==='01111011','omega mask 123 = 01111011');
+ok(L.distinct_code_faces.length===7&&L.distinct_phase_faces.length===7,'14 distinct faces');
+ok(JSON.stringify(L.distinct_code_faces.map(n=>n^m).sort((a,b)=>a-b))===JSON.stringify(L.distinct_phase_faces),'XOR 123 maps code to phase');
+ok([P.Y0,P.Q0,P.T3,P.l3,P.l8].map(r=>r.code_faces).join()==='7,7,4,4,6','code face counts');
+ok(JSON.stringify(P.Y0.phase_grades)==='{"2":4,"6":3}'&&JSON.stringify(P.l8.phase_grades)==='{"2":3,"6":3}'&&JSON.stringify(P.T3.phase_grades)==='{"2":2,"6":2}','phase grade splits');
+ok(P.T3.phase_pos===0&&P.T3.code_sum==='0'&&P.l8.code_pos===6&&P.l8.phase_sum==='0','sign patterns');
+for(const c of DICT.cartan){ok(!c.faces.some(f=>f.N===0)&&!c.phase_faces.some(f=>f.N===0),'traceless '+c.id);ok(c.faces.every(f=>f.N===0||f.S.length%2===0),'even grade '+c.id)}}
 // downloadable script mentions its own interface
 ok(/--compare/.test(SELFCHECK_PY)&&/ALL DICTIONARY CHECKS PASS/.test(SELFCHECK_PY),'script interface');
 console.log(bad?bad+' FAILURES':'ALL DICTIONARY TESTS PASS');process.exit(bad?1:0)
