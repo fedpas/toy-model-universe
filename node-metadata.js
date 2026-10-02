@@ -1,3 +1,4 @@
+import { patchNodeMetadata } from './genesis_audit_v3.js';
 // Generated from matrixData0110.txt.
 const NODE_METADATA = {
   "Sector_Vacuum_Origin_en_Physicist_Spatial": {
@@ -3060,4 +3061,4 @@ applyNodeMetadata('Sector_Furey_Ledger', 'Speculative Frontiers', {
   'it|Mathematician|Temporal': {...ledgerTemporal, grade: 'Bimodulo Regolare', simplex: 'Proiettore del Vertice Idempotente di Peirce', cube: 'Nodo di Validazione Doppia Ontologia Cl(4,4,0)', title: 'Il Registro della Rappresentazione Regolare del Crono-Bimodulo // Chiusura Duale', desc: 'Registra mappature temporali proposte. Le frazioni candidate restano quantità interne del modello giocattolo e richiedono verifica indipendente.'}
 });
 
-export default NODE_METADATA;
+export default patchNodeMetadata(NODE_METADATA);
