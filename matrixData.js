@@ -1,6 +1,7 @@
 import AUTHOR_TRANSLATIONS from './sector-translations.js';
 import NODE_METADATA from './node-metadata.js';
 import GENESIS_METADATA from './genesis-metadata.js';
+import { AUDITED_ATLAS, cliffordCell, coordOf, simplexView, cubeView, primeView } from './genesis_audit_v3.js';
 // Master 2D Clifford lattice matrix directory (B+F vs B-F).
 const nodes = [
  ['Sector_Vacuum_Origin','Foundational Symmetries','Grade 0 Pure Scalar','B+F=0, B-F=0','Empty Set Vertex Core (Ø)','[0, 0, 0, 0] ⊗ [0, 0, 0, 0]','The Cl(0,0) Trivial Vacuum Origin Root',"La Radice dell'Origine del Vuoto Banale Cl(0,0)",'Located at the absolute grid origin, this scalar multiplier root carries zero active base or fiber dimensions and acts as the baseline reference field.','Situata all’origine assoluta della griglia, questa radice scalare non ha dimensioni attive di base o fibra e agisce come campo di riferimento.'],
@@ -246,6 +247,36 @@ const FINAL_METRIC_COPY={
 for(const [id,metrics] of Object.entries(FINAL_METRIC_COPY)) for(const [metric,languages] of Object.entries(metrics)) for(const [lang,profiles] of Object.entries(languages)) for(const [profile,[title,subtitle,desc]] of Object.entries(profiles)) {
  const key=`${id}_${lang}_${profile}`; const base=KNOWLEDGE_BASE_DIRECTORY[key]; KNOWLEDGE_BASE_DIRECTORY[`${key}_${metric}`]={...base,title,subtitle,desc,metricMode:metric};
 }
+// Audited Clifford-cell metadata for the full 25-node atlas. Narrative translations remain authored.
+const AUDIT_INDEX = Object.fromEntries(AUDITED_ATLAS.map(([id, tier, status, p, q, note]) => [id, { tier, status, p, q, note }]));
+for (const [id, audit] of Object.entries(AUDIT_INDEX)) {
+ const cell = audit.p === null ? null : cliffordCell(audit.p, audit.q);
+ for (const lang of ['en', 'it']) for (const profile of ['Young Learner', 'Physicist', 'Mathematician']) {
+  const key = `${id}_${lang}_${profile}`;
+  const base = KNOWLEDGE_BASE_DIRECTORY[key];
+  if (!base) continue;
+  KNOWLEDGE_BASE_DIRECTORY[key] = {
+   ...base,
+   auditStatus: audit.status,
+   auditTier: audit.tier,
+   auditNote: audit.note,
+   ...(cell ? {
+    auditedCoordinate: coordOf(audit.p, audit.q),
+    auditedCell: `Cl(${audit.p},${audit.q})`,
+    algebra: cell.algebra,
+    omegaSquared: cell.omega2,
+    simplex: simplexView(cell.n),
+    cube: cubeView(cell.n),
+    prime: primeView(cell.n),
+   } : {
+    auditedCoordinate: audit.note,
+    auditedCell: 'Research audit — no Clifford cell',
+    algebra: 'Not applicable',
+   }),
+  };
+ }
+}
+
 const previousDualMetric=getDualMetricDisplayData;
 export function getCompleteDualMetricDisplayData(nodeKey,lang,profile,metricMode='Spatial') {
  const base=KNOWLEDGE_BASE_DIRECTORY[`${nodeKey}_${lang}_${profile}`];
