@@ -1,5 +1,6 @@
 export const config = { runtime: 'edge' };
 import { buildSystemPrompt, PROFILES as profiles, LANGUAGES as languages, METRICS as metrics } from '../lib/chatPersona.js';
+const model = process.env.VERCEL_ENV === 'production' ? (process.env.OPENAI_PUBLIC_MODEL || 'o3') : (process.env.OPENAI_DEBUG_MODEL || process.env.OPENAI_PUBLIC_MODEL || 'o3');
 
 export default async function handler(request) {
   if (request.method !== 'POST') return new Response('Method not allowed', { status: 405 });
@@ -15,7 +16,7 @@ export default async function handler(request) {
     async start(controller) {
       controller.enqueue(encoder.encode('data: {"type":"status","message":"OpenAI o3 is reasoning…"}\n\n'));
       try {
-        const upstream=await fetch('https://api.openai.com/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${process.env.ToyModelKeyOpenAi}`},body:JSON.stringify({model:'o3',stream:true,max_completion_tokens:32768,messages:[{role:'system',content:system},...cleanMessages]})});
+        const upstream=await fetch('https://api.openai.com/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json','authorization':`Bearer ${process.env.ToyModelKeyOpenAi}`},body:JSON.stringify({model,stream:true,max_completion_tokens:32768,messages:[{role:'system',content:system},...cleanMessages]})});
         if(!upstream.ok||!upstream.body) {
           const detail=(await upstream.text()).slice(0,500);
           console.error('OpenAI upstream error',upstream.status,detail);

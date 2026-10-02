@@ -1,5 +1,6 @@
 import { buildSystemPrompt, PROFILES as profiles, LANGUAGES as languages, METRICS as metrics } from '../lib/chatPersona.js';
 export const config = { runtime: 'edge' };
+const model = process.env.VERCEL_ENV === 'production' ? (process.env.ANTHROPIC_PUBLIC_MODEL || 'claude-opus-4-6') : (process.env.ANTHROPIC_DEBUG_MODEL || process.env.ANTHROPIC_PUBLIC_MODEL || 'claude-opus-4-6');
 
 export default async function handler(request) {
   if (request.method !== 'POST') return new Response('Method not allowed', { status: 405 });
@@ -20,7 +21,7 @@ export default async function handler(request) {
     const upstream = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-api-key': process.env.toy_model_key, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-opus-4-6', max_tokens: 32768, stream: true, temperature: 0.15, system, messages: cleanMessages }),
+      body: JSON.stringify({ model, max_tokens: 32768, stream: true, temperature: 0.15, system, messages: cleanMessages }),
     });
     if (!upstream.ok || !upstream.body) return new Response('The model service is unavailable.', { status: 502 });
     return new Response(upstream.body, { headers: { 'content-type': 'text/event-stream; charset=utf-8', 'cache-control': 'no-cache' } });
