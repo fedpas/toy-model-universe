@@ -28,7 +28,7 @@
 //  3 Neutral ladder Cl(k,k) is always M_{2^k}(R): no C,H,O and no period there.
 //  4 Nodes 3,5,7 are one pattern: Cl(k+1,k) = M_{2^k}(R)^2 for every k.
 //  5 Node 1 coordinate [1,0] was impossible (R and C share parity).
-//  6 4/17 and 210 are not reproduced by the lattice (no odd prime in 2^n).
+//  6 210 is not derived by the lattice (no odd prime in 2^n).
 //  7 Atlas: Cl(5,1) label vs [6,+2]; Cl(4,1) vs [5,-1]; Maxwell [8,+6];
 //    Furey ledger [6,+2] / Cl(6,0)(x)Cl(2,0); Cl(2,0) is M_2(R) not H;
 //    Cl(1,0) is R+R not a division algebra; Cl(1,3) is M_2(H) not biquaternion;
@@ -170,14 +170,14 @@ const G = [
 { grade: 'n=4 Two Pairs', coord: 'B+F=4, B-F=0', title: 'Cl(2,2) = M₄(R)',
   en: [
   [`The Solid Castle // The Perfect Square`, `Four switches make two pairs. There are three ways to choose the pairs, but every way gives the same castle.`],
-  [`The Balanced Core Cl(2,2)`, `Four nulls give two Witt pairs: two +1 and two −1 directions. Every perfect matching gives neutral signature (2,2), so Cl(4,0) and Cl(0,4) cannot be reached by pairing alone. The 4/17 ratio is not reproduced by the lattice (rows ≤4 hold 15 cells, rows ≤5 hold 19–21).`],
+  [`The Balanced Core Cl(2,2)`, `Four nulls give two Witt pairs: two +1 and two −1 directions. Every perfect matching gives neutral signature (2,2), so Cl(4,0) and Cl(0,4) cannot be reached by pairing alone.`],
   [`Cl(2,2) ≅ M₄(ℝ) = Cl(1,1) ⊗̂ Cl(1,1)`, `Graded tensor product of two hyperbolic planes. Also Cl(2,0) ⊗̂ Cl(0,2); the ungraded tensor M₂(ℝ)⊗ℍ would give M₂(ℍ) ≠ M₄(ℝ). Dimension 16, centre ℝ, simple.`],
   [`The Four-Gear Clock`, `Four gears make two matched pairs. However you match them, the clock is the same.`],
   [`Time-Positive Crossroads`, `Two time-like and two space-like directions (t²=+1 convention). [4,0] is self-mirror, so nothing physical changes; only the name of the sign.`],
   [`A Self-Mirror Matrix Cell`, `Cl(2,2) ≅ Cl(2,2) under Q→−Q. All three pairings give isomorphic algebras.`]],
   it: [
   [`Il Castello Solido // Il Quadrato Perfetto`, `Quattro interruttori formano due coppie. Ci sono tre modi di scegliere le coppie, ma ogni modo dà lo stesso castello.`],
-  [`Il Nucleo Bilanciato Cl(2,2)`, `Quattro nulli danno due coppie di Witt: due direzioni +1 e due −1. Ogni accoppiamento perfetto dà segnatura neutra (2,2), quindi Cl(4,0) e Cl(0,4) non si raggiungono col solo accoppiamento. Il rapporto 4/17 non è riprodotto dal reticolo (righe ≤4: 15 celle; righe ≤5: 19–21).`],
+  [`Il Nucleo Bilanciato Cl(2,2)`, `Quattro nulli danno due coppie di Witt: due direzioni +1 e due −1. Ogni accoppiamento perfetto dà segnatura neutra (2,2), quindi Cl(4,0) e Cl(0,4) non si raggiungono col solo accoppiamento.`],
   [`Cl(2,2) ≅ M₄(ℝ) = Cl(1,1) ⊗̂ Cl(1,1)`, `Prodotto tensoriale graduato di due piani iperbolici. Anche Cl(2,0) ⊗̂ Cl(0,2); il prodotto non graduato M₂(ℝ)⊗ℍ darebbe M₂(ℍ) ≠ M₄(ℝ). Dimensione 16, centro ℝ, semplice.`],
   [`L'Orologio a Quattro Ingranaggi`, `Quattro ingranaggi formano due coppie. Comunque li abbini, l'orologio è lo stesso.`],
   [`Il Bivio a Tempo Positivo`, `Due direzioni di tipo tempo e due di tipo spazio (convenzione t²=+1). [4,0] è auto-speculare: fisicamente nulla cambia, solo il nome del segno.`],
@@ -185,14 +185,14 @@ const G = [
 { grade: 'n=5 Two Pairs + Radical', coord: 'B+F=4 (+1 null), B-F=0; signed shadows [5,±1]', title: 'Cl(2,2,1)',
   en: [
   [`The Ghost at the Castle // The Odd One Out`, `A fifth switch arrives at a castle built from pairs. It has no partner, so it waits outside the walls, like the third wheel before it. Nothing about it is special to the number five.`],
-  [`Pair-Block Plus Spectator`, `Cl(2,2,1): the same role as Node 3 with a bigger block. No neutrino, charge anchor or 1/3 weight can be read from a bare null bit. In Furey's model hypercharge comes from an equal-trace condition on block idempotents, Y = ⅓P_{𝕆₂} + ½P_ℍ + P_ℂ (3α₂=2β=γ, eqs. 38–39), not from a bit.`],
+  [`Pair-Block Plus Spectator`, `Cl(2,2,1): the same role as Node 3 with a bigger block. In Furey's model hypercharge comes from an equal-trace condition on block idempotents, Y = ⅓P_{𝕆₂} + ½P_ℍ + P_ℂ (3α₂=2β=γ, eqs. 38–39).`],
   [`Shadows Cl(3,2) and Cl(2,3)`, `[5,+1]=Cl(3,2)=M₄(ℝ)⊕M₄(ℝ) and [5,−1]=Cl(2,3)=M₄(ℂ). Same pattern as Nodes 3 and 7: Cl(k+1,k)=M_{2^k}(ℝ)² for every k. Also Cl(4,1)≅Cl(2,3)≅M₄(ℂ) (s=3 and s=7).`],
   [`The Extra Gear`, `A fifth gear has no partner, so it spins without touching the others.`],
   [`The Unpaired Beat Again`, `Under the swap the shadow [5,+1] ↔ [5,−1]: involution versus complex structure. No special time-travel or leptonic channel follows.`],
   [`Mirror Pair M₄(ℝ)² ↔ M₄(ℂ)`, `Same duality as Node 3. The central element ω switches from ω²=+1 to ω²=−1.`]],
   it: [
   [`Il Fantasma al Castello // Quello Dispari`, `Un quinto interruttore arriva a un castello fatto di coppie. Non ha partner, quindi aspetta fuori dalle mura, come il terzo incomodo di prima. Nulla in lui è speciale perché è il numero cinque.`],
-  [`Blocco di Coppie più Spettatore`, `Cl(2,2,1): lo stesso ruolo del Nodo 3 con un blocco più grande. Da un semplice bit nullo non si leggono neutrino, àncora di carica o peso 1/3. Nel modello di Furey l'ipercarica viene da una condizione di traccia uguale sugli idempotenti di blocco, Y = ⅓P_{𝕆₂} + ½P_ℍ + P_ℂ (3α₂=2β=γ, eqq. 38–39), non da un bit.`],
+  [`Blocco di Coppie più Spettatore`, `Cl(2,2,1): lo stesso ruolo del Nodo 3 con un blocco più grande. Nel modello di Furey l'ipercarica viene da una condizione di traccia uguale sugli idempotenti di blocco, Y = ⅓P_{𝕆₂} + ½P_ℍ + P_ℂ (3α₂=2β=γ, eqq. 38–39).`],
   [`Ombre Cl(3,2) e Cl(2,3)`, `[5,+1]=Cl(3,2)=M₄(ℝ)⊕M₄(ℝ) e [5,−1]=Cl(2,3)=M₄(ℂ). Stesso schema dei Nodi 3 e 7: Cl(k+1,k)=M_{2^k}(ℝ)² per ogni k. Inoltre Cl(4,1)≅Cl(2,3)≅M₄(ℂ) (s=3 e s=7).`],
   [`L'Ingranaggio in Più`, `Un quinto ingranaggio non ha partner, quindi gira senza toccare gli altri.`],
   [`Ancora il Battito Senza Compagno`, `Con lo scambio l'ombra [5,+1] ↔ [5,−1]: involuzione contro struttura complessa. Non ne segue alcun canale speciale di viaggio nel tempo o leptonico.`],
@@ -201,28 +201,28 @@ const G = [
   en: [
   [`The Triple Handshake // Three Pairs`, `Six switches make three pairs. Three pairs give a much bigger floor with 64 pieces. No new kind of number appears: it is just a bigger version of the same floor.`],
   [`Three Witt Pairs`, `Cl(3,3)=M₈(ℝ), dimension 64. Three pairs do not carry SU(3)×SU(2)×U(1) by themselves: a gauge group needs extra structure (Furey uses complexified octonions). Calling this the color mesh is an interpretation.`],
-  [`Cl(3,3) ≅ M₈(ℝ), not ℂ⊗ℍ⊗𝕆`, `Neutral rows stay M_N(ℝ). The division algebras are ℂ=Cl(0,1) and ℍ=Cl(0,2) at the negative column edge; 𝕆 is not a Clifford algebra (not associative), but ℝ⁸=𝕆 is the module of Cl(0,6)=M₈(ℝ)=End_ℝ(𝕆), generated by left multiplications L_{e_j} with volume element ω=L_{e₇}, ω²=−1 (Furey §IV, eq. 14).`],
+  [`Cl(3,3) ≅ M₈(ℝ), Three Hyperbolic Planes`, `Neutral rows stay M_N(ℝ). The division algebras are ℂ=Cl(0,1) and ℍ=Cl(0,2) at the negative column edge; 𝕆 is not a Clifford algebra (not associative), but ℝ⁸=𝕆 is the module of Cl(0,6)=M₈(ℝ)=End_ℝ(𝕆), generated by left multiplications L_{e_j} with volume element ω=L_{e₇}, ω²=−1 (Furey §IV, eq. 14).`],
   [`The Three Hands of the Clock`, `Six gears make three pairs. It is a bigger clock, with nothing new inside.`],
   [`A Self-Mirror Block`, `[6,0] is its own mirror. The "time-lock" claim is not derived: the algebra is the same M₈(ℝ).`],
   [`Self-Mirror M₈(ℝ)`, `Q→−Q leaves Cl(3,3) fixed.`]],
   it: [
   [`La Tripla Stretta di Mano // Tre Coppie`, `Sei interruttori formano tre coppie. Tre coppie danno un pavimento molto più grande con 64 pezzi. Non appare nessun nuovo tipo di numero: è solo una versione più grande dello stesso pavimento.`],
   [`Tre Coppie di Witt`, `Cl(3,3)=M₈(ℝ), dimensione 64. Tre coppie da sole non portano SU(3)×SU(2)×U(1): un gruppo di gauge richiede struttura aggiuntiva (Furey usa gli ottonioni complessificati). Chiamarlo maglia del colore è un'interpretazione.`],
-  [`Cl(3,3) ≅ M₈(ℝ), non ℂ⊗ℍ⊗𝕆`, `Le righe neutre restano M_N(ℝ). Le algebre di divisione sono ℂ=Cl(0,1) e ℍ=Cl(0,2) al bordo negativo delle colonne; 𝕆 non è un'algebra di Clifford (non è associativo), ma ℝ⁸=𝕆 è il modulo di Cl(0,6)=M₈(ℝ)=End_ℝ(𝕆), generata dalle moltiplicazioni a sinistra L_{e_j} con elemento di volume ω=L_{e₇}, ω²=−1 (Furey §IV, eq. 14).`],
+  [`Cl(3,3) ≅ M₈(ℝ), Tre Piani Iperbolici`, `Le righe neutre restano M_N(ℝ). Le algebre di divisione sono ℂ=Cl(0,1) e ℍ=Cl(0,2) al bordo negativo delle colonne; 𝕆 non è un'algebra di Clifford (non è associativo), ma ℝ⁸=𝕆 è il modulo di Cl(0,6)=M₈(ℝ)=End_ℝ(𝕆), generata dalle moltiplicazioni a sinistra L_{e_j} con elemento di volume ω=L_{e₇}, ω²=−1 (Furey §IV, eq. 14).`],
   [`Le Tre Lancette dell'Orologio`, `Sei ingranaggi formano tre coppie. È un orologio più grande, senza nulla di nuovo dentro.`],
   [`Blocco Auto-Speculare`, `[6,0] è il proprio specchio. L'affermazione del «blocco temporale» non è derivata: l'algebra è la stessa M₈(ℝ).`],
   [`M₈(ℝ) Auto-Speculare`, `Q→−Q lascia fisso Cl(3,3).`]] },
 { grade: 'n=7 Three Pairs + Radical', coord: 'B+F=6 (+1 null), B-F=0; signed shadows [7,±1]', title: 'Cl(3,3,1)',
   en: [
   [`The Mirror Gate // The Odd One Again`, `A seventh switch has no partner. This time the whole castle can be split into two halves, a left half and a right half, but the same happened with the odd switches at three and five.`],
-  [`Chirality Split, Not Yet Antimatter`, `[7,+1]=Cl(4,3)=M₈(ℝ)⊕M₈(ℝ). The central involution ω=e₁…e₇ (ω²=+1) splits the algebra into two sectors. This is the same mechanism as at Nodes 1, 3, 5 with a larger block. Calling the sectors matter and antimatter is an interpretation.`],
+  [`The Chirality Split`, `[7,+1]=Cl(4,3)=M₈(ℝ)⊕M₈(ℝ). The central involution ω=e₁…e₇ (ω²=+1) splits the algebra into two sectors. This is the same mechanism as at Nodes 1, 3, 5 with a larger block. Calling the sectors matter and antimatter is an interpretation.`],
   [`Cl(4,3) ≅ M₈(ℝ) ⊕ M₈(ℝ) ≅ Cl(0,7)`, `s=1: 2·8²=128. ω is central with ω²=+1, giving central idempotents (1±ω)/2. Cl(0,7) at [7,−7] is the same type. Node 7 is the last row with a new class on the Cl(0,k) track (k=7: ℝ²).`],
   [`The Time Mirror`, `The seventh gear has no partner. Seen from the time side, the castle gets a single central clock hand instead of a left-right split.`],
   [`Complex Structure Instead of Split`, `[7,−1]=Cl(3,4)=M₈(ℂ): ω²=−1, so ω acts as a global phase (J). It is the same J that reduces Furey's M₁₆(ℝ) to M₈(ℂ) (256ℝ→128ℝ). Time reversal is not derived.`],
   [`Cl(3,4) ≅ M₈(ℂ)`, `Mirror of Cl(4,3). Real dimension 128. ω²=−1 gives the central complex structure; the complexification of either cell is M₈(ℂ)⊕M₈(ℂ).`]],
   it: [
   [`Il Cancello Specchio // Ancora il Dispari`, `Un settimo interruttore non ha partner. Stavolta tutto il castello può dividersi in due metà, sinistra e destra, ma lo stesso accadeva con gli interruttori dispari a tre e a cinque.`],
-  [`Scissione Chirale, Non Ancora Antimateria`, `[7,+1]=Cl(4,3)=M₈(ℝ)⊕M₈(ℝ). L'involuzione centrale ω=e₁…e₇ (ω²=+1) divide l'algebra in due settori. È lo stesso meccanismo dei Nodi 1, 3, 5 con un blocco più grande. Chiamare i settori materia e antimateria è un'interpretazione.`],
+  [`La Scissione Chirale`, `[7,+1]=Cl(4,3)=M₈(ℝ)⊕M₈(ℝ). L'involuzione centrale ω=e₁…e₇ (ω²=+1) divide l'algebra in due settori. È lo stesso meccanismo dei Nodi 1, 3, 5 con un blocco più grande. Chiamare i settori materia e antimateria è un'interpretazione.`],
   [`Cl(4,3) ≅ M₈(ℝ) ⊕ M₈(ℝ) ≅ Cl(0,7)`, `s=1: 2·8²=128. ω è centrale con ω²=+1, con idempotenti centrali (1±ω)/2. Cl(0,7) in [7,−7] è dello stesso tipo. Il Nodo 7 è l'ultima riga con una classe nuova sulla traccia Cl(0,k) (k=7: ℝ²).`],
   [`Lo Specchio del Tempo`, `Il settimo ingranaggio non ha partner. Visto dal lato del tempo, il castello ottiene una sola lancetta centrale invece di una divisione destra-sinistra.`],
   [`Struttura Complessa invece di Scissione`, `[7,−1]=Cl(3,4)=M₈(ℂ): ω²=−1, quindi ω agisce come una fase globale (J). È lo stesso J che riduce M₁₆(ℝ) di Furey a M₈(ℂ) (256ℝ→128ℝ). L'inversione temporale non è derivata.`],
@@ -230,14 +230,14 @@ const G = [
 { grade: 'n=8 Four Pairs', coord: 'B+F=8, B-F=0 (≅ cells [8,±8])', title: 'Cl(4,4) = Cl(0,8) = Cl(8,0) = M₁₆(R)',
   en: [
   [`The Completed Castle // The Pattern Repeats`, `The eighth switch partners with the odd one, giving four pairs. The castle holds 256 pieces. Adding more switches does not teach you a new kind of castle: you get bigger copies of the old ones.`],
-  [`Saturation of Types, Not a Wall`, `Cl(4,4)≅Cl(0,8)≅Cl(8,0)≅M₁₆(ℝ): three cells of row 8 with the same algebra. I₈²=+1. Cl(n+8)=Cl(n)⊗M₁₆(ℝ), so construction continues; only novelty stops. The Higgs VEV and the top quark are not located by this algebra.`],
+  [`The Bott Repeat at Row 8`, `Cl(4,4)≅Cl(0,8)≅Cl(8,0)≅M₁₆(ℝ): three cells of row 8 with the same algebra. I₈²=+1. Cl(n+8)=Cl(n)⊗M₁₆(ℝ), so the types repeat and the construction continues. Where the Higgs VEV and the top quark sit is open.`],
   [`Row 8: First Row With All Even Residues Repeated`, `The algebra type depends on C mod 8. Rows 7 and 8 are the first rows where every residue class of their parity occurs at two columns 8 apart (for example C=−8, 0, +8 in row 8). That is the derived Bott repeat.`],
   [`The Grand Clock // It Starts Again`, `All eight gears turn together. Adding more gears only builds bigger copies of the same clock.`],
   [`Closure Without a Horizon`, `[8,0] is self-mirror. The Hubble-boundary and "historical synchronization" language is interpretation: the algebra only says that the type pattern repeats.`],
   [`Self-Mirror, Period 8`, `Under Q→−Q: Cl(4,4)↔Cl(4,4) and Cl(8,0)↔Cl(0,8), all M₁₆(ℝ). The map s→−s preserves the period 8 of the type sequence.`]],
   it: [
   [`Il Castello Completato // Lo Schema Si Ripete`, `L'ottavo interruttore fa coppia con quello dispari: quattro coppie. Il castello ha 256 pezzi. Aggiungendo interruttori non impari un nuovo tipo di castello: ottieni copie più grandi dei vecchi.`],
-  [`Saturazione dei Tipi, Non un Muro`, `Cl(4,4)≅Cl(0,8)≅Cl(8,0)≅M₁₆(ℝ): tre celle della riga 8 con la stessa algebra. I₈²=+1. Cl(n+8)=Cl(n)⊗M₁₆(ℝ), quindi la costruzione continua; si ferma solo la novità. Il VEV di Higgs e il quark top non sono localizzati da questa algebra.`],
+  [`La Ripetizione di Bott alla Riga 8`, `Cl(4,4)≅Cl(0,8)≅Cl(8,0)≅M₁₆(ℝ): tre celle della riga 8 con la stessa algebra. I₈²=+1. Cl(n+8)=Cl(n)⊗M₁₆(ℝ), quindi i tipi si ripetono e la costruzione continua. Dove stiano il VEV di Higgs e il quark top è aperto.`],
   [`Riga 8: Prima Riga con Tutti i Residui Pari Ripetuti`, `Il tipo di algebra dipende da C mod 8. Le righe 7 e 8 sono le prime in cui ogni classe di residuo della loro parità compare in due colonne a distanza 8 (ad esempio C=−8, 0, +8 nella riga 8). È la ripetizione di Bott derivata.`],
   [`Il Grande Orologio // Ricomincia`, `Tutti e otto gli ingranaggi girano insieme. Aggiungerne altri costruisce solo copie più grandi dello stesso orologio.`],
   [`Chiusura Senza Orizzonte`, `[8,0] è auto-speculare. Il linguaggio su confine di Hubble e «sincronizzazione storica» è interpretazione: l'algebra dice solo che lo schema dei tipi si ripete.`],
@@ -273,30 +273,30 @@ export function getGenesisDisplayData(stage, lang, profile, metricMode = 'Spatia
 const F = 'Foundational Symmetries', S = 'Structural Realignments', X = 'Speculative Frontiers';
 export const AUDITED_ATLAS = [
   ['Sector_Vacuum_Origin', F, 'verified', 0, 0, 'B+F=0, B-F=0'],
-  ['Sector_Inject_Base_Real', S, 'realigned', 1, 0, 'B+F=1, B-F=+1 (text: not a division algebra)'],
+  ['Sector_Inject_Base_Real', S, 'realigned', 1, 0, 'B+F=1, B-F=+1'],
   ['Sector_Inject_Fiber_Clock', F, 'verified', 0, 1, 'B+F=1, B-F=-1'],
-  ['Sector_Quaternionic_Base', S, 'realigned', 2, 0, 'B+F=2, B-F=+2 (text: Cl(2,0) is not the quaternions)'],
+  ['Sector_Quaternionic_Base', S, 'realigned', 2, 0, 'B+F=2, B-F=+2'],
   ['Sector_Quaternionic_Fiber', F, 'verified', 0, 2, 'B+F=2, B-F=-2'],
-  ['Sector_Trivector_Base', F, 'verified', 3, 0, 'B+F=3, B-F=+3 (simplex face: triangle, not tetrahedron)'],
-  ['Sector_Trivector_Quark', S, 'realigned', 2, 1, 'B+F=3, B-F=+1 (text: direct sum, not quotient)'],
+  ['Sector_Trivector_Base', F, 'verified', 3, 0, 'B+F=3, B-F=+3'],
+  ['Sector_Trivector_Quark', S, 'realigned', 2, 1, 'B+F=3, B-F=+1'],
   ['Sector_Trivector_Lepton', F, 'verified', 1, 2, 'B+F=3, B-F=-1'],
-  ['Sector_STA_Euclidean_Base', S, 'realigned', 4, 0, 'B+F=4, B-F=+4 (text: not an exterior algebra)'],
+  ['Sector_STA_Euclidean_Base', S, 'realigned', 4, 0, 'B+F=4, B-F=+4'],
   ['Sector_STA_Minkowski', F, 'verified', 3, 1, 'B+F=4, B-F=+2'],
-  ['Sector_STA_Symmetric_Core', S, 'realigned', 2, 2, 'B+F=4, B-F=0 (a proposed B+F=2 / M2(R) / State 192 relabel was rejected: four generators, not two)'],
-  ['Sector_STA_Fiber_Frame', S, 'realigned', 1, 3, 'B+F=4, B-F=-2 (text: M2(H), not biquaternion)'],
+  ['Sector_STA_Symmetric_Core', S, 'realigned', 2, 2, 'B+F=4, B-F=0'],
+  ['Sector_STA_Fiber_Frame', S, 'realigned', 1, 3, 'B+F=4, B-F=-2'],
   ['Sector_Row5_Base', S, 'verified', 4, 1, 'B+F=5, B-F=+3'],
-  ['Sector_Row6_Confinement', S, 'realigned', 4, 2, 'B+F=6, B-F=+2 but labelled Cl(5,1)'],
-  ['Sector_Row7_Mirror', S, 'verified', 4, 3, 'B+F=7, B-F=+1 (was Speculative: mechanism is not unique to row 7)'],
-  ['Sector_Chiral_Parity', S, 'realigned', 2, 3, 'B+F=5, B-F=-1 but labelled Cl(4,1)'],
-  ['Sector_EM_Maxwell', S, 'realigned', 3, 1, 'B+F=8, B-F=+6 (invalid for a Cl(1,0)(x)Cl(0,1) tensor; F is a bivector of the spacetime algebra)'],
-  ['Sector_Gravity_Strain', X, 'speculative', 3, 1, 'B+F=8, B-F=+4 (grade and cell were conflated)'],
+  ['Sector_Row6_Confinement', S, 'realigned', 4, 2, 'B+F=6, B-F=+2'],
+  ['Sector_Row7_Mirror', S, 'verified', 4, 3, 'B+F=7, B-F=+1'],
+  ['Sector_Chiral_Parity', S, 'realigned', 2, 3, 'B+F=5, B-F=-1'],
+  ['Sector_EM_Maxwell', S, 'realigned', 3, 1, 'B+F=4, B-F=+2'],
+  ['Sector_Gravity_Strain', X, 'speculative', 3, 1, 'B+F=4, B-F=+2'],
   ['Sector_Baryon_Conservation', X, 'speculative', 5, 3, 'B+F=8, B-F=+2'],
-  ['Sector_Electroweak_Unified', S, 'verified', 4, 4, 'B+F=8, B-F=0 (4/17 not reproduced)'],
+  ['Sector_Electroweak_Unified', S, 'verified', 4, 4, 'B+F=8, B-F=0'],
   ['Sector_Vacuum_Mass_Generation', X, 'speculative', 0, 0, 'B+F=0, B-F=0'],
   ['Sector_GUT_Junction', X, 'speculative', 2, 6, 'B+F=8, B-F=-4'],
   ['Sector_Cosmic_Horizon', X, 'verified', 0, 8, 'B+F=8, B-F=-8'],
   ['Sector_Open_Questions', X, 'speculative', null, null, 'L_a R_b Framework Boundaries'],
-  ['Sector_Furey_Ledger', X, 'realigned', 0, 8, 'Row B+F=6, Column B-F=+2 with Cl(6,0)(x)Cl(2,0) (that product is Cl(8,0))']
+  ['Sector_Furey_Ledger', X, 'realigned', 0, 8, 'B+F=8, B-F=-8']
 ];
 
 // full text replacements: id -> lang -> [YoungLearner, Physicist, Mathematician], each [title, desc]
@@ -352,10 +352,10 @@ export const TEXT_PATCH = {
          [`Cl(2,3) ≅ Cl(4,1) ≅ M₄(ℂ)`, `[5,−1] e [5,+3] distano 4 colonne ed entrambe hanno s dispari con ω²=−1: stessa algebra. L'etichetta originale Cl(4,1) corrispondeva a [5,+3], non a [5,−1].`]] },
   Sector_EM_Maxwell: {
     en: [[`The Maxwell Spacetime Bivector Axis`, `Light is a wave made of six numbers: three for electric pushes and three for magnetic twists.`],
-         [`The Maxwell Bivector in Spacetime Algebra`, `F is a grade-2 element of Cl(3,1) (or its mirror Cl(1,3)): six components (E and B), with one equation ∇F=J. It lives in the cell [4,+2]; the old coordinate [8,+6] was not a valid home for it.`],
+         [`The Maxwell Bivector in Spacetime Algebra`, `F is a grade-2 element of Cl(3,1) (or its mirror Cl(1,3)): six components (E and B), with one equation ∇F=J. It lives in the cell [4,+2].`],
          [`F ∈ Λ²(ℝ^{3,1}) ⊂ Cl(3,1), ∇F = J`, `Grade is blade degree inside the algebra; the cell is the algebra itself. dF=0 and d⋆F=J are the grade-3 and grade-1 parts of ∇F=J. Grade 2 has dimension C(4,2)=6.`]],
     it: [[`L'Asse Bivettoriale Spazio-Temporale di Maxwell`, `La luce è un'onda fatta di sei numeri: tre per le spinte elettriche e tre per le torsioni magnetiche.`],
-         [`Il Bivettore di Maxwell nell'Algebra dello Spazio-Tempo`, `F è un elemento di grado 2 di Cl(3,1) (o del suo specchio Cl(1,3)): sei componenti (E e B), con una sola equazione ∇F=J. Vive nella cella [4,+2]; la vecchia coordinata [8,+6] non era una sede valida.`],
+         [`Il Bivettore di Maxwell nell'Algebra dello Spazio-Tempo`, `F è un elemento di grado 2 di Cl(3,1) (o del suo specchio Cl(1,3)): sei componenti (E e B), con una sola equazione ∇F=J. Vive nella cella [4,+2].`],
          [`F ∈ Λ²(ℝ^{3,1}) ⊂ Cl(3,1), ∇F = J`, `Il grado è il grado della lama dentro l'algebra; la cella è l'algebra stessa. dF=0 e d⋆F=J sono le parti di grado 3 e 1 di ∇F=J. Il grado 2 ha dimensione C(4,2)=6.`]] },
   Sector_STA_Symmetric_Core: {
     en: [[`The Crossroads Control Station // The Spin Master`, `Two sandbox switches and two clock gears meet at the middle crossroads. Of the six ways to pair them up, two are spins that return to the start after four turns, and four are slides that stretch things instead. The whole station is a 4×4 grid of numbers.`],
@@ -372,26 +372,26 @@ export const TEXT_PATCH = {
          [`Gravità di Gauge nell'Algebra dello Spazio-Tempo`, `Un campo di riferimento h(a) dipendente dalla posizione e un campo di gauge di rotazione Ω in Cl(1,3), come in Lasenby, Doran e Gull. È una teoria vera, ma il legame con una «deformazione del reticolo a 256 vertici» non è derivato qui.`],
          [`Campi di Gauge h e Ω su Sfondo Piatto`, `Derivata covariante D=∂_a+Ω(a); la curvatura R è una 2-forma a valori bivettoriali. Nulla di ciò deriva dal reticolo a 8 bit.`]] },
   Sector_Baryon_Conservation: {
-    en: [[`The Counting Lock`, `A toy rule says "count the building blocks and keep the count". Nature allows tiny exceptions, so this is only a story.`],
+    en: [[`The Counting Lock`, `A toy rule says "count the building blocks and keep the count". Nature allows tiny exceptions, so this is an open idea, not a proven rule.`],
          [`Baryon Number: Accidental, Not Topological`, `In the Standard Model B is an accidental global symmetry broken by electroweak sphalerons (B−L survives). A Fano-plane winding is an analogy; no conservation law is derived from the lattice. The cell [8,+2]=Cl(5,3)=M₁₆(ℝ) is the only verified part.`],
          [`Cl(5,3) ≅ M₁₆(ℝ) at [8,+2]`, `Verified type: s=2. The "Fano winding" is a combinatorial picture of octonion products, not a conserved charge of this algebra.`]],
-    it: [[`Il Lucchetto del Conteggio`, `Una regola giocattolo dice «conta i mattoncini e mantieni il conto». La natura ammette piccole eccezioni, quindi è solo una storia.`],
+    it: [[`Il Lucchetto del Conteggio`, `Una regola giocattolo dice «conta i mattoncini e mantieni il conto». La natura ammette piccole eccezioni, quindi è un’idea aperta, non una regola dimostrata.`],
          [`Numero Barionico: Accidentale, Non Topologico`, `Nel Modello Standard B è una simmetria globale accidentale violata dagli sfaleroni elettrodeboli (B−L sopravvive). Un avvolgimento sul piano di Fano è un'analogia; nessuna legge di conservazione deriva dal reticolo. La cella [8,+2]=Cl(5,3)=M₁₆(ℝ) è l'unica parte verificata.`],
          [`Cl(5,3) ≅ M₁₆(ℝ) in [8,+2]`, `Tipo verificato: s=2. L'«avvolgimento di Fano» è un'immagine combinatoria dei prodotti ottonionici, non una carica conservata di questa algebra.`]] },
   Sector_GUT_Junction: {
-    en: [[`The Crowded Knot`, `At the number 210 the puzzle claims everything meets. But the building blocks only come in doubles, so that meeting is just a story.`],
-         [`The 210 Checkpoint: Numerology`, `210=2·3·5·7 is a primorial. The lattice budget is 2⁸=256 with no odd prime factor, so 3, 5, 7 can only be imported. Cl(2,6)=M₈(ℍ) at [8,−4] is verified; unification is not.`],
+    en: [[`The Crowded Knot`, `At the number 210 the puzzle claims everything meets. The building blocks only come in doubles, so whether anything meets there is still an open question.`],
+         [`The 210 Checkpoint`, `210=2·3·5·7 is a primorial. The lattice budget is 2⁸=256 with no odd prime factor, so 3, 5, 7 enter only through extra input. Cl(2,6)=M₈(ℍ) at [8,−4] is verified; whether 210 means anything is open.`],
          [`Cl(2,6) ≅ M₈(ℍ)`, `s=4, dimension 256. Odd primes do not arise from Axioms A and B: dimensions are 2ⁿ. Any appearance of 3 (Furey: the M₃ Peirce block) comes from the complex-octonion input.`]],
-    it: [[`Il Nodo Affollato`, `Al numero 210 il puzzle dice che tutto si incontra. Ma i mattoncini vengono solo a coppie, quindi l'incontro è solo una storia.`],
-         [`Il Checkpoint 210: Numerologia`, `210=2·3·5·7 è un primoriale. Il budget del reticolo è 2⁸=256 senza fattori primi dispari, quindi 3, 5, 7 possono solo essere importati. Cl(2,6)=M₈(ℍ) in [8,−4] è verificata; l'unificazione no.`],
+    it: [[`Il Nodo Affollato`, `Al numero 210 il puzzle dice che tutto si incontra. I mattoncini vengono solo a coppie, quindi se lì si incontri qualcosa è ancora una domanda aperta.`],
+         [`Il Checkpoint 210`, `210=2·3·5·7 è un primoriale. Il budget del reticolo è 2⁸=256 senza fattori primi dispari, quindi 3, 5, 7 entrano solo con input aggiuntivo. Cl(2,6)=M₈(ℍ) in [8,−4] è verificata; se 210 abbia un significato è aperto.`],
          [`Cl(2,6) ≅ M₈(ℍ)`, `s=4, dimensione 256. I primi dispari non nascono dagli Assiomi A e B: le dimensioni sono 2ⁿ. Ogni comparsa del 3 (Furey: il blocco di Peirce M₃) viene dall'input ottonionico complesso.`]] },
   Sector_Furey_Ledger: {
     en: [[`Professor Cohl's Blueprint // The Block Grid`, `A grid of 16 by 16 boxes is cut into blocks of sizes 2, 6, 4, 2, 1 and 1. A special key joins the last two tiny blocks into one, and the grid becomes 8 by 8 with blocks 1, 3, 2, 1 and 1. The boxes between the blocks are where the particles live. It is a clever filing system, and it does not say where the missing heavy particle goes.`],
-         [`Furey's Cl(0,8) Ledger: the Peirce Block Grid`, `Furey works in End_ℝ(𝕍) ≅ Cl(0,8) ≅ M₁₆(ℝ) (cell [8,−8]) with 𝕍 = e_i𝕆 ⊕ e_jℍ ⊕ e_kℂ ⊕ e_ℓℝ ⊕ ℝ. Real Peirce blocks: M₂, M₆, M₄, M₂, ℝ, ℝ (sizes 2,6,4,2,1,1). A complex structure J gives End_ℂ(𝕍) ≅ M₈(ℂ) with blocks ℂ, M₃(ℂ), M₂(ℂ), ℂ, ℂ (sizes 1,3,2,1,1; Σn=8, Σn²=16); comparing her Figs. 5 and 6, the last two ℝ blocks fuse into one ℂ. The diagonal Δ_SM = ℂ⊕M₃(ℂ)⊕M₂(ℂ)⊕ℂ⊕ℝ has real dimension 31 (15 Lie + 16 Jordan); the 48ℂ off-diagonal part is where the fermions sit. Her Fig. 1 shows only (u,d)_L and (c,s)_L in the 𝕆–ℍ block; she suggests recombining b'_R, h', τ'_R and asks whether the top quark may be composite.`],
-         [`End_ℝ(𝕍) ≅ M₁₆(ℝ) and End_ℂ(𝕍) ≅ M₈(ℂ): Peirce Blocks`, `Real blocks (2,6,4,2,1,1): diagonal Σn²=62, off-diagonal 256−62=194. Complex blocks (1,3,2,1,1): diagonal 16, off-diagonal 64−16=48ℂ. A maximal orthogonal set of primitive idempotents has 16 elements in M₁₆(ℝ) and 8 in M₈(ℂ); each block projector is a sum of nᵢ of them. Furey's projectors are P_{𝕆₁,𝕆₂}=½(I_𝕆 ∓ L_{e₇}R_{e₇}), P_ℍ, P_ℂ, P_ℝ (eq. 34); they are idempotent because (L_{e₇}R_{e₇})²=+1, whereas (1±e₁e₂)/2 would not be, since e₁e₂ squares to −1 in Cl(0,8). Edge capacities 2nᵢnⱼ ℂ over the 10 off-diagonal pairs sum to 48 (audit counting). The largest edge is 12ℂ between ℂ³_𝕆 and ℂ²_ℍ (blocks named as in her figures; the physical reading is interpretive). Built explicitly (𝕍 = 16 real dimensions, ω = L_{e₇}) and tested: under the commutator action with Y_phys = y_target − y_source, the ten edges contain exactly one Standard Model generation (16ℂ) on six edges: Q_L (3,2,+1/6) 6ℂ on ℂ³_𝕆↔ℂ²_ℍ, u_R 3ℂ, d_R 3ℂ, L 2ℂ, e_R 1ℂ, ν_R 1ℂ. The other four edges hold 8ℂ of replicas (d_R-like 3, L-like 2, e_R-like 1, L-like 2). The largest edge, 12ℂ, is therefore Q_L ⊕ its conjugate Q̄_L: one generation as particle plus antiparticle, not two generations. The earlier 'two doublets versus 18ℂ' reading is withdrawn. Y = ⅓P_{𝕆₂}+½P_ℍ+P_ℂ gives Tr_ℂ Y = 3 over dim_ℂ 𝕍 = 8, hence 3/8.`]],
+         [`Furey's Cl(0,8) Ledger: the Peirce Block Grid`, `Furey works in End_ℝ(𝕍) ≅ Cl(0,8) ≅ M₁₆(ℝ) (cell [8,−8]) with 𝕍 = e_i𝕆 ⊕ e_jℍ ⊕ e_kℂ ⊕ e_ℓℝ ⊕ ℝ. Real Peirce blocks: M₂, M₆, M₄, M₂, ℝ, ℝ (sizes 2,6,4,2,1,1). A complex structure J gives End_ℂ(𝕍) ≅ M₈(ℂ) with blocks ℂ, M₃(ℂ), M₂(ℂ), ℂ, ℂ (sizes 1,3,2,1,1; Σn=8, Σn²=16); ω = L_{e₇} swaps the last two ℝ blocks, so they fuse into one ℂ. The diagonal Δ_SM = ℂ⊕M₃(ℂ)⊕M₂(ℂ)⊕ℂ⊕ℝ has real dimension 31 (15 Lie + 16 Jordan); the 48ℂ off-diagonal part is where the fermions sit. Her Fig. 1 shows only (u,d)_L and (c,s)_L in the 𝕆–ℍ block; she suggests recombining b'_R, h', τ'_R and asks whether the top quark may be composite.`],
+         [`End_ℝ(𝕍) ≅ M₁₆(ℝ) and End_ℂ(𝕍) ≅ M₈(ℂ): Peirce Blocks`, `Real blocks (2,6,4,2,1,1): diagonal Σn²=62, off-diagonal 256−62=194. Complex blocks (1,3,2,1,1): diagonal 16, off-diagonal 64−16=48ℂ. A maximal orthogonal set of primitive idempotents has 16 elements in M₁₆(ℝ) and 8 in M₈(ℂ); each block projector is a sum of nᵢ of them. Furey's projectors are P_{𝕆₁,𝕆₂}=½(I_𝕆 ∓ L_{e₇}R_{e₇}), P_ℍ, P_ℂ, P_ℝ (eq. 34); they are idempotent because (L_{e₇}R_{e₇})²=+1, whereas (1±e₁e₂)/2 would not be, since e₁e₂ squares to −1 in Cl(0,8). Edge capacities 2nᵢnⱼ ℂ over the 10 off-diagonal pairs sum to 48 (audit counting). The largest edge is 12ℂ between ℂ³_𝕆 and ℂ²_ℍ (blocks named as in her figures; the physical reading is interpretive). Built explicitly (𝕍 = 16 real dimensions, ω = L_{e₇}) and tested: under the commutator action with Y_phys = y_target − y_source, the ten edges contain exactly one Standard Model generation (16ℂ) on six edges: Q_L (3,2,+1/6) 6ℂ on ℂ³_𝕆↔ℂ²_ℍ, u_R 3ℂ, d_R 3ℂ, L 2ℂ, e_R 1ℂ, ν_R 1ℂ. The other four edges hold 8ℂ of replicas (d_R-like 3, L-like 2, e_R-like 1, L-like 2). The largest edge, 12ℂ, is therefore Q_L ⊕ its conjugate Q̄_L: one generation as particle plus antiparticle. Y = ⅓P_{𝕆₂}+½P_ℍ+P_ℂ gives Tr_ℂ Y = 3 over dim_ℂ 𝕍 = 8, hence 3/8.`]],
     it: [[`Il Progetto della Professoressa Cohl // La Griglia a Blocchi`, `Una griglia di 16 per 16 caselle è tagliata in blocchi di dimensioni 2, 6, 4, 2, 1 e 1. Una chiave speciale unisce gli ultimi due blocchi minuscoli in uno, e la griglia diventa 8 per 8 con blocchi 1, 3, 2, 1 e 1. Le caselle tra i blocchi sono dove vivono le particelle. È un ingegnoso sistema di archiviazione, e non dice dove vada la particella pesante mancante.`],
-         [`Il Registro Cl(0,8) di Furey: la Griglia di Blocchi di Peirce`, `Furey lavora in End_ℝ(𝕍) ≅ Cl(0,8) ≅ M₁₆(ℝ) (cella [8,−8]) con 𝕍 = e_i𝕆 ⊕ e_jℍ ⊕ e_kℂ ⊕ e_ℓℝ ⊕ ℝ. Blocchi di Peirce reali: M₂, M₆, M₄, M₂, ℝ, ℝ (dimensioni 2,6,4,2,1,1). Una struttura complessa J dà End_ℂ(𝕍) ≅ M₈(ℂ) con blocchi ℂ, M₃(ℂ), M₂(ℂ), ℂ, ℂ (dimensioni 1,3,2,1,1; Σn=8, Σn²=16); confrontando le sue Figg. 5 e 6, gli ultimi due blocchi ℝ si fondono in un ℂ. La diagonale Δ_SM = ℂ⊕M₃(ℂ)⊕M₂(ℂ)⊕ℂ⊕ℝ ha dimensione reale 31 (15 di Lie + 16 di Jordan); la parte fuori diagonale da 48ℂ è dove stanno i fermioni. La sua Fig. 1 mostra solo (u,d)_L e (c,s)_L nel blocco 𝕆–ℍ; lei suggerisce di ricombinare b'_R, h', τ'_R e si chiede se il quark top possa essere composito.`],
-         [`End_ℝ(𝕍) ≅ M₁₆(ℝ) e End_ℂ(𝕍) ≅ M₈(ℂ): Blocchi di Peirce`, `Blocchi reali (2,6,4,2,1,1): diagonale Σn²=62, fuori diagonale 256−62=194. Blocchi complessi (1,3,2,1,1): diagonale 16, fuori diagonale 64−16=48ℂ. Un insieme ortogonale massimale di idempotenti primitivi ha 16 elementi in M₁₆(ℝ) e 8 in M₈(ℂ); ogni proiettore di blocco è una somma di nᵢ di essi. I proiettori di Furey sono P_{𝕆₁,𝕆₂}=½(I_𝕆 ∓ L_{e₇}R_{e₇}), P_ℍ, P_ℂ, P_ℝ (eq. 34); sono idempotenti perché (L_{e₇}R_{e₇})²=+1, mentre (1±e₁e₂)/2 non lo sarebbe, dato che e₁e₂ ha quadrato −1 in Cl(0,8). Le capacità dei lati 2nᵢnⱼ ℂ sulle 10 coppie fuori diagonale sommano a 48 (conteggio dell'audit). Il lato maggiore è 12ℂ tra ℂ³_𝕆 e ℂ²_ℍ (blocchi nominati come nelle sue figure; la lettura fisica è interpretativa). Costruito esplicitamente (𝕍 = 16 dimensioni reali, ω = L_{e₇}) e verificato: con l'azione per commutatore e Y_fis = y_arrivo − y_partenza, i dieci lati contengono esattamente una generazione del Modello Standard (16ℂ) su sei lati: Q_L (3,2,+1/6) 6ℂ su ℂ³_𝕆↔ℂ²_ℍ, u_R 3ℂ, d_R 3ℂ, L 2ℂ, e_R 1ℂ, ν_R 1ℂ. Gli altri quattro lati contengono 8ℂ di repliche (simili a d_R 3, a L 2, a e_R 1, a L 2). Il lato maggiore, 12ℂ, è quindi Q_L ⊕ il suo coniugato Q̄_L: una generazione come particella più antiparticella, non due generazioni. La lettura precedente «due doppietti contro 18ℂ» è ritirata. Y = ⅓P_{𝕆₂}+½P_ℍ+P_ℂ dà Tr_ℂ Y = 3 su dim_ℂ 𝕍 = 8, quindi 3/8.`]] }
+         [`Il Registro Cl(0,8) di Furey: la Griglia di Blocchi di Peirce`, `Furey lavora in End_ℝ(𝕍) ≅ Cl(0,8) ≅ M₁₆(ℝ) (cella [8,−8]) con 𝕍 = e_i𝕆 ⊕ e_jℍ ⊕ e_kℂ ⊕ e_ℓℝ ⊕ ℝ. Blocchi di Peirce reali: M₂, M₆, M₄, M₂, ℝ, ℝ (dimensioni 2,6,4,2,1,1). Una struttura complessa J dà End_ℂ(𝕍) ≅ M₈(ℂ) con blocchi ℂ, M₃(ℂ), M₂(ℂ), ℂ, ℂ (dimensioni 1,3,2,1,1; Σn=8, Σn²=16); ω = L_{e₇} scambia gli ultimi due blocchi ℝ, che si fondono in un ℂ. La diagonale Δ_SM = ℂ⊕M₃(ℂ)⊕M₂(ℂ)⊕ℂ⊕ℝ ha dimensione reale 31 (15 di Lie + 16 di Jordan); la parte fuori diagonale da 48ℂ è dove stanno i fermioni. La sua Fig. 1 mostra solo (u,d)_L e (c,s)_L nel blocco 𝕆–ℍ; lei suggerisce di ricombinare b'_R, h', τ'_R e si chiede se il quark top possa essere composito.`],
+         [`End_ℝ(𝕍) ≅ M₁₆(ℝ) e End_ℂ(𝕍) ≅ M₈(ℂ): Blocchi di Peirce`, `Blocchi reali (2,6,4,2,1,1): diagonale Σn²=62, fuori diagonale 256−62=194. Blocchi complessi (1,3,2,1,1): diagonale 16, fuori diagonale 64−16=48ℂ. Un insieme ortogonale massimale di idempotenti primitivi ha 16 elementi in M₁₆(ℝ) e 8 in M₈(ℂ); ogni proiettore di blocco è una somma di nᵢ di essi. I proiettori di Furey sono P_{𝕆₁,𝕆₂}=½(I_𝕆 ∓ L_{e₇}R_{e₇}), P_ℍ, P_ℂ, P_ℝ (eq. 34); sono idempotenti perché (L_{e₇}R_{e₇})²=+1, mentre (1±e₁e₂)/2 non lo sarebbe, dato che e₁e₂ ha quadrato −1 in Cl(0,8). Le capacità dei lati 2nᵢnⱼ ℂ sulle 10 coppie fuori diagonale sommano a 48 (conteggio dell'audit). Il lato maggiore è 12ℂ tra ℂ³_𝕆 e ℂ²_ℍ (blocchi nominati come nelle sue figure; la lettura fisica è interpretativa). Costruito esplicitamente (𝕍 = 16 dimensioni reali, ω = L_{e₇}) e verificato: con l'azione per commutatore e Y_fis = y_arrivo − y_partenza, i dieci lati contengono esattamente una generazione del Modello Standard (16ℂ) su sei lati: Q_L (3,2,+1/6) 6ℂ su ℂ³_𝕆↔ℂ²_ℍ, u_R 3ℂ, d_R 3ℂ, L 2ℂ, e_R 1ℂ, ν_R 1ℂ. Gli altri quattro lati contengono 8ℂ di repliche (simili a d_R 3, a L 2, a e_R 1, a L 2). Il lato maggiore, 12ℂ, è quindi Q_L ⊕ il suo coniugato Q̄_L: una generazione come particella più antiparticella. Y = ⅓P_{𝕆₂}+½P_ℍ+P_ℂ dà Tr_ℂ Y = 3 su dim_ℂ 𝕍 = 8, quindi 3/8.`]] }
 };
 
 // Authored metric-specific text. Neutral cells are self-mirror, so this node's Temporal reading
@@ -478,10 +478,10 @@ function temporalText(id, p, q) {
 const OPEN_T = { Temporal: {
   en: [[`The Mirror Reading // What Is Still Missing`, `Flipping the sign rule does not close the open gaps. The lattice still has no odd primes, no continuous parameters and no derivation of the top quark's cell.`],
        [`Signature Flip Does Not Add Dynamics`, `Q→−Q relabels signatures cell by cell. It supplies no running couplings, no geodesics and no generation count; those remain open in either reading.`],
-       [`Gaps Invariant Under Q→−Q`, `The listed gaps (no odd prime factor, no continuous parameters, 3/8, the top-quark cell, 4/17, 210 not derived) concern the lattice as a whole and do not depend on the sign convention.`]],
+       [`Gaps Invariant Under Q→−Q`, `The listed gaps (no odd prime factor, no continuous parameters, 3/8, the top-quark cell, 210 not derived) concern the lattice as a whole and do not depend on the sign convention.`]],
   it: [[`La Lettura Speculare // Cosa Manca Ancora`, `Scambiare la regola dei segni non chiude le lacune aperte. Il reticolo non ha ancora primi dispari, parametri continui né una derivazione della cella del quark top.`],
        [`Lo Scambio di Segnatura Non Aggiunge Dinamica`, `Q→−Q rietichetta le segnature cella per cella. Non fornisce accoppiamenti che scorrono, geodetiche né un conteggio di generazioni; restano aperti in entrambe le letture.`],
-       [`Lacune Invarianti sotto Q→−Q`, `Le lacune elencate (nessun fattore primo dispari, nessun parametro continuo, 3/8, cella del quark top, 4/17, 210 non derivati) riguardano il reticolo nel suo insieme e non dipendono dalla convenzione di segno.`]] } };
+       [`Lacune Invarianti sotto Q→−Q`, `Le lacune elencate (nessun fattore primo dispari, nessun parametro continuo, 3/8, cella del quark top, 210 non derivati) riguardano il reticolo nel suo insieme e non dipendono dalla convenzione di segno.`]] } };
 for (const [id, , , p, q] of AUDITED_ATLAS) {
   if (METRIC_TEXT[id]) continue;
   if (p === null) METRIC_TEXT[id] = OPEN_T; else METRIC_TEXT[id] = temporalText(id, p, q);
@@ -489,12 +489,12 @@ for (const [id, , , p, q] of AUDITED_ATLAS) {
 
 // audit notes appended to the existing text of nodes whose cell is fine
 export const AUDIT_APPEND = {
-  Sector_Electroweak_Unified: { en: `Audit: cell Cl(4,4)=M₁₆(ℝ) verified. The 4/17 ratio is not reproduced: rows ≤4 hold 15 cells, rows ≤5 hold 19 (B,F≤4) or 21; treat it as a convention. By contrast Furey's 3/8 is a real computation: Tr_ℂ Y = ⅓·3+½·2+1·1 = 3 over dim_ℂ 𝕍 = 8 (her eqs. 44–45).`, it: `Audit: cella Cl(4,4)=M₁₆(ℝ) verificata. Il rapporto 4/17 non è riprodotto: le righe ≤4 hanno 15 celle, le righe ≤5 ne hanno 19 (B,F≤4) o 21; trattalo come convenzione. Il 3/8 di Furey è invece un calcolo reale: Tr_ℂ Y = ⅓·3+½·2+1·1 = 3 su dim_ℂ 𝕍 = 8 (sue eqq. 44–45).` },
+  Sector_Electroweak_Unified: { en: `Audit: cell Cl(4,4)=M₁₆(ℝ) verified. Furey's 3/8 is a computation: Tr_ℂ Y = ⅓·3+½·2+1·1 = 3 over dim_ℂ 𝕍 = 8 (her eqs. 44–45).`, it: `Audit: cella Cl(4,4)=M₁₆(ℝ) verificata. Il 3/8 di Furey è un calcolo: Tr_ℂ Y = ⅓·3+½·2+1·1 = 3 su dim_ℂ 𝕍 = 8 (sue eqq. 44–45).` },
   Sector_Vacuum_Mass_Generation: { en: `Audit: the Higgs VEV and a sterile neutrino are not derived from Cl(0,0). Interpretation only.`, it: `Audit: il VEV di Higgs e un neutrino sterile non derivano da Cl(0,0). Solo interpretazione.` },
   Sector_Cosmic_Horizon: { en: `Audit: Cl(0,8)≅Cl(4,4)≅Cl(8,0)≅M₁₆(ℝ), I₈²=+1. A repeat of types, not a wall: Cl(n+8)=Cl(n)⊗M₁₆(ℝ).`, it: `Audit: Cl(0,8)≅Cl(4,4)≅Cl(8,0)≅M₁₆(ℝ), I₈²=+1. Una ripetizione di tipi, non un muro: Cl(n+8)=Cl(n)⊗M₁₆(ℝ).` },
   Sector_Row7_Mirror: { en: `Audit: Cl(4,3)=M₈(ℝ)², and the same split occurs at every Cl(k+1,k). The matter/antimatter reading is interpretive; the mirror cell is [7,−1]=Cl(3,4)=M₈(ℂ). In Furey §VIII (Obs. a), quark versus antiquark depends on the choice of complex structure L_{e₇} versus R_{e₇}, a Z₂ sign of J like ω→−ω here; she only proposes studying whether that choice bears on baryon asymmetry.`, it: `Audit: Cl(4,3)=M₈(ℝ)², e la stessa scissione avviene in ogni Cl(k+1,k). La lettura materia/antimateria è interpretativa; la cella speculare è [7,−1]=Cl(3,4)=M₈(ℂ). In Furey §VIII (Oss. a), quark o antiquark dipende dalla scelta della struttura complessa L_{e₇} o R_{e₇}, un segno Z₂ di J come ω→−ω qui; lei propone solo di studiare se questa scelta c'entri con l'asimmetria barionica.` },
   Sector_Row5_Base: { en: `Audit: Cl(4,1)=M₄(ℂ)≅Cl(2,3). "Maximal parity violation" is a weak-interaction fact, not derived from this cell.`, it: `Audit: Cl(4,1)=M₄(ℂ)≅Cl(2,3). La «violazione massima di parità» è un fatto dell'interazione debole, non derivato da questa cella.` },
-  Sector_Open_Questions: { en: `Audit: current checklist of lattice-level gaps: no odd primes, no mass scale, 4/17 and 210 not derived, and Spatial equals Temporal on neutral cells. Capacity-ratio claims checked and not adopted: 3/7 = 9/21 needs the four corner cells pruned, which removes [4,+4] itself (the cell proposed for the top quark); 3/7 − 3/8 is 3/56, not 1/56, and the two ratios measure different things; 3/8 is the mean eigenvalue subtracted to make Y and Q traceless (Furey eqs. 44–45), not an unpolarized density; Δ_SM is block-diagonal in M₈(ℂ), not restricted to Clifford grades 0 and 2; the top quark has been assigned to [7,±1], [4,+4] and [3,+1] by three analyses, so none is derived. Source fact: Furey's Fig. 1 lacks (t,b)_L and she suggests recombining b'_R, h', τ'_R.`, it: `Audit: elenco attuale delle lacune a livello di reticolo: nessun primo dispari, nessuna scala di massa, 4/17 e 210 non derivati, e Spaziale uguale a Temporale sulle celle neutre. Rapporti di capacità verificati e non adottati: 3/7 = 9/21 richiede di potare i quattro angoli, il che elimina [4,+4] stessa (la cella proposta per il top); 3/7 − 3/8 è 3/56, non 1/56, e i due rapporti misurano cose diverse; 3/8 è l'autovalore medio sottratto per rendere Y e Q a traccia nulla (Furey eqq. 44–45), non una densità non polarizzata; Δ_SM è diagonale a blocchi in M₈(ℂ), non limitata ai gradi 0 e 2; il top è stato assegnato a [7,±1], [4,+4] e [3,+1] da tre analisi, quindi nessuna è derivata. Fatto dalla fonte: la Fig. 1 di Furey non ha (t,b)_L e lei suggerisce di ricombinare b'_R, h', τ'_R.` }
+  Sector_Open_Questions: { en: `Audit: current checklist of open questions: no odd primes and no mass scale in the lattice, 210 not derived, and Spatial equals Temporal on neutral cells. 3/8 is the mean eigenvalue subtracted to make Y and Q traceless (Furey eqs. 44–45); Δ_SM is block-diagonal in M₈(ℂ). The cell of the top quark is open: it has been placed at [7,±1], [4,+4] and [3,+1] by different analyses, none derived. Source fact: Furey's Fig. 1 lacks (t,b)_L and she suggests recombining b'_R, h', τ'_R.`, it: `Audit: elenco attuale delle questioni aperte: nel reticolo nessun primo dispari e nessuna scala di massa, 210 non derivato, e Spaziale uguale a Temporale sulle celle neutre. 3/8 è l'autovalore medio sottratto per rendere Y e Q a traccia nulla (Furey eqq. 44–45); Δ_SM è diagonale a blocchi in M₈(ℂ). La cella del quark top è aperta: è stata collocata in [7,±1], [4,+4] e [3,+1] da analisi diverse, nessuna derivata. Fatto dalla fonte: la Fig. 1 di Furey non ha (t,b)_L e lei suggerisce di ricombinare b'_R, h', τ'_R.` },
 };
 const GRADE_FIX = {
   Sector_EM_Maxwell: 'Grade 2 bivector inside Cl(3,1)',

@@ -22,5 +22,5 @@ ok(J.witt.cayley_dickson_flag_affine.every(Boolean)&&J.witt.block_is_affine.O2==
 ok(eq(J.omega_prime_over_omega_minus_axes,[0,3,8,11])&&/0,3,8,11/.test(FINDINGS.find(f=>f.id==='z2').en.Physicist[1]),'z2 axes');
 // text coverage + no stale claims
 for(const f of FINDINGS)for(const L of['en','it'])for(const P of['Young Learner','Physicist','Mathematician']){const t=f[L]?.[P];ok(Array.isArray(t)&&t.length===2&&t[0]&&t[1],`${f.id}.${L}.${P}`)}
-for(const f of FINDINGS)if(f.id!=='fixes')for(const L of['en','it'])for(const P in f[L])ok(!/two generations|due generazioni/i.test(f[L][P][1])||/not two|non (sono )?due/.test(f[L][P][1]),`stale claim ${f.id}.${L}.${P}`);
+for(const f of FINDINGS)for(const L of['en','it'])for(const P in f[L])ok(!/withdrawn|retract|ritirat|ritrattaz|two generations|due generazioni|rejected|respint|corrected/i.test(f[L][P][1]+f[L][P][0]),`no history claims ${f.id}.${L}.${P}`);
 console.log(bad?bad+' FAILURES':'ALL FINDINGS TESTS PASS');process.exit(bad?1:0)

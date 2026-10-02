@@ -1,7 +1,7 @@
 import React from 'react';
 import { FINDINGS, FINDINGS_UI, REAL_BLOCKS, COMPLEX_BLOCKS, BLOCK_NAMES, BLOCK_COLORS, EDGES } from './findingsData';
 
-const BADGE = { verified: '#4fd18b', open: '#ffd166', corrected: '#ff5d8f' };
+const BADGE = { verified: '#4fd18b', open: '#ffd166' };
 const CSS = `
 .findings{margin:3rem auto;max-width:1100px;padding:0 1rem}
 .findings h2{margin:.2rem 0 .6rem}
