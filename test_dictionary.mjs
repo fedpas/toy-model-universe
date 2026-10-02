@@ -4,9 +4,9 @@ import {SELFCHECK_PY} from './selfcheckSource.js';
 import {cliffordCell} from './genesis_audit_v3.js';
 let bad=0;const ok=(c,m)=>{if(!c){bad++;console.log('FAIL',m)}};
 // 1. shipped data == rebuilt JSON file
-const J=JSON.parse(fs.readFileSync('../out/selfcheck/dictionary.json','utf8'));
+const J=JSON.parse(fs.readFileSync('./dictionary.json','utf8'));
 ok(JSON.stringify(J)===JSON.stringify(JSON.parse(JSON.stringify(DICT))),'data equals the rebuilt JSON');
-ok(SELFCHECK_PY===fs.readFileSync('../out/selfcheck/dictionary_selfcheck.py','utf8'),'embedded script equals the file');
+ok(SELFCHECK_PY===fs.readFileSync('./dictionary_selfcheck.py','utf8'),'embedded script equals the file');
 // 2. ladder vs independent JS algebra engine
 for(const r of DICT.ladder){const c=cliffordCell(0,r.n);ok(c.N===r.minus_edge.matrix_size&&c.kind===r.minus_edge.type,`Cl(0,${r.n}) ${c.kind}${c.N} vs ${r.minus_edge.type}${r.minus_edge.matrix_size}`);
  const cp=cliffordCell(r.n,0);ok(cp.N===r.plus_edge.matrix_size&&cp.kind===r.plus_edge.type,`Cl(${r.n},0)`);

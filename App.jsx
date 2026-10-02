@@ -5,6 +5,7 @@ import { BlockMath, InlineMath } from 'react-katex';
 import SimplexCanvas from './SimplexCanvas';
 import GenesisCanvas from './GenesisCanvas';
 import FureyFindings from './FureyFindings';
+import DictionarySection from './DictionarySection';
 import { PROOFS, STATUS_LABEL, PROOF_UI } from './proofs';
 import { KNOWLEDGE_BASE_DIRECTORY, MENU_SECTOR_LIST, GENESIS_STAGES, getCompleteDualMetricDisplayData, getGenesisDisplayData } from './matrixData';
 
@@ -54,6 +55,7 @@ export default function App(){
   <section className="result active-result" ref={resultRef} tabIndex="-1"><article className="paper"><p className="eyebrow">{t.now.toUpperCase()} · {selected.category.toUpperCase()} · {view.toUpperCase()} VIEW</p><h2>{record.title}</h2>{record.subtitle&&<p className="subtitle">{record.subtitle}</p>}<p>{record.desc}</p><ResultFormal sector={sector} profile={profile} lang={lang} record={record}/></article><aside className="proof-map"><p className="eyebrow">{t.activeVisual.toUpperCase()}</p><SimplexCanvas step={3} activeView={view} sector={sector} metricMode={metricMode} lang={lang}/><div className="view-pills">{VIEWS.map(v=><button onClick={()=>setView(v)} className={v===view?'active':''} key={v}>{v}: {telemetry(record,v)}</button>)}</div></aside></section>
   <SectorNavigator lang={lang} profile={profile} metricMode={metricMode} t={t} sector={sector} setSector={setSector} resultRef={resultRef}/>
   <FureyFindings lang={lang} profile={profile}/>
+  <DictionarySection lang={lang} profile={profile}/>
   <ChatPanel lang={lang} profile={profile} metricMode={metricMode}/><footer><span>Clifford · Prime · Simplex · Cube</span><span>{t.note}</span></footer>
  </main>
 }
@@ -92,7 +94,7 @@ function ChatPanel({lang,profile,metricMode}) {
   const response=await fetch(url,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});
   if(!response.ok||!response.body) throw new Error('unavailable');
   const reader=response.body.getReader(),decoder=new TextDecoder(); let text='',buffer='';
-  while(true){const {value,done}=await reader.read();buffer+=decoder.decode(value||new Uint8Array(),{stream:!done});const lines=buffer.split('\n');buffer=done?'':lines.pop();for(const line of lines){if(!line.startsWith('data: ')||line.includes('[DONE]'))continue;let event;try{event=JSON.parse(line.slice(6))}catch{continue}if(event.type==='status'){onStatus?.(event.message);continue}if(event.type==='error'||event.error)throw new Error(event.message||event.error?.message||'unavailable');const delta=event.type==='content_block_delta'?event.delta?.text||'':event.choices?.[0]?.delta?.content||'';if(delta){text+=delta;onText(text)}}if(done)break}
+  while(true){const {value,done}=await reader.read();buffer+=decoder.decode(value||new Uint8Array(),{stream:!done});const lines=buffer.split('\n');buffer=done?'':lines.pop();for(const line of lines){if(!line.startsWith('data: ')||line.includes('[DONE]'))continue;try{const event=JSON.parse(line.slice(6));if(event.type==='status'){onStatus?.(event.message);continue}if(event.type==='error')throw new Error(event.message||'unavailable');const delta=event.type==='content_block_delta'?event.delta?.text||'':event.choices?.[0]?.delta?.content||'';if(delta){text+=delta;onText(text)}}catch{}}if(done)break}
  }
  const payload=()=>({spokenLang:lang,userProfile:profile,metricMode,messages:[{role:'user',content:input}]});
  async function ask(e){e.preventDefault();if(!input.trim()||loading)return;setLoading(true);setAnswer('');try{await readStream(agent==='openai'?'/api/chat-openai':'/api/chat',payload(),setAnswer,status=>setAnswer(status))}catch{setAnswer(unavailable)}finally{setLoading(false)}}
