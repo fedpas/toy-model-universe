@@ -1,0 +1,986 @@
+{
+ "demicube": {
+  "demicube_is_orthoplex_at": [
+   4
+  ],
+  "demicube_is_simplex_at": [
+   3
+  ],
+  "even_subalgebra": {
+   "0,1": {
+    "even": "R",
+    "even_is": "Cl(0,0)",
+    "even_splits": false,
+    "full": "M1(C)",
+    "full_splits": false,
+    "n": 1
+   },
+   "0,2": {
+    "even": "M1(C)",
+    "even_is": "Cl(0,1)",
+    "even_splits": false,
+    "full": "M1(H)",
+    "full_splits": false,
+    "n": 2
+   },
+   "0,3": {
+    "even": "M1(H)",
+    "even_is": "Cl(0,2)",
+    "even_splits": false,
+    "full": "M1(H) + M1(H)",
+    "full_splits": true,
+    "n": 3
+   },
+   "0,4": {
+    "even": "M1(H) + M1(H)",
+    "even_is": "Cl(0,3)",
+    "even_splits": true,
+    "full": "M2(H)",
+    "full_splits": false,
+    "n": 4
+   },
+   "0,5": {
+    "even": "M2(H)",
+    "even_is": "Cl(0,4)",
+    "even_splits": false,
+    "full": "M4(C)",
+    "full_splits": false,
+    "n": 5
+   },
+   "0,6": {
+    "even": "M4(C)",
+    "even_is": "Cl(0,5)",
+    "even_splits": false,
+    "full": "M8(R)",
+    "full_splits": false,
+    "n": 6
+   },
+   "0,7": {
+    "even": "M8(R)",
+    "even_is": "Cl(0,6)",
+    "even_splits": false,
+    "full": "M8(R) + M8(R)",
+    "full_splits": true,
+    "n": 7
+   },
+   "0,8": {
+    "even": "M8(R) + M8(R)",
+    "even_is": "Cl(0,7)",
+    "even_splits": true,
+    "full": "M16(R)",
+    "full_splits": false,
+    "n": 8
+   },
+   "1,0": {
+    "even": "R",
+    "even_is": "Cl(0,0)",
+    "even_splits": false,
+    "full": "M1(R) + M1(R)",
+    "full_splits": true,
+    "n": 1
+   },
+   "1,1": {
+    "even": "M1(R) + M1(R)",
+    "even_is": "Cl(1,0)",
+    "even_splits": true,
+    "full": "M2(R)",
+    "full_splits": false,
+    "n": 2
+   },
+   "1,2": {
+    "even": "M2(R)",
+    "even_is": "Cl(1,1)",
+    "even_splits": false,
+    "full": "M2(C)",
+    "full_splits": false,
+    "n": 3
+   },
+   "1,3": {
+    "even": "M2(C)",
+    "even_is": "Cl(1,2)",
+    "even_splits": false,
+    "full": "M2(H)",
+    "full_splits": false,
+    "n": 4
+   },
+   "1,4": {
+    "even": "M2(H)",
+    "even_is": "Cl(1,3)",
+    "even_splits": false,
+    "full": "M2(H) + M2(H)",
+    "full_splits": true,
+    "n": 5
+   },
+   "1,5": {
+    "even": "M2(H) + M2(H)",
+    "even_is": "Cl(1,4)",
+    "even_splits": true,
+    "full": "M4(H)",
+    "full_splits": false,
+    "n": 6
+   },
+   "1,6": {
+    "even": "M4(H)",
+    "even_is": "Cl(1,5)",
+    "even_splits": false,
+    "full": "M8(C)",
+    "full_splits": false,
+    "n": 7
+   },
+   "1,7": {
+    "even": "M8(C)",
+    "even_is": "Cl(1,6)",
+    "even_splits": false,
+    "full": "M16(R)",
+    "full_splits": false,
+    "n": 8
+   },
+   "2,0": {
+    "even": "M1(C)",
+    "even_is": "Cl(0,1)",
+    "even_splits": false,
+    "full": "M2(R)",
+    "full_splits": false,
+    "n": 2
+   },
+   "2,1": {
+    "even": "M2(R)",
+    "even_is": "Cl(2,0)",
+    "even_splits": false,
+    "full": "M2(R) + M2(R)",
+    "full_splits": true,
+    "n": 3
+   },
+   "2,2": {
+    "even": "M2(R) + M2(R)",
+    "even_is": "Cl(2,1)",
+    "even_splits": true,
+    "full": "M4(R)",
+    "full_splits": false,
+    "n": 4
+   },
+   "2,3": {
+    "even": "M4(R)",
+    "even_is": "Cl(2,2)",
+    "even_splits": false,
+    "full": "M4(C)",
+    "full_splits": false,
+    "n": 5
+   },
+   "2,4": {
+    "even": "M4(C)",
+    "even_is": "Cl(2,3)",
+    "even_splits": false,
+    "full": "M4(H)",
+    "full_splits": false,
+    "n": 6
+   },
+   "2,5": {
+    "even": "M4(H)",
+    "even_is": "Cl(2,4)",
+    "even_splits": false,
+    "full": "M4(H) + M4(H)",
+    "full_splits": true,
+    "n": 7
+   },
+   "2,6": {
+    "even": "M4(H) + M4(H)",
+    "even_is": "Cl(2,5)",
+    "even_splits": true,
+    "full": "M8(H)",
+    "full_splits": false,
+    "n": 8
+   },
+   "3,0": {
+    "even": "M1(H)",
+    "even_is": "Cl(0,2)",
+    "even_splits": false,
+    "full": "M2(C)",
+    "full_splits": false,
+    "n": 3
+   },
+   "3,1": {
+    "even": "M2(C)",
+    "even_is": "Cl(3,0)",
+    "even_splits": false,
+    "full": "M4(R)",
+    "full_splits": false,
+    "n": 4
+   },
+   "3,2": {
+    "even": "M4(R)",
+    "even_is": "Cl(3,1)",
+    "even_splits": false,
+    "full": "M4(R) + M4(R)",
+    "full_splits": true,
+    "n": 5
+   },
+   "3,3": {
+    "even": "M4(R) + M4(R)",
+    "even_is": "Cl(3,2)",
+    "even_splits": true,
+    "full": "M8(R)",
+    "full_splits": false,
+    "n": 6
+   },
+   "3,4": {
+    "even": "M8(R)",
+    "even_is": "Cl(3,3)",
+    "even_splits": false,
+    "full": "M8(C)",
+    "full_splits": false,
+    "n": 7
+   },
+   "3,5": {
+    "even": "M8(C)",
+    "even_is": "Cl(3,4)",
+    "even_splits": false,
+    "full": "M8(H)",
+    "full_splits": false,
+    "n": 8
+   },
+   "4,0": {
+    "even": "M1(H) + M1(H)",
+    "even_is": "Cl(0,3)",
+    "even_splits": true,
+    "full": "M2(H)",
+    "full_splits": false,
+    "n": 4
+   },
+   "4,1": {
+    "even": "M2(H)",
+    "even_is": "Cl(4,0)",
+    "even_splits": false,
+    "full": "M4(C)",
+    "full_splits": false,
+    "n": 5
+   },
+   "4,2": {
+    "even": "M4(C)",
+    "even_is": "Cl(4,1)",
+    "even_splits": false,
+    "full": "M8(R)",
+    "full_splits": false,
+    "n": 6
+   },
+   "4,3": {
+    "even": "M8(R)",
+    "even_is": "Cl(4,2)",
+    "even_splits": false,
+    "full": "M8(R) + M8(R)",
+    "full_splits": true,
+    "n": 7
+   },
+   "4,4": {
+    "even": "M8(R) + M8(R)",
+    "even_is": "Cl(4,3)",
+    "even_splits": true,
+    "full": "M16(R)",
+    "full_splits": false,
+    "n": 8
+   },
+   "5,0": {
+    "even": "M2(H)",
+    "even_is": "Cl(0,4)",
+    "even_splits": false,
+    "full": "M2(H) + M2(H)",
+    "full_splits": true,
+    "n": 5
+   },
+   "5,1": {
+    "even": "M2(H) + M2(H)",
+    "even_is": "Cl(5,0)",
+    "even_splits": true,
+    "full": "M4(H)",
+    "full_splits": false,
+    "n": 6
+   },
+   "5,2": {
+    "even": "M4(H)",
+    "even_is": "Cl(5,1)",
+    "even_splits": false,
+    "full": "M8(C)",
+    "full_splits": false,
+    "n": 7
+   },
+   "5,3": {
+    "even": "M8(C)",
+    "even_is": "Cl(5,2)",
+    "even_splits": false,
+    "full": "M16(R)",
+    "full_splits": false,
+    "n": 8
+   },
+   "6,0": {
+    "even": "M4(C)",
+    "even_is": "Cl(0,5)",
+    "even_splits": false,
+    "full": "M4(H)",
+    "full_splits": false,
+    "n": 6
+   },
+   "6,1": {
+    "even": "M4(H)",
+    "even_is": "Cl(6,0)",
+    "even_splits": false,
+    "full": "M4(H) + M4(H)",
+    "full_splits": true,
+    "n": 7
+   },
+   "6,2": {
+    "even": "M4(H) + M4(H)",
+    "even_is": "Cl(6,1)",
+    "even_splits": true,
+    "full": "M8(H)",
+    "full_splits": false,
+    "n": 8
+   },
+   "7,0": {
+    "even": "M8(R)",
+    "even_is": "Cl(0,6)",
+    "even_splits": false,
+    "full": "M8(C)",
+    "full_splits": false,
+    "n": 7
+   },
+   "7,1": {
+    "even": "M8(C)",
+    "even_is": "Cl(7,0)",
+    "even_splits": false,
+    "full": "M8(H)",
+    "full_splits": false,
+    "n": 8
+   },
+   "8,0": {
+    "even": "M8(R) + M8(R)",
+    "even_is": "Cl(0,7)",
+    "even_splits": true,
+    "full": "M16(R)",
+    "full_splits": false,
+    "n": 8
+   }
+  },
+  "maxwell": {
+   "2": {
+    "F_components": 1,
+    "coupled_pairs": 0,
+    "coupling_graph_is_demicube_edges_between_bivectors": true,
+    "each_coupled_pair_in_two_equations": null,
+    "incidences": 2,
+    "trivector_equation_terms": 0,
+    "trivector_equations": 0,
+    "vector_equation_terms": 1,
+    "vector_equations": 2
+   },
+   "3": {
+    "F_components": 3,
+    "coupled_pairs": 3,
+    "coupling_graph_is_demicube_edges_between_bivectors": true,
+    "each_coupled_pair_in_two_equations": true,
+    "incidences": 9,
+    "trivector_equation_terms": 3,
+    "trivector_equations": 1,
+    "vector_equation_terms": 2,
+    "vector_equations": 3
+   },
+   "4": {
+    "F_components": 6,
+    "coupled_pairs": 12,
+    "coupling_graph_is_demicube_edges_between_bivectors": true,
+    "each_coupled_pair_in_two_equations": true,
+    "incidences": 24,
+    "trivector_equation_terms": 3,
+    "trivector_equations": 4,
+    "vector_equation_terms": 3,
+    "vector_equations": 4
+   },
+   "5": {
+    "F_components": 10,
+    "coupled_pairs": 30,
+    "coupling_graph_is_demicube_edges_between_bivectors": true,
+    "each_coupled_pair_in_two_equations": true,
+    "incidences": 50,
+    "trivector_equation_terms": 3,
+    "trivector_equations": 10,
+    "vector_equation_terms": 4,
+    "vector_equations": 5
+   },
+   "6": {
+    "F_components": 15,
+    "coupled_pairs": 60,
+    "coupling_graph_is_demicube_edges_between_bivectors": true,
+    "each_coupled_pair_in_two_equations": true,
+    "incidences": 90,
+    "trivector_equation_terms": 3,
+    "trivector_equations": 20,
+    "vector_equation_terms": 5,
+    "vector_equations": 6
+   },
+   "7": {
+    "F_components": 21,
+    "coupled_pairs": 105,
+    "coupling_graph_is_demicube_edges_between_bivectors": true,
+    "each_coupled_pair_in_two_equations": true,
+    "incidences": 147,
+    "trivector_equation_terms": 3,
+    "trivector_equations": 35,
+    "vector_equation_terms": 6,
+    "vector_equations": 7
+   }
+  },
+  "names": {
+   "3": "tetrahedron (3-simplex)",
+   "4": "16-cell (demitesseract)",
+   "5": "demipenteract",
+   "6": "demihexeract",
+   "7": "demihepteract",
+   "8": "demiocteract"
+  },
+  "rows": {
+   "3": {
+    "brute_force_verified": true,
+    "corner_simplex_example_vertices": [
+     0,
+     3,
+     5
+    ],
+    "edges": 6,
+    "edges_by_grade_pair": {
+     "0-2": 3,
+     "2-2": 3
+    },
+    "euler": 2,
+    "even_blades_by_grade": {
+     "0": 1,
+     "2": 3
+    },
+    "even_equals_n-1_cube_vertices_by_dropping_last_bit": true,
+    "even_labels": [
+     0,
+     3,
+     5,
+     6
+    ],
+    "f_vector": [
+     4,
+     6,
+     4
+    ],
+    "facet_split": {
+     "corner_simplices": 4,
+     "demicubes_(n-1)": 0
+    },
+    "facets": 4,
+    "name": "tetrahedron (3-simplex)",
+    "vertices": 4
+   },
+   "4": {
+    "brute_force_verified": true,
+    "corner_simplex_example_vertices": [
+     0,
+     3,
+     5,
+     9
+    ],
+    "edges": 24,
+    "edges_by_grade_pair": {
+     "0-2": 6,
+     "2-2": 12,
+     "2-4": 6
+    },
+    "euler": 0,
+    "even_blades_by_grade": {
+     "0": 1,
+     "2": 6,
+     "4": 1
+    },
+    "even_equals_n-1_cube_vertices_by_dropping_last_bit": true,
+    "even_labels": [
+     0,
+     3,
+     5,
+     6,
+     9,
+     10,
+     12,
+     15
+    ],
+    "f_vector": [
+     8,
+     24,
+     32,
+     16
+    ],
+    "facet_split": {
+     "corner_simplices": 8,
+     "demicubes_(n-1)": 8
+    },
+    "facets": 16,
+    "name": "16-cell (demitesseract)",
+    "vertices": 8
+   },
+   "5": {
+    "brute_force_verified": true,
+    "corner_simplex_example_vertices": [
+     0,
+     3,
+     5,
+     9,
+     17
+    ],
+    "edges": 80,
+    "edges_by_grade_pair": {
+     "0-2": 10,
+     "2-2": 30,
+     "2-4": 30,
+     "4-4": 10
+    },
+    "euler": 2,
+    "even_blades_by_grade": {
+     "0": 1,
+     "2": 10,
+     "4": 5
+    },
+    "even_equals_n-1_cube_vertices_by_dropping_last_bit": true,
+    "even_labels": [
+     0,
+     3,
+     5,
+     6,
+     9,
+     10,
+     12,
+     15,
+     17,
+     18,
+     20,
+     23,
+     24,
+     27,
+     29,
+     30
+    ],
+    "f_vector": [
+     16,
+     80,
+     160,
+     120,
+     26
+    ],
+    "facet_split": {
+     "corner_simplices": 16,
+     "demicubes_(n-1)": 10
+    },
+    "facets": 26,
+    "name": "demipenteract",
+    "vertices": 16
+   },
+   "6": {
+    "brute_force_verified": true,
+    "corner_simplex_example_vertices": [
+     0,
+     3,
+     5,
+     9,
+     17,
+     33
+    ],
+    "edges": 240,
+    "edges_by_grade_pair": {
+     "0-2": 15,
+     "2-2": 60,
+     "2-4": 90,
+     "4-4": 60,
+     "4-6": 15
+    },
+    "euler": 0,
+    "even_blades_by_grade": {
+     "0": 1,
+     "2": 15,
+     "4": 15,
+     "6": 1
+    },
+    "even_equals_n-1_cube_vertices_by_dropping_last_bit": true,
+    "even_labels": null,
+    "f_vector": [
+     32,
+     240,
+     640,
+     640,
+     252,
+     44
+    ],
+    "facet_split": {
+     "corner_simplices": 32,
+     "demicubes_(n-1)": 12
+    },
+    "facets": 44,
+    "name": "demihexeract",
+    "vertices": 32
+   },
+   "7": {
+    "brute_force_verified": true,
+    "corner_simplex_example_vertices": [
+     0,
+     3,
+     5,
+     9,
+     17,
+     33,
+     65
+    ],
+    "edges": 672,
+    "edges_by_grade_pair": {
+     "0-2": 21,
+     "2-2": 105,
+     "2-4": 210,
+     "4-4": 210,
+     "4-6": 105,
+     "6-6": 21
+    },
+    "euler": 2,
+    "even_blades_by_grade": {
+     "0": 1,
+     "2": 21,
+     "4": 35,
+     "6": 7
+    },
+    "even_equals_n-1_cube_vertices_by_dropping_last_bit": true,
+    "even_labels": null,
+    "f_vector": [
+     64,
+     672,
+     2240,
+     2800,
+     1624,
+     532,
+     78
+    ],
+    "facet_split": {
+     "corner_simplices": 64,
+     "demicubes_(n-1)": 14
+    },
+    "facets": 78,
+    "name": "demihepteract",
+    "vertices": 64
+   },
+   "8": {
+    "brute_force_verified": true,
+    "corner_simplex_example_vertices": [
+     0,
+     3,
+     5,
+     9,
+     17,
+     33,
+     65,
+     129
+    ],
+    "edges": 1792,
+    "edges_by_grade_pair": {
+     "0-2": 28,
+     "2-2": 168,
+     "2-4": 420,
+     "4-4": 560,
+     "4-6": 420,
+     "6-6": 168,
+     "6-8": 28
+    },
+    "euler": 0,
+    "even_blades_by_grade": {
+     "0": 1,
+     "2": 28,
+     "4": 70,
+     "6": 28,
+     "8": 1
+    },
+    "even_equals_n-1_cube_vertices_by_dropping_last_bit": true,
+    "even_labels": null,
+    "f_vector": [
+     128,
+     1792,
+     7168,
+     10752,
+     8288,
+     4032,
+     1136,
+     144
+    ],
+    "facet_split": {
+     "corner_simplices": 128,
+     "demicubes_(n-1)": 16
+    },
+    "facets": 144,
+    "name": "demiocteract",
+    "vertices": 128
+   }
+  }
+ },
+ "orthoplex": {
+  "constraint_solution_duality_checked_for_n": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "exceptional_series": {
+   "E6": {
+    "edges_of_orthoplex": 40,
+    "facets_of_orthoplex": 32,
+    "grade0": 40,
+    "grade_pm1_each": 16,
+    "grade_pm2_each": 0,
+    "orthoplex_n": 5,
+    "roots": 72
+   },
+   "E7": {
+    "edges_of_orthoplex": 60,
+    "facets_of_orthoplex": 64,
+    "grade0": 60,
+    "grade_pm1_each": 32,
+    "grade_pm2_each": 1,
+    "orthoplex_n": 6,
+    "roots": 126
+   },
+   "E8": {
+    "edges_of_orthoplex": 84,
+    "facets_of_orthoplex": 128,
+    "grade0": 84,
+    "grade_pm1_each": 64,
+    "grade_pm2_each": 14,
+    "orthoplex_n": 7,
+    "roots": 240
+   },
+   "E9_and_E10": "infinitely many roots (affine and hyperbolic): the finite series stops at E8"
+  },
+  "ladder": {
+   "0": {
+    "algebra": "Cl(0,0) = R",
+    "diameters": 0,
+    "edges": 0,
+    "faces_by_vertices": [],
+    "faces_total_with_empty": 1,
+    "facets": 1,
+    "genesis_node": 0,
+    "half_spinors": 1,
+    "matrix_size": 1,
+    "self_dual_with_cube": true,
+    "so_2n_dimension": 0,
+    "vertices": 0
+   },
+   "1": {
+    "algebra": "Cl(1,1) = M2(R)",
+    "diameters": 1,
+    "edges": 0,
+    "faces_by_vertices": [
+     2
+    ],
+    "faces_total_with_empty": 3,
+    "facets": 2,
+    "genesis_node": 2,
+    "half_spinors": 1,
+    "matrix_size": 2,
+    "self_dual_with_cube": true,
+    "so_2n_dimension": 1,
+    "vertices": 2
+   },
+   "2": {
+    "algebra": "Cl(2,2) = M4(R)",
+    "diameters": 2,
+    "edges": 4,
+    "faces_by_vertices": [
+     4,
+     4
+    ],
+    "faces_total_with_empty": 9,
+    "facets": 4,
+    "genesis_node": 4,
+    "half_spinors": 2,
+    "matrix_size": 4,
+    "self_dual_with_cube": true,
+    "so_2n_dimension": 6,
+    "vertices": 4
+   },
+   "3": {
+    "algebra": "Cl(3,3) = M8(R)",
+    "diameters": 3,
+    "edges": 12,
+    "faces_by_vertices": [
+     6,
+     12,
+     8
+    ],
+    "faces_total_with_empty": 27,
+    "facets": 8,
+    "genesis_node": 6,
+    "half_spinors": 4,
+    "matrix_size": 8,
+    "self_dual_with_cube": false,
+    "so_2n_dimension": 15,
+    "vertices": 6
+   },
+   "4": {
+    "algebra": "Cl(4,4) = M16(R)",
+    "diameters": 4,
+    "edges": 24,
+    "faces_by_vertices": [
+     8,
+     24,
+     32,
+     16
+    ],
+    "faces_total_with_empty": 81,
+    "facets": 16,
+    "genesis_node": 8,
+    "half_spinors": 8,
+    "matrix_size": 16,
+    "self_dual_with_cube": false,
+    "so_2n_dimension": 28,
+    "vertices": 8
+   },
+   "5": {
+    "algebra": "Cl(5,5) = M32(R)",
+    "diameters": 5,
+    "edges": 40,
+    "faces_by_vertices": [
+     10,
+     40,
+     80,
+     80,
+     32
+    ],
+    "faces_total_with_empty": 243,
+    "facets": 32,
+    "genesis_node": 10,
+    "half_spinors": 16,
+    "matrix_size": 32,
+    "self_dual_with_cube": false,
+    "so_2n_dimension": 45,
+    "vertices": 10
+   },
+   "6": {
+    "algebra": "Cl(6,6) = M64(R)",
+    "diameters": 6,
+    "edges": 60,
+    "faces_by_vertices": [
+     12,
+     60,
+     160,
+     240,
+     192,
+     64
+    ],
+    "faces_total_with_empty": 729,
+    "facets": 64,
+    "genesis_node": 12,
+    "half_spinors": 32,
+    "matrix_size": 64,
+    "self_dual_with_cube": false,
+    "so_2n_dimension": 66,
+    "vertices": 12
+   },
+   "7": {
+    "algebra": "Cl(7,7) = M128(R)",
+    "diameters": 7,
+    "edges": 84,
+    "faces_by_vertices": [
+     14,
+     84,
+     280,
+     560,
+     672,
+     448,
+     128
+    ],
+    "faces_total_with_empty": 2187,
+    "facets": 128,
+    "genesis_node": 14,
+    "half_spinors": 64,
+    "matrix_size": 128,
+    "self_dual_with_cube": false,
+    "so_2n_dimension": 91,
+    "vertices": 14
+   },
+   "8": {
+    "algebra": "Cl(8,8) = M256(R)",
+    "diameters": 8,
+    "edges": 112,
+    "faces_by_vertices": [
+     16,
+     112,
+     448,
+     1120,
+     1792,
+     1792,
+     1024,
+     256
+    ],
+    "faces_total_with_empty": 6561,
+    "facets": 256,
+    "genesis_node": 16,
+    "half_spinors": 128,
+    "matrix_size": 256,
+    "self_dual_with_cube": false,
+    "so_2n_dimension": 120,
+    "vertices": 16
+   }
+  },
+  "n4_triality": {
+   "Q8_index": 3,
+   "even_facets_8s": 8,
+   "odd_facets_8c": 8,
+   "three_16cells_are_the_cosets": true,
+   "union_is_group_of_order": 24,
+   "vertices_8v": 8,
+   "vertices_equal_half_facets_only_at_n": [
+    4
+   ]
+  },
+  "n5_fock_content": {
+   "edges_are_roots_of_so10": 40,
+   "even": [
+    1,
+    10,
+    5
+   ],
+   "odd": [
+    5,
+    10,
+    1
+   ],
+   "with_diameters": 45
+  },
+  "n8_E8": {
+   "E8_dimension": 248,
+   "closed_under_reflections": true,
+   "edges": 112,
+   "even_facets": 128,
+   "half_spinor": 128,
+   "roots": 240,
+   "so16_dimension": 120
+  }
+ },
+ "status": {
+  "checked": [
+   "face counts and duality (n<=5 exhaustive)",
+   "f-vectors of the demicube (brute-force face lattice n<=8, Euler relation n<=8)",
+   "even subalgebra types, built from explicit generators",
+   "incidences and couplings of the Maxwell cells n=2..7",
+   "triality at n=4",
+   "roots of E6, E7, E8"
+  ],
+  "open": [
+   "whether any of these shapes selects the number of generations"
+  ],
+  "ours": [
+   "reading even blades as the fields and odd blades as sources and equations",
+   "reading n=5 even blades as one generation"
+  ],
+  "standard": [
+   "Cl^0(p,q) = Cl(p,q-1)",
+   "Spin(2n) weights and roots from the orthoplex",
+   "Gosset series"
+  ]
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "n": 5,
+ "faces_by_vertices": {
+  "1": 10,
+  "2": 40,
+  "3": 80,
+  "4": 80,
+  "5": 32
+ },
+ "total_faces": 242,
+ "facets_equal_cube_vertices": true,
+ "cells": {
+  "0,5": {
+   "time_gens": 0,
+   "space_gens": 5,
+   "F_components": 10,
+   "E_components(k*d)": 0,
+   "null_edges": 0,
+   "null_edges_equal_4E": true,
+   "time_time_edges": 0,
+   "space_space_edges": 40,
+   "symmetry_group_order": 3840,
+   "order3_elements": 80,
+   "algebra": null
+  },
+  "1,4": {
+   "time_gens": 1,
+   "space_gens": 4,
+   "F_components": 10,
+   "E_components(k*d)": 4,
+   "null_edges": 16,
+   "null_edges_equal_4E": true,
+   "time_time_edges": 0,
+   "space_space_edges": 24,
+   "symmetry_group_order": 768,
+   "order3_elements": 32,
+   "algebra": {
+    "type": "H2",
+    "splits_in_two": true
+   }
+  },
+  "2,3": {
+   "time_gens": 2,
+   "space_gens": 3,
+   "F_components": 10,
+   "E_components(k*d)": 6,
+   "null_edges": 24,
+   "null_edges_equal_4E": true,
+   "time_time_edges": 4,
+   "space_space_edges": 12,
+   "symmetry_group_order": 384,
+   "order3_elements": 8,
+   "algebra": {
+    "type": "C",
+    "splits_in_two": false
+   }
+  },
+  "3,2": {
+   "time_gens": 3,
+   "space_gens": 2,
+   "F_components": 10,
+   "E_components(k*d)": 6,
+   "null_edges": 24,
+   "null_edges_equal_4E": true,
+   "time_time_edges": 12,
+   "space_space_edges": 4,
+   "symmetry_group_order": 384,
+   "order3_elements": 8,
+   "algebra": {
+    "type": "R2",
+    "splits_in_two": true
+   }
+  },
+  "4,1": {
+   "time_gens": 4,
+   "space_gens": 1,
+   "F_components": 10,
+   "E_components(k*d)": 4,
+   "null_edges": 16,
+   "null_edges_equal_4E": true,
+   "time_time_edges": 24,
+   "space_space_edges": 0,
+   "symmetry_group_order": 768,
+   "order3_elements": 32,
+   "algebra": {
+    "type": "C",
+    "splits_in_two": false
+   }
+  },
+  "5,0": {
+   "time_gens": 5,
+   "space_gens": 0,
+   "F_components": 10,
+   "E_components(k*d)": 0,
+   "null_edges": 0,
+   "null_edges_equal_4E": true,
+   "time_time_edges": 40,
+   "space_space_edges": 0,
+   "symmetry_group_order": 3840,
+   "order3_elements": 80,
+   "algebra": null
+  }
+ },
+ "petrie_graph": "K10 minus perfect matching (cocktail-party graph K_{2,2,2,2,2}): 40 edges",
+ "coincidence": "C(5,2) = 10 = number of vertices only for n = 5 (2n = n(n-1)/2)"
+}
