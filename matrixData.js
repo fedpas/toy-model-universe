@@ -1,6 +1,8 @@
 import AUTHOR_TRANSLATIONS from './sector-translations.js';
 import NODE_METADATA from './node-metadata.js';
 import GENESIS_METADATA from './genesis-metadata.js';
+import { applyStory } from './storyOverrides.js';
+import { applyGenesisStory } from './genesisStory.js';
 import { AUDITED_ATLAS, cliffordCell, coordOf, simplexView, cubeView, primeView } from './genesis_audit_v3.js';
 // Master 2D Clifford lattice matrix directory (B+F vs B-F).
 const nodes = [
@@ -283,13 +285,14 @@ export function getCompleteDualMetricDisplayData(nodeKey,lang,profile,metricMode
  const key=`${nodeKey}_${lang}_${profile}_${metricMode}`;
  const metadata=NODE_METADATA[key];
  const authored=AUTHOR_TRANSLATIONS[nodeKey]?.[metricMode]?.[lang]?.[profile];
- if (metadata) return {...base,...authored,...metadata,metricMode};
- if (authored) return {...base,...authored,metricMode};
- return previousDualMetric(nodeKey,lang,profile,metricMode);
+ if (metadata) return applyStory(nodeKey,lang,profile,metricMode,{...base,...authored,...metadata,metricMode});
+ if (authored) return applyStory(nodeKey,lang,profile,metricMode,{...base,...authored,metricMode});
+ return applyStory(nodeKey,lang,profile,metricMode,previousDualMetric(nodeKey,lang,profile,metricMode));
 }
 
 export const GENESIS_STAGES = Array.from({ length: 9 }, (_, index) => `Sector_Genesis_Node_${index}`);
 export function getGenesisDisplayData(stage, lang, profile, metricMode='Spatial') {
   const sourceProfile = lang === 'it' && profile === 'Physicist' ? 'Fisico' : lang === 'it' && profile === 'Mathematician' ? 'Matematico' : profile;
-  return GENESIS_METADATA[`Sector_Genesis_Node_${stage}_${lang}_${sourceProfile}_${metricMode}`];
+  const gkey=`Sector_Genesis_Node_${stage}_${lang}_${sourceProfile}_${metricMode}`;
+  return applyGenesisStory(gkey,GENESIS_METADATA[gkey]);
 }
