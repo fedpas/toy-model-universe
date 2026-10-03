@@ -209,7 +209,7 @@ function Fano({ pick, setPick, entry }) {
 
 /* ---------- main ---------- */
 const STYLE = `
-.dict{margin:3rem auto;max-width:1180px;padding:0 1rem}
+.dict{margin:0;max-width:none;padding:0}
 .dict h2{margin:.2rem 0 .6rem}.dict h3{margin:1.4rem 0 .5rem}
 .dict .d-card{border:1px solid rgba(160,170,200,.28);border-radius:14px;padding:1rem 1.1rem;background:rgba(120,130,170,.07)}
 .dict .d-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}

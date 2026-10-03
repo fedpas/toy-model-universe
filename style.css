@@ -69,3 +69,56 @@ main{width:min(100%,1440px);padding-inline:clamp(1rem,4vw,2.625rem)}
   .action-model i{display:none}
   .action-model span{flex:1 1 12rem}
 }
+
+
+/* Five-chapter reading shell. Keep navigation, controls and content on one grid. */
+.story-app{--reading-width:76ch;--chapter-gap:clamp(1.5rem,4vw,3rem);padding-top:1rem}
+.story-app .story-nav{position:relative;top:auto;z-index:1;padding:1rem 0;gap:.5rem;background:transparent;border-bottom:1px solid var(--line);display:flex;align-items:center}
+.story-app .story-nav .brand{flex:1 0 100%;padding-bottom:.75rem}
+.story-app .story-nav button{display:flex;align-items:center;gap:.6rem;flex:1;justify-content:center;min-height:48px;border:1px solid var(--line);border-radius:10px;padding:.75rem;color:var(--muted);background:var(--surface)}
+.story-app .story-nav button.active{color:#fff;border-color:#61ddea;background:#17343f}
+.chapter-number{font:500 11px 'DM Mono',monospace;color:#6fd9e8}
+.story-app .controls{position:relative;top:auto;margin:1rem 0 0;gap:1.25rem;box-shadow:none}
+.story-app .page-intro{max-width:none;margin:var(--chapter-gap) 0;padding:clamp(1.25rem,3vw,2.25rem);border:1px solid var(--line);border-radius:18px;background:linear-gradient(130deg,#17233b,#101323)}
+.story-app .page-intro h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.045em;line-height:1.1;margin:.4rem 0 1rem;max-width:26ch}
+.story-app .page-intro>p{max-width:var(--reading-width);line-height:1.65;color:var(--muted)}
+.story-app .page-intro .before{border-left:2px solid #61ddea;padding-left:1rem;margin-block:1rem;opacity:1;font-size:.875rem}
+.story-app .page-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.25rem}
+.story-app .tag{white-space:normal;line-height:1.4;padding:.35rem .6rem;margin:0;border-radius:6px}
+.story-app .page-tags details{flex-basis:100%;margin-top:.5rem;line-height:1.5}
+.story-app .page-tags summary{cursor:pointer}
+.story-app .atlas-hero{max-width:none;padding-block:var(--chapter-gap)}
+.story-app :is(.mx,.dict,.findings){width:100%;max-width:none;margin:0;padding:var(--chapter-gap) 0;border-top:1px solid var(--line)}
+.story-app :is(.mx,.dict,.findings)>h2{font-size:clamp(1.65rem,3vw,2.25rem);line-height:1.15;letter-spacing:-.035em;margin:0 0 1rem}
+.story-app :is(.mx,.dict,.findings)>h3{font-size:1.3rem;margin:2rem 0 1rem}
+.story-app :is(.mx,.dict,.findings) .lede{font-size:1.05rem;max-width:var(--reading-width);line-height:1.7;margin:0 0 1.5rem}
+.story-app :is(.mx-card,.d-card,.f-card){min-width:0;border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:clamp(1rem,2vw,1.5rem)}
+.story-app :is(.mx-card,.d-card,.f-card) p{font-size:.95rem;line-height:1.65;overflow-wrap:anywhere}
+.story-app :is(.mx-card,.d-card) h4{font-size:1rem;line-height:1.4;margin-bottom:.75rem}
+.story-app :is(.mx-cap,.d-cap,.f-cap){font-size:.8rem;line-height:1.5;color:var(--muted);margin-top:.75rem}
+.story-app :is(.mx-chip,.d-chip){min-height:40px;padding:.45rem .8rem}
+.story-app :is(.mx-grid,.d-row,.d-row2,.f-body){gap:1rem}
+.story-app .story-pager{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:var(--chapter-gap) 0;padding:1.25rem 0;gap:1rem}
+.story-app .story-pager button{width:100%;max-width:none;min-height:76px;padding:1rem;border:1px solid var(--line);background:var(--surface);border-radius:12px;line-height:1.5}
+.story-app .story-pager small{color:var(--muted);line-height:1.5}
+.story-app button:focus-visible,.story-app a:focus-visible,.story-app summary:focus-visible{outline:2px solid #61ddea;outline-offset:4px}
+.story-app :is(.tour,.result,.d-row,.d-row2,.mx-grid)>*{min-width:0}
+@media(max-width:900px){
+ .story-app .story-nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+ .story-app .story-nav .brand{grid-column:1/-1}
+ .story-app .story-nav button{flex-direction:column;font-size:.75rem;padding:.6rem .3rem;gap:.35rem}
+ .story-app .dict .d-row2>*{grid-column:auto!important}
+ .story-app .tour,.story-app .result{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:600px){
+ .story-app{padding-top:.5rem}
+ .story-app .controls{padding:.75rem!important;gap:.6rem;flex-wrap:wrap}
+ .story-app .control-group{flex-wrap:wrap;gap:.25rem}
+ .story-app .controls .control-group button{min-height:36px;font-size:11px}
+ .story-app .page-intro{padding:1.25rem;border-radius:12px}
+ .story-app .dict .d-row,.story-app .dict .d-row2,.story-app .mx .mx-grid{grid-template-columns:minmax(0,1fr)}
+ .story-app .mx .mx-lab{min-width:0;flex-basis:100%}
+ .story-app .story-pager{grid-template-columns:1fr}
+ .story-app .steps{flex-wrap:wrap}
+ .story-app .atlas-hero h1{font-size:clamp(2rem,10vw,3rem);line-height:1.05}
+}

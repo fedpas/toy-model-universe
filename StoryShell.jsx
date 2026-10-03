@@ -19,7 +19,7 @@ const STYLE = `
 .page-tags{margin:8px 0}
 .page-tags details{font-size:.8em;opacity:.85}
 .story-pager{display:flex;justify-content:space-between;gap:16px;max-width:900px;margin:32px auto;padding:16px;border-top:1px solid rgba(128,128,128,.3)}
-.story-pager button{background:none;border:1px solid rgba(128,128,128,.5);border-radius:8px;padding:8px 14px;color:inherit;cursor:pointer;font:inherit;text-align:left;max-width:48%}
+.story-pager button{background:none;border:1px solid rgba(128,128,128,.5);border-radius:8px;padding:8px 14px;color:inherit;cursor:pointer;font:inherit;text-align:left;width:100%}
 .story-pager small{display:block;opacity:.75;margin-top:4px}
 `;
 
@@ -34,12 +34,12 @@ export function usePage() {
 export function StoryNav({ lang, page, setPage }) {
   const s = STORY[lang] || STORY.en;
   return <><style>{STYLE}</style><nav className="story-nav" aria-label="Story pages"><a className="brand" href="#rule" onClick={() => setPage('rule')}><span>01</span> CASCADE ATLAS</a>
-    {PAGES.map((p, i) => <button key={p} className={p === page ? 'active' : ''} aria-current={p === page ? 'page' : undefined} onClick={() => setPage(p)}>{i + 1} · {s.nav[p]}</button>)}</nav></>;
+    {PAGES.map((p, i) => <button key={p} className={p === page ? 'active' : ''} aria-current={p === page ? 'page' : undefined} onClick={() => setPage(p)}><span className="chapter-number">{String(i + 1).padStart(2, '0')}</span><span>{s.nav[p]}</span></button>)}</nav></>;
 }
 
 export function PageIntro({ lang, page }) {
   const s = STORY[lang] || STORY.en, p = s.pages[page], i = PAGES.indexOf(page);
-  return <section className="page-intro"><p className="eyebrow">{s.step.toUpperCase()} {i + 1} {s.of} {PAGES.length}</p><h2>{p.h}</h2>
+  return <section className="page-intro" id="chapter-intro"><p className="eyebrow">{s.step.toUpperCase()} {i + 1} {s.of} {PAGES.length}</p><h2>{p.h}</h2>
     {p.before && <p className="before"><b>{s.before}:</b> {p.before}</p>}
     <p>{p.does}</p>
     <div className="page-tags">{p.tags.map(([k, txt]) => <span key={txt} className={'tag ' + k} title={s.tagHelp[k]}>{s.tags[k]} · {txt}</span>)}

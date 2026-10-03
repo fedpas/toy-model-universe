@@ -247,7 +247,7 @@ export default function MaxwellSection({ lang = 'en', profile = 'Young Learner' 
 }
 
 const STYLE = `
-.mx{margin:3rem auto;max-width:1180px;padding:0 1rem}.mx h2{margin:.2rem 0 .6rem}.mx h3{margin:1.4rem 0 .5rem}
+.mx{margin:0;max-width:none;padding:0}.mx h2{margin:.2rem 0 .6rem}.mx h3{margin:1.4rem 0 .5rem}
 .mx .mx-card{border:1px solid rgba(160,170,200,.28);border-radius:14px;padding:.9rem 1rem;background:rgba(120,130,170,.07)}
 .mx .mx-card h4{margin:.1rem 0 .35rem;font-size:.88rem}.mx .mx-card p{margin:.25rem 0;font-size:.86rem}
 .mx .mx-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin-top:.8rem}

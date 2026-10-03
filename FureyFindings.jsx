@@ -3,7 +3,7 @@ import { FINDINGS, FINDINGS_UI, REAL_BLOCKS, COMPLEX_BLOCKS, BLOCK_NAMES, BLOCK_
 
 const BADGE = { verified: '#4fd18b', open: '#ffd166' };
 const CSS = `
-.findings{margin:3rem auto;max-width:1100px;padding:0 1rem}
+.findings{margin:0;max-width:none;padding:0}
 .findings h2{margin:.2rem 0 .6rem}
 .findings .f-card{border:1px solid rgba(160,170,200,.28);border-radius:14px;padding:1.1rem 1.2rem;margin:1rem 0;background:rgba(120,130,170,.07)}
 .findings .f-badge{display:inline-block;font-size:.72rem;letter-spacing:.04em;padding:.15rem .6rem;border-radius:99px;border:1px solid;margin-bottom:.4rem}
