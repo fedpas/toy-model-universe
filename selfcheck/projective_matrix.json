@@ -1,0 +1,138 @@
+{
+ "checks": {
+  "lorentz,2": {
+   "conformal": {
+    "generators": 6,
+    "positive_eigenvalues": 4
+   },
+   "dilation": true,
+   "inversion": true,
+   "null_pair": true,
+   "pga_rank": 8,
+   "plane": true,
+   "points": true,
+   "rotation": true,
+   "translation": true
+  },
+  "lorentz,3": {
+   "conformal": {
+    "generators": 10,
+    "positive_eigenvalues": 6
+   },
+   "dilation": true,
+   "inversion": true,
+   "null_pair": true,
+   "pga_rank": 16,
+   "plane": true,
+   "points": true,
+   "rotation": true,
+   "translation": true
+  },
+  "lorentz,4": {
+   "conformal": {
+    "generators": 15,
+    "positive_eigenvalues": 8
+   },
+   "dilation": true,
+   "inversion": true,
+   "null_pair": true,
+   "pga_rank": 32,
+   "plane": true,
+   "points": true,
+   "rotation": true,
+   "translation": true
+  },
+  "space,2": {
+   "conformal": {
+    "generators": 6,
+    "positive_eigenvalues": 3
+   },
+   "dilation": true,
+   "inversion": true,
+   "null_pair": true,
+   "pga_rank": 8,
+   "plane": true,
+   "points": true,
+   "rotation": true,
+   "translation": true
+  },
+  "space,3": {
+   "conformal": {
+    "generators": 10,
+    "positive_eigenvalues": 4
+   },
+   "dilation": true,
+   "inversion": true,
+   "null_pair": true,
+   "pga_rank": 16,
+   "plane": true,
+   "points": true,
+   "rotation": true,
+   "translation": true
+  },
+  "space,4": {
+   "conformal": {
+    "generators": 15,
+    "positive_eigenvalues": 5
+   },
+   "dilation": true,
+   "inversion": true,
+   "null_pair": true,
+   "pga_rank": 32,
+   "plane": true,
+   "points": true,
+   "rotation": true,
+   "translation": true
+  }
+ },
+ "controls": {
+  "o_replaced_by_minus_o": "P(x) is not null",
+  "opposite_sign_of_x2_term": "P(x) is not null",
+  "pair_of_equal_signs": "eps is not null",
+  "reflection_in_a_null_vector": "the matrix of eps is singular: no inverse, no mirror",
+  "translation_coefficient_1": "moves the point to the wrong place"
+ },
+ "ladder": {
+  "lorentz,2": {
+   "-1": true,
+   "0": true,
+   "1": true
+  },
+  "lorentz,3": {
+   "-1": true,
+   "0": true,
+   "1": true
+  },
+  "lorentz,4": {
+   "-1": true,
+   "0": true,
+   "1": true
+  },
+  "lorentz,5": {
+   "-1": true,
+   "0": true,
+   "1": true
+  },
+  "space,2": {
+   "-1": true,
+   "0": true,
+   "1": true
+  },
+  "space,3": {
+   "-1": true,
+   "0": true,
+   "1": true
+  },
+  "space,4": {
+   "-1": true,
+   "0": true,
+   "1": true
+  },
+  "space,5": {
+   "-1": true,
+   "0": true,
+   "1": true
+  }
+ },
+ "status": "ALL PROJECTIVE MATRIX CHECKS PASS"
+}

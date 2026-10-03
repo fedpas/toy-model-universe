@@ -32,7 +32,7 @@ om=diag2(Lk); print('omega^2=-1:',np.allclose(om@om,-I16))
 comm=lambda A,B:A@B-B@A
 print('real blocks commuting with omega:',{n:bool(np.allclose(comm(om,P),0)) for n,P in blocks.items()})
 # omega swaps the last two real blocks:
-print('omega maps R -> e7R:',np.allclose(om@sel((),(0,))[:, :],om@sel((),(0,))))
+print('omega maps R -> e7R:',np.allclose(om@sel((),(0,))[:, :],om@sel((),(0,)))) 
 v=np.zeros(16); v[8+0]=1; print('omega(1\') =',np.nonzero(om@v)[0], om@v[om@v!=0] if False else '')
 # fused complex blocks
 Q=[Ps[0],Ps[1],Ps[2],Ps[3],Ps[4]+Ps[5]]; cn=['C_O(1)','C3_O(3)','C2_H(2)','C_C(1)','C_last(1)']

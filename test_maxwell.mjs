@@ -3,9 +3,9 @@ import M from './maxwellData.js';
 import {MAXWELL_PY} from './maxwellSelfcheckSource.js';
 import {cliffordCell} from './genesis_audit_v3.js';
 let bad=0;const ok=(c,m)=>{if(!c){bad++;console.log('FAIL',m)}};
-const J=JSON.parse(fs.readFileSync('./maxwell.json','utf8'));
+const J=JSON.parse(fs.readFileSync('./selfcheck/maxwell.json','utf8'));
 ok(JSON.stringify(J)===JSON.stringify(JSON.parse(JSON.stringify(M))),'data equals rebuilt JSON');
-ok(MAXWELL_PY===fs.readFileSync('./maxwell_selfcheck.py','utf8'),'embedded script equals file');
+ok(MAXWELL_PY===fs.readFileSync('./selfcheck/maxwell_selfcheck.py','utf8'),'embedded script equals file');
 const norm=t=>t.replace(/[²2]$/,'');
 // space ladder Cl(1,d) and time ladder Cl(k,1) against the independent JS engine
 for(const l of M.ladder){const c=cliffordCell(l.p,l.q);ok(c.N===l.matrix_size&&norm(c.kind)===norm(l.type),`Cl(${l.p},${l.q})`)}

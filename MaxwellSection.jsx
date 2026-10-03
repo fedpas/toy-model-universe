@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import M from './maxwellData';
 import { MAXWELL_PY } from './maxwellSelfcheckSource';
+import { Intro } from './Fold.jsx';
 
 const COL = { E: '#4cc9f0', B: '#ffa06f', J: '#4fd18b', F: '#a78bfa', D: '#ff5d8f', T: '#2ec4b6', one: '#8b93a8' };
 const roleColor = r => r === 'E' ? COL.E : r === 'T' ? COL.T : r === 'B' ? COL.B : (r === 'rho' || r === 'J') ? COL.J : r === 'Faraday' ? COL.F : r === 'divB' ? COL.D : COL.one;
@@ -18,6 +19,7 @@ const T = {
       'Electric field E: the edges at the time vertex. Magnetic field B: the edge opposite it. Charge and current J: the vertices. Faraday’s law: the filled triangle.',
       'Electric field E: the 3 edges at the time vertex. Magnetic field B: the 3 edges of the opposite triangle. Charge and current J: the vertices. Faraday’s law: the 3 faces that contain the time vertex. No magnetic monopoles, ∇·B = 0: the opposite, purely spatial face.',
       'Same rules, one more direction: E is the 4 edges at the time vertex, B the 6 edges among the 4 space vertices, the 4 space triangles are the no-monopole conditions, and the 6 triangles with the time vertex are Faraday’s law. ∇F has 5 + 10 = 15 pieces. New: the pseudoscalar I is central with I² = +1, so the whole algebra splits in two (1 ± I)/2.'],
+    gradLine: (a, p, m) => `${a}, with ${p} generator(s) squaring to +1 and ${m} to −1`,
     conv: 'Convention found by exhaustive search (exactly two sign choices reproduce the standard equations, and they differ by an overall sign):',
     note: 'This is standard geometric-algebra electromagnetism (Hestenes’ spacetime algebra). What is ours is the reading of the same algebra as faces of a simplex, bit moves on a cube and XOR on integer labels. Gold labels mark primes: notation only, no meaning is claimed. Not claimed either: any link between this sector and Furey’s Cl(0,8) model. How the two sit together is open.',
     cons: 'Checked exactly on random polynomial fields, in each dimension: ∇∇F = □F (every component obeys the wave equation at speed 1); ∇F has only grade 1 and grade 3; the grade-0 part of ∇∇F vanishes, which is charge conservation; and the algebra’s terms into each target are exactly the derivative terms of the physical equation.',
@@ -34,6 +36,7 @@ const T = {
       'Campo elettrico E: gli spigoli al vertice del tempo. Campo magnetico B: lo spigolo opposto. Carica e corrente J: i vertici. Legge di Faraday: il triangolo pieno.',
       'Campo elettrico E: i 3 spigoli al vertice del tempo. Campo magnetico B: i 3 spigoli del triangolo opposto. Carica e corrente J: i vertici. Legge di Faraday: le 3 facce che contengono il vertice del tempo. Niente monopoli magnetici, ∇·B = 0: la faccia opposta, puramente spaziale.',
       'Stesse regole, una direzione in più: E sono i 4 spigoli al vertice del tempo, B i 6 spigoli tra i 4 vertici spaziali, i 4 triangoli spaziali sono le condizioni di assenza di monopoli e i 6 triangoli con il vertice del tempo sono la legge di Faraday. ∇F ha 5 + 10 = 15 pezzi. Novità: lo pseudoscalare I è centrale con I² = +1, quindi tutta l’algebra si spezza in due (1 ± I)/2.'],
+    gradLine: (a, p, m) => `${a}, con ${p} generatori di quadrato +1 e ${m} di quadrato −1`,
     conv: 'Convenzione trovata per ricerca esaustiva (esattamente due scelte di segno riproducono le equazioni standard, e differiscono per un segno globale):',
     note: 'È elettromagnetismo standard in algebra geometrica (l’algebra dello spaziotempo di Hestenes). Nostra è la lettura della stessa algebra come facce di un simplesso, mosse di bit su un cubo e XOR su etichette intere. Le etichette dorate segnano i primi: solo notazione, nessun significato è affermato. Non affermiamo nemmeno alcun legame tra questo settore e il modello Cl(0,8) di Furey: come stiano insieme è aperto.',
     cons: 'Verificato esattamente su campi polinomiali casuali, in ogni dimensione: ∇∇F = □F (ogni componente obbedisce all’equazione d’onda a velocità 1); ∇F ha solo grado 1 e grado 3; la parte di grado 0 di ∇∇F si annulla, cioè la conservazione della carica; e i termini dell’algebra verso ogni bersaglio sono esattamente i termini di derivata dell’equazione fisica.',
@@ -240,7 +243,7 @@ export default function MaxwellSection({ lang = 'en', profile = 'Young Learner' 
   const R = x => cellStr(x.type, x.matrix_size);
   return <section className="mx" id="maxwell" aria-labelledby="mx-h">
     <style>{STYLE}</style>
-    <p className="eyebrow">{t.eyebrow}</p><h2 id="mx-h">{t.title}</h2><p className="lede">{t.lede}</p>
+    <p className="eyebrow">{t.eyebrow}</p><h2 id="mx-h">{t.title}</h2><Intro lang={lang} profile={profile} id="maxwell" lede={t.lede} />
     <h3>{t.timeH}</h3>
     <div className="mx-row"><span className="mx-lab">{t.timeL}</span><div className="mx-chips">{[1, 2, 3, 4].map(v => <button key={v} className={'mx-chip' + (k === v ? ' on' : '')} onClick={() => pickK(v)} aria-pressed={k === v}>{v}</button>)}</div></div>
     <div className="mx-row"><span className="mx-lab">{t.spaceL}</span><div className="mx-chips">{[1, 2, 3, 4].map(v => <button key={v} className={'mx-chip' + (d === v ? ' on' : '')} onClick={() => pickD(v)} aria-pressed={d === v}>{v}</button>)}</div></div>
@@ -271,7 +274,7 @@ export default function MaxwellSection({ lang = 'en', profile = 'Young Learner' 
     <div className="mx-card"><p>{t.mirText(k, d, `${R(mir.algebra)}`)}</p>
       {meq && cur && <p className="mx-cap">{t.mirPair}</p>}{meq && cur && <p className="mx-mono">({k},{d}): {cur.eq}<br />({d},{k}): {meq.eq}</p>}
       {k !== d && <div className="mx-chips"><button className="mx-chip" onClick={() => { setK(d); setD(k); }}>{t.mirGo} ({d},{k})</button></div>}</div>
-    {expert && <div className="mx-card" style={{ marginTop: '.8rem' }}><p>{t.conv}</p><p className="mx-mono">∇ = {D.conventions.grad}<br />F = {D.conventions.F}<br />J = {D.conventions.J}</p><p>{t.cons}</p></div>}
+    {expert && <div className="mx-card" style={{ marginTop: '.8rem' }}><p>{t.conv}</p><p className="mx-mono">∇ = {(() => { const g = D.conventions.grad.match(/^(.*), with (\d+) generator\(s\) squaring to \+1 and (\d+) to −1$/); return g ? t.gradLine(g[1], g[2], g[3]) : D.conventions.grad; })()}<br />F = {D.conventions.F}<br />J = {D.conventions.J}</p><p>{t.cons}</p></div>}
     <p className="mx-cap" style={{ fontSize: '.82rem' }}>{t.note}</p>
     <h3>{t.ladTimeH}</h3>
     <div className="mx-card"><div style={{ overflowX: 'auto' }}><table className="mx-mono" style={{ borderCollapse: 'collapse', width: '100%', fontSize: '.78rem' }}>
@@ -298,7 +301,7 @@ export default function MaxwellSection({ lang = 'en', profile = 'Young Learner' 
 }
 
 const STYLE = `
-.mx{margin:0;max-width:none;padding:0}.mx h2{margin:.2rem 0 .6rem}.mx h3{margin:1.4rem 0 .5rem}
+.mx{margin:3rem auto;max-width:1180px;padding:0 1rem}.mx h2{margin:.2rem 0 .6rem}.mx h3{margin:1.4rem 0 .5rem}
 .mx .mx-card{border:1px solid rgba(160,170,200,.28);border-radius:14px;padding:.9rem 1rem;background:rgba(120,130,170,.07)}
 .mx .mx-card h4{margin:.1rem 0 .35rem;font-size:.88rem}.mx .mx-card p{margin:.25rem 0;font-size:.86rem}
 .mx .mx-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin-top:.8rem}

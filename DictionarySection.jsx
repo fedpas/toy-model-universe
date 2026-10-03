@@ -3,6 +3,7 @@ import DICT from './dictionaryData';
 import { SELFCHECK_PY } from './selfcheckSource';
 import { cliffordCell } from './genesis_audit_v3';
 import { BLOCK_COLORS } from './findingsData';
+import { Intro } from './Fold.jsx';
 
 /* ---------- constants ---------- */
 const CH = { 0: '#8b93a8', 1: '#4cc9f0', 2: '#ffd166', 3: '#ff5d8f', 8: '#4fd18b', 9: '#a78bfa', 10: '#ffa06f', 11: '#61dff0' };
@@ -209,7 +210,7 @@ function Fano({ pick, setPick, entry }) {
 
 /* ---------- main ---------- */
 const STYLE = `
-.dict{margin:0;max-width:none;padding:0}
+.dict{margin:3rem auto;max-width:1180px;padding:0 1rem}
 .dict h2{margin:.2rem 0 .6rem}.dict h3{margin:1.4rem 0 .5rem}
 .dict .d-card{border:1px solid rgba(160,170,200,.28);border-radius:14px;padding:1rem 1.1rem;background:rgba(120,130,170,.07)}
 .dict .d-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
@@ -303,7 +304,7 @@ export default function DictionarySection({ lang = 'en', profile = 'Young Learne
   const groups = ['matter', 'gauge', 'cartan', 'replica'];
   return <section className="dict" id="dictionary" aria-labelledby="dict-h">
     <style>{STYLE}</style>
-    <p className="eyebrow">{t.eyebrow}</p><h2 id="dict-h">{t.title}</h2><p className="lede">{t.lede}</p>
+    <p className="eyebrow">{t.eyebrow}</p><h2 id="dict-h">{t.title}</h2><Intro lang={lang} profile={profile} id="dictionary" lede={t.lede} />
     <h3>{t.ladderH}</h3><Ladder lang={lang} profile={profile} />
     <h3>{t.dictH}</h3><p className="d-cap" style={{ fontSize: '.85rem' }}>{t.pick}</p>
     {groups.map(g => <div key={g} style={{ margin: '.5rem 0' }}><div className="d-cap" style={{ marginBottom: '.2rem' }}>{t.groups[g]}</div><div className="d-chips">{ENTRIES.filter(x => x.group === g).map(x => <button key={x.id} className={'d-chip' + (x.id === sel ? ' on' : '')} onClick={() => setSel(x.id)} aria-pressed={x.id === sel}>{lbl(x, lang)}</button>)}</div></div>)}
@@ -313,7 +314,7 @@ export default function DictionarySection({ lang = 'en', profile = 'Young Learne
     <h3>{t.fanoH}</h3>
     <div className="d-row2"><div className="d-card"><Fano pick={e.channel} setPick={c => { const x = ENTRIES.find(z => z.channel === c && z.kind === 'matter') || ENTRIES.find(z => z.channel === c); if (x) setSel(x.id); }} entry={e} /></div>
       <div className="d-card" style={{ gridColumn: 'span 2' }}><p>{lang === 'en' ? 'The 28 edges of the Peirce simplex fall into 7 parallel classes (channels); any two channels lie on exactly one of 7 lines of three: a Fano plane.' : 'I 28 lati del simplesso di Peirce cadono in 7 classi parallele (canali); due canali qualsiasi stanno su una sola delle 7 rette da tre: un piano di Fano.'}</p>
-        <p>{lang === 'en' ? 'The dashed circle is a line: channels 1, 10, 11 hold the even-grade blades (colour-neutral edges: gauge roots and leptons). The other four channels form the quadrangle of odd-grade blades (quark edges and ν_R). Grade parity is whether the edge joins the two octonion copies.' : 'Il cerchio tratteggiato è una retta: i canali 1, 10, 11 contengono i blade di grado pari (lati neutri di colore: radici di gauge e leptoni). Gli altri quattro canali formano il quadrangolo dei blade di grado dispari (lati dei quark e ν_R). La parità del grado dice se il lato unisce le due copie ottonioniche.'}</p>
+        <p>{lang === 'en' ? 'The dashed circle is a line: channels 1, 10, 11 hold the even-grade blades (gauge roots, i.e. the three gluon pairs and W±, plus the leptons e_R, ν_L, e_L, and some replica edges). The other four channels form the quadrangle of odd-grade blades (all quark edges and ν_R, plus replica edges). Grade parity is whether the edge joins the two octonion copies.' : 'Il cerchio tratteggiato è una retta: i canali 1, 10, 11 contengono i blade di grado pari (radici di gauge, cioè le tre coppie di gluoni e W±, più i leptoni e_R, ν_L, e_L e alcuni lati di replica). Gli altri quattro canali formano il quadrangolo dei blade di grado dispari (tutti i lati dei quark e ν_R, più lati di replica). La parità del grado dice se il lato unisce le due copie ottonioniche.'}</p>
         <p>{lang === 'en' ? 'In the blade 7-simplex, each odd channel owns a pair of vertices ({0,1}, {2,7}, {3,6}, {4,5}); each even channel owns 8 edges; the 4 vertex pairs are the edges of the diagonal channel.' : 'Nel 7-simplesso dei blade, ogni canale dispari possiede una coppia di vertici ({0,1}, {2,7}, {3,6}, {4,5}); ogni canale pari possiede 8 spigoli; le 4 coppie di vertici sono gli spigoli del canale diagonale.'}</p>
         {!learner && <p className="d-cap">{lang === 'en' ? 'Not checked: whether this Fano plane equals the octonion multiplication plane.' : 'Non verificato: se questo piano di Fano coincida con il piano di moltiplicazione degli ottonioni.'}</p>}</div></div>
     <h3>{t.dlH}</h3>

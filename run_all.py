@@ -46,7 +46,7 @@ yv=[F(0),F(1,3),F(1,2),F(1),F(0)]
 Y=real[1][1]/3+real[2][1]/2+real[3][1]
 assert abs(np.trace(Y)/2-3)<1e-12 and abs(np.trace(Y)/16-3/8)<1e-12
 # eigen-decomposition of ad_Y on End_C(V): complex multiplicity of each eigenvalue
-adY=np.array([ (Y@X-X@Y).reshape(-1) for X in Bm]);
+adY=np.array([ (Y@X-X@Y).reshape(-1) for X in Bm]); 
 # ad_Y acts diagonally on Peirce pieces with eigenvalue y_i-y_j: verify piecewise
 for a in range(5):
     for b in range(5):

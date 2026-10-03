@@ -1,9 +1,10 @@
 import React from 'react';
 import { FINDINGS, FINDINGS_UI, REAL_BLOCKS, COMPLEX_BLOCKS, BLOCK_NAMES, BLOCK_COLORS, EDGES } from './findingsData';
+import { Intro } from './Fold.jsx';
 
 const BADGE = { verified: '#4fd18b', open: '#ffd166' };
 const CSS = `
-.findings{margin:0;max-width:none;padding:0}
+.findings{margin:3rem auto;max-width:1100px;padding:0 1rem}
 .findings h2{margin:.2rem 0 .6rem}
 .findings .f-card{border:1px solid rgba(160,170,200,.28);border-radius:14px;padding:1.1rem 1.2rem;margin:1rem 0;background:rgba(120,130,170,.07)}
 .findings .f-badge{display:inline-block;font-size:.72rem;letter-spacing:.04em;padding:.15rem .6rem;border-radius:99px;border:1px solid;margin-bottom:.4rem}
@@ -53,7 +54,7 @@ export default function FureyFindings({ lang = 'en', profile = 'Young Learner' }
   const ui = FINDINGS_UI[lang] || FINDINGS_UI.en, V = { grid: GridVisual, graph: GraphVisual, axes: AxesVisual };
   return <section className="findings" id="findings" aria-labelledby="findings-h">
     <style>{CSS}</style>
-    <p className="eyebrow">{ui.eyebrow}</p><h2 id="findings-h">{ui.title}</h2><p className="lede">{ui.lede}</p>
+    <p className="eyebrow">{ui.eyebrow}</p><h2 id="findings-h">{ui.title}</h2><Intro lang={lang} profile={profile} id="findings" lede={ui.lede} />
     {FINDINGS.map(f => {
       const [title, body] = (f[lang] || f.en)[profile] || f.en['Physicist']; const Vis = V[f.visual];
       return <article className="f-card" key={f.id} data-finding={f.id}>
