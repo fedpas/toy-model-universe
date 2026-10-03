@@ -1,0 +1,799 @@
+{
+ "commutators": {
+  "by_n": {
+   "2": {
+    "bivectors": 1,
+    "commuting_pairs": 0,
+    "edges": 0,
+    "signatures_checked": 3,
+    "triangles": 0
+   },
+   "3": {
+    "bivectors": 3,
+    "commuting_pairs": 0,
+    "edges": 3,
+    "signatures_checked": 4,
+    "triangles": 1
+   },
+   "4": {
+    "bivectors": 6,
+    "commuting_pairs": 3,
+    "edges": 12,
+    "signatures_checked": 5,
+    "triangles": 4
+   },
+   "5": {
+    "bivectors": 10,
+    "commuting_pairs": 15,
+    "edges": 30,
+    "signatures_checked": 6,
+    "triangles": 10
+   },
+   "6": {
+    "bivectors": 15,
+    "commuting_pairs": 45,
+    "edges": 60,
+    "signatures_checked": 7,
+    "triangles": 20
+   },
+   "7": {
+    "bivectors": 21,
+    "commuting_pairs": 105,
+    "edges": 105,
+    "signatures_checked": 8,
+    "triangles": 35
+   },
+   "8": {
+    "bivectors": 28,
+    "commuting_pairs": 210,
+    "edges": 168,
+    "signatures_checked": 9,
+    "triangles": 56
+   }
+  },
+  "roles": {
+   "0,2": {},
+   "0,3": {
+    "B+B via s": {
+     "edges": 3,
+     "result": "B"
+    }
+   },
+   "0,4": {
+    "B+B via s": {
+     "edges": 12,
+     "result": "B"
+    }
+   },
+   "0,5": {
+    "B+B via s": {
+     "edges": 30,
+     "result": "B"
+    }
+   },
+   "0,6": {
+    "B+B via s": {
+     "edges": 60,
+     "result": "B"
+    }
+   },
+   "1,1": {},
+   "1,2": {
+    "B+E via s": {
+     "edges": 2,
+     "result": "E"
+    },
+    "E+E via t": {
+     "edges": 1,
+     "result": "B"
+    }
+   },
+   "1,3": {
+    "B+B via s": {
+     "edges": 3,
+     "result": "B"
+    },
+    "B+E via s": {
+     "edges": 6,
+     "result": "E"
+    },
+    "E+E via t": {
+     "edges": 3,
+     "result": "B"
+    }
+   },
+   "1,4": {
+    "B+B via s": {
+     "edges": 12,
+     "result": "B"
+    },
+    "B+E via s": {
+     "edges": 12,
+     "result": "E"
+    },
+    "E+E via t": {
+     "edges": 6,
+     "result": "B"
+    }
+   },
+   "1,5": {
+    "B+B via s": {
+     "edges": 30,
+     "result": "B"
+    },
+    "B+E via s": {
+     "edges": 20,
+     "result": "E"
+    },
+    "E+E via t": {
+     "edges": 10,
+     "result": "B"
+    }
+   },
+   "2,0": {},
+   "2,1": {
+    "E+E via s": {
+     "edges": 1,
+     "result": "T"
+    },
+    "E+T via t": {
+     "edges": 2,
+     "result": "E"
+    }
+   },
+   "2,2": {
+    "B+E via s": {
+     "edges": 4,
+     "result": "E"
+    },
+    "E+E via s": {
+     "edges": 2,
+     "result": "T"
+    },
+    "E+E via t": {
+     "edges": 2,
+     "result": "B"
+    },
+    "E+T via t": {
+     "edges": 4,
+     "result": "E"
+    }
+   },
+   "2,3": {
+    "B+B via s": {
+     "edges": 3,
+     "result": "B"
+    },
+    "B+E via s": {
+     "edges": 12,
+     "result": "E"
+    },
+    "E+E via s": {
+     "edges": 3,
+     "result": "T"
+    },
+    "E+E via t": {
+     "edges": 6,
+     "result": "B"
+    },
+    "E+T via t": {
+     "edges": 6,
+     "result": "E"
+    }
+   },
+   "2,4": {
+    "B+B via s": {
+     "edges": 12,
+     "result": "B"
+    },
+    "B+E via s": {
+     "edges": 24,
+     "result": "E"
+    },
+    "E+E via s": {
+     "edges": 4,
+     "result": "T"
+    },
+    "E+E via t": {
+     "edges": 12,
+     "result": "B"
+    },
+    "E+T via t": {
+     "edges": 8,
+     "result": "E"
+    }
+   },
+   "3,0": {
+    "T+T via t": {
+     "edges": 3,
+     "result": "T"
+    }
+   },
+   "3,1": {
+    "E+E via s": {
+     "edges": 3,
+     "result": "T"
+    },
+    "E+T via t": {
+     "edges": 6,
+     "result": "E"
+    },
+    "T+T via t": {
+     "edges": 3,
+     "result": "T"
+    }
+   },
+   "3,2": {
+    "B+E via s": {
+     "edges": 6,
+     "result": "E"
+    },
+    "E+E via s": {
+     "edges": 6,
+     "result": "T"
+    },
+    "E+E via t": {
+     "edges": 3,
+     "result": "B"
+    },
+    "E+T via t": {
+     "edges": 12,
+     "result": "E"
+    },
+    "T+T via t": {
+     "edges": 3,
+     "result": "T"
+    }
+   },
+   "3,3": {
+    "B+B via s": {
+     "edges": 3,
+     "result": "B"
+    },
+    "B+E via s": {
+     "edges": 18,
+     "result": "E"
+    },
+    "E+E via s": {
+     "edges": 9,
+     "result": "T"
+    },
+    "E+E via t": {
+     "edges": 9,
+     "result": "B"
+    },
+    "E+T via t": {
+     "edges": 18,
+     "result": "E"
+    },
+    "T+T via t": {
+     "edges": 3,
+     "result": "T"
+    }
+   },
+   "4,0": {
+    "T+T via t": {
+     "edges": 12,
+     "result": "T"
+    }
+   },
+   "4,1": {
+    "E+E via s": {
+     "edges": 6,
+     "result": "T"
+    },
+    "E+T via t": {
+     "edges": 12,
+     "result": "E"
+    },
+    "T+T via t": {
+     "edges": 12,
+     "result": "T"
+    }
+   },
+   "4,2": {
+    "B+E via s": {
+     "edges": 8,
+     "result": "E"
+    },
+    "E+E via s": {
+     "edges": 12,
+     "result": "T"
+    },
+    "E+E via t": {
+     "edges": 4,
+     "result": "B"
+    },
+    "E+T via t": {
+     "edges": 24,
+     "result": "E"
+    },
+    "T+T via t": {
+     "edges": 12,
+     "result": "T"
+    }
+   },
+   "5,0": {
+    "T+T via t": {
+     "edges": 30,
+     "result": "T"
+    }
+   },
+   "5,1": {
+    "E+E via s": {
+     "edges": 10,
+     "result": "T"
+    },
+    "E+T via t": {
+     "edges": 20,
+     "result": "E"
+    },
+    "T+T via t": {
+     "edges": 30,
+     "result": "T"
+    }
+   },
+   "6,0": {
+    "T+T via t": {
+     "edges": 60,
+     "result": "T"
+    }
+   }
+  }
+ },
+ "dirac": {
+  "J_mask": 6,
+  "counts": {
+   "components": 8,
+   "cube_edges_used_by_derivative": 32,
+   "equations": 8,
+   "incidences": 40,
+   "mass_edges": 8,
+   "terms_per_equation": {
+    "derivative": 4,
+    "mass": 1
+   }
+  },
+  "covariance": {
+   "bivector_generators": 6,
+   "identity": "D_p(B psi) = B D_p(psi) - D'_{[B,p]}(psi)",
+   "verified": true
+  },
+  "dispersion": [
+   {
+    "det_abs": "0",
+    "expected": "0",
+    "m": "1",
+    "p": [
+     "1",
+     "0",
+     "0",
+     "0"
+    ],
+    "p2": "1"
+   },
+   {
+    "det_abs": "16",
+    "expected": "16",
+    "m": "1",
+    "p": [
+     "2",
+     "1",
+     "0",
+     "0"
+    ],
+    "p2": "3"
+   },
+   {
+    "det_abs": "1048576",
+    "expected": "1048576",
+    "m": "2",
+    "p": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "p2": "-28"
+   },
+   {
+    "det_abs": "6561",
+    "expected": "6561",
+    "m": "3",
+    "p": [
+     "5",
+     "3",
+     "4",
+     "0"
+    ],
+    "p2": "0"
+   },
+   {
+    "det_abs": "85577018694349827121/968265199641600000000",
+    "expected": "85577018694349827121/968265199641600000000",
+    "m": "3/4",
+    "p": [
+     "1/2",
+     "1/3",
+     "1/5",
+     "2/7"
+    ],
+    "p2": "761/44100"
+   },
+   {
+    "det_abs": "1",
+    "expected": "1",
+    "m": "1",
+    "p": [
+     "0",
+     "0",
+     "0",
+     "0"
+    ],
+    "p2": "0"
+   },
+   {
+    "det_abs": "0",
+    "expected": "0",
+    "m": "3",
+    "p": [
+     "3",
+     "0",
+     "0",
+     "0"
+    ],
+    "p2": "9"
+   }
+  ],
+  "even_blades": [
+   {
+    "grade": 0,
+    "mask": 0,
+    "name": "1"
+   },
+   {
+    "grade": 2,
+    "mask": 3,
+    "name": "tx"
+   },
+   {
+    "grade": 2,
+    "mask": 5,
+    "name": "ty"
+   },
+   {
+    "grade": 2,
+    "mask": 6,
+    "name": "xy"
+   },
+   {
+    "grade": 2,
+    "mask": 9,
+    "name": "tz"
+   },
+   {
+    "grade": 2,
+    "mask": 10,
+    "name": "xz"
+   },
+   {
+    "grade": 2,
+    "mask": 12,
+    "name": "yz"
+   },
+   {
+    "grade": 4,
+    "mask": 15,
+    "name": "txyz"
+   }
+  ],
+  "incidences": [
+   {
+    "from": 0,
+    "kind": "dt",
+    "sign": -1,
+    "to": 7
+   },
+   {
+    "from": 0,
+    "kind": "dx",
+    "sign": 1,
+    "to": 4
+   },
+   {
+    "from": 0,
+    "kind": "dy",
+    "sign": -1,
+    "to": 2
+   },
+   {
+    "from": 0,
+    "kind": "dz",
+    "sign": -1,
+    "to": 14
+   },
+   {
+    "from": 0,
+    "kind": "m",
+    "sign": 1,
+    "to": 1
+   },
+   {
+    "from": 3,
+    "kind": "dt",
+    "sign": 1,
+    "to": 4
+   },
+   {
+    "from": 3,
+    "kind": "dx",
+    "sign": -1,
+    "to": 7
+   },
+   {
+    "from": 3,
+    "kind": "dy",
+    "sign": 1,
+    "to": 1
+   },
+   {
+    "from": 3,
+    "kind": "dz",
+    "sign": 1,
+    "to": 13
+   },
+   {
+    "from": 3,
+    "kind": "m",
+    "sign": -1,
+    "to": 2
+   },
+   {
+    "from": 5,
+    "kind": "dt",
+    "sign": -1,
+    "to": 2
+   },
+   {
+    "from": 5,
+    "kind": "dx",
+    "sign": -1,
+    "to": 1
+   },
+   {
+    "from": 5,
+    "kind": "dy",
+    "sign": -1,
+    "to": 7
+   },
+   {
+    "from": 5,
+    "kind": "dz",
+    "sign": -1,
+    "to": 11
+   },
+   {
+    "from": 5,
+    "kind": "m",
+    "sign": -1,
+    "to": 4
+   },
+   {
+    "from": 6,
+    "kind": "dt",
+    "sign": 1,
+    "to": 1
+   },
+   {
+    "from": 6,
+    "kind": "dx",
+    "sign": 1,
+    "to": 2
+   },
+   {
+    "from": 6,
+    "kind": "dy",
+    "sign": 1,
+    "to": 4
+   },
+   {
+    "from": 6,
+    "kind": "dz",
+    "sign": 1,
+    "to": 8
+   },
+   {
+    "from": 6,
+    "kind": "m",
+    "sign": 1,
+    "to": 7
+   },
+   {
+    "from": 9,
+    "kind": "dt",
+    "sign": -1,
+    "to": 14
+   },
+   {
+    "from": 9,
+    "kind": "dx",
+    "sign": -1,
+    "to": 13
+   },
+   {
+    "from": 9,
+    "kind": "dy",
+    "sign": 1,
+    "to": 11
+   },
+   {
+    "from": 9,
+    "kind": "dz",
+    "sign": -1,
+    "to": 7
+   },
+   {
+    "from": 9,
+    "kind": "m",
+    "sign": -1,
+    "to": 8
+   },
+   {
+    "from": 10,
+    "kind": "dt",
+    "sign": 1,
+    "to": 13
+   },
+   {
+    "from": 10,
+    "kind": "dx",
+    "sign": 1,
+    "to": 14
+   },
+   {
+    "from": 10,
+    "kind": "dy",
+    "sign": -1,
+    "to": 8
+   },
+   {
+    "from": 10,
+    "kind": "dz",
+    "sign": 1,
+    "to": 4
+   },
+   {
+    "from": 10,
+    "kind": "m",
+    "sign": 1,
+    "to": 11
+   },
+   {
+    "from": 12,
+    "kind": "dt",
+    "sign": -1,
+    "to": 11
+   },
+   {
+    "from": 12,
+    "kind": "dx",
+    "sign": 1,
+    "to": 8
+   },
+   {
+    "from": 12,
+    "kind": "dy",
+    "sign": 1,
+    "to": 14
+   },
+   {
+    "from": 12,
+    "kind": "dz",
+    "sign": -1,
+    "to": 2
+   },
+   {
+    "from": 12,
+    "kind": "m",
+    "sign": 1,
+    "to": 13
+   },
+   {
+    "from": 15,
+    "kind": "dt",
+    "sign": 1,
+    "to": 8
+   },
+   {
+    "from": 15,
+    "kind": "dx",
+    "sign": -1,
+    "to": 11
+   },
+   {
+    "from": 15,
+    "kind": "dy",
+    "sign": -1,
+    "to": 13
+   },
+   {
+    "from": 15,
+    "kind": "dz",
+    "sign": 1,
+    "to": 1
+   },
+   {
+    "from": 15,
+    "kind": "m",
+    "sign": -1,
+    "to": 14
+   }
+  ],
+  "odd_blades": [
+   {
+    "grade": 1,
+    "mask": 1,
+    "name": "t"
+   },
+   {
+    "grade": 1,
+    "mask": 2,
+    "name": "x"
+   },
+   {
+    "grade": 1,
+    "mask": 4,
+    "name": "y"
+   },
+   {
+    "grade": 3,
+    "mask": 7,
+    "name": "txy"
+   },
+   {
+    "grade": 1,
+    "mask": 8,
+    "name": "z"
+   },
+   {
+    "grade": 3,
+    "mask": 11,
+    "name": "txz"
+   },
+   {
+    "grade": 3,
+    "mask": 13,
+    "name": "tyz"
+   },
+   {
+    "grade": 3,
+    "mask": 14,
+    "name": "xyz"
+   }
+  ],
+  "solution_space": {
+   "massive_shell_real_dim": 4,
+   "massless_shell_real_dim": 4,
+   "off_shell_real_dim": 0
+  }
+ },
+ "status": {
+  "checked": [
+   "bivector commutators: nonzero exactly when two bivectors share one index, result a bivector of coefficient 2, Jacobi, faithful on vectors, so(p,q)",
+   "the nonzero-commutator graph has n(n-1)(n-2)/2 edges and C(n,3) triangles, and equals the demicube edges between bivectors",
+   "Dirac-Hestenes incidences: 8 even components, 8 odd equations, 40 incidences, 5 terms per equation",
+   "dispersion det = (p^2 - m^2)^4 and covariance identity, exact"
+  ],
+  "open": [
+   "the same construction for other signatures and for Yang-Mills with a gauge field",
+   "whether anything here selects a number of generations"
+  ],
+  "ours": [
+   "reading the derivative terms as the 32 edges of the 4-cube and the mass term as its time edges"
+  ],
+  "standard": [
+   "Hestenes space-time algebra form of the Dirac equation",
+   "so(p,q) as the bivectors under commutator"
+  ]
+ }
+}

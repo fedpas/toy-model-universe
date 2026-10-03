@@ -1,0 +1,14 @@
+{
+ "J_u_equals_s_i_u": {
+  "s": 1
+ },
+ "bijection_rank": 8,
+ "gamma0_u_equals_u": true,
+ "meaning": "right multiplication by J = gamma_2 gamma_1 acts as multiplication by i, so grad(psi) J = m psi gamma_0 is the Dirac equation i gamma^mu d_mu Psi = m Psi up to the sign s",
+ "negative_controls_fail_with_error": {
+  "J replaced by gamma_1 gamma_2 (wrong sign of i)": 16.51814846978248,
+  "derivative term without J": 9.899577672687688
+ },
+ "trials": 200,
+ "worst_error": 0.0
+}
