@@ -1,0 +1,38 @@
+{
+ "controls": {
+  "current_without_J": "fails (error > 1e-3)",
+  "gauge_term_dropped_on_one_side": "fails (error > 1e-3)",
+  "wrong_gamma_signature": "fails (error > 1e-3)",
+  "wrong_sign_of_J": "fails (error > 1e-3)"
+ },
+ "current": {
+  "3,2": {
+   "abs_constant": 1.0,
+   "equals_part_of_spinor_bilinear": "im"
+  },
+  "3,3": {
+   "abs_constant": 1.0,
+   "equals_part_of_spinor_bilinear": "im"
+  },
+  "4,2": {
+   "abs_constant": 1.0,
+   "equals_part_of_spinor_bilinear": "im"
+  },
+  "4,3": {
+   "abs_constant": 1.0,
+   "equals_part_of_spinor_bilinear": "im"
+  },
+  "4,4": {
+   "abs_constant": 1.0,
+   "equals_part_of_spinor_bilinear": "im"
+  }
+ },
+ "max_error_equation": {
+  "3,2": 0,
+  "3,3": 0,
+  "4,2": 0,
+  "4,3": 0,
+  "4,4": 0
+ },
+ "status": "ALL MATTER MATRIX CHECKS PASS"
+}
