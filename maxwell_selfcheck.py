@@ -309,22 +309,22 @@ def build():
     assert all(cell(k + 8, 1)[0] == cell(k, 1)[0] and cell(k + 8, 1)[1] == 16 * cell(k, 1)[1] for k in range(1, 12))
     assert [(l['type'], l['matrix_size']) for l in tl] == [('R', 2), ('R2', 2), ('R', 4), ('C', 4), ('H', 4), ('H2', 4), ('H', 8), ('C', 16), ('R', 32)]
     D['time_ladder'] = tl
-    # ---- every (k,d) with k+d <= 5: the picture depends only on n = k+d, the signs and the algebra on the split
+    # ---- every (k,d) with k,d <= 4 and k+d <= 7: the picture depends only on n = k+d, the signs and the algebra on the split
     cells = {}
     for k in range(1, 5):
         for d in range(1, 5):
-            if k + d > 5: continue
+            if k + d > 7: continue
             spec = phys_spec(d) if k == 1 else cov_spec(k, d)
             C = build_cell(spec, rng); C['mirror'] = mirror_check(k, d)
             if k == 1:                                               # the physical form and the covariant form must be the same theory
                 cv = build_cell(cov_spec(1, d), random.Random(3)); C['covariant_agrees'] = (len(cv['equations']) == len(C['equations']) and len(cv['incidences']) == len(C['incidences']) and cv['checks']['conventions'] == 2)
                 assert C['covariant_agrees']
             cells[f'{k},{d}'] = C
-    assert sorted(cells) == sorted(f'{k},{d}' for k in range(1, 5) for d in range(1, 5) if k + d <= 5)
+    assert sorted(cells) == sorted(f'{k},{d}' for k in range(1, 5) for d in range(1, 5) if k + d <= 7)
     for key, C in cells.items():                                      # same n => same pictures: incidence structure (source, axis, target) is identical
-        n = C['n']; ref = cells[f'1,{n - 1}']
-        assert [(i['source'], i['axis'], i['target']) for i in C['incidences']] == [(i['source'], i['axis'], i['target']) for i in ref['incidences']] or C['kind'] == 'covariant'
-    for n in (3, 4, 5):                                               # ... and also across covariant cells of equal n, up to the order in which fields are listed
+        n = C['n']; ref = cells.get(f'1,{n - 1}')
+        assert ref is None or C['kind'] == 'covariant' or [(i['source'], i['axis'], i['target']) for i in C['incidences']] == [(i['source'], i['axis'], i['target']) for i in ref['incidences']]
+    for n in (3, 4, 5, 6, 7):                                               # ... and also across covariant cells of equal n, up to the order in which fields are listed
         ks = [c for c in cells.values() if c['n'] == n]
         sets = [sorted((i['source'], i['axis'], i['target']) for i in c['incidences']) for c in ks]
         assert all(s == sets[0] for s in sets), n

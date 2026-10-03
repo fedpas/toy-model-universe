@@ -19,7 +19,7 @@ ok(M.time_ladder.map(l=>l.equations_total).join()==='2,4,8,15,26,42,64,93,130','
 const pc=m=>(m.toString(2).match(/1/g)||[]).length;
 const prod=(a,b,k)=>{let s=1;for(let t=a>>1;t;t>>=1)if(pc(t&b)%2)s=-s;let c=a&b,i=0;while(c){if(c&1)s*=i<k?1:-1;c>>=1;i++}return[a^b,s]};
 const C=(n,r)=>r<0||r>n?0:r===0?1:n*C(n-1,r-1)/r;
-const incExp={2:2,3:9,4:24,5:50};
+const incExp={2:2,3:9,4:24,5:50,6:90,7:147};
 const byN={};
 for(const key of Object.keys(M.cells)){const D=M.cells[key],k=D.k,d=D.d,n=k+d;
  ok(key===`${k},${d}`&&D.n===n&&D.blades.length===1<<n,`${key} blades`);
@@ -42,14 +42,21 @@ for(const key of Object.keys(M.cells)){const D=M.cells[key],k=D.k,d=D.d,n=k+d;
  (byN[n]=byN[n]||[]).push(D);}
 // same n => same incidence structure (source, axis, target) in every split
 for(const n in byN){const sets=byN[n].map(D=>JSON.stringify(D.incidences.map(i=>[i.source,i.axis,i.target]).sort()));ok(new Set(sets).size===1,`n=${n} same incidence set across splits`)}
-ok(Object.keys(M.cells).length===10,'ten cells k+d<=5');
+ok(Object.keys(M.cells).length===15,'fifteen cells k,d<=4 and k+d<=7');
 // Maxwell k=1 physical facts
 const by3=Object.fromEntries(M.cells['1,3'].equations.map(e=>[e.id,e]));
 ok(by3.gauss.terms.join()==='+∂xEx,+∂yEy,+∂zEz','3D Gauss terms');
 ok(M.cells['1,3'].equations.filter(e=>e.id.startsWith('far_')).length===3,'3D Faraday count');
 ok(M.cells['1,4'].equations.filter(e=>e.id.startsWith('far_')).length===6&&M.cells['1,4'].equations.filter(e=>e.id.startsWith('bian_')).length===4,'d=4 Faraday/Bianchi counts');
 // first genuinely new regime
-ok(Object.values(M.cells).filter(c=>c.symbol.class==='ultrahyperbolic').map(c=>`${c.k},${c.d}`).sort().join()==='2,2,2,3,3,2','ultrahyperbolic cells');
+ok(Object.values(M.cells).filter(c=>c.symbol.class==='ultrahyperbolic').map(c=>`${c.k},${c.d}`).sort().join()==='2,2,2,3,2,4,3,2,3,3,3,4,4,2,4,3','ultrahyperbolic cells');
+// the n = 6, 7 cells: (3,3) is self-mirror; the (3,4)/(4,3) mirror pair has different algebras
+{const g=(k,d)=>M.cells[`${k},${d}`];
+ ok(g(3,3).algebra.type==='R'&&g(3,3).algebra.matrix_size===8&&g(3,3).mirror.mirror_of.join()==='3,3'&&!g(3,3).algebra.splits_in_two,'(3,3)');
+ ok(g(4,3).algebra.type==='R2'&&g(4,3).algebra.matrix_size===8&&g(4,3).algebra.splits_in_two&&g(4,3).algebra.pseudoscalar_square===1,'(4,3) splits');
+ ok(g(3,4).algebra.type==='C'&&g(3,4).algebra.matrix_size===8&&!g(3,4).algebra.splits_in_two&&g(3,4).algebra.pseudoscalar_central&&g(3,4).algebra.pseudoscalar_square===-1,'(3,4) does not split');
+ ok(g(3,3).counts.E===9&&g(3,3).counts.T===3&&g(3,3).counts.B===3&&g(3,4).counts.E===12&&g(3,4).counts.T===3&&g(3,4).counts.B===6&&g(4,3).counts.T===6&&g(4,3).counts.B===3,'(3,3),(3,4),(4,3) counts');
+ ok(g(3,3).equations.length===26&&g(3,4).equations.length===42,'equation counts at n=6,7')}
 // d=7 = Cl(0,8) as algebra; splitting at d=0,4,8
 {const a=cliffordCell(1,7),b=cliffordCell(0,8);ok(a.N===16&&b.N===16&&a.kind===b.kind,'Cl(1,7)=Cl(0,8)');
  ok(M.ladder.filter(l=>l.same_algebra_as_Cl08).map(l=>l.d).join()==='7','only d=7');

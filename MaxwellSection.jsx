@@ -45,7 +45,7 @@ const EQN = { it: { 'no monopole': 'niente monopoli' } };
 
 function download(name, text, type) { try { const b = new Blob([text], { type }); const u = URL.createObjectURL(b); const a = document.createElement('a'); a.href = u; a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 1000); } catch (e) { /* ignore */ } }
 const sgn = s => (s > 0 ? '+' : '−');
-const bits = m => [0, 1, 2, 3, 4].filter(a => m >> a & 1);
+const bits = m => [0, 1, 2, 3, 4, 5, 6].filter(a => m >> a & 1);
 const gname = (m, n) => m === 0 ? '1' : (bits(m).length === 3 && n === 3) ? 'I' : 'γ' + bits(m).join('');
 const lit = (D, eq) => D.incidences.filter(i => eq === 'all' || i.target === D.equations.find(e => e.id === eq).target);
 
@@ -58,27 +58,29 @@ function Arrow({ x1, y1, x2, y2, c, w = 2, dash }) {
 function ViewClifford({ D, eq }) {
   const n = D.n, t = T.en, BL = Object.fromEntries(D.blades.map(b => [b.N, b])), on = lit(D, eq);
   const fnames = D.conventions.field_order.filter(f => /^[ETB]/.test(f)), src = fnames.map(f => D.incidences.find(i => i.field === f).source);
-  const R = src.length, cw = Math.min(78, 248 / n), rh = n === 5 ? 22 : Math.min(36, 156 / R), x0 = 70, y0 = 44, fs = n === 5 ? 9.5 : n === 4 ? 11 : 13;
-  const H = y0 + R * rh + 82;
+  const R = src.length, cw = Math.min(78, 248 / n), rh = n >= 6 ? 19 : n === 5 ? 22 : Math.min(36, 156 / R), x0 = 70, y0 = 44, fs = n >= 6 ? 8.5 : n === 5 ? 9.5 : n === 4 ? 11 : 13;
+  const H = y0 + R * rh + (n >= 6 ? 100 : 82);
   const e = D.equations.find(z => z.id === eq);
   return <svg viewBox={`0 0 330 ${H}`} role="img" aria-label="Clifford product table">
     <text x="8" y="16" fontSize="11" fill="currentColor">∇F = ∇·F + ∇∧F = J</text>
     {[...Array(n).keys()].map(a => <text key={a} x={x0 + a * cw + cw / 2} y={y0 - 8} textAnchor="middle" fontSize="12" fill="currentColor">∂{D.axes[a]}</text>)}
     {src.map((s, i) => <g key={s}>
-      <text x={x0 - 6} y={y0 + i * rh + rh / 2 + 4} textAnchor="end" fontSize={n === 5 ? 10 : 11.5} fill={roleColor(BL[s].role)}>{SUB(BL[s].label)}</text>
+      <text x={x0 - 6} y={y0 + i * rh + rh / 2 + 4} textAnchor="end" fontSize={n >= 6 ? 8.5 : n === 5 ? 10 : 11.5} fill={roleColor(BL[s].role)}>{SUB(BL[s].label)}</text>
       {[...Array(n).keys()].map(a => { const inc = D.incidences.find(z => z.source === s && z.axis === a), isOn = on.includes(inc), c = roleColor(BL[inc.target].role);
         return <g key={a} opacity={isOn ? 1 : .28}><rect x={x0 + a * cw + 2} y={y0 + i * rh + 2} width={cw - 4} height={rh - 4} rx="6" fill={c} fillOpacity={isOn ? .3 : .1} stroke={c} strokeWidth={isOn ? 2 : 1} />
           <text x={x0 + a * cw + cw / 2} y={y0 + i * rh + rh / 2 + 4.5} textAnchor="middle" fontSize={fs} fill="currentColor">{sgn(inc.sign)}{gname(inc.target, n)}</text></g>; })}
     </g>)}
     {[['E', COL.E], ['T', COL.T], ['B', COL.B], ['ρ, J', COL.J], ['faces', COL.F]].filter(([l]) => (l !== 'B' || D.counts.B > 0) && (l !== 'T' || D.counts.T > 0)).map(([l, c], k) => <g key={l}><rect x={8 + k * 58} y={y0 + R * rh + 10} width="10" height="10" rx="3" fill={c} /><text x={22 + k * 58} y={y0 + R * rh + 19} fontSize="10.5" fill="currentColor">{l}</text></g>)}
     <text x="8" y={y0 + R * rh + 40} fontSize="10.5" fill="currentColor" opacity=".75">{t.cell}</text>
-    {e && <text x="8" y={y0 + R * rh + 58} fontSize="11.5" fill="currentColor">{e.eq}</text>}
+    {e && (n >= 6 ? <foreignObject x="8" y={y0 + R * rh + 46} width="316" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style={{ fontSize: 10.5, lineHeight: 1.35, color: 'currentColor', fontFamily: 'ui-monospace,Menlo,monospace' }}>{e.eq}</div></foreignObject> : <text x="8" y={y0 + R * rh + 58} fontSize="11.5" fill="currentColor">{e.eq}</text>)}
     <text x="8" y={H - 6} fontSize="10" fill="currentColor" opacity=".6">γ0²=+1, γi²=−1</text>
   </svg>;
 }
 
 /* ---- view 2: simplex (segment, triangle, tetrahedron) ---- */
-const SP = { 2: [[200, 50], [80, 190]], 3: [[150, 36], [50, 196], [250, 196]], 4: [[150, 44], [46, 198], [262, 198], [206, 150]], 5: [0, 1, 2, 3, 4].map(k => [155 + 92 * Math.cos((-90 + 72 * k) * Math.PI / 180), 124 + 92 * Math.sin((-90 + 72 * k) * Math.PI / 180)]) };
+const SP = { 2: [[200, 50], [80, 190]], 3: [[150, 36], [50, 196], [250, 196]], 4: [[150, 44], [46, 198], [262, 198], [206, 150]], 5: [0, 1, 2, 3, 4].map(k => [155 + 92 * Math.cos((-90 + 72 * k) * Math.PI / 180), 124 + 92 * Math.sin((-90 + 72 * k) * Math.PI / 180)]),
+  6: [0, 1, 2, 3, 4, 5].map(k => [155 + 84 * Math.cos((-90 + 60 * k) * Math.PI / 180), 118 + 84 * Math.sin((-90 + 60 * k) * Math.PI / 180)]),
+  7: [0, 1, 2, 3, 4, 5, 6].map(k => [155 + 84 * Math.cos((-90 + 360 / 7 * k) * Math.PI / 180), 120 + 84 * Math.sin((-90 + 360 / 7 * k) * Math.PI / 180)]) };
 function ViewSimplex({ D, eq }) {
   const n = D.n, P = SP[n], BL = Object.fromEntries(D.blades.map(b => [b.N, b])), on = lit(D, eq);
   const cen = m => { const v = bits(m).map(a => P[a]); return [v.reduce((s, p) => s + p[0], 0) / v.length, v.reduce((s, p) => s + p[1], 0) / v.length]; };
@@ -87,13 +89,13 @@ function ViewSimplex({ D, eq }) {
   const tgt = i => i.op === 'wedge' ? cen(i.target) : P[Math.log2(i.target)];
   return <svg viewBox="0 0 310 235" role="img" aria-label="simplex">
     {masks(3).filter(m => n < 5 || on.some(i => i.target === m)).map(m => { const v = bits(m).map(a => P[a].join(',')).join(' '), isT = on.some(i => i.target === m); return <polygon key={m} points={v} fill={roleColor(BL[m].role)} fillOpacity={isT ? .32 : .07} stroke="none" />; })}
-    {masks(2).map(m => { const [a, b] = bits(m); return <line key={m} x1={P[a][0]} y1={P[a][1]} x2={P[b][0]} y2={P[b][1]} stroke={roleColor(BL[m].role)} strokeWidth={n === 5 ? 2.2 : 3.6} strokeOpacity={n === 5 ? (on.some(i => i.source === m) ? 1 : .5) : n === 4 && !bits(m).includes(0) ? .8 : 1} />; })}
+    {masks(2).map(m => { const [a, b] = bits(m); return <line key={m} x1={P[a][0]} y1={P[a][1]} x2={P[b][0]} y2={P[b][1]} stroke={roleColor(BL[m].role)} strokeWidth={n >= 5 ? 2.2 : 3.6} strokeOpacity={n >= 5 ? (on.some(i => i.source === m) ? 1 : .5) : n === 4 && !bits(m).includes(0) ? .8 : 1} />; })}
     {on.map((i, k) => { const m = cen(i.source), to = tgt(i); return <Arrow key={k} x1={m[0]} y1={m[1]} x2={to[0]} y2={to[1]} c={roleColor(BL[i.target].role)} w={2.1} dash={i.op === 'wedge' ? '5 3' : undefined} />; })}
     {on.map((i, k) => { const m = cen(i.source), to = tgt(i), mx = (m[0] + to[0]) / 2, my = (m[1] + to[1]) / 2, dx = to[0] - m[0], dy = to[1] - m[1], L = Math.hypot(dx, dy) || 1;
       return <text key={'l' + k} x={mx - dy / L * 9} y={my + dx / L * 9 + 3} textAnchor="middle" fontSize="10.5" fill="currentColor">{sgn(i.sign)}∂{i.axis_name}</text>; })}
     {[...Array(n).keys()].map(a => <g key={a}><circle cx={P[a][0]} cy={P[a][1]} r="12" fill={a === 0 ? COL.one : COL.J} fillOpacity=".92" /><text x={P[a][0]} y={P[a][1] + 4} textAnchor="middle" fontSize="11" fill="#0b1020">{a}</text>
       <text {...(([x, y]) => ({ x, y }))(n === 4 && a === 3 ? [P[a][0] + 18, P[a][1] - 12] : away(P[a], 24))} textAnchor={n === 4 && a === 3 ? 'start' : 'middle'} fontSize="11" fill="currentColor">{D.axes[a]} · {BL[1 << a].label}</text></g>)}
-    {masks(2).filter(m => n < 5 || on.some(i => i.source === m)).map(m => { const q = away(cen(m), n === 5 ? 9 : 13); return <text key={'e' + m} x={q[0]} y={q[1] + 4} textAnchor="middle" fontSize={n === 5 ? 10 : 11.5} fill={roleColor(BL[m].role)}>{SUB(BL[m].label)}</text>; })}
+    {masks(2).filter(m => n < 5 || on.some(i => i.source === m)).map(m => { const q = away(cen(m), n >= 5 ? 9 : 13); return <text key={'e' + m} x={q[0]} y={q[1] + 4} textAnchor="middle" fontSize={n >= 5 ? 10 : 11.5} fill={roleColor(BL[m].role)}>{SUB(BL[m].label)}</text>; })}
     {n === 3 && <text x={cen(7)[0]} y={cen(7)[1] + 4} textAnchor="middle" fontSize="12" fill={COL.F}>I</text>}
     {n === 4 && masks(3).map(m => { const q = cen(m); return <text key={'f' + m} x={q[0]} y={q[1] + 4} textAnchor="middle" fontSize="9.5" fill={roleColor(BL[m].role)} opacity=".95">{BL[m].label}</text>; })}
   </svg>;
@@ -103,7 +105,23 @@ function ViewSimplex({ D, eq }) {
 const AXV = { 2: [[150, 0], [0, -120]], 3: [[120, 0], [0, -100], [62, -50]], 4: [[80, 0], [0, -62], [36, -30], [118, 54]], 5: [[40, 0], [0, -38], [20, -17], [112, 16], [8, 94]] };
 const BASE = { 2: [60, 190], 3: [38, 186], 4: [30, 126], 5: [34, 88] };
 const CP = (m, n) => { let [x, y] = BASE[n]; AXV[n].forEach((v, a) => { if (m >> a & 1) { x += v[0]; y += v[1]; } }); return [x, y]; };
+/* n = 6, 7: bits 0-2 are a small oblique cube; bits 3-6 place the small cubes on a grid (bit3, bit4: columns; bit5, bit6: rows) */
+const CUBE_A = [[28, 0], [0, -22], [12, -10]];
+const cpBig = m => { const col = (m >> 3 & 1) + 2 * (m >> 4 & 1), row = (m >> 5 & 1) + 2 * (m >> 6 & 1); let x = 14 + col * 76, y = 58 + row * 46; CUBE_A.forEach((v, a) => { if (m >> a & 1) { x += v[0]; y += v[1]; } }); return [x, y]; };
+function ViewCubeBig({ D, eq }) {
+  const n = D.n, on = lit(D, eq), BL = Object.fromEntries(D.blades.map(b => [b.N, b])), litV = new Set(on.flatMap(i => [i.source, i.target]));
+  const L = (a, b) => on.find(i => (i.source === a && i.target === b) || (i.source === b && i.target === a));
+  return <svg viewBox="0 0 310 235" role="img" aria-label="cube">
+    {D.cube.edges.map(([a, b, ax], k) => { if (L(a, b)) return null; const A = cpBig(a), B = cpBig(b); return <line key={k} x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} stroke="currentColor" strokeOpacity={ax < 3 ? .3 : .12} strokeWidth={ax < 3 ? 1 : .7} />; })}
+    {D.cube.edges.map(([a, b, ax], k) => { const l = L(a, b); if (!l) return null; const A = cpBig(a), B = cpBig(b); return <g key={'l' + k}><line x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} stroke={roleColor(BL[l.target].role)} strokeWidth="2.6" strokeDasharray={l.op === 'wedge' ? '5 3' : undefined} /><text x={(A[0] + B[0]) / 2 + 3} y={(A[1] + B[1]) / 2 - 3} fontSize="8.5" fill="currentColor">∂{D.axes[ax]}</text></g>; })}
+    {D.cube.vertices.map(v => { const p = cpBig(v.N), c = roleColor(BL[v.N].role), isL = litV.has(v.N);
+      return <g key={v.N}><circle cx={p[0]} cy={p[1]} r={isL ? 6.5 : 2.4} fill={c} fillOpacity={isL ? .92 : .55} />{isL && <text x={p[0]} y={p[1] + 2.8} textAnchor="middle" fontSize="7.5" fill="#0b1020">{v.N}</text>}{isL && <text x={p[0]} y={p[1] - 9} textAnchor="middle" fontSize="8" fill="currentColor" opacity=".9">{SUB(BL[v.N].label)}</text>}</g>; })}
+    <text x="6" y="12" fontSize="9" fill="currentColor" opacity=".7">bits 0–2: small cube · bits 3, 4: columns · {n === 7 ? 'bits 5, 6: rows' : 'bit 5: rows'}</text>
+    <text x="6" y="231" fontSize="10" fill="currentColor" opacity=".7">layers by weight: {D.cube.layers.join(' · ')}</text>
+  </svg>;
+}
 function ViewCube({ D, eq }) {
+  if (D.n >= 6) return <ViewCubeBig D={D} eq={eq} />;
   const n = D.n, on = lit(D, eq), BL = Object.fromEntries(D.blades.map(b => [b.N, b])), r = n === 5 ? 4 : n === 4 ? 9.5 : 12;
   const L = (a, b) => on.find(i => (i.source === a && i.target === b) || (i.source === b && i.target === a));
   const litV = new Set(on.flatMap(i => [i.source, i.target]));
@@ -119,7 +137,19 @@ function ViewCube({ D, eq }) {
 }
 
 /* ---- view 4: integer labels ---- */
+function ViewPrimeGrid({ D, eq }) {
+  const n = D.n, on = lit(D, eq), cnt = 1 << n, cols = n === 7 ? 16 : 8, rows = cnt / cols, cw = 19, ch = n === 7 ? 17 : 19, BL = Object.fromEntries(D.blades.map(b => [b.N, b])), isP = new Set(D.primes.prime_labels), litV = new Set(on.flatMap(i => [i.source, i.target]));
+  const x = m => 12 + (m % cols) * cw + cw / 2, y = m => 26 + Math.floor(m / cols) * ch + ch / 2, extra = Math.max(0, Math.ceil(on.length / 5) - 3) * 15, top = 26 + rows * ch + 8;
+  return <svg viewBox={`0 0 330 ${top + 66 + extra}`} role="img" aria-label="integer labels">
+    <text x="8" y="14" fontSize="9.5" fill="currentColor" opacity=".7">label m = row × {cols} + column; gold border: m is prime (notation only)</text>
+    {Array.from({ length: cnt }, (_, m) => <g key={m}><rect x={x(m) - cw / 2 + 1} y={y(m) - ch / 2 + 1} width={cw - 2} height={ch - 2} rx="3" fill={roleColor(BL[m].role)} fillOpacity={litV.has(m) ? .5 : .16} stroke={isP.has(m) ? '#ffd166' : roleColor(BL[m].role)} strokeWidth={isP.has(m) ? 1.6 : .6} /><text x={x(m)} y={y(m) + 3} textAnchor="middle" fontSize={litV.has(m) ? 8 : 6.5} fill="currentColor" opacity={litV.has(m) ? 1 : .6}>{m}</text></g>)}
+    {on.map((i, k) => { const a = [x(i.source), y(i.source)], b = [x(i.target), y(i.target)], mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2 - 10 - Math.abs(a[0] - b[0]) * .08; return <path key={k} d={`M${a[0]},${a[1]} Q${mx},${my} ${b[0]},${b[1]}`} fill="none" stroke={roleColor(BL[i.target].role)} strokeWidth="1.6" strokeDasharray={i.op === 'wedge' ? '4 3' : undefined} />; })}
+    <foreignObject x="6" y={top} width="318" height={60 + extra}><div xmlns="http://www.w3.org/1999/xhtml" style={{ fontSize: 10.5, lineHeight: 1.4, color: 'currentColor', opacity: .85, fontFamily: 'ui-monospace,Menlo,monospace' }}>
+      {on.map((i, k) => <React.Fragment key={k}>{k > 0 && ' · '}<span style={{ whiteSpace: 'nowrap' }}>{i.source}⊕{1 << i.axis}={i.target}</span></React.Fragment>)}</div></foreignObject>
+  </svg>;
+}
 function ViewPrime({ D, eq }) {
+  if (D.n >= 6) return <ViewPrimeGrid D={D} eq={eq} />;
   const n = D.n, on = lit(D, eq), cnt = 1 << n, BL = Object.fromEntries(D.blades.map(b => [b.N, b])), isP = new Set(D.primes.prime_labels);
   const gap = n === 5 ? 1 : n === 4 ? 2 : 4, w = Math.min(34, (300 - gap * cnt) / cnt), x = m => 14 + m * (w + gap) + w / 2, bw = n === 5 ? 8 : n === 4 ? 9.5 : 14, litV = new Set(on.flatMap(i => [i.source, i.target]));
   const extra = Math.max(0, Math.ceil(on.length / 5) - 3) * 15;
@@ -138,7 +168,7 @@ function ViewPrime({ D, eq }) {
 const TX = {
   en: {
     timeH: 'How many time and how many space dimensions?', timeL: 'time dimensions (generators that square to +1)', spaceL: 'space dimensions (square to −1)',
-    limit: 'The pictures go up to 5 generators in all (k + d ≤ 5). The tables below go further.',
+    limit: 'The pictures go up to 7 generators in all (k + d ≤ 7, each at most 4). The tables below go further.',
     stepH: 'What this step adds', start: 'Starting point: two generators, one time and one space. One field piece E and two equations.',
     newT: 'New generator: a time direction (squares to +1)', newS: 'New generator: a space direction (squares to −1)',
     blades: 'Blades', pieces: 'Field pieces F', eqs: 'Equations ∇F = J', algebra: 'Algebra', pde: 'Wave operator', newMark: '★ = equations that involve the new generator',
@@ -156,7 +186,7 @@ const TX = {
   },
   it: {
     timeH: 'Quante dimensioni di tempo e quante di spazio?', timeL: 'dimensioni di tempo (generatori con quadrato +1)', spaceL: 'dimensioni di spazio (quadrato −1)',
-    limit: 'Le immagini arrivano fino a 5 generatori in tutto (k + d ≤ 5). Le tabelle sotto vanno oltre.',
+    limit: 'Le immagini arrivano fino a 7 generatori in tutto (k + d ≤ 7, al massimo 4 per tipo). Le tabelle sotto vanno oltre.',
     stepH: 'Che cosa aggiunge questo passo', start: 'Punto di partenza: due generatori, un tempo e uno spazio. Un pezzo di campo E e due equazioni.',
     newT: 'Nuovo generatore: una direzione di tempo (quadrato +1)', newS: 'Nuovo generatore: una direzione di spazio (quadrato −1)',
     blades: 'Blade', pieces: 'Pezzi di campo F', eqs: 'Equazioni ∇F = J', algebra: 'Algebra', pde: 'Operatore d’onda', newMark: '★ = equazioni che coinvolgono il nuovo generatore',
@@ -173,13 +203,33 @@ const TX = {
     ladSpaceH: 'La scala lungo lo spazio (una dimensione di tempo)'
   }
 };
+T.en.simp.push('Simplex: a 5-simplex (hexagon with all diagonals)', 'Simplex: a 6-simplex (heptagon with all diagonals)');
+T.en.cube.push('Cube: a 6-cube (eight small cubes on a grid)', 'Cube: a 7-cube (sixteen small cubes on a grid)');
+T.it.simp.push('Simplesso: un 5-simplesso (esagono con tutte le diagonali)', 'Simplesso: un 6-simplesso (ettagono con tutte le diagonali)');
+T.it.cube.push('Cubo: un 6-cubo (otto piccoli cubi su una griglia)', 'Cubo: un 7-cubo (sedici piccoli cubi su una griglia)');
+const BIG = {
+  en: {
+    h: 'Six and seven generators: the logic keeps holding',
+    gen: (n, c, D) => `With ${n} generators F has ${c.E + c.T + c.B} components (${c.E} E, ${c.T} T, ${c.B} B) and ∇F = J splits into ${n} + ${D.equations.length - n} equations, from ${D.incidences.length} incidences. The pictures are the same bit rule on a ${n - 1}-simplex and an ${n}-cube, only denser: the lit moves are what to follow.`,
+    c33: 'Cl(3,3) = M₈(ℝ) is its own mirror, and it is the algebra of three Witt pairs, the same cell the Genesis page reaches at node 6.',
+    c34: 'This is half of a mirror pair with different algebras: Cl(4,3) = M₈(ℝ) ⊕ M₈(ℝ) has a central I with I² = +1 and splits in two, while Cl(3,4) = M₈(ℂ) has a central I with I² = −1 and does not. The equation system is the same in both; the algebra is not. Cl(4,3) is the cell the Genesis page uses at node 7.',
+    nonew: 'Nothing here is a new kind of Maxwell theory: all of these are ultrahyperbolic. The point is that the same rule, checked exactly, keeps working one generator at a time.'
+  },
+  it: {
+    h: 'Sei e sette generatori: la logica continua a reggere',
+    gen: (n, c, D) => `Con ${n} generatori F ha ${c.E + c.T + c.B} componenti (${c.E} E, ${c.T} T, ${c.B} B) e ∇F = J si divide in ${n} + ${D.equations.length - n} equazioni, da ${D.incidences.length} incidenze. Le immagini sono la stessa regola dei bit su un ${n - 1}-simplesso e un ${n}-cubo, solo più dense: conta seguire le mosse accese.`,
+    c33: 'Cl(3,3) = M₈(ℝ) è il proprio specchio ed è l’algebra di tre coppie di Witt, la stessa cella a cui la pagina Genesi arriva al nodo 6.',
+    c34: 'È metà di una coppia speculare con algebre diverse: Cl(4,3) = M₈(ℝ) ⊕ M₈(ℝ) ha I centrale con I² = +1 e si spezza in due, mentre Cl(3,4) = M₈(ℂ) ha I centrale con I² = −1 e non si spezza. Il sistema di equazioni è lo stesso in entrambe; l’algebra no. Cl(4,3) è la cella che la pagina Genesi usa al nodo 7.',
+    nonew: 'Niente di tutto ciò è un nuovo tipo di teoria di Maxwell: sono tutte ultraiperboliche. Il punto è che la stessa regola, verificata in modo esatto, continua a funzionare un generatore alla volta.'
+  }
+};
 const cellStr = (ty, N) => { const k = { R: 'ℝ', R2: 'ℝ', C: 'ℂ', H: 'ℍ', H2: 'ℍ' }[ty], one = `M${N}(${k})`; return ty.endsWith('2') ? `${one} ⊕ ${one}` : one; };
 const C2 = (n, r) => r < 0 || r > n ? 0 : r === 0 ? 1 : (n * C2(n - 1, r - 1)) / r;
 
 export default function MaxwellSection({ lang = 'en', profile = 'Young Learner' }) {
   const t = { ...(T[lang] || T.en), ...(TX[lang] || TX.en) }, [k, setK] = useState(1), [d, setD] = useState(1), [eq, setEq] = useState('gauss');
   const D = M.cells[`${k},${d}`], n = D.n, expert = profile !== 'Young Learner', al = D.algebra, sy = D.symbol;
-  const pickK = v => { setK(v); if (v + d > 5) setD(5 - v); }; const pickD = v => { setD(v); if (v + k > 5) setK(5 - v); };
+  const pickK = v => { setK(v); if (v + d > 7) setD(7 - v); }; const pickD = v => { setD(v); if (v + k > 7) setK(7 - v); };
   const eqEff = eq === 'all' || D.equations.some(e => e.id === eq) ? eq : D.equations[0].id, cur = D.equations.find(e => e.id === eqEff);
   const eqName = e => lang === 'it' && EQN.it[e.name] ? EQN.it[e.name] : e.name;
   // the step that led here: along time if k > 1, else along space if d > 1
@@ -204,8 +254,9 @@ export default function MaxwellSection({ lang = 'en', profile = 'Young Learner' 
       <p><b>{stepTime ? t.newT : t.newS}</b></p>
       <p className="mx-mono">{t.blades}: {1 << (n - 1)} → {1 << n}  ·  {t.pieces}: {C2(n - 1, 2)} → {C2(n, 2)} (+{n - 1}: {stepTime ? t.partsT(d, k) : t.partsS(k, d)})  ·  {t.eqs}: {prev.n + C2(prev.n, 3)} → {n + C2(n, 3)} (+{1 + C2(n - 1, 2)}: {t.newEq(C2(n - 1, 2))})</p>
       <p className="mx-mono">{t.algebra}: Cl({stepTime ? k - 1 : k},{stepTime ? d : d - 1}) = {R(prev.algebra)} → Cl({k},{d}) = {R(al)}  ·  I²: {prev.algebra.pseudoscalar_square > 0 ? '+1' : '−1'} → {al.pseudoscalar_square > 0 ? '+1' : '−1'}  ·  {t.pde}: {prev.symbol.class} → {sy.class}</p></>}</div>
+    {n >= 6 && (() => { const B = BIG[lang] || BIG.en; return <div className="mx-card"><h4>{B.h}</h4><p>{B.gen(n, D.counts, D)}</p>{k === 3 && d === 3 && <p>{B.c33}</p>}{((k === 3 && d === 4) || (k === 4 && d === 3)) && <p>{B.c34}</p>}<p className="mx-cap">{B.nonew}</p></div>; })()}
     <h3>{t.pickEq}</h3>
-    <div className="mx-chips"><button className={'mx-chip' + (eqEff === 'all' ? ' on' : '')} onClick={() => setEq('all')}>{t.all}</button>
+    <div className="mx-chips" style={D.equations.length > 16 ? { maxHeight: 132, overflowY: 'auto' } : undefined}><button className={'mx-chip' + (eqEff === 'all' ? ' on' : '')} onClick={() => setEq('all')}>{t.all}</button>
       {D.equations.map(e => <button key={e.id} className={'mx-chip' + (eqEff === e.id ? ' on' : '')} onClick={() => setEq(e.id)}>{isNew(e) ? '★ ' : ''}{eqName(e)}: <span className="mx-mono">{e.eq}</span></button>)}</div>
     {prev && <p className="mx-cap">{t.newMark}</p>}
     {cur && <p className="mx-cap">{cur.op === 'contract' ? t.contract : t.wedge}</p>}

@@ -25,7 +25,8 @@ for(const f of['api/chat.js','api/chat-openai.js']){const s=fs.readFileSync(f,'u
 import M from './maxwellData.js';
 ok(/MAXWELL LAYER/.test(P)&&/first ultrahyperbolic cell is \(2,2\)/.test(P)&&M.cells['2,2'].symbol.class==='ultrahyperbolic'&&M.cells['2,1'].symbol.class==='hyperbolic','maxwell symbol');
 ok(P.includes('M₂(ℝ), M₂(ℝ)², M₄(ℝ), M₄(ℂ), M₄(ℍ), M₄(ℍ)², M₈(ℍ), M₁₆(ℂ), M₃₂(ℝ)')&&M.time_ladder.map(l=>l.type+l.matrix_size).join()==='R2,R22,R4,C4,H4,H24,H8,C16,R32','time ladder');
-ok(P.includes('2, 9, 24, 50')&&[2,3,4,5].map(n=>M.cells[Object.keys(M.cells).find(k=>M.cells[k].n===n)].incidences.length).join()==='2,9,24,50','incidence counts');
+ok(P.includes('2, 9, 24, 50, 90, 147')&&[2,3,4,5,6,7].map(n=>M.cells[Object.keys(M.cells).find(k=>M.cells[k].n===n)].incidences.length).join()==='2,9,24,50,90,147','incidence counts');
+ok(/Cl\(4,3\)=M₈\(ℝ\)²/.test(P)&&M.cells['4,3'].algebra.splits_in_two&&!M.cells['3,4'].algebra.splits_in_two,'n=7 mirror pair');
 ok(M.cells['1,3'].incidences.length===24&&M.cells['1,4'].incidences.length===50,'incidence data');
 ok(/vector equations .*change sign|J→−J/.test(P)&&M.cells['2,2'].mirror.vector_equations_factor===-1,'mirror factor');
 ok(/No link between this sector and Furey/.test(P),'no link claim');
