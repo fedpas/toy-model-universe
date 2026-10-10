@@ -1,0 +1,155 @@
+{
+ "cartan_dieudonne": {
+  "2,lorentz": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "1": 16,
+    "2": 9
+   }
+  },
+  "2,space": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "1": 13,
+    "2": 12
+   }
+  },
+  "3,lorentz": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "1": 2,
+    "2": 10,
+    "3": 13
+   }
+  },
+  "3,space": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "1": 5,
+    "2": 12,
+    "3": 8
+   }
+  },
+  "4,lorentz": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "2": 2,
+    "3": 13,
+    "4": 10
+   }
+  },
+  "4,space": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "1": 2,
+    "2": 4,
+    "3": 12,
+    "4": 7
+   }
+  },
+  "5,lorentz": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 8,
+    "5": 11
+   }
+  },
+  "5,space": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "2": 2,
+    "3": 6,
+    "4": 7,
+    "5": 10
+   }
+  },
+  "6,lorentz": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "2": 5,
+    "3": 1,
+    "4": 1,
+    "5": 8,
+    "6": 10
+   }
+  },
+  "6,space": {
+   "at_most_n": true,
+   "mirror_counts_seen": {
+    "2": 2,
+    "3": 4,
+    "4": 2,
+    "5": 9,
+    "6": 8
+   }
+  }
+ },
+ "controls": {
+  "n_minus_1_mirrors_for_the_corner": "never reaches -1 (closest distance 0.76)",
+  "untwisted_sandwich": "fails for an odd number of mirrors",
+  "wrong_gamma_square": "fails (the vector is not sent to a vector)",
+  "wrong_metric": "the matrix is not an isometry of eta"
+ },
+ "corner": {
+  "2,lorentz": {
+   "all_flip_needs": 2,
+   "rank_of_flip_minus_identity": 2
+  },
+  "2,space": {
+   "all_flip_needs": 2,
+   "rank_of_flip_minus_identity": 2
+  },
+  "3,lorentz": {
+   "all_flip_needs": 3,
+   "rank_of_flip_minus_identity": 3
+  },
+  "3,space": {
+   "all_flip_needs": 3,
+   "rank_of_flip_minus_identity": 3
+  },
+  "4,lorentz": {
+   "all_flip_needs": 4,
+   "rank_of_flip_minus_identity": 4
+  },
+  "4,space": {
+   "all_flip_needs": 4,
+   "rank_of_flip_minus_identity": 4
+  },
+  "5,lorentz": {
+   "all_flip_needs": 5,
+   "rank_of_flip_minus_identity": 5
+  },
+  "5,space": {
+   "all_flip_needs": 5,
+   "rank_of_flip_minus_identity": 5
+  },
+  "6,lorentz": {
+   "all_flip_needs": 6,
+   "rank_of_flip_minus_identity": 6
+  },
+  "6,space": {
+   "all_flip_needs": 6,
+   "rank_of_flip_minus_identity": 6
+  }
+ },
+ "examples": {
+  "boost_5_4_3_4": "two mirrors",
+  "rotation_3_4_5": "two mirrors"
+ },
+ "status": "ALL MIRRORS MATRIX CHECKS PASS",
+ "twisted_sandwich_error": {
+  "2,lorentz": 0,
+  "2,space": 0,
+  "3,lorentz": 0,
+  "3,space": 0,
+  "4,lorentz": 0,
+  "4,space": 0,
+  "5,lorentz": 0,
+  "5,space": 0,
+  "6,lorentz": 0,
+  "6,space": 0
+ }
+}
