@@ -1,0 +1,59 @@
+{
+ "representation": {
+  "relations_residual": 0.0,
+  "rank_of_16_products": 16,
+  "ok": true
+ },
+ "body": {
+  "principal_inertias": [
+   7.028606449218118,
+   16.635214719199055,
+   20.718980426945524
+  ],
+  "mass": 8.5
+ },
+ "initial_pose_error": 1.3322676295501878e-15,
+ "free_top": {
+  "position_error": 4.4364512064021255e-13,
+  "ok": true
+ },
+ "motor_manifold_residual": 7.106294666405892e-15,
+ "gravity_top": {
+  "position_error": 9.386269539390923e-12,
+  "ok": true
+ },
+ "conservation": {
+  "momentum_drift": 1.5596423165858248e-12,
+  "ok": true
+ },
+ "spherical_top": {
+  "motor_error": 1.2126359845965904e-14,
+  "ok": true
+ },
+ "symmetric_top": {
+  "motor_error": 2.6990424254992213e-14,
+  "ok": true,
+  "A_check": 0.0
+ },
+ "tennis_racket": {
+  "predicted_rate": 0.8944271909999159,
+  "measured_rate_middle_axis": 0.8944271909996669,
+  "max_perturbation_over_initial_axis1": 1.5811387830546972,
+  "max_perturbation_over_initial_axis3": 2.0816659984427,
+  "ok": true
+ },
+ "negative_controls": {
+  "no_coriolis_term": {
+   "position_error": 3.194358991433161,
+   "fails_as_expected": true
+  },
+  "wrong_sign_coriolis": {
+   "position_error": 2.993364767705839,
+   "fails_as_expected": true
+  },
+  "wrong_kinematic_factor": {
+   "position_error": 4.570049863774279,
+   "fails_as_expected": true
+  }
+ }
+}

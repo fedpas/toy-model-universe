@@ -1,0 +1,226 @@
+{
+ "real_blocks": [
+  2,
+  6,
+  4,
+  2,
+  1,
+  1
+ ],
+ "real_diag": 62,
+ "real_off": 194,
+ "blocks_commuting_with_omega": {
+  "O1": true,
+  "O2": true,
+  "H": true,
+  "C": true,
+  "e7R": false,
+  "R": false
+ },
+ "complex_blocks": [
+  1,
+  3,
+  2,
+  1,
+  1
+ ],
+ "complex_diag": 16,
+ "complex_off": 48,
+ "omega_alt_minus_R_works": true,
+ "omega_prime_over_omega_minus_axes": [
+  0,
+  3,
+  8,
+  11
+ ],
+ "centralizers": {
+  "O_L": 32,
+  "O_L_and_R": 20,
+  "H": 8,
+  "C": 2,
+  "R": 1
+ },
+ "delta_SM_real_dim": 31,
+ "edges": [
+  {
+   "a": "C_O(1)",
+   "b": "C3_O(3)",
+   "n_a": 1,
+   "n_b": 3,
+   "capacity_C": 6,
+   "one_way_C": 3,
+   "y_a_minus_y_b": "-1/3"
+  },
+  {
+   "a": "C_O(1)",
+   "b": "C2_H(2)",
+   "n_a": 1,
+   "n_b": 2,
+   "capacity_C": 4,
+   "one_way_C": 2,
+   "y_a_minus_y_b": "-1/2"
+  },
+  {
+   "a": "C_O(1)",
+   "b": "C_C(1)",
+   "n_a": 1,
+   "n_b": 1,
+   "capacity_C": 2,
+   "one_way_C": 1,
+   "y_a_minus_y_b": "-1"
+  },
+  {
+   "a": "C_O(1)",
+   "b": "C_last(1)",
+   "n_a": 1,
+   "n_b": 1,
+   "capacity_C": 2,
+   "one_way_C": 1,
+   "y_a_minus_y_b": "0"
+  },
+  {
+   "a": "C3_O(3)",
+   "b": "C2_H(2)",
+   "n_a": 3,
+   "n_b": 2,
+   "capacity_C": 12,
+   "one_way_C": 6,
+   "y_a_minus_y_b": "-1/6"
+  },
+  {
+   "a": "C3_O(3)",
+   "b": "C_C(1)",
+   "n_a": 3,
+   "n_b": 1,
+   "capacity_C": 6,
+   "one_way_C": 3,
+   "y_a_minus_y_b": "-2/3"
+  },
+  {
+   "a": "C3_O(3)",
+   "b": "C_last(1)",
+   "n_a": 3,
+   "n_b": 1,
+   "capacity_C": 6,
+   "one_way_C": 3,
+   "y_a_minus_y_b": "1/3"
+  },
+  {
+   "a": "C2_H(2)",
+   "b": "C_C(1)",
+   "n_a": 2,
+   "n_b": 1,
+   "capacity_C": 4,
+   "one_way_C": 2,
+   "y_a_minus_y_b": "-1/2"
+  },
+  {
+   "a": "C2_H(2)",
+   "b": "C_last(1)",
+   "n_a": 2,
+   "n_b": 1,
+   "capacity_C": 4,
+   "one_way_C": 2,
+   "y_a_minus_y_b": "1/2"
+  },
+  {
+   "a": "C_C(1)",
+   "b": "C_last(1)",
+   "n_a": 1,
+   "n_b": 1,
+   "capacity_C": 2,
+   "one_way_C": 1,
+   "y_a_minus_y_b": "1"
+  }
+ ],
+ "sm_matches": [
+  {
+   "name": "Q_L",
+   "rep": "(3,2,+1/6)",
+   "dim_C": 6
+  },
+  {
+   "name": "u_R",
+   "rep": "(3,1,+2/3)",
+   "dim_C": 3
+  },
+  {
+   "name": "d_R",
+   "rep": "(3,1,-1/3)",
+   "dim_C": 3
+  },
+  {
+   "name": "L",
+   "rep": "(1,2,-1/2)",
+   "dim_C": 2
+  },
+  {
+   "name": "e_R",
+   "rep": "(1,1,-1)",
+   "dim_C": 1
+  },
+  {
+   "name": "nu_R",
+   "rep": "(1,1,0)",
+   "dim_C": 1
+  }
+ ],
+ "sm_generation_dim": 16,
+ "extras": [
+  {
+   "name": "d_R-like",
+   "rep": "(3bar,1,+1/3)~(3,1,-1/3)",
+   "dim_C": 3
+  },
+  {
+   "name": "L-like",
+   "rep": "(1,2,+1/2)~(1,2,-1/2)",
+   "dim_C": 2
+  },
+  {
+   "name": "e_R-like",
+   "rep": "(1,1,+1)~(1,1,-1)",
+   "dim_C": 1
+  },
+  {
+   "name": "L-like",
+   "rep": "(1,2,-1/2)",
+   "dim_C": 2
+  }
+ ],
+ "extras_dim": 8,
+ "maxEdge": {
+  "pair": "C3_O<->C2_H",
+  "capacity_C": 12,
+  "content": "Q_L (3,2,+1/6) + conjugate (3bar,2,-1/6): one generation, particle + antiparticle"
+ },
+ "witt": {
+  "fano_lines": 7,
+  "line_blades_square_plus1": true,
+  "commute": true,
+  "diagonal_in_standard_basis": true,
+  "axes": 16,
+  "omega_is_single_grade_blade": 6,
+  "projector_grades": [
+   0,
+   4,
+   8
+  ],
+  "independent_commuting_grade4_quadruples": 18480,
+  "diagonalising_all_block_projectors": 616,
+  "cayley_dickson_flag_affine": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "block_is_affine": {
+   "O1": true,
+   "O2": false,
+   "H": true,
+   "C": true,
+   "e7R": true,
+   "R": true
+  }
+ }
+}

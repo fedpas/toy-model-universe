@@ -1,0 +1,93 @@
+{
+ "constant_connection_error": {
+  "2": 0,
+  "3": 0,
+  "4": 0,
+  "5": 0,
+  "6": 0
+ },
+ "controls": {
+  "Ricci_instead_of_Einstein": "ratio not constant",
+  "extra_square_sign_flipped": "k changes sign",
+  "first_Bianchi_dropped": "dimension 36 and not pair symmetric (instead of 20)",
+  "trace_coefficient_1": "ratio not constant",
+  "wrong_gamma_square": "fails (Clifford relation broken)"
+ },
+ "curvature_space": {
+  "2": {
+   "dimension": 1,
+   "pair_symmetric": true,
+   "ricci_rank": 1,
+   "weyl_dimension": 0
+  },
+  "3": {
+   "dimension": 6,
+   "pair_symmetric": true,
+   "ricci_rank": 6,
+   "weyl_dimension": 0
+  },
+  "4": {
+   "dimension": 20,
+   "pair_symmetric": true,
+   "ricci_rank": 10,
+   "weyl_dimension": 10
+  },
+  "5": {
+   "dimension": 50,
+   "pair_symmetric": true,
+   "ricci_rank": 15,
+   "weyl_dimension": 35
+  },
+  "6": {
+   "dimension": 105,
+   "pair_symmetric": true,
+   "ricci_rank": 21,
+   "weyl_dimension": 84
+  },
+  "7": {
+   "dimension": 196,
+   "pair_symmetric": true,
+   "ricci_rank": 28,
+   "weyl_dimension": 168
+  }
+ },
+ "desitter": {
+  "3,AdS": {
+   "k": "-1",
+   "mu": "1"
+  },
+  "3,dS": {
+   "k": "1",
+   "mu": "1"
+  },
+  "4,AdS": {
+   "k": "-1",
+   "mu": "1"
+  },
+  "4,dS": {
+   "k": "1",
+   "mu": "1"
+  },
+  "5,AdS": {
+   "k": "-1",
+   "mu": "1"
+  },
+  "5,dS": {
+   "k": "1",
+   "mu": "1"
+  }
+ },
+ "einstein_ratio": {
+  "3": "1",
+  "4": "1",
+  "5": "1"
+ },
+ "status": "ALL GRAVITY MATRIX CHECKS PASS",
+ "structure_constants": {
+  "2": "equal to the bit-rule constants",
+  "3": "equal to the bit-rule constants",
+  "4": "equal to the bit-rule constants",
+  "5": "equal to the bit-rule constants",
+  "6": "equal to the bit-rule constants"
+ }
+}

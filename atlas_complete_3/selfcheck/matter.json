@@ -1,0 +1,436 @@
+{
+ "identities": {
+  "3,2": {
+   "abelian_current_equals_step3_X": true,
+   "adjoint_covariance": true,
+   "commutator_identity": true,
+   "conserved_on_shell": true,
+   "current_is_not_zero": true,
+   "gauge_covariance_of_E_first_order": true
+  },
+  "3,3": {
+   "abelian_current_equals_step3_X": true,
+   "adjoint_covariance": true,
+   "commutator_identity": true,
+   "conserved_on_shell": true,
+   "current_is_not_zero": true,
+   "gauge_covariance_of_E_first_order": true
+  },
+  "4,2": {
+   "abelian_current_equals_step3_X": true,
+   "adjoint_covariance": true,
+   "commutator_identity": true,
+   "conserved_on_shell": true,
+   "current_is_not_zero": true,
+   "gauge_covariance_of_E_first_order": true
+  },
+  "4,3": {
+   "abelian_current_equals_step3_X": true,
+   "adjoint_covariance": true,
+   "commutator_identity": true,
+   "conserved_on_shell": true,
+   "current_is_not_zero": true,
+   "gauge_covariance_of_E_first_order": true
+  },
+  "4,4": {
+   "abelian_current_equals_step3_X": true,
+   "adjoint_covariance": true,
+   "commutator_identity": true,
+   "conserved_on_shell": true,
+   "current_is_not_zero": true,
+   "gauge_covariance_of_E_first_order": true
+  },
+  "5,3": {
+   "abelian_current_equals_step3_X": true,
+   "adjoint_covariance": true,
+   "commutator_identity": true,
+   "conserved_on_shell": true,
+   "current_is_not_zero": true,
+   "gauge_covariance_of_E_first_order": true
+  }
+ },
+ "ladder": {
+  "2": {
+   "components": 32,
+   "copies_of_each_module": 1,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 16,
+    "1": 16,
+    "2": 16,
+    "3": 16
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 32,
+   "gauge_terms_per_equation": 4,
+   "gauge_terms_total": 128,
+   "gens": 1,
+   "internal_cell": "M1(H)",
+   "internal_dim": 4,
+   "mass_terms_per_equation": 1,
+   "minimal_module_real_dim": 4,
+   "summands": 1,
+   "terms_per_equation": 9,
+   "terms_total": 288
+  },
+  "3": {
+   "components": 64,
+   "copies_of_each_module": 1,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 32,
+    "1": 32,
+    "2": 32,
+    "3": 32
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 64,
+   "gauge_terms_per_equation": 12,
+   "gauge_terms_total": 768,
+   "gens": 3,
+   "internal_cell": "M1(H) + M1(H)",
+   "internal_dim": 8,
+   "mass_terms_per_equation": 1,
+   "minimal_module_real_dim": 4,
+   "summands": 2,
+   "terms_per_equation": 17,
+   "terms_total": 1088
+  },
+  "4": {
+   "components": 128,
+   "copies_of_each_module": 2,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 64,
+    "1": 64,
+    "2": 64,
+    "3": 64
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 128,
+   "gauge_terms_per_equation": 24,
+   "gauge_terms_total": 3072,
+   "gens": 6,
+   "internal_cell": "M2(H)",
+   "internal_dim": 16,
+   "mass_terms_per_equation": 1,
+   "minimal_module_real_dim": 8,
+   "summands": 1,
+   "terms_per_equation": 29,
+   "terms_total": 3712
+  },
+  "5": {
+   "components": 256,
+   "copies_of_each_module": 4,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 128,
+    "1": 128,
+    "2": 128,
+    "3": 128
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 256,
+   "gauge_terms_per_equation": 40,
+   "gauge_terms_total": 10240,
+   "gens": 10,
+   "internal_cell": "M4(C)",
+   "internal_dim": 32,
+   "mass_terms_per_equation": 1,
+   "minimal_module_real_dim": 8,
+   "summands": 1,
+   "terms_per_equation": 45,
+   "terms_total": 11520
+  },
+  "6": {
+   "components": 512,
+   "copies_of_each_module": 8,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 256,
+    "1": 256,
+    "2": 256,
+    "3": 256
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 512,
+   "gauge_terms_per_equation": 60,
+   "gauge_terms_total": 30720,
+   "gens": 15,
+   "internal_cell": "M8(R)",
+   "internal_dim": 64,
+   "mass_terms_per_equation": 1,
+   "minimal_module_real_dim": 8,
+   "summands": 1,
+   "terms_per_equation": 65,
+   "terms_total": 33280
+  },
+  "7": {
+   "components": 1024,
+   "copies_of_each_module": 8,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 512,
+    "1": 512,
+    "2": 512,
+    "3": 512
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 1024,
+   "gauge_terms_per_equation": 84,
+   "gauge_terms_total": 86016,
+   "gens": 21,
+   "internal_cell": "M8(R) + M8(R)",
+   "internal_dim": 128,
+   "mass_terms_per_equation": 1,
+   "minimal_module_real_dim": 8,
+   "summands": 2,
+   "terms_per_equation": 89,
+   "terms_total": 91136
+  },
+  "8": {
+   "components": 2048,
+   "copies_of_each_module": 16,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 1024,
+    "1": 1024,
+    "2": 1024,
+    "3": 1024
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 2048,
+   "gauge_terms_per_equation": 112,
+   "gauge_terms_total": 229376,
+   "gens": 28,
+   "internal_cell": "M16(R)",
+   "internal_dim": 256,
+   "mass_terms_per_equation": 1,
+   "minimal_module_real_dim": 16,
+   "summands": 1,
+   "terms_per_equation": 117,
+   "terms_total": 239616
+  }
+ },
+ "spacetime": {
+  "3": {
+   "components": 32,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3
+   },
+   "current_monomials_per_component": {
+    "0": 16,
+    "1": 16,
+    "2": 16
+   },
+   "derivative_terms_per_equation": 3,
+   "equations": 32,
+   "gauge_terms_per_equation": 9,
+   "gauge_terms_total": 288,
+   "m": 3,
+   "mass_terms_per_equation": 1,
+   "terms_per_equation": 13,
+   "terms_total": 416
+  },
+  "4": {
+   "components": 64,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15
+   },
+   "current_monomials_per_component": {
+    "0": 32,
+    "1": 32,
+    "2": 32,
+    "3": 32
+   },
+   "derivative_terms_per_equation": 4,
+   "equations": 64,
+   "gauge_terms_per_equation": 12,
+   "gauge_terms_total": 768,
+   "m": 3,
+   "mass_terms_per_equation": 1,
+   "terms_per_equation": 17,
+   "terms_total": 1088
+  },
+  "5": {
+   "components": 128,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4,
+    "4": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15,
+    "4": 23
+   },
+   "current_monomials_per_component": {
+    "0": 64,
+    "1": 64,
+    "2": 64,
+    "3": 64,
+    "4": 64
+   },
+   "derivative_terms_per_equation": 5,
+   "equations": 128,
+   "gauge_terms_per_equation": 15,
+   "gauge_terms_total": 1920,
+   "m": 3,
+   "mass_terms_per_equation": 1,
+   "terms_per_equation": 21,
+   "terms_total": 2688
+  },
+  "6": {
+   "components": 256,
+   "current_corner_distance": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 4,
+    "4": 4,
+    "5": 4
+   },
+   "current_corner_masks": {
+    "0": 6,
+    "1": 5,
+    "2": 3,
+    "3": 15,
+    "4": 23,
+    "5": 39
+   },
+   "current_monomials_per_component": {
+    "0": 128,
+    "1": 128,
+    "2": 128,
+    "3": 128,
+    "4": 128,
+    "5": 128
+   },
+   "derivative_terms_per_equation": 6,
+   "equations": 256,
+   "gauge_terms_per_equation": 18,
+   "gauge_terms_total": 4608,
+   "m": 3,
+   "mass_terms_per_equation": 1,
+   "terms_per_equation": 25,
+   "terms_total": 6400
+  }
+ },
+ "status": {
+  "checked": [
+   "the matter equation with the covariant derivative, the commutator identity [D, D] Psi = g F Psi, and first-order gauge covariance of the equation, exact (polynomial fields)",
+   "the current j^a_nu of each generator: adjoint covariance and D^nu j^a_nu = 0 at points where the matter equation holds, exact",
+   "term counts per equation n(G+1)+1 by enumeration for m = 2 to 8 at n = 4 and n = 3 to 6 at m = 3",
+   "the abelian current of step 3 is the same formula for the generator J acting on the right"
+  ],
+  "open": [
+   "the coupling constant and the sign of the source term in D^mu F_mu_nu = kappa j_nu (no action rebuilt)",
+   "which representation, if any, the model uses",
+   "solutions of any of these equations"
+  ],
+  "ours": [
+   "reading the gauge terms as the n*G edges that combine one cube edge in space-time with one distance-2 edge in the internal cube"
+  ],
+  "standard": [
+   "the Dirac equation with minimal coupling to a Yang-Mills field and its Noether current",
+   "left multiplication on Cl(0,m) is the spinor-type representation of spin(m); at m = 3 it is two doublets of su(2)"
+  ]
+ }
+}

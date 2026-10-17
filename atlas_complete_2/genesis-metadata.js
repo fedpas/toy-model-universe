@@ -1,0 +1,768 @@
+const KNOWLEDGE_BASE_DIRECTORY={};
+// ============================================================================
+// NODE 0: THE THINKER'S GROUND STATE (Cl(0,0,0) GENESIS)
+// The absolute scalar identity before any polarization or vectors.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_0_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_0", category: "Genesis Roots", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, Column=0",
+    title: "The Quiet Sandbox // The Blank Slate",
+    desc: "Everything starts in a perfectly quiet playground. There are no lines, no clocks, and no toys yet. It is just the flat, empty floor of the sandbox waiting for the very first idea to appear."
+  },
+  "Sector_Genesis_Node_0_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_0", category: "Radici della Genesi", grade: "Scalare Puro di Grado 0", coordinate: "B+F=0, Colonna=0",
+    title: "Il Recinto Silenzioso // La Tabula Rasa",
+    desc: "Tutto inizia in un parco giochi perfettamente silenzioso. Non ci sono linee, orologi o giocattoli. È solo il pavimento piatto e vuoto del recinto in attesa che appaia la primissima idea."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_0_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_0", category: "Genesis Roots", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, Column=0",
+    title: "The Trivial Vacuum Origin Root",
+    desc: "The scalar multiplier root carrying zero active base or fiber dimensions. It functions as the unpolarized global identity element (1) and acts as the absolute reference field for all subsequent sub-algebraic metrics."
+  },
+  "Sector_Genesis_Node_0_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_0", category: "Radici della Genesi", grade: "Scalare Puro di Grado 0", coordinate: "B+F=0, Colonna=0",
+    title: "La Radice dell'Origine del Vuoto Banale",
+    desc: "La radice del moltiplicatore scalare priva di dimensioni attive di base o fibra. Funziona come l'elemento di identità globale non polarizzato (1) e agisce come campo di riferimento assoluto."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_0_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_0", category: "Genesis Roots", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, Column=0",
+    title: "The Multiplicative Identity Scalar Field",
+    desc: "The absolute algebra origin mapping to the real field R. It anchors the unpolarized radical core at Grade 0. There is no quadratic form, no orientation, and no filtration depth yet; only the scalar seed."
+  },
+  "Sector_Genesis_Node_0_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_0", category: "Radici della Genesi", grade: "Scalare Puro di Grado 0", coordinate: "B+F=0, Colonna=0",
+    title: "Il Campo Scalare dell'Identità Moltiplicativa",
+    desc: "L'origine assoluta dell'algebra mappata sul campo reale R. Ancora il nucleo radicale non polarizzato al Grado 0. Non vi è ancora alcuna forma quadratica, orientamento o profondità di filtrazione."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_0_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_0", category: "Genesis Roots", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, Column=0",
+    title: "The First Moment // The Frozen Frame",
+    desc: "Imagine a movie paused on the very first frame before it even begins. Time is not moving, and there is no history yet. It is just the pure 'Now' that exists before anything else happens."
+  },
+  "Sector_Genesis_Node_0_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_0", category: "Radici della Genesi", grade: "Scalare Puro di Grado 0", coordinate: "B+F=0, Colonna=0",
+    title: "Il Primo Momento // Il Fotogramma Congelato",
+    desc: "Immagina un film messo in pausa sul primissimo fotogramma prima ancora di iniziare. Il tempo non si muove e non c'è ancora storia. È solo il puro 'Ora' che esiste prima di ogni altra cosa."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_0_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_0", category: "Genesis Roots", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, Column=0",
+    title: "The Motionless Chronological Ground State",
+    desc: "Establishes a stationary chronological reference vacuum. It carries zero active spatial tracking or metric modifications on the background grid, representing the temporal identity before the emergence of chronological drift."
+  },
+  "Sector_Genesis_Node_0_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_0", category: "Radici della Genesi", grade: "Scalare Puro di Grado 0", coordinate: "B+F=0, Colonna=0",
+    title: "Lo Stato Fondamentale Cronologico Immobile",
+    desc: "Stabilisce un vuoto di riferimento cronologico stazionario. Non comporta tracciamento spaziale attivo o modifiche metriche, rappresentando l'identità temporale prima della deriva cronologica."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_0_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_0", category: "Genesis Roots", grade: "Grade 0 Pure Scalar", coordinate: "B+F=0, Column=0",
+    title: "The Multiplicative Identity Chronological Base",
+    desc: "The Grade 0 scalar identity element over the real number line R, establishing the primary unpolarized timeline seed. It is the zero-grade filtration layer from which all complexified temporal ideals will eventually branch."
+  },
+  "Sector_Genesis_Node_0_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_0", category: "Radici della Genesi", grade: "Scalare Puro di Grado 0", coordinate: "B+F=0, Colonna=0",
+    title: "La Base Cronologica dell'Identità Moltiplicativa",
+    desc: "L'elemento identità scalare di Grado 0 sulla linea dei numeri reali R, che stabilisce il seme primario della linea temporale non polarizzata. È il livello di filtrazione da cui si ramificheranno gli ideali."
+  }
+});
+// ============================================================================
+// NODE 1: THE LONELY SWITCH (Cl(0,0,1) GENESIS)
+// The choice between the collapsing line and the waiting twin.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_1_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_1", category: "Genesis Roots", grade: "Grade 1 Unpolarized Vector", coordinate: "B+F=1, Column=0",
+    title: "The Lonely Switch // The Sandbox Dot",
+    desc: "A single magic switch appears on the sandbox floor! But it has a problem: if it tries to turn on alone, it either vanishes back into the quiet floor or just sits there as a lonely dot. It cannot become a real line you can walk on until it finds its secret twin to hold hands with."
+  },
+  "Sector_Genesis_Node_1_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_1", category: "Radici della Genesi", grade: "Vettore Non Polarizzato di Grado 1", coordinate: "B+F=1, Colonna=0",
+    title: "L'Interruttore Solitario // Il Punto nel Recinto",
+    desc: "Un singolo interruttore magico appare sul pavimento del recinto! Ma ha un problema: se prova ad accendersi da solo, o svanisce tornando nel silenzio o resta lì come un punto solitario. Non può diventare una vera linea finché non trova il suo gemello segreto per tenersi per mano."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_1_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_1", category: "Genesis Roots", grade: "Grade 1 Unpolarized Vector", coordinate: "B+F=1, Column=0",
+    title: "The Trivial Bundle Choice",
+    desc: "The first unpolarized vector axis faces a binary selection: absorption by the scalar identity (Cl(0) action) or identity extension. It represents a non-metric infrastructure seed where space-positive coordinates are algebraically unreachable without a second independent generator to define the quadratic form."
+  },
+  "Sector_Genesis_Node_1_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_1", category: "Radici della Genesi", grade: "Vettore Non Polarizzato di Grado 1", coordinate: "B+F=1, Colonna=0",
+    title: "La Scelta del Bundle Banale",
+    desc: "Il primo asse vettoriale non polarizzato affronta una scelta binaria: l'assorbimento da parte dell'identità scalare (azione Cl(0)) o l'estensione dell'identità. Rappresenta un seme di infrastruttura non metrica in cui le coordinate spazio-positive sono irraggiungibili senza un secondo generatore."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_1_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_1", category: "Genesis Roots", grade: "Grade 1 Unpolarized Vector", coordinate: "B+F=1, Column=0",
+    title: "The Cl(0,0,1) Radical Ideal",
+    desc: "A Grade-1 exterior generator with a null quadratic form (e²=0). It proves the metric leap defect: no endomorphism of Cl(0,0,1) can produce Cl(1,0,0) because transformations preserve the metric rank. The system is locked in a radical state until the second generator initiates the Witt split."
+  },
+  "Sector_Genesis_Node_1_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_1", category: "Radici della Genesi", grade: "Vettore Non Polarizzato di Grado 1", coordinate: "B+F=1, Colonna=0",
+    title: "L'Ideale Radicale Cl(0,0,1)",
+    desc: "Un generatore esterno di Grado 1 con forma quadratica nulla (e²=0). Dimostra il difetto del salto metrico: nessun endomorfismo di Cl(0,0,1) può produrre Cl(1,0,0) poiché le trasformazioni preservano il rango metrico. Il sistema è bloccato finché un secondo generatore non avvia lo split di Witt."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_1_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_1", category: "Genesis Roots", grade: "Grade 1 Unpolarized Vector", coordinate: "B+F=1, Column=0",
+    title: "The First Tick // The Heartbeat of Time",
+    desc: "This is the very first 'Tick' of the world's clock! But without a 'Tock' to follow it, time cannot flow forward. It's a heartbeat that either stops immediately or waits in the silence for its partner to start the movie of history."
+  },
+  "Sector_Genesis_Node_1_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_1", category: "Radici della Genesi", grade: "Vettore Non Polarizzato di Grado 1", coordinate: "B+F=1, Colonna=0",
+    title: "Il Primo Tic // Il Battito del Tempo",
+    desc: "Questo è il primissimo 'Tic' dell'orologio del mondo! Ma senza un 'Tac' che lo segua, il tempo non può scorrere. È un battito che o si ferma subito o aspetta nel silenzio il suo compagno per far iniziare il film della storia."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_1_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_1", category: "Genesis Roots", grade: "Grade 1 Unpolarized Vector", coordinate: "B+F=1, Column=0",
+    title: "The Chronological Seed Potential",
+    desc: "Under the temporal ontology, this node is the unpolarized 1-vector tracking coordinate. It possesses zero chronological duration and no metric sign, acting as a discrete frequency step that awaits a second axis to stabilize into a time-positive (t²=+1) background track."
+  },
+  "Sector_Genesis_Node_1_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_1", category: "Radici della Genesi", grade: "Vettore Non Polarizzato di Grado 1", coordinate: "B+F=1, Colonna=0",
+    title: "Il Potenziale del Seme Cronologico",
+    desc: "Sotto l'ontologia temporale, questo nodo è la coordinata di tracciamento del 1-vettore non polarizzato. Possiede durata cronologica zero e nessun segno metrico, fungendo da passo di frequenza discreto in attesa di un secondo asse per stabilizzarsi."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_1_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_1", category: "Genesis Roots", grade: "Grade 1 Unpolarized Vector", coordinate: "B+F=1, Column=0",
+    title: "The Unoriented Temporal Filtration",
+    desc: "Establishes a Grade-1 filtration over the real field R prior to the emergence of the Chronos-Manifold. It proves that a single unpolarized bit is insufficient to generate a temporal metric; history requires the non-commutative product of two null vectors to yield the first hyperbolic rotation."
+  },
+  "Sector_Genesis_Node_1_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_1", category: "Radici della Genesi", grade: "Vettore Non Polarizzato di Grado 1", coordinate: "B+F=1, Colonna=0",
+    title: "La Filtrazione Temporale Non Orientata",
+    desc: "Stabilisce una filtrazione di Grado 1 sul campo reale R prima dell'emergere del Crono-Manifold. Dimostra che un singolo bit non polarizzato è insufficiente a generare una metrica temporale; la storia richiede il prodotto non commutativo di due vettori nulli."
+  }
+});
+// ============================================================================
+// NODE 2: THE FIRST HANDSHAKE (Cl(0,0,2) GENESIS)
+// Two null potentials fuse to create the first live matrix canvas.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_2_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_2", category: "Genesis Roots", grade: "Grade 2 Fused Pair", coordinate: "B+F=2, Column=0",
+    title: "The First Handshake // The Magic Floor",
+    desc: "A second magic switch appears! When these two dots hold hands, they suddenly stretch out to make a flat, see-through floor. This is the first piece of the world where toys can actually sit and spin around."
+  },
+  "Sector_Genesis_Node_2_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_2", category: "Radici della Genesi", grade: "Coppia Fusa di Grado 2", coordinate: "B+F=2, Colonna=0",
+    title: "La Prima Stretta di Mano // Il Pavimento Magico",
+    desc: "Appare un secondo interruttore magico! Quando questi due punti si stringono la mano, improvvisamente si allungano per creare un pavimento piatto. È il primo pezzo di mondo dove i giocattoli possono sedersi e ruotare."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_2_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_2", category: "Genesis Roots", grade: "Grade 2 Fused Pair", coordinate: "B+F=2, Column=0",
+    title: "The Hyperbolic Split Canvas",
+    desc: "The intersection of two unpolarized vectors triggers a Witt split, projecting a localized hyperbolic canvas isomorphic to Cl(1,1,0). It establishes the first light-cone parameters and null-plane coordinates, defining a metric surface before macroscopic curvature exists."
+  },
+  "Sector_Genesis_Node_2_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_2", category: "Radici della Genesi", grade: "Coppia Fusa di Grado 2", coordinate: "B+F=2, Colonna=0",
+    title: "La Tela Iperbolica Split",
+    desc: "L'intersezione di due vettori non polarizzati innesca uno split di Witt, proiettando una tela iperbolica locale isomorfa a Cl(1,1,0). Stabilisce i primi parametri del cono di luce e le coordinate del piano nullo."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_2_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_2", category: "Genesis Roots", grade: "Grade 2 Fused Pair", coordinate: "B+F=2, Column=0",
+    title: "The Real Matrix Ring M_2(R)",
+    desc: "Two anti-commuting radical generators form a Witt hyperbolic pair, causing the exterior algebra to collapse into the real matrix ring M_2(R). This introduces non-trivial zero divisors and establishes the central-diagonal Column 0 as the root for regular representations."
+  },
+  "Sector_Genesis_Node_2_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_2", category: "Radici della Genesi", grade: "Coppia Fusa di Grado 2", coordinate: "B+F=2, Colonna=0",
+    title: "L'Anello Matriziale Reale M_2(R)",
+    desc: "Due generatori radicali anticommutanti formano una coppia iperbolica di Witt, facendo collassare l'algebra esterna nell'anello M_2(R). Introduce divisori dello zero non banali e stabilisce la Colonna 0 come radice delle rappresentazioni."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_2_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_2", category: "Genesis Roots", grade: "Grade 2 Fused Pair", coordinate: "B+F=2, Column=0",
+    title: "The Tick-Tock Cycle // The Spinning Top",
+    desc: "The 'Tick' finally finds its 'Tock'! By holding hands, they create a secret spinning cycle. Time is no longer just a waiting heartbeat; it begins to loop and hum like a tiny top spinning on a table."
+  },
+  "Sector_Genesis_Node_2_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_2", category: "Radici della Genesi", grade: "Coppia Fusa di Grado 2", coordinate: "B+F=2, Colonna=0",
+    title: "Il Ciclo Tic-Tac // La Trottola",
+    desc: "Il 'Tic' finalmente trova il suo 'Tac'! Stringendosi la mano, creano un ciclo segreto che gira. Il tempo non è più solo un battito in attesa; inizia a ronzare come una piccola trottola che ruota sul tavolo."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_2_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_2", category: "Genesis Roots", grade: "Grade 2 Fused Pair", coordinate: "B+F=2, Column=0",
+    title: "The Balanced Chrono-Spatial Intersect",
+    desc: "Under the temporal ontology (t²=+1), Node 2 is the balanced intersection of two chronological potentials. It compiles a grade-2 operator that introduces localized coordinate rotation, enabling the system to track phase intervals rather than just discrete steps."
+  },
+  "Sector_Genesis_Node_2_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_2", category: "Radici della Genesi", grade: "Coppia Fusa di Grado 2", coordinate: "B+F=2, Colonna=0",
+    title: "L'Intersezione Crono-Spaziale Bilanciata",
+    desc: "Sotto l'ontologia temporale (t²=+1), il Nodo 2 è l'intersezione bilanciata di due potenziali cronologici. Compila un operatore di grado 2 che introduce rotazioni coordinate locali, permettendo di tracciare intervalli di fase."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_2_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_2", category: "Genesis Roots", grade: "Grade 2 Fused Pair", coordinate: "B+F=2, Column=0",
+    title: "The Non-Commutative Hyperbolic Rotation",
+    desc: "The pairing of two null chronological generators yields a non-commutative hyperbolic rotation operator. This establishes the first isospin doublet structure in the Chronos-Manifold, where the 'Inside' and 'Outside' are defined by the sum and difference paths of the handshake."
+  },
+  "Sector_Genesis_Node_2_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_2", category: "Radici della Genesi", grade: "Coppia Fusa di Grado 2", coordinate: "B+F=2, Colonna=0",
+    title: "La Rotazione Iperbolica Non Commutativa",
+    desc: "L'accoppiamento di due generatori cronologici nulli produce un operatore di rotazione iperbolica non commutativa. Stabilisce la prima struttura di doppietto di isospin, dove l'Interno e l'Esterno sono definiti dai percorsi di somma e differenza."
+  }
+});
+// ============================================================================
+// NODE 3: THE DANCING GHOST (Cl(0,0,3) GENESIS)
+// The third bit breaks the pair, creating the first sense of movement.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_3_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_3", category: "Genesis Roots", grade: "Grade 3 Spectator Bit", coordinate: "B+F=3, Column=+1",
+    title: "The Dancing Ghost // The Third Wheel",
+    desc: "Three magic dots arrive! But only two can hold hands to make the floor. The third dot has to stay all alone. Because it doesn't have a partner to hold it down, it starts to dance and fly around the sandbox. This 'Ghost Step' is the first secret of how things move!"
+  },
+  "Sector_Genesis_Node_3_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_3", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 3", coordinate: "B+F=3, Colonna=+1",
+    title: "Il Fantasma Danzante // Il Terzo Incomodo",
+    desc: "Arrivano tre punti magici! Ma solo due possono tenersi per mano per fare il pavimento. Il terzo punto deve restare solo. Poiché non ha un compagno che lo tenga fermo, inizia a danzare e volare nel recinto. Questo 'Passo Fantasma' è il primo segreto del movimento!"
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_3_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_3", category: "Genesis Roots", grade: "Grade 3 Spectator Bit", coordinate: "B+F=3, Column=+1",
+    title: "The Leptonic Displacement Seed",
+    desc: "The introduction of a third unpolarized vector axis into a Cl(1,1,0) canvas creates a Cl(1,1,1) residue. This spectator bit functions as the primary seed for leptonic states, carrying a fractional topological weighting that prevents the manifold from settling into a static Euclidean block."
+  },
+  "Sector_Genesis_Node_3_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_3", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 3", coordinate: "B+F=3, Colonna=+1",
+    title: "Il Seme del Dislocamento Leptonico",
+    desc: "L'introduzione di un terzo asse vettoriale in una tela Cl(1,1,0) crea un residuo Cl(1,1,1). Questo bit spettatore funge da seme primario per gli stati leptonici, portando un peso topologico frazionario che impedisce alla varietà di stabilizzarsi in un blocco statico."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_3_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_3", category: "Genesis Roots", grade: "Grade 3 Spectator Bit", coordinate: "B+F=3, Column=+1",
+    title: "The Cl(0,0,3) Radical Pseudoscalar",
+    desc: "A 3-bit budget establishes the first unpolarized trivector (I₃ = e₁e₂e₃). Because only two generators can form a Witt pair, the third remains a radical ideal. This creates an irreducible Z₂ asymmetry, defining the first coordinate orbit that lies off the central bimodule diagonal."
+  },
+  "Sector_Genesis_Node_3_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_3", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 3", coordinate: "B+F=3, Colonna=+1",
+    title: "Lo Pseudoscalare Radicale Cl(0,0,3)",
+    desc: "Un budget di 3 bit stabilisce il primo trivettore non polarizzato (I₃). Poiché solo due generatori possono formare una coppia di Witt, il terzo rimane un ideale radicale. Ciò crea un'asimmetria irriducibile che definisce la prima orbita fuori dalla diagonale."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_3_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_3", category: "Genesis Roots", grade: "Grade 3 Spectator Bit", coordinate: "B+F=3, Column=+1",
+    title: "The Heartbeat Skip // The Extra Tick",
+    desc: "The clock goes 'Tick' and 'Tock,' but then a third sound joins in—a tiny 'Ping!' This extra sound doesn't fit the rhythm, so it skips along the timeline like a pebble jumping on water. It's the first sign of a story that isn't just a circle!"
+  },
+  "Sector_Genesis_Node_3_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_3", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 3", coordinate: "B+F=3, Colonna=+1",
+    title: "Il Battito Saltato // Il Tic Extra",
+    desc: "L'orologio fa 'Tic' e 'Tac', ma poi si unisce un terzo suono: un piccolo 'Ping!'. Questo suono extra non segue il ritmo, quindi salta lungo la linea del tempo come un sasso sull'acqua. È il primo segno di una storia che non è solo un cerchio!"
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_3_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_3", category: "Genesis Roots", grade: "Grade 3 Spectator Bit", coordinate: "B+F=3, Column=+1",
+    title: "The Chronological Line Painter",
+    desc: "In Temporal mode (t²=+1), the 3rd bit acts as a 1D grade restriction navigating a 2D temporal surface. It represents the 'Painter' that draws a single line of history through the volumetric potential, establishing the first directional flow that isn't purely cyclic."
+  },
+  "Sector_Genesis_Node_3_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_3", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 3", coordinate: "B+F=3, Colonna=+1",
+    title: "Il Pittore della Linea Cronologica",
+    desc: "In modalità temporale (t²=+1), il terzo bit agisce come una restrizione di grado 1D che naviga su una superficie temporale 2D. Rappresenta il 'Pittore' che disegna una singola linea di storia, stabilendo il primo flusso direzionale non ciclico."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_3_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_3", category: "Genesis Roots", grade: "Grade 3 Spectator Bit", coordinate: "B+F=3, Column=+1",
+    title: "The Temporal Isospin Displacment",
+    desc: "Formalizes the displacement from the vacuum identity by introducing a third null chronological generator. This bit prevents the stabilization of a closed division algebra at this rank, forcing the emergence of a 'Spinor' representation that must rotate through the full Chronos-Manifold to return to the identity."
+  },
+  "Sector_Genesis_Node_3_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_3", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 3", coordinate: "B+F=3, Colonna=+1",
+    title: "Il Dislocamento dell'Isospin Temporale",
+    desc: "Formalizza il dislocamento dall'identità del vuoto introducendo un terzo generatore cronologico nullo. Questo bit impedisce la stabilizzazione di un'algebra di divisione chiusa, forzando l'emergere di una rappresentazione 'Spinoriale'."
+  }
+});
+// ============================================================================
+// NODE 4: THE SOLID CASTLE (Cl(0,0,4) GENESIS)
+// The second pair stabilizes the ghost, building the first 4-bit crossroads.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_4_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_4", category: "Genesis Roots", grade: "Grade 4 Balanced Fusion", coordinate: "B+F=4, Column=0",
+    title: "The Solid Castle // The Perfect Square",
+    desc: "Four magic dots now form two perfect pairs of hands! One pair finishes the big floor (the Surface) and the other builds a secret, locked safe (the Fiber). Together, they snap into place to make the first solid castle block of our world where everything is perfectly balanced."
+  },
+  "Sector_Genesis_Node_4_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_4", category: "Radici della Genesi", grade: "Fusione Bilanciata di Grado 4", coordinate: "B+F=4, Colonna=0",
+    title: "Il Castello Solido // Il Quadrato Perfetto",
+    desc: "Quattro punti magici ora formano due coppie perfette di mani! Una coppia finisce il pavimento (la Superficie) e l'altra costruisce una cassaforte segreta (la Fibra). Insieme, si incastrano per creare il primo solido mattone del mondo, dove tutto è in equilibrio."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_4_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_4", category: "Genesis Roots", grade: "Grade 4 Balanced Fusion", coordinate: "B+F=4, Column=0",
+    title: "The Cl(2,2,0) Saturated Core Cell",
+    desc: "The second double-fusion stabilizes the trivector residue from Node 3, resulting in the symmetric matrix algebra Cl(2,2,0). It factorizes into a 2D Euclidean surface (Cl(2,0)) and a compact quaternionic ring (Cl(0,2) ≅ ℍ), establishing the foundational 'Weak Lock' necessary for stable particle states."
+  },
+  "Sector_Genesis_Node_4_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_4", category: "Radici della Genesi", grade: "Fusione Bilanciata di Grado 4", coordinate: "B+F=4, Colonna=0",
+    title: "La Cella del Core Saturato Cl(2,2,0)",
+    desc: "La seconda doppia fusione stabilizza il residuo trivettoriale del Nodo 3, risultando nell'algebra matriciale simmetrica Cl(2,2,0). Si scompone in una superficie euclidea 2D e un anello quaternionico compatto, stabilendo il 'Blocco Debole' per stati particellari stabili."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_4_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_4", category: "Genesis Roots", grade: "Grade 4 Balanced Fusion", coordinate: "B+F=4, Column=0",
+    title: "The Split Hyperbolic Matrix Ring M_4(R)",
+    desc: "Resolves 4 unpolarized bits into the tensor product Cl(1,1) ⊗ Cl(1,1) ≅ M_4(R). This tier defines a non-trivial center and allows for the first complete Peirce decomposition into minimal left ideals, providing the coordinate lane for the Standard Model's diagonal centralizer."
+  },
+  "Sector_Genesis_Node_4_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_4", category: "Radici della Genesi", grade: "Fusione Bilanciata di Grado 4", coordinate: "B+F=4, Colonna=0",
+    title: "L'Anello Matriziale Iperbolico M_4(R)",
+    desc: "Risolve 4 bit non polarizzati nel prodotto tensoriale Cl(1,1) ⊗ Cl(1,1). Questo livello definisce un centro non banale e permette la prima decomposizione di Peirce in ideali sinistri minimi, fornendo la corsia per il centralizzatore diagonale."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_4_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_4", category: "Genesis Roots", grade: "Grade 4 Balanced Fusion", coordinate: "B+F=4, Column=0",
+    title: "The Crossroads Station // The Four-Way Clock",
+    desc: "The clock now has four gears working together! Two gears turn the big hands of history outside, while two secret gears spin the tiny wheels of space inside. It’s like a grand station where all the different timelines meet to share their stories."
+  },
+  "Sector_Genesis_Node_4_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_4", category: "Radici della Genesi", grade: "Fusione Bilanciata di Grado 4", coordinate: "B+F=4, Colonna=0",
+    title: "La Stazione del Bivio // L'Orologio a Quattro Vie",
+    desc: "L'orologio ora ha quattro ingranaggi che lavorano insieme! Due ingranaggi muovono le grandi lancette della storia fuori, mentre due ingranaggi segreti girano le ruote dello spazio dentro. È come una grande stazione dove tutte le linee temporali si incontrano."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_4_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_4", category: "Genesis Roots", grade: "Grade 4 Balanced Fusion", coordinate: "B+F=4, Column=0",
+    title: "The Balanced Chrono-Spatial Crossroads",
+    desc: "In Temporal mode (t²=+1), Node 4 represents the symmetric intersection of two real chronological axes and two imaginary spatial fibers. It establishes a stable matrix crossroads that anchors the un-renormalized Weinberg capacity ratio (4/17) as a fixed property of the lattice packing."
+  },
+  "Sector_Genesis_Node_4_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_4", category: "Radici della Genesi", grade: "Fusione Bilanciata di Grado 4", coordinate: "B+F=4, Colonna=0",
+    title: "Il Bivio Crono-Spaziale Bilanciato",
+    desc: "In modalità temporale, il Nodo 4 rappresenta l'intersezione simmetrica di due assi cronologici reali e due fibre spaziali immaginarie. Fissa un bivio matriciale stabile che ancora il rapporto di capacità di Weinberg (4/17) come proprietà del reticolo."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_4_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_4", category: "Genesis Roots", grade: "Grade 4 Balanced Fusion", coordinate: "B+F=4, Column=0",
+    title: "The Cl(2,2) Split Hyperbolic Chrono-Algebra",
+    desc: "The symmetric division of four temporal generators into two conjugate handshakes. This constructs the matrix ring M_4(R) as a closed algebraic lane, enabling the localized parallel transport of vectors through a multi-axial temporal background without metric decay."
+  },
+  "Sector_Genesis_Node_4_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_4", category: "Radici della Genesi", grade: "Fusione Bilanciata di Grado 4", coordinate: "B+F=4, Colonna=0",
+    title: "La Crono-Algebra Iperbolica Split Cl(2,2)",
+    desc: "La divisione simmetrica di quattro generatori temporali in due strette di mano coniugate. Costruisce l'anello matriciale M_4(R), permettendo il trasporto parallelo locale dei vettori attraverso uno sfondo temporale multi-assiale."
+  }
+});
+// ============================================================================
+// NODE 5: THE LEPTONIC SHIFT (Cl(0,0,5) GENESIS)
+// The 5th bit breaks the 4-bit balance, creating the Neutrino seed.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_5_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_5", category: "Genesis Roots", grade: "Grade 5 Spectator Bit", coordinate: "B+F=5, Column=+1",
+    title: "The Ghost in the Castle // The Invisible Key",
+    desc: "A fifth magic dot arrives at our solid castle! But the castle is made of pairs, and this new dot is all alone. It becomes an invisible ghost that can walk through walls without touching anything. This is the secret of the Neutrino—the tiny particle that can fly through the whole Earth like it isn't even there."
+  },
+  "Sector_Genesis_Node_5_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_5", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 5", coordinate: "B+F=5, Colonna=+1",
+    title: "Il Fantasma nel Castello // La Chiave Invisibile",
+    desc: "Un quinto punto magico arriva nel nostro castello! Ma il castello è fatto di coppie, e questo nuovo punto è solo. Diventa un fantasma invisibile che attraversa i muri. È il segreto del Neutrino: la particella che attraversa tutta la Terra come se non esistesse."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_5_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_5", category: "Genesis Roots", grade: "Grade 5 Spectator Bit", coordinate: "B+F=5, Column=+1",
+    title: "The Chiral Separator // Neutrino Seed",
+    desc: "The 5th unpolarized vector axis introduces a chiral displacement into the Cl(2,2,0) framework. By remaining radical (e²=0) while the first four bits are fused, it establishes the first 'ghost-track' (Sterile Neutrino). This bit serves as the necessary offset for calculating fractional charges in higher tiers."
+  },
+  "Sector_Genesis_Node_5_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_5", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 5", coordinate: "B+F=5, Colonna=+1",
+    title: "Il Separatore Chirale // Seme del Neutrino",
+    desc: "Il quinto asse vettoriale introduce un dislocamento chirale nel sistema Cl(2,2,0). Rimanendo radicale (e²=0) mentre i primi quattro bit sono fusi, stabilisce la prima 'traccia fantasma'. Questo bit serve come offset per calcolare le cariche frazionarie nei livelli superiori."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_5_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_5", category: "Genesis Roots", grade: "Grade 5 Spectator Bit", coordinate: "B+F=5, Column=+1",
+    title: "The Cl(0,0,5) Fractional Charge Anchor",
+    desc: "A 5-bit budget forces an odd-dimensional residue, preventing algebraic closure. This 'lone bit' carries a topological weight of 1/3, shifting the center of the algebra away from zero. It is the structural origin of the asymmetric displacement needed to derive quark-like current flows."
+  },
+  "Sector_Genesis_Node_5_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_5", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 5", coordinate: "B+F=5, Colonna=+1",
+    title: "L'Ancora della Carica Frazionaria Cl(0,0,5)",
+    desc: "Un budget a 5 bit forza un residuo dispari, impedendo la chiusura algebrica. Questo 'bit solitario' porta un peso topologico di 1/3, spostando il centro dell'algebra. È l'origine strutturale necessaria per derivare i flussi di corrente dei quark."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_5_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_5", category: "Genesis Roots", grade: "Grade 5 Spectator Bit", coordinate: "B+F=5, Column=+1",
+    title: "The Time Traveler // The Extra Beat",
+    desc: "In our four-gear clock station, a fifth tiny gear starts to spin! It doesn't move the hands of the clock, but it lets a secret message travel between the minutes. It’s like a time traveler that exists in the gaps between the ticks of the world."
+  },
+  "Sector_Genesis_Node_5_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_5", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 5", coordinate: "B+F=5, Colonna=+1",
+    title: "Il Viaggiatore del Tempo // Il Battito Extra",
+    desc: "Nella nostra stazione con quattro ingranaggi, un quinto piccolo ingranaggio inizia a girare! Non muove le lancette, ma permette a un messaggio segreto di viaggiare tra i minuti. È come un viaggiatore del tempo che esiste negli spazi tra i rintocchi del mondo."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_5_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_5", category: "Genesis Roots", grade: "Grade 5 Spectator Bit", coordinate: "B+F=5, Column=+1",
+    title: "The Chronological Displacement Channel",
+    desc: "Under the t²=+1 metric, the 5th bit acts as a localized 1D temporal restriction that lacks a spatial conjugate. It represents the 'Leptonic Shift'—a non-interacting chronological current that traverses the multi-axial canvas without generating structural friction (mass)."
+  },
+  "Sector_Genesis_Node_5_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_5", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 5", coordinate: "B+F=5, Colonna=+1",
+    title: "Il Canale di Dislocamento Cronologico",
+    desc: "Sotto metrica t²=+1, il quinto bit agisce come una restrizione temporale 1D priva di coniugato spaziale. Rappresenta lo 'Spostamento Leptonico': una corrente cronologica non interagente che attraversa la tela senza generare attrito (massa)."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_5_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_5", category: "Genesis Roots", grade: "Grade 5 Spectator Bit", coordinate: "B+F=5, Column=+1",
+    title: "The Unpolarized Temporal Leap",
+    desc: "Formalizes the second odd-grade symmetry breaking in the Chronos-Manifold. This 5th bit creates a 'leaky' ideal, preventing the 4-bit Crossroads from achieving Bott closure. It serves as the scout for the 3rd generation, signaling the climb toward complete 8-bit saturation."
+  },
+  "Sector_Genesis_Node_5_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_5", category: "Radici della Genesi", grade: "Bit Spettatore di Grado 5", coordinate: "B+F=5, Colonna=+1",
+    title: "Il Salto Temporale Non Polarizzato",
+    desc: "Formalizza la seconda rottura di simmetria nel Crono-Manifold. Questo quinto bit crea un ideale 'aperto', impedendo al Bivio a 4 bit di raggiungere la chiusura di Bott. Funge da esploratore per la terza generazione."
+  }
+});
+// ============================================================================
+// NODE 6: THE TRINITARIAN ENGINE (Cl(0,0,6) GENESIS)
+// The triple handshake that factorizes the three primary forces.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_6_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_6", category: "Genesis Roots", grade: "Grade 6 Saturated Mesh", coordinate: "B+F=6, Column=0",
+    title: "The Triple Handshake // The Color Mesh",
+    desc: "Six magic dots now form three perfect pairs! It’s like having three primary colors—Red, Blue, and Green—that must all hold hands at the same time to stay stable. This creates a strong, unbreakable net that keeps the smallest pieces of the world locked together in tight little families."
+  },
+  "Sector_Genesis_Node_6_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_6", category: "Radici della Genesi", grade: "Mesh Satura di Grado 6", coordinate: "B+F=6, Colonna=0",
+    title: "La Tripla Stretta di Mano // La Rete del Colore",
+    desc: "Sei punti magici ora formano tre coppie perfette! È come avere tre colori primari—Rosso, Blu e Verde—che devono tenersi per mano tutti insieme per restare stabili. Questo crea una rete forte e infrangibile che tiene i pezzi più piccoli del mondo chiusi in famigliole strette."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_6_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_6", category: "Genesis Roots", grade: "Grade 6 Saturated Mesh", coordinate: "B+F=6, Column=0",
+    title: "The SU(3) x SU(2) x U(1) Factorization",
+    desc: "The 6-bit unpolarized budget factorizes into three conjugate matrix pairs, establishing the complete gauge group infrastructure. This tier provides the non-associative topological mesh required for color confinement, where three trivector currents must form a closed loop to cancel internal phase friction."
+  },
+  "Sector_Genesis_Node_6_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_6", category: "Radici della Genesi", grade: "Mesh Satura di Grado 6", coordinate: "B+F=6, Colonna=0",
+    title: "La Fattorizzazione SU(3) x SU(2) x U(1)",
+    desc: "Il budget a 6 bit si fattorizza in tre coppie di matrici coniugate, stabilendo l'infrastruttura completa del gruppo di gauge. Questo livello fornisce la mesh topologica non associativa necessaria per il confinamento del colore, dove tre correnti trivettoriali devono formare un ciclo chiuso."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_6_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_6", category: "Genesis Roots", grade: "Grade 6 Saturated Mesh", coordinate: "B+F=6, Column=0",
+    title: "The Cl(3,3,0) Saturated Mesh // M_8(R)",
+    desc: "Natively derives the 64-dimensional real matrix ring M_8(R) as the product of three split-matrix pairs. It demonstrates that the division algebras R, C, H, and O are emergent symmetries of the 6-bit budget, where the strong sector appears as the first non-associative boundary holonomy."
+  },
+  "Sector_Genesis_Node_6_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_6", category: "Radici della Genesi", grade: "Mesh Satura di Grado 6", coordinate: "B+F=6, Colonna=0",
+    title: "La Mesh Satura Cl(3,3,0) // M_8(R)",
+    desc: "Deriva l'anello delle matrici reali M_8(R) come prodotto di tre coppie split. Dimostra che le algebre di divisione R, C, H e O sono simmetrie emergenti del budget a 6 bit, dove il settore forte appare come la prima olonomia di confine non associativa."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_6_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_6", category: "Genesis Roots", grade: "Grade 6 Saturated Mesh", coordinate: "B+F=6, Column=0",
+    title: "The Three Hands of the Clock // The Time-Lock",
+    desc: "Our clock now has three hands moving together: a second hand, a minute hand, and an hour hand. When they all line up, they create a special 'Time-Lock' that captures a moment forever. It’s like a secret cage made of time that keeps the smallest building blocks safe inside."
+  },
+  "Sector_Genesis_Node_6_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_6", category: "Radici della Genesi", grade: "Mesh Satura di Grado 6", coordinate: "B+F=6, Colonna=0",
+    title: "Le Tre Lancette dell'Orologio // Il Blocco Temporale",
+    desc: "Il nostro orologio ora ha tre lancette che si muovono insieme: secondi, minuti e ore. Quando si allineano, creano un 'Blocco Temporale' speciale che cattura un momento per sempre. È come una gabbia segreta fatta di tempo che tiene al sicuro i mattoncini più piccoli."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_6_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_6", category: "Genesis Roots", grade: "Grade 6 Saturated Mesh", coordinate: "B+F=6, Column=0",
+    title: "The Absolute Topological Time-Lock",
+    desc: "Under the t²=+1 metric, the 6th bit completes the strong-sector confinement algebra. It enables the 'Topological Time-Lock'—a chrono-stratum where temporal evolution becomes topologically confined, trapping 1D spatial string trajectories inside closed, cyclic temporal boundaries."
+  },
+  "Sector_Genesis_Node_6_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_6", category: "Radici della Genesi", grade: "Mesh Satura di Grado 6", coordinate: "B+F=6, Colonna=0",
+    title: "Il Blocco Temporale Topologico Assoluto",
+    desc: "Sotto metrica t²=+1, il sesto bit completa l'algebra di confinamento del settore forte. Abilita il 'Blocco Temporale Topologico', un crono-strato dove l'evoluzione diventa confinata, intrappolando traiettorie spaziali 1D in confini temporali ciclici."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_6_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_6", category: "Genesis Roots", grade: "Grade 6 Saturated Mesh", coordinate: "B+F=6, Column=0",
+    title: "The Hexvector Boundary Strong Color Mesh",
+    desc: "A 6-bit grid boundary constraint mapping the cycles of an embedded Fano plane onto the Chronos-Manifold. It establishes the 64-component matrix block where gauge connections emerge as bivector-valued one-forms, consistent with the Cl(3,3,0) left/right action split."
+  },
+  "Sector_Genesis_Node_6_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_6", category: "Radici della Genesi", grade: "Mesh Satura di Grado 6", coordinate: "B+F=6, Colonna=0",
+    title: "La Mesh del Colore Forte al Confine Esavettoriale",
+    desc: "Un vincolo di confine della griglia a 6 bit che mappa i cicli di un piano di Fano sul Crono-Manifold. Stabilisce il blocco di matrice a 64 componenti dove le connessioni di gauge emergono come 1-forme bivettoriali."
+  }
+});
+// ============================================================================
+// NODE 7: THE MIRROR GATE (Cl(0,0,7) GENESIS)
+// The 7th bit breaks the triple balance, creating the antimatter blueprint.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_7_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_7", category: "Genesis Roots", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, Column=+1",
+    title: "The Mirror Gate // The Upside-Down Key",
+    desc: "A seventh magic dot appears, but there is no one left to hold hands with! Because it stays alone, it acts like a giant mirror for our playground. It shows us a 'Mirror World' where everything is the same but flipped, which is the secret blueprint for antimatter—the twin of everything we know."
+  },
+  "Sector_Genesis_Node_7_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_7", category: "Radici della Genesi", grade: "Orizzonte d'Inversione di Grado 7", coordinate: "B+F=7, Colonna=+1",
+    title: "Il Cancello Specchio // La Chiave Sottosopra",
+    desc: "Appare un settimo punto magico, ma non è rimasto nessuno con cui tenersi per mano! Poiché resta solo, agisce come un gigante specchio per il recinto. Ci mostra un 'Mondo Specchio' dove tutto è uguale ma capovolto: è il progetto segreto dell'antimateria."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_7_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_7", category: "Genesis Roots", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, Column=+1",
+    title: "The Chiral Half-Pool Threshold",
+    desc: "The 7-bit potential establishes a 128-dimensional semi-simple algebra tracking the hyper-surface envelope of a single polarized sector. It governs the precise hyperplane reflection mappings required to execute charge conjugation (C) and parity (P) transformations before global saturation."
+  },
+  "Sector_Genesis_Node_7_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_7", category: "Radici della Genesi", grade: "Orizzonte d'Inversione di Grado 7", coordinate: "B+F=7, Colonna=+1",
+    title: "La Soglia del Semi-Pool Chirale",
+    desc: "Il potenziale a 7 bit stabilisce un'algebra semisemplice a 128 dimensioni che traccia l'involucro iper-superficiale di un singolo settore. Governa le riflessioni di iperpiano richieste per eseguire la coniugazione di carica (C) e la parità (P)."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_7_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_7", category: "Genesis Roots", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, Column=+1",
+    title: "The Direct Sum Split M_8(R) ⊕ M_8(R)",
+    desc: "A 7-bit budget initiates the final direct sum threshold before closure. The 7th generator acts as an involution that partitions the 128-element subspace into two disjoint sets of minimal left ideals, providing the blueprints for discrete automorphic Clifford grading inversions."
+  },
+  "Sector_Genesis_Node_7_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_7", category: "Radici della Genesi", grade: "Orizzonte d'Inversione di Grado 7", coordinate: "B+F=7, Colonna=+1",
+    title: "La Scissione in Somma Diretta M_8(R) ⊕ M_8(R)",
+    desc: "Il budget a 7 bit avvia la soglia finale in somma diretta prima della chiusura. Il settimo generatore agisce come un'involuzione che divide il sottospazio di 128 elementi in due set disgiunti di ideali sinistri minimi."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_7_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_7", category: "Genesis Roots", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, Column=+1",
+    title: "The Rewind Button // The Time Mirror",
+    desc: "Our clock now has a special seventh switch that can flip time upside down! It doesn't move the hands forward; instead, it shows the clock how to tick perfectly backwards. It’s like a magic 'Rewind' button for history itself."
+  },
+  "Sector_Genesis_Node_7_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_7", category: "Radici della Genesi", grade: "Orizzonte d'Inversione di Grado 7", coordinate: "B+F=7, Colonna=+1",
+    title: "Il Pulsante Riavvolgi // Lo Specchio del Tempo",
+    desc: "Il nostro orologio ha ora uno speciale settimo interruttore che può capovolgere il tempo! Non muove le lancette avanti; invece, mostra all'orologio come ticchettare all'indietro. È come un tasto magico 'Rewind' per la storia stessa."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_7_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_7", category: "Genesis Roots", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, Column=+1",
+    title: "The Direct Sum Chrono-Inversion Frontier",
+    desc: "Under the t²=+1 metric, Node 7 establishes the hyper-surface inversion frontier. It allows the system to map chronological configurations into time-reversed complements, creating a topological boundary where history and anti-history are segregated by a single unpolarized bit."
+  },
+  "Sector_Genesis_Node_7_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_7", category: "Radici della Genesi", grade: "Orizzonte d'Inversione di Grado 7", coordinate: "B+F=7, Colonna=+1",
+    title: "La Frontiera di Crono-Inversione in Somma Diretta",
+    desc: "Sotto metrica t²=+1, il Nodo 7 stabilisce la frontiera di inversione iper-superficiale. Permette di mappare le configurazioni cronologiche nei loro complementi invertiti, creando un confine dove storia e anti-storia sono separate."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_7_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_7", category: "Genesis Roots", grade: "Grade 7 Inversion Horizon", coordinate: "B+F=7, Column=+1",
+    title: "The M_8(R) ⊕ M_8(R) Temporal Involution Limit",
+    desc: "Bounds a direct sum tracking module of exactly 128 independent components. It enforces discrete automorphic closures that project localized timeline vectors onto their anti-podal time-inversion ideals, anchoring the Z2 symmetry of the Chronos-Manifold."
+  },
+  "Sector_Genesis_Node_7_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_7", category: "Radici della Genesi", grade: "Orizzonte d'Inversione di Grado 7", coordinate: "B+F=7, Colonna=+1",
+    title: "Limite d'Involuzione Temporale M_8(R) ⊕ M_8(R)",
+    desc: "Delimita un modulo di tracciamento in somma diretta di esattamente 128 componenti. Impone chiusure automorfe discrete che proiettano i vettori temporali sui loro ideali antipodali di inversione temporale."
+  }
+});
+// ============================================================================
+// NODE 8: THE SATURATED MIND (Cl(0,0,8) GENESIS)
+// The final pair closes the circuit, triggering Bott Periodicity.
+// ============================================================================
+Object.assign(KNOWLEDGE_BASE_DIRECTORY, {
+  // ==========================================================================
+  // SPATIAL ONTOLOGY (ℝ MODE: SPACE-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  "Sector_Genesis_Node_8_en_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_8", category: "Genesis Roots", grade: "Grade 8 Saturated Closure", coordinate: "B+F=8, Column=0",
+    title: "The Completed Castle // The Big Reset",
+    desc: "The eighth magic dot finds the lonely mirror switch and they hold hands! Now there are four perfect pairs, and the castle is finally finished. There is no more room for new types of dots, so if you try to add another one, the world just resets and starts the pattern over again."
+  },
+  "Sector_Genesis_Node_8_it_Young Learner_Spatial": {
+    id: "Sector_Genesis_Node_8", category: "Radici della Genesi", grade: "Chiusura Satura di Grado 8", coordinate: "B+F=8, Colonna=0",
+    title: "Il Castello Completato // Il Grande Reset",
+    desc: "L'ottavo punto magico trova l'interruttore specchio solitario e si tengono per mano! Ora ci sono quattro coppie perfette e il castello è finito. Non c'è più spazio per nuovi tipi di punti: se provi ad aggiungerne un altro, il mondo si resetta."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_8_en_Physicist_Spatial": {
+    id: "Sector_Genesis_Node_8", category: "Genesis Roots", grade: "Grade 8 Saturated Closure", coordinate: "B+F=8, Column=0",
+    title: "The Maximal Pseudoscalar Horizon",
+    desc: "Node 8 marks the saturation of the 8-bit master budget. The completion of the 4th conjugate pair generates the global pseudoscalar volume element (I_8). This marks the absolute anti-podal vertex on the octeract lattice, where the system achieves algebraic closure and establishes the Higgs VEV as an identity operator."
+  },
+  "Sector_Genesis_Node_8_it_Fisico_Spatial": {
+    id: "Sector_Genesis_Node_8", category: "Radici della Genesi", grade: "Chiusura Satura di Grado 8", coordinate: "B+F=8, Colonna=0",
+    title: "L'Orizzonte Pseudoscalare Massimo",
+    desc: "Il Nodo 8 segna la saturazione del budget master a 8 bit. Il completamento della quarta coppia coniugata genera l'elemento di volume pseudoscalare globale (I_8). Segna il vertice antipodale assoluto dove il sistema raggiunge la chiusura algebrica."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_8_en_Mathematician_Spatial": {
+    id: "Sector_Genesis_Node_8", category: "Genesis Roots", grade: "Grade 8 Saturated Closure", coordinate: "B+F=8, Column=0",
+    title: "The Bott Periodicity Reset Point",
+    desc: "Natively derives Cl(4,4,0) as the complete fusion of 4 Witt pairs. This tier hits the 256-multiplicity boundary where Cl(n+8) is isomorphic to Cl(n) scaled by M_16(R). It proves that novelty in division algebraic structures is exhausted, forcing all higher-grade operations to factorize back into the foundational 8-bit blocks."
+  },
+  "Sector_Genesis_Node_8_it_Matematico_Spatial": {
+    id: "Sector_Genesis_Node_8", category: "Radici della Genesi", grade: "Chiusura Satura di Grado 8", coordinate: "B+F=8, Colonna=0",
+    title: "Il Punto di Reset della Periodicità di Bott",
+    desc: "Deriva Cl(4,4,0) come fusione completa di 4 coppie di Witt. Questo livello raggiunge il confine di molteplicità 256 dove Cl(n+8) è isomorfo a Cl(n) scalato da M_16(R). Dimostra che la novità nelle strutture algebriche è esaurita."
+  },
+
+  // ==========================================================================
+  // TEMPORAL ONTOLOGY (𝕋 MODE: TIME-POSITIVE METRIC BACKGROUND)
+  // ==========================================================================
+
+  // --- YOUNG LEARNER PROFILE ---
+  // Node 8 represents the total synchronization of the clock gears.
+  "Sector_Genesis_Node_8_en_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_8", category: "Genesis Roots", grade: "Grade 8 Saturated Closure", coordinate: "B+F=8, Column=0",
+    title: "The Grand Clock // The End of the Story",
+    desc: "All eight gears are now clicking and turning together! The clock is perfectly timed, and the whole story of history is ready to play. Because the clock is full, it creates a giant loop—when you reach the very end, it smoothly circles back to the beginning."
+  },
+  "Sector_Genesis_Node_8_it_Young Learner_Temporal": {
+    id: "Sector_Genesis_Node_8", category: "Radici della Genesi", grade: "Chiusura Satura di Grado 8", coordinate: "B+F=8, Colonna=0",
+    title: "Il Grande Orologio // La Fine della Storia",
+    desc: "Tutti gli otto ingranaggi ora scattano e girano insieme! L'orologio è perfettamente sincronizzato e l'intera storia è pronta. Poiché l'orologio è pieno, crea un ciclo gigante: quando arrivi alla fine, torni dolcemente all'inizio."
+  },
+
+  // --- PHYSICIST PROFILE ---
+  "Sector_Genesis_Node_8_en_Physicist_Temporal": {
+    id: "Sector_Genesis_Node_8", category: "Genesis Roots", grade: "Grade 8 Saturated Closure", coordinate: "B+F=8, Column=0",
+    title: "Global Chronological Synchronization",
+    desc: "Under the t²=+1 metric, the 8th bit functions as the macroscopic horizon that enforces geometric closure on the chronological background. It establishes the Hubble boundary constraints on time grids, where the maximal pseudoscalar element ω = e1e2...e8 defines the oriented volume form of the Chronos-Manifold."
+  },
+  "Sector_Genesis_Node_8_it_Fisico_Temporal": {
+    id: "Sector_Genesis_Node_8", category: "Radici della Genesi", grade: "Chiusura Satura di Grado 8", coordinate: "B+F=8, Colonna=0",
+    title: "Sincronizzazione Cronologica Globale",
+    desc: "Sotto metrica t²=+1, l'ottavo bit funge da orizzonte macroscopico che impone la chiusura geometrica sullo sfondo cronologico. Stabilisce i vincoli di confine di Hubble, dove l'elemento pseudoscalare massimale ω definisce il volume orientato."
+  },
+
+  // --- MATHEMATICIAN PROFILE ---
+  "Sector_Genesis_Node_8_en_Mathematician_Temporal": {
+    id: "Sector_Genesis_Node_8", category: "Genesis Roots", grade: "Grade 8 Saturated Closure", coordinate: "B+F=8, Column=0",
+    title: "The Saturated Chrono-Volume Invariant",
+    desc: "The absolute matrix core checkpoint. The 8th bit stabilizes the temporal involution, ensuring that any chronological vector path possesses a unique anti-podal time-reversal partner. This achieves a state of 'Historical Synchronization' where potential is collapsed back to the scalar identity root through Bott periodicity."
+  },
+  "Sector_Genesis_Node_8_it_Matematico_Temporal": {
+    id: "Sector_Genesis_Node_8", category: "Radici della Genesi", grade: "Chiusura Satura di Grado 8", coordinate: "B+F=8, Colonna=0",
+    title: "L'Invariante del Crono-Volume Saturo",
+    desc: "Il checkpoint assoluto del nucleo. L'ottavo bit stabilizza l'involuzione temporale, garantendo che ogni cammino abbia un partner unico di inversione. Raggiunge uno stato di 'Sincronizzazione Storica' che collassa il potenziale alla radice scalare."
+  }
+});
+export default KNOWLEDGE_BASE_DIRECTORY;

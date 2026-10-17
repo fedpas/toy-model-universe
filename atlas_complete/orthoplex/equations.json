@@ -1,0 +1,118 @@
+{
+ "E1_constraints_vs_dual_face_all_faces_n<=5": {
+  "1": true,
+  "2": true,
+  "3": true,
+  "4": true,
+  "5": true
+ },
+ "E2_moore_neighbourhood": {
+  "1,1": {
+   "neighbours": 8,
+   "light_like_neighbours": 4
+  },
+  "1,2": {
+   "neighbours": 26,
+   "light_like_neighbours": 8
+  },
+  "1,3": {
+   "neighbours": 80,
+   "light_like_neighbours": 12
+  },
+  "2,2": {
+   "neighbours": 80,
+   "light_like_neighbours": 32
+  },
+  "2,3": {
+   "neighbours": 242,
+   "light_like_neighbours": 72
+  },
+  "3,3": {
+   "neighbours": 728,
+   "light_like_neighbours": 244
+  },
+  "4,4": {
+   "neighbours": 6560,
+   "light_like_neighbours": 1920
+  },
+  "1,4": {
+   "neighbours": 242,
+   "light_like_neighbours": 16
+  }
+ },
+ "E3_dirac_symbol_split_signature": {
+  "1": {
+   "components": 2,
+   "weyl_halves": 1,
+   "symbol_square_equals_quadratic_form": true,
+   "null_symbol_nilpotent_rank": 1,
+   "real_chirality_Gamma^2=+1": true
+  },
+  "2": {
+   "components": 4,
+   "weyl_halves": 2,
+   "symbol_square_equals_quadratic_form": true,
+   "null_symbol_nilpotent_rank": 2,
+   "real_chirality_Gamma^2=+1": true
+  },
+  "3": {
+   "components": 8,
+   "weyl_halves": 4,
+   "symbol_square_equals_quadratic_form": true,
+   "null_symbol_nilpotent_rank": 4,
+   "real_chirality_Gamma^2=+1": true
+  },
+  "4": {
+   "components": 16,
+   "weyl_halves": 8,
+   "symbol_square_equals_quadratic_form": true,
+   "null_symbol_nilpotent_rank": 8,
+   "real_chirality_Gamma^2=+1": true
+  }
+ },
+ "E4_even_part_of_Cl44": {
+  "even_blades": 128,
+  "splits_as": "M8(R) + M8(R)",
+  "demicube_vertices_n8": 128
+ },
+ "E5_exceptional_series": {
+  "E6": {
+   "roots": 72,
+   "grade0": 40,
+   "grade_pm1_each": 16,
+   "grade_pm2_each": 0,
+   "orthoplex_n": 5,
+   "edges_of_n_orthoplex": 40,
+   "all_facets_2^n": 32,
+   "cartan_positive_definite": true
+  },
+  "E7": {
+   "roots": 126,
+   "grade0": 60,
+   "grade_pm1_each": 32,
+   "grade_pm2_each": 1,
+   "orthoplex_n": 6,
+   "edges_of_n_orthoplex": 60,
+   "all_facets_2^n": 64,
+   "cartan_positive_definite": true
+  },
+  "E8": {
+   "roots": 240,
+   "grade0": 84,
+   "grade_pm1_each": 64,
+   "grade_pm2_each": 14,
+   "orthoplex_n": 7,
+   "edges_of_n_orthoplex": 84,
+   "all_facets_2^n": 128,
+   "cartan_positive_definite": true
+  },
+  "E9": {
+   "min_eigenvalue": -0.0,
+   "finite": false
+  },
+  "E10": {
+   "min_eigenvalue": -0.006593618,
+   "finite": false
+  }
+ }
+}

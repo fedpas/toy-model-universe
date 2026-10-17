@@ -1,0 +1,28 @@
+{
+ "controls": {
+  "one_structure_constant_with_wrong_sign": "fails (error > 1e-3)",
+  "wrong_sign_of_g_in_the_covariant_derivative": "fails (error > 1e-3)"
+ },
+ "max_error_bianchi": {
+  "2": 0,
+  "3": 0,
+  "4": 0,
+  "5": 0,
+  "6": 0
+ },
+ "max_error_field_strength": {
+  "2": 0,
+  "3": 0,
+  "4": 0,
+  "5": 0,
+  "6": 0
+ },
+ "max_error_representation": {
+  "2": 0,
+  "3": 0,
+  "4": 0,
+  "5": 0,
+  "6": 0
+ },
+ "status": "ALL YANG-MILLS MATRIX CHECKS PASS"
+}
