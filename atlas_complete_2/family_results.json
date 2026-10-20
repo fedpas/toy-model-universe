@@ -1,0 +1,470 @@
+{
+ "delta_SM_real_dim": 31,
+ "commutant_of_gauge_real_dim": 12,
+ "commutant_per_block_real_dim": {
+  "C_O(1)": 2,
+  "C3_O(3)": 2,
+  "C2_H(2)": 2,
+  "C_C(1)": 2,
+  "C_last(1)": 4
+ },
+ "commutant_off_block_real_dim": 0,
+ "torus_group_order": 32,
+ "torus_elements_commuting_with_gauge": 4,
+ "torus_elements_inside_gauge_algebra": 16,
+ "torus_degrees": 16,
+ "block_axes": {
+  "O1": [
+   0,
+   3
+  ],
+  "O2": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   7
+  ],
+  "H": [
+   12,
+   13,
+   14,
+   15
+  ],
+  "C": [
+   9,
+   10
+  ],
+  "e7R": [
+   11
+  ],
+  "R": [
+   8
+  ]
+ },
+ "omega_degrees": [
+  [
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0
+  ]
+ ],
+ "omega_prime_degrees": [
+  [
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0
+  ]
+ ],
+ "sm_edge_degree_dimensions": {
+  "Q_L": {
+   "0010110": 1,
+   "0011001": 1,
+   "0100101": 1,
+   "0101010": 1,
+   "1000011": 2,
+   "1001100": 2,
+   "1110000": 2,
+   "1111111": 2
+  },
+  "u_R": {
+   "0010110": 1,
+   "0011001": 1,
+   "0100101": 1,
+   "0101010": 1,
+   "1000011": 1,
+   "1111111": 1
+  },
+  "d_R": {
+   "0010110": 1,
+   "0011001": 1,
+   "0100101": 1,
+   "0101010": 1,
+   "1001100": 1,
+   "1110000": 1
+  },
+  "L": {
+   "1010101": 1,
+   "1011010": 1,
+   "1100110": 1,
+   "1101001": 1
+  },
+  "e_R": {
+   "0001111": 1,
+   "0110011": 1
+  },
+  "nu_R": {
+   "1000011": 1,
+   "1111111": 1
+  }
+ },
+ "sm_edges_are_graded_subspaces": {
+  "Q_L": true,
+  "u_R": true,
+  "d_R": true,
+  "L": true,
+  "e_R": true,
+  "nu_R": true
+ },
+ "degrees_touched_by_one_generation": 14,
+ "frame_symmetries_preserving_blocks": 16,
+ "order_histogram": {
+  "1": 1,
+  "2": 11,
+  "4": 4
+ },
+ "order3_elements": 0,
+ "order3_blocks_touched": [],
+ "order3_commute_with_omega": 0,
+ "omega_prime_over_omega_minus_axes": [
+  0,
+  3,
+  8,
+  11
+ ],
+ "complex_structures_omega_times_torus": 8,
+ "blade_complex_structures_commuting_with_blocks": 8,
+ "blade_complex_structures_with_same_fusion": 8,
+ "blade_complex_structure_grades": [
+  2,
+  6
+ ],
+ "linear_sector_dims": [
+  128,
+  128
+ ],
+ "linear_sectors_intersection_real_dim": 80,
+ "linear_sectors_span_real_dim": 176,
+ "matter_dims": [
+  96,
+  96
+ ],
+ "matter_intersection_real_dim": 48,
+ "matter_span_real_dim": 144,
+ "gauge_algebra_same_for_omega_prime": true,
+ "omega_prime_in_gauge_commutant": true,
+ "omega_prime_in_gauge_algebra": false,
+ "omega_prime_over_omega_on_blocks_trace_sign": [
+  [
+   -1
+  ],
+  [
+   1
+  ],
+  [
+   1
+  ],
+  [
+   1
+  ],
+  [
+   -1
+  ]
+ ],
+ "gauge_compatible_complex_structures": 16,
+ "their_generation_counts": {
+  "0": 4,
+  "1": 10,
+  "2": 2
+ },
+ "their_max_generations": 2,
+ "their_patterns": [
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": true,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    1,
+    1,
+    -1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    1,
+    -1,
+    1
+   ],
+   "generations": 0,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "generations": 0,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    -1,
+    1,
+    1
+   ],
+   "generations": 2,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    -1,
+    1,
+    -1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    -1,
+    -1,
+    1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    1,
+    -1,
+    -1,
+    -1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": true
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    1,
+    1,
+    1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    1,
+    1,
+    -1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    1,
+    -1,
+    1
+   ],
+   "generations": 0,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    1,
+    -1,
+    -1
+   ],
+   "generations": 0,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    -1,
+    1,
+    1
+   ],
+   "generations": 2,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    -1,
+    1,
+    -1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    -1,
+    -1,
+    1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  },
+  {
+   "signs_on_blocks_0_to_3": [
+    -1,
+    -1,
+    -1,
+    -1
+   ],
+   "generations": 1,
+   "exotic_complex_dim": 32,
+   "is_omega": false,
+   "is_omega_prime": false
+  }
+ ],
+ "omega_prime_signs_on_blocks_0_to_3": [
+  1,
+  -1,
+  -1,
+  -1
+ ],
+ "torus_complex_structures": 8,
+ "torus_complex_structures_commuting_with_gauge": 2,
+ "sm_edges_omega_vs_omega_prime": {
+  "Q_L": {
+   "real_dim_omega": 12,
+   "real_dim_omega_prime": 12,
+   "shared": 12
+  },
+  "u_R": {
+   "real_dim_omega": 6,
+   "real_dim_omega_prime": 6,
+   "shared": 6
+  },
+  "d_R": {
+   "real_dim_omega": 6,
+   "real_dim_omega_prime": 6,
+   "shared": 0
+  },
+  "L": {
+   "real_dim_omega": 4,
+   "real_dim_omega_prime": 4,
+   "shared": 4
+  },
+  "e_R": {
+   "real_dim_omega": 2,
+   "real_dim_omega_prime": 2,
+   "shared": 0
+  },
+  "nu_R": {
+   "real_dim_omega": 2,
+   "real_dim_omega_prime": 2,
+   "shared": 2
+  }
+ },
+ "sm_edges_identical_for_both": [
+  "Q_L",
+  "u_R",
+  "L",
+  "nu_R"
+ ],
+ "sm_edges_different": [
+  "d_R",
+  "e_R"
+ ],
+ "commutant_action_on_sm_edges": {
+  "Q_L": {
+   "real_dim": 12,
+   "closure_real_dim": 12,
+   "preserved_by_commutant": true,
+   "complex_scalars_only": true,
+   "touches_last_block": false
+  },
+  "u_R": {
+   "real_dim": 6,
+   "closure_real_dim": 6,
+   "preserved_by_commutant": true,
+   "complex_scalars_only": true,
+   "touches_last_block": false
+  },
+  "d_R": {
+   "real_dim": 6,
+   "closure_real_dim": 12,
+   "preserved_by_commutant": false,
+   "complex_scalars_only": null,
+   "touches_last_block": true
+  },
+  "L": {
+   "real_dim": 4,
+   "closure_real_dim": 4,
+   "preserved_by_commutant": true,
+   "complex_scalars_only": true,
+   "touches_last_block": false
+  },
+  "e_R": {
+   "real_dim": 2,
+   "closure_real_dim": 4,
+   "preserved_by_commutant": false,
+   "complex_scalars_only": null,
+   "touches_last_block": true
+  },
+  "nu_R": {
+   "real_dim": 2,
+   "closure_real_dim": 4,
+   "preserved_by_commutant": false,
+   "complex_scalars_only": null,
+   "touches_last_block": true
+  }
+ },
+ "cube_root_phase_in_commutant": true,
+ "z3_global_phase_acts_trivially_on_edges": true
+}

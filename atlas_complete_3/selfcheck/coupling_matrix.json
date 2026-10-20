@@ -1,0 +1,39 @@
+{
+ "controls": {
+  "A_term_dropped_on_one_side": "fails (error > 1e-3)",
+  "wrong_gamma_signature": "fails (error > 1e-3)",
+  "wrong_sign_of_J": "fails (error > 1e-3)"
+ },
+ "current": {
+  "3": {
+   "ratios_X_over_bilinear": [
+    -1.0,
+    1.0
+   ]
+  },
+  "4": {
+   "ratios_X_over_bilinear": [
+    -1.0,
+    1.0
+   ]
+  },
+  "5": {
+   "psi_with_zero_spinor_but_nonzero_vector_current": true
+  }
+ },
+ "max_error": {
+  "3": 0,
+  "4": 0,
+  "5": 0,
+  "6": 0,
+  "7": 0
+ },
+ "rank_real": {
+  "3": 4,
+  "4": 8,
+  "5": 8,
+  "6": 16,
+  "7": 16
+ },
+ "status": "ALL MATRIX CHECKS PASS"
+}

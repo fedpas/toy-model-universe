@@ -1,0 +1,313 @@
+{
+ "curvature_space": {
+  "2": {
+   "dimension": 1,
+   "pair_symmetric": true,
+   "ricci_rank": 1,
+   "weyl_dimension": 0
+  },
+  "3": {
+   "dimension": 6,
+   "pair_symmetric": true,
+   "ricci_rank": 6,
+   "weyl_dimension": 0
+  },
+  "4": {
+   "dimension": 20,
+   "pair_symmetric": true,
+   "ricci_rank": 10,
+   "weyl_dimension": 10
+  },
+  "5": {
+   "dimension": 50,
+   "pair_symmetric": true,
+   "ricci_rank": 15,
+   "weyl_dimension": 35
+  },
+  "6": {
+   "dimension": 105,
+   "pair_symmetric": true,
+   "ricci_rank": 21,
+   "weyl_dimension": 84
+  },
+  "7": {
+   "dimension": 196,
+   "pair_symmetric": true,
+   "ricci_rank": 28,
+   "weyl_dimension": 168
+  }
+ },
+ "desitter": {
+  "3,AdS": {
+   "coefficient_of_e_wedge_e": "-1",
+   "coefficient_of_torsion": "1",
+   "extra_generator_square": 1,
+   "group": "anti-de Sitter"
+  },
+  "3,dS": {
+   "coefficient_of_e_wedge_e": "1",
+   "coefficient_of_torsion": "1",
+   "extra_generator_square": -1,
+   "group": "de Sitter"
+  },
+  "4,AdS": {
+   "coefficient_of_e_wedge_e": "-1",
+   "coefficient_of_torsion": "1",
+   "extra_generator_square": 1,
+   "group": "anti-de Sitter"
+  },
+  "4,dS": {
+   "coefficient_of_e_wedge_e": "1",
+   "coefficient_of_torsion": "1",
+   "extra_generator_square": -1,
+   "group": "de Sitter"
+  }
+ },
+ "einstein_identities": {
+  "3,0": {
+   "covariant_divergence_of_E_is_torsion_terms": true
+  },
+  "3,1": {
+   "covariant_divergence_of_E_is_torsion_terms": true
+  },
+  "4,0": {
+   "covariant_divergence_of_E_is_torsion_terms": true
+  },
+  "4,1": {
+   "covariant_divergence_of_E_is_torsion_terms": true
+  },
+  "5,0": {
+   "covariant_divergence_of_E_is_torsion_terms": true
+  }
+ },
+ "einstein_tensor_ratio": {
+  "3": "1",
+  "4": "1",
+  "5": "1"
+ },
+ "identities": {
+  "2": {
+   "first_bianchi": true,
+   "local_lorentz_covariance": true,
+   "second_bianchi": true,
+   "spinor_commutator": true
+  },
+  "3": {
+   "first_bianchi": true,
+   "local_lorentz_covariance": true,
+   "second_bianchi": true,
+   "spinor_commutator": true
+  },
+  "4": {
+   "first_bianchi": true,
+   "local_lorentz_covariance": true,
+   "second_bianchi": true,
+   "spinor_commutator": true
+  },
+  "5": {
+   "first_bianchi": true,
+   "local_lorentz_covariance": true,
+   "second_bianchi": true,
+   "spinor_commutator": true
+  }
+ },
+ "ladder": {
+  "2": {
+   "bivectors": 1,
+   "boosts": 1,
+   "curvature_components": 1,
+   "desitter_curvature_components": 3,
+   "desitter_generators": 3,
+   "divergence_torsion_terms_per_component": 0,
+   "einstein_components": 0,
+   "einstein_terms_per_component": 0,
+   "even_half": "M1(R) + M1(R)",
+   "first_bianchi_constraints": 0,
+   "frame_algebra": "M2(R)",
+   "omega_components": 2,
+   "pair_classes": {
+    "diagonal": 1,
+    "disjoint": 0,
+    "share_one_index": 0
+   },
+   "poincare_generators": 3,
+   "riemann_from_classes": 1,
+   "riemann_independent": 1,
+   "rotations": 0,
+   "tetrad_components": 4,
+   "torsion_components": 2
+  },
+  "3": {
+   "bivectors": 3,
+   "boosts": 2,
+   "curvature_components": 9,
+   "desitter_curvature_components": 18,
+   "desitter_generators": 6,
+   "divergence_torsion_terms_per_component": 0,
+   "einstein_components": 9,
+   "einstein_terms_per_component": 1,
+   "even_half": "M2(R)",
+   "first_bianchi_constraints": 0,
+   "frame_algebra": "M2(C)",
+   "omega_components": 9,
+   "pair_classes": {
+    "diagonal": 3,
+    "disjoint": 0,
+    "share_one_index": 3
+   },
+   "poincare_generators": 6,
+   "riemann_from_classes": 6,
+   "riemann_independent": 6,
+   "rotations": 1,
+   "tetrad_components": 9,
+   "torsion_components": 9
+  },
+  "4": {
+   "bivectors": 6,
+   "boosts": 3,
+   "curvature_components": 36,
+   "desitter_curvature_components": 60,
+   "desitter_generators": 10,
+   "divergence_torsion_terms_per_component": 3,
+   "einstein_components": 16,
+   "einstein_terms_per_component": 3,
+   "even_half": "M2(C)",
+   "first_bianchi_constraints": 1,
+   "frame_algebra": "M2(H)",
+   "omega_components": 24,
+   "pair_classes": {
+    "diagonal": 6,
+    "disjoint": 3,
+    "share_one_index": 12
+   },
+   "poincare_generators": 10,
+   "riemann_from_classes": 20,
+   "riemann_independent": 20,
+   "rotations": 3,
+   "tetrad_components": 16,
+   "torsion_components": 24
+  },
+  "5": {
+   "bivectors": 10,
+   "boosts": 4,
+   "curvature_components": 100,
+   "desitter_curvature_components": 150,
+   "desitter_generators": 15,
+   "divergence_torsion_terms_per_component": 12,
+   "einstein_components": 25,
+   "einstein_terms_per_component": 6,
+   "even_half": "M2(H)",
+   "first_bianchi_constraints": 5,
+   "frame_algebra": "M2(H) + M2(H)",
+   "omega_components": 50,
+   "pair_classes": {
+    "diagonal": 10,
+    "disjoint": 15,
+    "share_one_index": 30
+   },
+   "poincare_generators": 15,
+   "riemann_from_classes": 50,
+   "riemann_independent": 50,
+   "rotations": 6,
+   "tetrad_components": 25,
+   "torsion_components": 50
+  },
+  "6": {
+   "bivectors": 15,
+   "boosts": 5,
+   "curvature_components": 225,
+   "desitter_curvature_components": 315,
+   "desitter_generators": 21,
+   "divergence_torsion_terms_per_component": 30,
+   "einstein_components": 36,
+   "einstein_terms_per_component": 10,
+   "even_half": "M2(H) + M2(H)",
+   "first_bianchi_constraints": 15,
+   "frame_algebra": "M4(H)",
+   "omega_components": 90,
+   "pair_classes": {
+    "diagonal": 15,
+    "disjoint": 45,
+    "share_one_index": 60
+   },
+   "poincare_generators": 21,
+   "riemann_from_classes": 105,
+   "riemann_independent": 105,
+   "rotations": 10,
+   "tetrad_components": 36,
+   "torsion_components": 90
+  },
+  "7": {
+   "bivectors": 21,
+   "boosts": 6,
+   "curvature_components": 441,
+   "desitter_curvature_components": 588,
+   "desitter_generators": 28,
+   "divergence_torsion_terms_per_component": 60,
+   "einstein_components": 49,
+   "einstein_terms_per_component": 15,
+   "even_half": "M4(H)",
+   "first_bianchi_constraints": 35,
+   "frame_algebra": "M8(C)",
+   "omega_components": 147,
+   "pair_classes": {
+    "diagonal": 21,
+    "disjoint": 105,
+    "share_one_index": 105
+   },
+   "poincare_generators": 28,
+   "riemann_from_classes": 196,
+   "riemann_independent": 196,
+   "rotations": 15,
+   "tetrad_components": 49,
+   "torsion_components": 147
+  },
+  "8": {
+   "bivectors": 28,
+   "boosts": 7,
+   "curvature_components": 784,
+   "desitter_curvature_components": 1008,
+   "desitter_generators": 36,
+   "divergence_torsion_terms_per_component": 105,
+   "einstein_components": 64,
+   "einstein_terms_per_component": 21,
+   "even_half": "M8(C)",
+   "first_bianchi_constraints": 70,
+   "frame_algebra": "M16(R)",
+   "omega_components": 224,
+   "pair_classes": {
+    "diagonal": 28,
+    "disjoint": 210,
+    "share_one_index": 168
+   },
+   "poincare_generators": 36,
+   "riemann_from_classes": 336,
+   "riemann_independent": 336,
+   "rotations": 21,
+   "tetrad_components": 64,
+   "torsion_components": 224
+  }
+ },
+ "status": {
+  "checked": [
+   "connection, curvature, torsion and the Einstein form are all the bit rule: bivector and vector commutators of the frame algebra, and forms as the same rule with null generators",
+   "second Bianchi D R = 0, first Bianchi D T = R ^ e, local Lorentz covariance, [D, D] psi = (1/2) R psi, exact for n = 2 to 5",
+   "D E_a equals the torsion terms only (with and without a cosmological term); in 3D without it D E_a = 0 identically; exact for n = 3, 4, 5",
+   "at e = dx the Einstein form is a fixed multiple of the Einstein tensor built from the Ricci contraction (exact, any R)",
+   "the curvature of the de Sitter / anti-de Sitter algebra (one more generator) is R + k e ^ e together with a multiple of the torsion",
+   "algebraic curvature tensors: dimension n^2 (n^2 - 1)/12, pair-symmetric once the first Bianchi identity holds, Ricci and Weyl parts, n = 2 to 7 by linear algebra"
+  ],
+  "open": [
+   "the field equation with matter: the sign and size of the coupling kappa (no action rebuilt)",
+   "solutions: nothing is solved, no metric is built from the tetrad",
+   "whether any of this is the gravity of the model"
+  ],
+  "ours": [
+   "reading the Riemann components as pairs of bivectors: diagonal pairs, pairs sharing one index (the commutator graph of step 1) and disjoint pairs (the commuting pairs, the antipodes of the 16-cell at n = 4), with the first Bianchi identity as one relation per 4-subset"
+  ],
+  "standard": [
+   "Einstein-Cartan / first-order gravity, Cartan structure equations, MacDowell-Mansouri embedding in so(1,n) or so(2,n-1)",
+   "Riemann, Ricci, Weyl decomposition"
+  ]
+ }
+}

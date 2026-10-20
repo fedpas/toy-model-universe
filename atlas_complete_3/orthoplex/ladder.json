@@ -1,0 +1,197 @@
+{
+ "ladder": {
+  "0": {
+   "genesis_node": 0,
+   "algebra": "Cl(0,0) = M_1(R)",
+   "matrix_size": 1,
+   "blades_of_Cl(n,n)": 1,
+   "checked_explicitly": true,
+   "vertices": 0,
+   "edges(roots of D_n)": 0,
+   "facets(Fock states)": 1,
+   "faces_total": 1,
+   "grade_counts": [
+    1
+   ]
+  },
+  "1": {
+   "genesis_node": 2,
+   "algebra": "Cl(1,1) = M_2(R)",
+   "matrix_size": 2,
+   "blades_of_Cl(n,n)": 4,
+   "checked_explicitly": true,
+   "vertices": 2,
+   "diameters(Cartan)": 1,
+   "edges(roots of D_n)": 0,
+   "so(2n)_dim": 1,
+   "facets(Fock states)": 2,
+   "half_spinors": 1,
+   "faces_total": 3,
+   "grade_counts": [
+    1,
+    1
+   ]
+  },
+  "2": {
+   "genesis_node": 4,
+   "algebra": "Cl(2,2) = M_4(R)",
+   "matrix_size": 4,
+   "blades_of_Cl(n,n)": 16,
+   "checked_explicitly": true,
+   "vertices": 4,
+   "diameters(Cartan)": 2,
+   "edges(roots of D_n)": 4,
+   "so(2n)_dim": 6,
+   "facets(Fock states)": 4,
+   "half_spinors": 2,
+   "faces_total": 9,
+   "grade_counts": [
+    1,
+    2,
+    1
+   ]
+  },
+  "3": {
+   "genesis_node": 6,
+   "algebra": "Cl(3,3) = M_8(R)",
+   "matrix_size": 8,
+   "blades_of_Cl(n,n)": 64,
+   "checked_explicitly": true,
+   "vertices": 6,
+   "diameters(Cartan)": 3,
+   "edges(roots of D_n)": 12,
+   "so(2n)_dim": 15,
+   "facets(Fock states)": 8,
+   "half_spinors": 4,
+   "faces_total": 27,
+   "grade_counts": [
+    1,
+    3,
+    3,
+    1
+   ]
+  },
+  "4": {
+   "genesis_node": 8,
+   "algebra": "Cl(4,4) = M_16(R)",
+   "matrix_size": 16,
+   "blades_of_Cl(n,n)": 256,
+   "checked_explicitly": true,
+   "vertices": 8,
+   "diameters(Cartan)": 4,
+   "edges(roots of D_n)": 24,
+   "so(2n)_dim": 28,
+   "facets(Fock states)": 16,
+   "half_spinors": 8,
+   "faces_total": 81,
+   "grade_counts": [
+    1,
+    4,
+    6,
+    4,
+    1
+   ]
+  },
+  "5": {
+   "genesis_node": 10,
+   "matrix_size": 32,
+   "blades_of_Cl(n,n)": 1024,
+   "algebra": "Cl(5,5) = M_32(R) = Cl(1,1) (x) Cl(4,4): the budget of 8 is used up at n = 4",
+   "checked_explicitly": false,
+   "vertices": 10,
+   "diameters(Cartan)": 5,
+   "edges(roots of D_n)": 40,
+   "so(2n)_dim": 45,
+   "facets(Fock states)": 32,
+   "half_spinors": 16,
+   "faces_total": 243,
+   "grade_counts": [
+    1,
+    5,
+    10,
+    10,
+    5,
+    1
+   ]
+  }
+ },
+ "fock_su_content": {
+  "n=3": {
+   "all": [
+    1,
+    3,
+    3,
+    1
+   ],
+   "even_half": [
+    1,
+    3
+   ],
+   "odd_half": [
+    3,
+    1
+   ]
+  },
+  "n=5": {
+   "all": [
+    1,
+    5,
+    10,
+    10,
+    5,
+    1
+   ],
+   "even_half(1+10+5)": [
+    1,
+    10,
+    5
+   ],
+   "odd_half(5+10+1)": [
+    5,
+    10,
+    1
+   ]
+  }
+ },
+ "n4_triality": {
+  "8_v_vertices": 8,
+  "8_s_even_facets": 8,
+  "8_c_odd_facets": 8,
+  "union": 24,
+  "is_group_of_order_24": true,
+  "Q8_index": 3,
+  "three_16cells_are_the_cosets": true
+ },
+ "vertices_equal_half_facets_only_at": [
+  4
+ ],
+ "witt_axes_as_tesseract": {
+  "blocks_that_are_affine_subspaces": [
+   "O1",
+   "H",
+   "C",
+   "e7R",
+   "R"
+  ],
+  "blocks_not_affine": [
+   "O2"
+  ],
+  "O1+O2_is_a_cube(3-dim affine, 8 axes)": true,
+  "H+C+e7R+R_is_a_cube(8 axes)": true,
+  "C+e7R+R_is_a_square(4 axes)": true,
+  "H_is_a_square(4 axes)": true
+ },
+ "n8": {
+  "edges_112_plus_even_facets_128": 240,
+  "is_E8_root_set(checked: norms, integrality, reflection closure on a sample)": true,
+  "so(16)_dim": 120,
+  "plus_half_spinor": 128,
+  "E8_dim": 248,
+  "End_V_antisymmetric_symmetric": [
+   120,
+   136
+  ],
+  "facets": 256,
+  "even_blades": 128
+ }
+}

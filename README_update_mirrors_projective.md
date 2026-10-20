@@ -1,0 +1,12 @@
+# Update: steps 8 and 9 of "More equations" — mirrors, and one more generator with a null pair
+
+New (step 8): MirrorsSection.jsx, mirrorsCopy.js, mirrorsData.js, mirrorsSelfcheckSource.js, selfcheck/mirrors_selfcheck.py + mirrors.json (stdlib, ~2 s), selfcheck/mirrors_matrix_check.py + mirrors_matrix.json (numpy, self-contained), test_mirrors.mjs, test_mirrors_ui.mjs.
+New (step 9): ProjectiveSection.jsx, projectiveCopy.js, projectiveData.js, projectiveSelfcheckSource.js, selfcheck/projective_selfcheck.py + projective.json (stdlib, needs mirrors_selfcheck.py beside it, ~5 s), selfcheck/projective_matrix_check.py + projective_matrix.json (numpy, self-contained), test_projective.mjs, test_projective_ui.mjs.
+Changed: EquationsSection.jsx (10 nav links, two new sections), equationsCopy.js (tally rows 9 and 10), audienceCopy.js (short readings for `mirrors` and `projective`), storyCopy.js, lib/chatPersona.js (prompt ~20.0k characters, cap raised from 17,800 to 20,000), test_persona.mjs, test_audience.mjs, test_audience_ui.mjs, layout_check.mjs, and the nav/tally counts in the earlier tests.
+
+Run: `python3 selfcheck/mirrors_selfcheck.py --compare selfcheck/mirrors.json`, `python3 selfcheck/projective_selfcheck.py --compare selfcheck/projective.json`, `python3 selfcheck/mirrors_matrix_check.py --compare selfcheck/mirrors_matrix.json`, `python3 selfcheck/projective_matrix_check.py --compare selfcheck/projective_matrix.json`, `node test_mirrors.mjs`, `node test_projective.mjs`.
+
+What is checked: step 8 — the mirror formula, the twisted sandwich, Cartan–Dieudonné (at most n mirrors, same versor up to a scalar), corners of the n-cube as products of coordinate mirrors, B_n and D_n orders, E8 roots permuted by their mirrors.
+Step 9 — one extra generator of square 0, −1, +1 (closure, Jacobi, Killing form, contraction, k = −s of step 7), the null pair, points, planes, spheres, translation, rotation, dilation, inversion, PGA inside CGA, isometries as at most n+1 plane mirrors, the conformal algebra, Cl(k,k) = M_{2^k}(R) to k = 4.
+Not rebuilt, stated as standard on the page: conformal invariance of Maxwell, Yang–Mills and massless Dirac.
+Open, as stated on the page: force and forque dynamics (the next step), that the equations of motion coincide in the three PGAs (attributed to Gunn in the paper we read, not re-derived), conformal dynamics, any physical role, three generations.
